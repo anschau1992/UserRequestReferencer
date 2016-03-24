@@ -9,27 +9,26 @@ import java.util.List;
 
 public class Crawler implements Constants {
 
+        Date testDate = new Date(116, 02, 23);
+
 
 
         public void startGooglePlayStoreCrawler(){
 
+            System.out.println(testDate);
+
             for(final String appName : APP_NAMES){
                 new Thread(new Runnable() {
                     public void run() {
-                        GooglePlayStoreCrawler googlePlayStoreCrawler = new GooglePlayStoreCrawler();
+                        GooglePlayStoreCrawler googlePlayStoreCrawler = new GooglePlayStoreCrawler(appName, testDate);
 
-                        List<String> googleReviews = new ArrayList<String>();
+                        List<Review> googleReviews = googlePlayStoreCrawler.getReviewsByAppName();
 
-                        if(DATE_OF_LAST_CRAWL != null){
-                            googleReviews = googlePlayStoreCrawler.getReviewsByAppName(appName, DATE_OF_LAST_CRAWL);
-                        }else{
-                            googleReviews = googlePlayStoreCrawler.getReviewsByAppName(appName);
-                        }
 
 
                         //TODO: remove. Print out for testing
-                        for (String review: googleReviews){
-                            System.out.println(review);
+                        for (Review review: googleReviews){
+                            System.out.println(review.getReviewText() + "// Date: " + review.getReviewDate().toString() + " // Stars: " + review.getNumberOfStars());
                         }
                     }
                 }).start();
