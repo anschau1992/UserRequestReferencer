@@ -21,16 +21,13 @@ import java.util.List;
 import java.util.Locale;
 
 public class GooglePlayStoreCrawler {
-    private static final int searchLimit = 3; //TODO: only testing purpose --> remove afterwards
-    private int count = 0;
-    private boolean dateOfLastCrawlIsReached = false;
-
     //TODO: move them to right place --> Constants or into method
     private static final String play_store_base_link = "https://play.google.com/store/apps/details?id=com.";
     private static final String next_reviews_button = "//button[@aria-label='See More' and @class='expand-button expand-next']";
     private static final String reviews_language = "en";
 
     private Date dateOfLastCrawl = null; // is given as parameter if already crawled before
+    private boolean dateOfLastCrawlIsReached = false;
     private String appName = null;
     private WebDriver driver = null;
     private WebDriverWait wait = null;
@@ -44,30 +41,27 @@ public class GooglePlayStoreCrawler {
             System.out.println("Crawling all new reviews of "+ appName + " since " + dateOfLastCrawl);
             this.dateOfLastCrawl = dateOfLastCrawl;
         }
+        setupDriverWithLink();
+        prepareReviews();
     }
+    private void  setupDriverWithLink(){
+        String appLink = play_store_base_link + this.appName + "&hl=" + reviews_language;
 
-    public List<Review> getReviewsByAppName(){
-
-        driver = connectWithDriverOfLink(this.appName);
+        //open Browser with Link
+        WebDriver driver = new FirefoxDriver();
+        driver.manage().window().maximize();
+        driver.navigate().to(appLink);
+        this.driver = driver;
+    }
+    private void prepareReviews(){
         clickNextButton();
         scrollPage(0,-250);
         changeReviewSortOrderToNewest();
         moveHoveSoItShowsReviewDate();
-
-        return getReviewsByDriver();
     }
 
-    private WebDriver connectWithDriverOfLink(String appName){
-        String appLink = play_store_base_link + appName + "&hl=" + reviews_language;
-
-        WebDriver driver = new FirefoxDriver();
-        driver.manage().window().maximize();
-        driver.navigate().to(appLink);
-
-        return driver;
-    }
-    private void clickNextButton() {
-        //Wait til nextbutton is clickable
+    public void clickNextButton() {
+        //Wait until next button is clickable
         this.wait = new WebDriverWait(driver, 10);
         this.wait.until(ExpectedConditions.elementToBeClickable(By.xpath(next_reviews_button)));
 
@@ -98,19 +92,12 @@ public class GooglePlayStoreCrawler {
         builder.moveToElement(hoverElement).perform();
     }
 
-
-
-    private List<Review> getReviewsByDriver() {
-        List<Review> collectedReviews = new ArrayList<Review>();
-
-        while (nextButtonExists(driver) && !dateOfLastCrawlIsReached) {
-            sleep(2500);
-            List <WebElement> newReviewsAsWebElement = getAllReviewsOfCurrentPage();
-
-            collectedReviews = reviewsSortedOutByDate(newReviewsAsWebElement, dateOfLastCrawl, collectedReviews);
-            clickNextButton();
-        }
-        return collectedReviews;
+    public List<Review> getReviewsOfPage(){
+        //TODO: change to 'presenceOfElementLocated', but not working
+        sleep(2500);
+        List <WebElement> newReviewsAsWebElement = getAllReviewsOfCurrentPage();
+        List<Review> reviewsOfPage = reviewsSortedOutByDate(newReviewsAsWebElement, dateOfLastCrawl);
+        return reviewsOfPage;
     }
 
     private List<WebElement> getAllReviewsOfCurrentPage() {
@@ -118,9 +105,8 @@ public class GooglePlayStoreCrawler {
         return driver.findElements(By.className(reviewClassName));
     }
 
-    private List<Review> reviewsSortedOutByDate(List<WebElement> crawledReviews, Date dateOfLastCrawl, List<Review> sortedReviews) {
-
-
+    private List<Review> reviewsSortedOutByDate(List<WebElement> crawledReviews, Date dateOfLastCrawl) {
+        List<Review> sortedReviews = new ArrayList<Review>();
         DateFormat formatter = new SimpleDateFormat("MMMM dd,yyyy", Locale.ENGLISH);
         Date date = null;
 
@@ -139,7 +125,7 @@ public class GooglePlayStoreCrawler {
                     }
                     //add to List if newer than lastCrawl
                     if(date.after(dateOfLastCrawl)) {
-                        System.out.println(dateAsText + " is newer than lastCrawl ");
+                        //TODO: get the real number of stars
                         Review newReview = new Review(reviewText, date, 5);
                         sortedReviews.add(newReview);
                     }else{
@@ -153,8 +139,15 @@ public class GooglePlayStoreCrawler {
         return sortedReviews;
     }
 
-    private boolean nextButtonExists(WebDriver driver) {
-        List<WebElement> arrowButton = driver.findElements(By.xpath(next_reviews_button));
+    public boolean crawlNextSite() {
+        if(nextButtonExists() && !dateOfLastCrawlIsReached){
+            return true;
+        }else {
+            return false;
+        }
+    }
+    private boolean nextButtonExists() {
+        List<WebElement> arrowButton = this.driver.findElements(By.xpath(next_reviews_button));
 
         if(arrowButton.size() >= 1){
             return true;
@@ -163,7 +156,10 @@ public class GooglePlayStoreCrawler {
         }
     }
 
-    //TODO: change to 'presenceOfElementLocated', but not working
+    public void terminateDriver(){
+        this.driver.quit();
+    }
+
     private void sleep(int milliseconds){
         try {
             Thread.sleep(milliseconds);
