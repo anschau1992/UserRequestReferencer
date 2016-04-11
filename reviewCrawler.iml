@@ -57,5 +57,7 @@
     <orderEntry type="library" name="Maven: org.mongodb:mongodb-driver:3.0.4" level="project" />
     <orderEntry type="library" name="Maven: org.mongodb:mongodb-driver-core:3.0.4" level="project" />
     <orderEntry type="library" name="Maven: org.mongodb:bson:3.0.4" level="project" />
+    <orderEntry type="library" name="ejml-0.23" level="project" />
+    <orderEntry type="library" name="ARdoc_API" level="project" />
   </component>
 </module>
