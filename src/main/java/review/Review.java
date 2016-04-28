@@ -1,0 +1,61 @@
+package review;
+
+import java.util.Date;
+import java.util.Map;
+
+public class Review {
+    private String reviewAuthor;
+    private String reviewText;
+    private Date reviewDate;
+    private int ratingStars;
+    private String app;
+    private ArDocClassification arDocClassification;
+    private Map<String, Double> wordsWithWeights = null;
+
+    public Review(String reviewAuthor, String reviewText, Date reviewDate,int ratingStars){
+        this.reviewAuthor = reviewAuthor;
+        this.reviewText = reviewText;
+        this.reviewDate = reviewDate;
+        this.ratingStars = ratingStars;
+    }
+
+    public String getReviewAuthor() {
+        return this.reviewAuthor;
+    }
+
+    public String getReviewText() {
+        return this.reviewText;
+    }
+
+    public Date getReviewDate() {
+        return this.reviewDate;
+    }
+
+    public int getRatingStars() {
+        return this.ratingStars;
+    }
+
+    public ArDocClassification getArDocClassification() {
+        return arDocClassification;
+    }
+
+    public void setArDocClassification(ArDocClassification arDocClassification) {
+        this.arDocClassification = arDocClassification;
+    }
+
+    public void setWordsWithWeights(Map<String, Double> wordsWithWeights) {
+        this.wordsWithWeights = wordsWithWeights;
+    }
+
+    public Map<String, Double> getWordsWithWeights(){
+        return this.wordsWithWeights;
+    }
+
+    public String getApp() {
+        return app;
+    }
+
+    public void setApp(String app) {
+        this.app = app;
+    }
+}
