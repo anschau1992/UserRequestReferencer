@@ -17,7 +17,7 @@ import static net.sourceforge.htmlunit.corejs.javascript.ScriptRuntime.eq;
 
 
 public class DBTest {
-    String dbname = "reviews";
+    String dbname = "review";
 
     MongoClient mongoClient = new MongoClient();
     MongoDatabase db =  mongoClient.getDatabase(this.dbname);
@@ -28,7 +28,7 @@ public class DBTest {
        MongoCollection coll = db.getCollection(dbname);
 
 
-        System.out.println(coll.count("2"));
+        System.out.println(coll.count());
     }
 
 

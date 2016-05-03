@@ -9,14 +9,16 @@ public class Review {
     private Date reviewDate;
     private int ratingStars;
     private String app;
+    private String appVersion;
     private ArDocClassification arDocClassification;
     private Map<String, Double> wordsWithWeights = null;
 
-    public Review(String reviewAuthor, String reviewText, Date reviewDate,int ratingStars){
+    public Review(String reviewAuthor, String reviewText, Date reviewDate,int ratingStars, String appVersion){
         this.reviewAuthor = reviewAuthor;
         this.reviewText = reviewText;
         this.reviewDate = reviewDate;
         this.ratingStars = ratingStars;
+        this.appVersion = appVersion;
     }
 
     public String getReviewAuthor() {
@@ -57,5 +59,9 @@ public class Review {
 
     public void setApp(String app) {
         this.app = app;
+    }
+
+    public String getAppVersion() {
+        return appVersion;
     }
 }

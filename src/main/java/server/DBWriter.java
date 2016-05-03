@@ -54,6 +54,7 @@ public class DBWriter {
                 .append("ratingStars", review.getRatingStars())
                 .append("classification", review.getArDocClassification().toString())
                 .append("app", review.getApp())
+                .append("appVersion", review.getAppVersion())
         );
     }
 

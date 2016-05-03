@@ -28,6 +28,8 @@ public class GooglePlayStoreCrawler {
     private static final String next_reviews_button = "//button[@aria-label='See More' and @class='expand-button expand-next']";
     private static final String reviews_language = "en";
 
+    private String appVersion;
+
     private Date dateOfLastCrawl = null; // is given as parameter if already crawled before
     private boolean dateOfLastCrawlIsReached = false;
 
@@ -49,28 +51,32 @@ public class GooglePlayStoreCrawler {
         System.out.println("Crawling all new reviews of "+ appInfo.getName() + " since " + dateOfLastCrawl);
 
         setupDriverWithLink();
-        prepareReviews();
-
-    }
-
-    public GooglePlayStoreCrawler(AppInfo appInfo, Date dateOfLastCrawl){
-        this.appInfo = appInfo;
-
-        System.out.println("Crawling all new reviews of "+ appInfo.getName() + " since " + dateOfLastCrawl);
-        this.dateOfLastCrawl = dateOfLastCrawl;
-
-        setupDriverWithLink();
+        appVersion = readAppVersion();
         prepareReviews();
     }
+
     private void  setupDriverWithLink(){
         //open Google Play Store App
         String appLink = play_store_base_link + appInfo.getId() + "." + appInfo.getLinkName() + "&hl=" + reviews_language;
         driver.navigate().to(appLink);
     }
+    private String readAppVersion() {
+        scrollPage(0,-250);
+        String version;
+        sleep(2000);
+        try {
+            version = driver.findElement(By.xpath("//*[@id=\"body-content\"]/div/div/div[1]/div[4]/div/div[2]/div[4]/div[2]")).getText();
+        } catch (Throwable error){
+            sleep(2000);
+            version = driver.findElement(By.xpath("//*[@id=\"body-content\"]/div/div/div[1]/div[4]/div/div[2]/div[4]/div[2]")).getText();
+        }
+        return version;
+    }
     private void prepareReviews(){
         clickNextButton();
         scrollPage(0,-250);
         changeReviewSortOrderToNewest();
+        filterReviewsByLatestVersion();
         moveHoveSoItShowsReviewDate();
     }
 
@@ -94,22 +100,42 @@ public class GooglePlayStoreCrawler {
         //Open sortOrder Dropdown menu
         this.wait = new WebDriverWait(driver, 10);
         this.wait.until(ExpectedConditions.elementToBeClickable(By.className("dropdown-menu")));
-        WebElement sortOrderButton = driver.findElements(By.className("dropdown-menu")).get(0);
+        WebElement sortOrderButton = driver.findElement(By.xpath("//button[contains(.,'Helpfulness')]"));
         sortOrderButton.click();
 
         //Change order to 'Newest'
         this.wait = new WebDriverWait(driver, 10);
         WebElement newestOrderButton = driver.findElement(By.xpath("//button[contains(.,'Newest')]"));
+        clickButtonWithCatch(newestOrderButton);
+
+    }
+
+    private void clickButtonWithCatch(WebElement button) {
         try{
-            this.wait.until(ExpectedConditions.elementToBeClickable(newestOrderButton));
-            newestOrderButton.click();
+            this.wait.until(ExpectedConditions.elementToBeClickable(button));
+            button.click();
         }catch (Exception e) {
-            sleep(2000);
-            System.err.print(e + " // Waiting for 2 seconds!");
-            newestOrderButton.click();
+            sleep(5000);
+            System.err.print(e + " // Waiting for 5 seconds!");
+            button.click();
+        }
+    }
+
+    private void filterReviewsByLatestVersion() {
+        //Open versionfilter Dropdown menu
+        this.wait = new WebDriverWait(driver, 10);
+        this.wait.until(ExpectedConditions.elementToBeClickable(By.className("dropdown-menu")));
+        try{
+            WebElement versionFilterButton = driver.findElement(By.xpath("//button[contains(.,'All Versions')]"));
+            versionFilterButton.click();
+        } catch (Error e) {
+            System.err.println(new Date() +":     This has no version-filter");
         }
 
-
+        //Change filter to 'Only latest'
+        this.wait = new WebDriverWait(driver, 10);
+        WebElement latestVersionButton = driver.findElement(By.xpath("//button[contains(.,'Latest Version')]"));
+        clickButtonWithCatch(latestVersionButton);
     }
     //Focuses the mousehover somewhere else, otherwise review date is hidden
     private void moveHoveSoItShowsReviewDate() {
@@ -171,7 +197,7 @@ public class GooglePlayStoreCrawler {
                     //add to List if newer than lastCrawl
                     if(date.after(dateOfLastCrawl)) {
                         //TODO: get the real number of stars
-                        Review newReview = new Review(author, reviewText, date, ratingStars);
+                        Review newReview = new Review(author, reviewText, date, ratingStars, appVersion);
                         sortedReviews.add(newReview);
                     }else{
                         dateOfLastCrawlIsReached = true;

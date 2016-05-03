@@ -8,6 +8,10 @@ import java.util.List;
 
 public interface Constants {
 
+    String DBNAME = "review";
+    String COLLLECTIONNAME = "review";
+    int REVIEWSPERAPPLIMIT = 500;
+
      AppInfo [] APP_INFOS =
             {
             //Testing apps
@@ -24,8 +28,21 @@ public interface Constants {
             //OpenSource Apps
             new AppInfo("Adblock Plus", "adblockplus.adblockplussbrowser", "org"),
             new AppInfo("A Comic Viewer", "androidcomics.acv", "net"),
-            new AppInfo("OpenDocument Reader", "tomtasche.reader", "at"),
-            new AppInfo("WiFi Automatic", "j4velin.wifiAutoOff", "de")
+            new AppInfo("Duck Duck GO", "duckduckgo.mobile.android", "com"),
+            new AppInfo("Xabber", "xabber.android", "com"),
+            new AppInfo("Marine Compass", "pierrox.mcompass", "net"),
+            new AppInfo("Bankdroid", "liato.bankdroid", "com"),
+            new AppInfo("Abstract Art", "georgewhiteside.android.abstractart", "net"),
+            new AppInfo("MultiPicture Live Wallpaper", "tamanegi.wallpaper.multipicture", "org"),
+            new AppInfo("Frozen Bubble", "jfedor.frozenbubble", "org"),
+            new AppInfo("Pixel Dungeon", "watabou.pixeldungeon", "com"),
+            new AppInfo("BatteryBot Battery Indicator", "darshancomputing.BatteryIndicator", "com"),
+            new AppInfo("Autostarts", "elsdoerfer.android.autostarts", "com"),
+            new AppInfo("Calculator", "android2.calculator3", "com"),
+            new AppInfo("Bubble level", "androgames.level", "net"),
+            new AppInfo("CatLog", "nolanlawson.logcat", "com"),
+            new AppInfo("Network Log", "googlecode.networklog", "com"),
+            new AppInfo("OctoDroid", "gh4a", "com"),
 
     };
 

@@ -16,74 +16,64 @@ import static java.lang.Thread.sleep;
 
 public  class Crawler implements Constants {
     static Date lastCrawlDate;
-    static String dbName = "Reviews";
-    static String collectionName = "reviews";
+    static GooglePlayStoreCrawler googlePlayStoreCrawler;
+    static DBWriter dbWriter;
+
 
     public  static void main(String[] args) throws InterruptedException {
+        googlePlayStoreCrawler = new GooglePlayStoreCrawler();
+        dbWriter = new DBWriter(DBNAME, COLLLECTIONNAME);
 
-        GooglePlayStoreCrawler googlePlayStoreCrawler = new GooglePlayStoreCrawler();
-        DBWriter dbWriter = new DBWriter(dbName, collectionName);
-
-        crawlForEachAPP(googlePlayStoreCrawler, dbWriter);
+        crawlForEachAPP();
     }
 
-    private static void crawlForEachAPP(GooglePlayStoreCrawler googlePlayStoreCrawler, DBWriter dbWriter) throws InterruptedException {
+    private static void crawlForEachAPP() throws InterruptedException {
         int [] reviewsCounts = new int[APP_INFOS.length];
         int looper = 0;
         for (final AppInfo appInfo : APP_INFOS) {
+            boolean reviewsOnFirstPage = true;
             int reviewCount = 0;
-            System.out.println(" ************** Start ReviewCrawler for App " + appInfo.getName()+" **************");
+            printAppCrawlStart(appInfo);
 
             //get Date of latest review. If not exist, give default 1970
             lastCrawlDate = dbWriter.getLatestReviewsDateOfApp(appInfo.getName());
-
             googlePlayStoreCrawler.setAppInfo(appInfo, lastCrawlDate);
             sleep(2000);
 
             //get reviews of first page
-            List<Review> reviewsOfPage = googlePlayStoreCrawler.getReviewsOfPage();
-            if(reviewsOfPage.size() > 0){
-                reviewCount = reviewCount + reviewsOfPage.size();
-                reviewsOfPage = setArDocAndAppName(reviewsOfPage, appInfo.getName());
-                dbWriter.writeReviewsToDB(reviewsOfPage);
-            }
+            reviewCount = writeCurrentReviewsToDB(reviewCount, appInfo);
 
-            while(googlePlayStoreCrawler.crawlNextSite()){
-
+            while(googlePlayStoreCrawler.crawlNextSite() && reviewCount <= REVIEWSPERAPPLIMIT){
                 googlePlayStoreCrawler.clickNextButton();
-                reviewsOfPage = googlePlayStoreCrawler.getReviewsOfPage();
-
-                if(reviewsOfPage != null){
-                    reviewCount = reviewCount + reviewsOfPage.size();
-                    reviewsOfPage = setArDocAndAppName(reviewsOfPage, appInfo.getName());
-                    dbWriter.writeReviewsToDB(reviewsOfPage);
+                if(googlePlayStoreCrawler.getReviewsOfPage().size() <= 0){
+                    break;
                 }
-
-                //reviewsPrintout(reviewsOfPage);
-
+                reviewCount = writeCurrentReviewsToDB(reviewCount, appInfo);
             }
 
             System.out.println(appInfo.getName() + ": finished crawling. Crawled reviews: " + reviewCount);
             reviewsCounts[looper] = reviewCount;
             looper++;
-
-                googlePlayStoreCrawler.setDateOfLastCrawlIsReached(false);
+            googlePlayStoreCrawler.setDateOfLastCrawlIsReached(false);
         }
-
-
         //finish print out
-        System.out.println("==================================================================================================================================================================================================================");
-        for(int i = 0; i < reviewsCounts.length ; i++){
-            if(i % 4 == 0){
-                System.out.println("");
-            }
+        printAppCrawlEnd(reviewsCounts);
+    }
 
-            System.out.print(APP_INFOS[i].getName() + ", new Reviews: " + reviewsCounts[i] + " || ");
+    private static void printAppCrawlStart(AppInfo appInfo) {
+        System.out.println(" ************** Start ReviewCrawler for App " + appInfo.getName()+" **************");
+    }
 
+    private static int writeCurrentReviewsToDB(int reviewCount, AppInfo appInfo) {
+        List<Review> reviewsOfPage = googlePlayStoreCrawler.getReviewsOfPage();
+        int counter = reviewCount;
 
+        if(reviewsOfPage.size() > 0){
+            counter = counter + reviewsOfPage.size();
+            reviewsOfPage = setArDocAndAppName(reviewsOfPage, appInfo.getName());
+            dbWriter.writeReviewsToDB(reviewsOfPage);
         }
-        System.out.println("");
-        System.out.println("==================================================================================================================================================================================================================");
+        return counter;
     }
 
     private static List<Review> setArDocAndAppName (List<Review> reviewsOfPage, String appName) {
@@ -107,6 +97,22 @@ public  class Crawler implements Constants {
         String classWithUnderscore = sentenceClass.replaceAll(" ", "_");
 
         return ArDocClassification.valueOf(classWithUnderscore);
+    }
+
+    private static void printAppCrawlEnd(int[] reviewsCounts) {
+        System.out.println("===================================================================================================" +
+                "===============================================================================================================");
+        for(int i = 0; i < reviewsCounts.length ; i++){
+            if(i % 4 == 0){
+                System.out.println("\n");
+            }
+
+            System.out.print(APP_INFOS[i].getName() + ", new Reviews: " + reviewsCounts[i] + " || ");
+
+
+        }
+        System.out.println("\n=================================================================================================" +
+                "=================================================================================================================");
     }
 
     //TODO: remove, just testing purpose
