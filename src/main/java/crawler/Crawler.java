@@ -45,9 +45,10 @@ public  class Crawler implements Constants {
 
             while(googlePlayStoreCrawler.crawlNextSite() && reviewCount <= REVIEWSPERAPPLIMIT){
                 googlePlayStoreCrawler.clickNextButton();
-                if(googlePlayStoreCrawler.getReviewsOfPage().size() <= 0){
-                    break;
-                }
+                //TODO: find better way to avoid empty reviewwindow
+//                if(googlePlayStoreCrawler.getReviewsOfPage().size() <= 0){
+//                    break;
+//                }
                 reviewCount = writeCurrentReviewsToDB(reviewCount, appInfo);
             }
 
