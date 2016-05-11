@@ -1,9 +1,9 @@
 package crawler;
 
 public class AppInfo {
-    final String name;
-    final String id;
-    final String linkName;
+    private final String name;
+    private final String id;
+    private final String linkName;
 
     public AppInfo(String name, String linkName, String id) {
         this.name = name;

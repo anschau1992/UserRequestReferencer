@@ -1,29 +1,31 @@
 package server;
 
+import appsInfoCrawler.ExtendedAppInfo;
 import com.mongodb.BasicDBObject;
-import com.mongodb.DBCollection;
 import com.mongodb.MongoClient;
 import com.mongodb.client.FindIterable;
 import com.mongodb.client.MongoCollection;
 import com.mongodb.client.MongoDatabase;
-import com.mongodb.client.MongoIterable;
-import crawler.AppInfo;
 import org.bson.Document;
 import review.Review;
 
-import java.util.*;
+import java.util.ArrayList;
+import java.util.Date;
+import java.util.List;
 
 public class DBWriter {
 
-    MongoDatabase db;
-    String databaseName;
-    String collectionName;
+    private MongoDatabase db;
+    private String databaseName;
+    private String collectionName;
+    private MongoCollection mongoCollection;
 
     public DBWriter(String databaseName, String collectionName) {
         this.databaseName = cleanName(databaseName);
         this.collectionName = cleanName(collectionName);
         MongoClient mongoClient = new MongoClient();
         db = mongoClient.getDatabase(this.databaseName);
+        mongoCollection = db.getCollection(collectionName);
     };
 
     private String cleanName(String databaseName) {
@@ -56,6 +58,21 @@ public class DBWriter {
                 .append("app", review.getApp())
                 .append("appVersion", review.getAppVersion())
         );
+    }
+
+    public void writeAppInfosToDb(List<ExtendedAppInfo> appInfos) {
+        if (appInfos.isEmpty()) {
+            return;
+        }
+        mongoCollection.insertMany(convertToDocuments(appInfos));
+    }
+
+    private List<Document> convertToDocuments(List<ExtendedAppInfo> appInfos) {
+        List<Document> documents = new ArrayList();
+        for (ExtendedAppInfo appInfo : appInfos) {
+            documents.add(appInfo.convertToDocument());
+        }
+        return documents;
     }
 
     public Date getLatestReviewsDateOfApp(String appName) {
