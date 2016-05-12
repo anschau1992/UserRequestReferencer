@@ -13,6 +13,8 @@ import java.util.ArrayList;
 import java.util.Date;
 import java.util.List;
 
+import static com.mongodb.client.model.Filters.eq;
+
 public class DBWriter {
 
     private MongoDatabase db;
@@ -64,7 +66,16 @@ public class DBWriter {
         if (appInfos.isEmpty()) {
             return;
         }
-        mongoCollection.insertMany(convertToDocuments(appInfos));
+        for (Document appInfoDocument : convertToDocuments(appInfos)) {
+            String appInfoId = (String) appInfoDocument.get("id");
+            FindIterable<Document> iterable = mongoCollection.find(new Document("id", appInfoId));
+            Document first = iterable.first();
+            if (first != null) {
+                mongoCollection.updateOne(eq("id", appInfoId), new Document("$set", appInfoDocument));
+            } else {
+                mongoCollection.insertOne(appInfoDocument);
+            }
+        }
     }
 
     private List<Document> convertToDocuments(List<ExtendedAppInfo> appInfos) {

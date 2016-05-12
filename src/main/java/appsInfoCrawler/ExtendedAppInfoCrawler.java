@@ -1,5 +1,6 @@
 package appsInfoCrawler;
 
+import com.google.common.base.Strings;
 import org.openqa.selenium.By;
 import org.openqa.selenium.NoSuchElementException;
 import org.openqa.selenium.WebDriver;
@@ -18,15 +19,20 @@ import static utils.SafariDriverUtils.*;
  * Selenium crawler that crawls the extended apps info for a given url with a specific category.
  */
 public class ExtendedAppInfoCrawler {
+    private static final Integer MAX_APPS = 100;
+    private static final String INSTALL = "install";
+    private static final String BUY = " buy";
+    public static final String COMMA = ",";
+    public static final String EMPTY = "";
+
     private WebDriver driver;
-    private String appInfoCategory = "";
 
     public ExtendedAppInfoCrawler() {
-        driver = createSafariDriver();
+        this(createSafariDriver());
     }
 
-    public void setAppInfoCategory(String appInfoCategory) {
-        this.appInfoCategory = appInfoCategory;
+    public ExtendedAppInfoCrawler(WebDriver driver) {
+        this.driver = driver;
     }
 
     public List<ExtendedAppInfo> crawlWithSeeMore(String url) {
@@ -53,21 +59,44 @@ public class ExtendedAppInfoCrawler {
 
     public List<ExtendedAppInfo> crawl(String subcategoryUrl) {
         goToUrl(driver, subcategoryUrl);
-        return crawlAppInfos(findAppUrls());
+        List<ExtendedAppInfo> appInfos = new ArrayList();
+        while (true) {
+            appInfos.addAll(crawlAppInfos(findAppUrls()));
+            if (showMoreIsVisible(driver)) {
+                break;
+            }
+            scrollPage(driver);
+            sleep(2000);
+        }
+        return appInfos;
+    }
+
+    private boolean showMoreIsVisible(WebDriver driver) {
+        WebElement element = driver.findElement(By.id("show-more-button"));
+        return element != null && element.isDisplayed();
     }
 
     private Set<String> findAppUrls() {
-        List<WebElement> webElementLinks = driver.findElements(By.className("card-click-target"));
+        List<WebElement> webElementLinks = driver.findElements(By.className("title"));
         Set<String> appUrls = new HashSet();
         for (WebElement webElementLink : webElementLinks) {
-            appUrls.add(webElementLink.getAttribute("href"));
+            String href = webElementLink.getAttribute("href");
+            if (!Strings.isNullOrEmpty(href)) {
+                appUrls.add(webElementLink.getAttribute("href"));
+            }
         }
         return appUrls;
     }
 
     private List<ExtendedAppInfo> crawlAppInfos(Set<String> appUrls) {
         List<ExtendedAppInfo> appInfos = new ArrayList<ExtendedAppInfo>();
+        int i = 0;
         for (String appUrl : appUrls) {
+            if (i++ >= MAX_APPS) {
+                System.out.println(">>>>>>>>>>> limit reached");
+                break;
+            }
+
             ExtendedAppInfo appInfo = crawlAppInfo(appUrl);
             if (appInfo != null) {
                 appInfos.add(appInfo);
@@ -97,12 +126,11 @@ public class ExtendedAppInfoCrawler {
         String googleAppName = extractGoogleAppName(appUrl);
         String appTitle = extractAppTitle(driver);
         ExtendedAppInfo appInfo = new ExtendedAppInfo(appTitle, googleAppName, googleAppName);
-
+        appInfo.setPrice(extractPrice(driver, appUrl));
         appInfo.setStarRating(Double.valueOf(extractStarRating(driver)));
-        appInfo.setCategory(appInfoCategory);
         appInfo.setBadge(extractBadge(driver));
         appInfo.setAuthor(extractAuthor(driver));
-        appInfo.setGenre(extractGenre(driver));
+        appInfo.setCategory(extractCategory(driver));
         appInfo.setTotalNrOfReviews(Long.valueOf(extractTotalNrOfReviews(driver)));
         appInfo.setReviewsPerStars(extractReviewsPerStar(driver));
         appInfo.setDescription(extractDescription(driver));
@@ -110,9 +138,21 @@ public class ExtendedAppInfoCrawler {
         return appInfo;
     }
 
+    private double extractPrice(WebDriver driver, String appUrl) {
+        WebElement priceElement = driver.findElement(By.className("price"));
+        String priceText = getText(priceElement);
+        if (priceText.indexOf(INSTALL) != -1) {
+            return 0;
+        }
+        // Price text is of the form CHF 4,89 Buy
+        int endIndex = priceText.indexOf(BUY);
+        double price = Double.valueOf(priceText.substring(4, endIndex).replace(COMMA, EMPTY));
+        return price;
+    }
+
     private String extractGoogleAppName(String appUrl) {
         int index = appUrl.indexOf("id=");
-        return appUrl.substring(index + 1);
+        return appUrl.substring(index + 3);
     }
 
     private String extractAppTitle(WebDriver driver) {
@@ -142,9 +182,9 @@ public class ExtendedAppInfoCrawler {
         return author.getText();
     }
 
-    private String extractGenre(WebDriver driver) {
-        WebElement genre = driver.findElement(By.className("category"));
-        return genre.getText();
+    private String extractCategory(WebDriver driver) {
+        WebElement category = driver.findElement(By.className("category"));
+        return category.getText();
     }
 
     private String extractTotalNrOfReviews(WebDriver driver) {
