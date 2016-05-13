@@ -6,7 +6,7 @@ import org.openqa.selenium.interactions.Actions;
 import org.openqa.selenium.safari.SafariDriver;
 
 /**
- * SafaruDriver utility methods.
+ * Safari Driver utility methods.
  */
 public final class SafariDriverUtils {
     private SafariDriverUtils() {
@@ -26,7 +26,12 @@ public final class SafariDriverUtils {
 
     public static void scrollPage(WebDriver driver) {
         JavascriptExecutor jsx = (JavascriptExecutor) driver;
-        jsx.executeScript("window.scrollBy(0,800)", "");
+        jsx.executeScript("window.scrollBy(0,1200)", "");
+    }
+
+    public static void scrollPage(WebDriver driver, int yOffset) {
+        JavascriptExecutor jsx = (JavascriptExecutor) driver;
+        jsx.executeScript("window.scrollBy(0," + yOffset + ")", "");
     }
 
     public static void scrollPage(WebDriver driver, int xAxis, int yAxis) {

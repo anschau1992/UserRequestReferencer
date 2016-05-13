@@ -62,7 +62,12 @@ public class DBWriter {
         );
     }
 
-    public void writeAppInfosToDb(List<ExtendedAppInfo> appInfos) {
+    public void writeAppInfosToDb(List<ExtendedAppInfo> appInfos, String collectionName) {
+        mongoCollection = db.getCollection(collectionName);
+        writeAppInfosToDb(appInfos, mongoCollection);
+    }
+
+    public void writeAppInfosToDb(List<ExtendedAppInfo> appInfos, MongoCollection mongoCollection) {
         if (appInfos.isEmpty()) {
             return;
         }
@@ -76,6 +81,25 @@ public class DBWriter {
                 mongoCollection.insertOne(appInfoDocument);
             }
         }
+    }
+
+    public int writeAppLinksToDb(Iterable<String> appLinks) {
+        MongoCollection mongoCollection = db.getCollection("appLinks");
+        List<Document> appLinksDocuments = new ArrayList<Document>();
+        for (String appLink : appLinks) {
+            FindIterable<Document> iterable = mongoCollection.find(new Document("appLink", appLink));
+            if (iterable.first() == null) {
+                appLinksDocuments.add(convertToDocument(appLink));
+            }
+        }
+        if (!appLinksDocuments.isEmpty()) {
+            mongoCollection.insertMany(appLinksDocuments);
+        }
+        return appLinksDocuments.size();
+    }
+
+    private Document convertToDocument(String appLink) {
+        return new Document().append("appLink", appLink);
     }
 
     private List<Document> convertToDocuments(List<ExtendedAppInfo> appInfos) {
