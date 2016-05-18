@@ -26,6 +26,7 @@ public class GooglePlayStoreCrawler {
     //TODO: move them to right place --> Constants or into method
     private static final String play_store_base_link = "https://play.google.com/store/apps/details?id=";
     private static final String next_reviews_button = "//button[@aria-label='See More' and @class='expand-button expand-next']";
+    private static final String version_xpath = "//*[@id=\"body-content\"]/div/div/div[1]/div[4]/div/div[2]/div[4]/div[2]";
     private static final String reviews_language = "en";
 
     private String appVersion;
@@ -65,10 +66,10 @@ public class GooglePlayStoreCrawler {
         String version;
         sleep(2000);
         try {
-            version = driver.findElement(By.xpath("//*[@id=\"body-content\"]/div/div/div[1]/div[4]/div/div[2]/div[4]/div[2]")).getText();
+            version = driver.findElement(By.xpath(version_xpath)).getText();
         } catch (Throwable error){
             sleep(2000);
-            version = driver.findElement(By.xpath("//*[@id=\"body-content\"]/div/div/div[1]/div[4]/div/div[2]/div[4]/div[2]")).getText();
+            version = driver.findElement(By.xpath(version_xpath)).getText();
         }
         return version;
     }
@@ -248,24 +249,12 @@ public class GooglePlayStoreCrawler {
         }
     }
 
-    public void terminateDriver(){
-        this.driver.quit();
-    }
-
     private void sleep(int milliseconds){
         try {
             Thread.sleep(milliseconds);
         } catch (InterruptedException e) {
             e.printStackTrace();
         }
-    }
-
-    public static void waitForPageLoaded(WebDriver driver) {
-
-
-
-
-
     }
 
     public void setDateOfLastCrawlIsReached(boolean dateOfLastCrawlIsReached) {

@@ -51,7 +51,6 @@ public interface Constants {
             new AppInfo("Financius - Expense Manager", "code44.finance", "com"),
             new AppInfo("2048", "uberspot.a2048", "com"),
             new AppInfo("Simon Tatham's Puzzles", "boyle.chris.sgtpuzzles", "name"),
-            new AppInfo("AntennaPod", "danoeh.antennapod", "de"),
             new AppInfo("Last.fm", "last.android", "fm"),
             new AppInfo("SeriesGuide", "battlelancer.seriesguide", "com"),
             new AppInfo("Muzei Live Wallpaper", "nurik.roman.muzei", "net"),

@@ -15,19 +15,24 @@ import static java.lang.Thread.sleep;
 
 
 public  class Crawler implements Constants {
-    static Date lastCrawlDate;
-    static GooglePlayStoreCrawler googlePlayStoreCrawler;
-    static DBWriter dbWriter;
+    private Date lastCrawlDate;
+    private GooglePlayStoreCrawler googlePlayStoreCrawler;
+    private DBWriter dbWriter;
+    private static Crawler uniqueInstance;
 
-
-    public  static void main(String[] args) throws InterruptedException {
+    private Crawler() {
         googlePlayStoreCrawler = new GooglePlayStoreCrawler();
         dbWriter = new DBWriter(DBNAME, COLLLECTIONNAME);
-
-        crawlForEachAPP();
     }
 
-    private static void crawlForEachAPP() throws InterruptedException {
+    public static Crawler getInstance() {
+        if (uniqueInstance == null) {
+            uniqueInstance = new Crawler();
+        }
+        return uniqueInstance;
+    }
+
+    public void crawlForEachAPP() throws InterruptedException {
         int [] reviewsCounts = new int[APP_INFOS.length];
         int looper = 0;
         for (final AppInfo appInfo : APP_INFOS) {
@@ -61,46 +66,23 @@ public  class Crawler implements Constants {
         printAppCrawlEnd(reviewsCounts);
     }
 
-    private static void printAppCrawlStart(AppInfo appInfo) {
+    private void printAppCrawlStart(AppInfo appInfo) {
         System.out.println(" ************** Start ReviewCrawler for App " + appInfo.getName()+" **************");
     }
 
-    private static int writeCurrentReviewsToDB(int reviewCount, AppInfo appInfo) {
+    private int writeCurrentReviewsToDB(int reviewCount, AppInfo appInfo) {
         List<Review> reviewsOfPage = googlePlayStoreCrawler.getReviewsOfPage();
         int counter = reviewCount;
-
+        ArDocDecider arDocDecider = ArDocDecider.getInstance();
         if(reviewsOfPage.size() > 0){
             counter = counter + reviewsOfPage.size();
-            reviewsOfPage = setArDocAndAppName(reviewsOfPage, appInfo.getName());
+            reviewsOfPage = arDocDecider.setArDocAndAppName(reviewsOfPage, appInfo.getName());
             dbWriter.writeReviewsToDB(reviewsOfPage);
         }
         return counter;
     }
 
-    private static List<Review> setArDocAndAppName (List<Review> reviewsOfPage, String appName) {
-        Parser p = Parser.getInstance().getInstance();
-        try{
-            for (Review review: reviewsOfPage) {
-                review.setApp(appName);
-                ArrayList <Result> res = p.extract(ARDOC_SEARCH_METHOD, review.getReviewText());
-
-                for (Result r : res ) {
-                    review.setArDocClassification(turnSentenceIntoArDocClass(r.getSentenceClass()));
-                }
-            }
-        } catch (UnknownCombinationException ex) {
-            ex.printStackTrace();
-        }
-        return reviewsOfPage;
-    }
-
-    private static ArDocClassification turnSentenceIntoArDocClass(String sentenceClass) {
-        String classWithUnderscore = sentenceClass.replaceAll(" ", "_");
-
-        return ArDocClassification.valueOf(classWithUnderscore);
-    }
-
-    private static void printAppCrawlEnd(int[] reviewsCounts) {
+    private void printAppCrawlEnd(int[] reviewsCounts) {
         System.out.println("===================================================================================================" +
                 "===============================================================================================================");
         for(int i = 0; i < reviewsCounts.length ; i++){
@@ -117,7 +99,7 @@ public  class Crawler implements Constants {
     }
 
     //TODO: remove, just testing purpose
-    private static void reviewsPrintout(List<Review> reviewsOfPage) {
+    private void reviewsPrintout(List<Review> reviewsOfPage) {
         for (Review review: reviewsOfPage){
             System.out.println(review.getReviewText()
                     + " // Author: " + review.getReviewAuthor()
