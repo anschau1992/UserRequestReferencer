@@ -23,6 +23,14 @@ public class ExtendedAppInfo extends AppInfo {
     private String description;
     private String whatsNew;
     private int price;
+    private String lastUpdated;
+    private String size;
+    private String installs;
+    private String currentVersion;
+    private String requiredAndroidVersion;
+    private String contentRating;
+    private String permissions;
+    private String inApppProducts;
 
     public ExtendedAppInfo(String name, String linkName, String id) {
         super(name, linkName, id);
@@ -100,6 +108,70 @@ public class ExtendedAppInfo extends AppInfo {
         return ((double) price) / PRICE_MULTIPLIER;
     }
 
+    public String getLastUpdated() {
+        return lastUpdated;
+    }
+
+    public void setLastUpdates(String lastUpdated) {
+        this.lastUpdated = lastUpdated;
+    }
+
+    public void setSize(String size) {
+        this.size = size;
+    }
+
+    public String getSize() {
+        return size;
+    }
+
+    public void setInstalls(String installs) {
+        this.installs = installs;
+    }
+
+    public String getInstalls() {
+        return installs;
+    }
+
+    public void setCurrentVersion(String currentVersion) {
+        this.currentVersion = currentVersion;
+    }
+
+    public String getCurrentVersion() {
+        return currentVersion;
+    }
+
+    public void setRequiredAndroidVersion(String requiredAndroidVersion) {
+        this.requiredAndroidVersion = requiredAndroidVersion;
+    }
+
+    public String getRequiredAndroidVersion() {
+        return requiredAndroidVersion;
+    }
+
+    public void setContentRating(String contentRating) {
+        this.contentRating = contentRating;
+    }
+
+    public String getContentRating() {
+        return contentRating;
+    }
+
+    public void setPermissions(String permissions) {
+        this.permissions = permissions;
+    }
+
+    public String getPermissions() {
+        return permissions;
+    }
+
+    public void setInAppProducts(String inAppProducts) {
+        this.inApppProducts = inAppProducts;
+    }
+
+    public String getInAppProducts() {
+        return inApppProducts;
+    }
+
     @Override
     public String toString() {
         StringBuilder sb = new StringBuilder();
@@ -145,6 +217,14 @@ public class ExtendedAppInfo extends AppInfo {
                 .append("totalNrOfReviews", getTotalNrOfReviews())
                 .append("reviewsPerStarRating", starsRatings)
                 .append("description", getDescription())
-                .append("whatsNew", getWhatsNew());
+                .append("whatsNew", getWhatsNew())
+                .append("lastUpdated", getLastUpdated())
+                .append("size", getSize())
+                .append("installs", getInstalls())
+                .append("currentVersion", getCurrentVersion())
+                .append("requiredAndroidVersion", getRequiredAndroidVersion())
+                .append("contentRating", getContentRating())
+                .append("permissions", getPermissions())
+                .append("inAppProducts", getInAppProducts());
     }
 }

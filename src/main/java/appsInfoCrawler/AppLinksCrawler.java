@@ -16,11 +16,11 @@ import static utils.SafariDriverUtils.*;
 /**
  * Main class for crawling apps per category.
  */
-public class MainCrawler {
+public class AppLinksCrawler {
     private static final int BATCH_SIZE = 50;
     private static final String DB_NAME = "appInfos";
     private static final String COLLLECTION_NAME = "infos";
-    private static final Logger log = Logger.getLogger(MainCrawler.class.getName());
+    private static final Logger log = Logger.getLogger(AppLinksCrawler.class.getName());
 
     private static final String playUrlMain = "https://play.google.com/store/apps";
     private static final String playUrlNew = "https://play.google.com/store/apps/new";
@@ -46,18 +46,10 @@ public class MainCrawler {
     private final DBWriter dbWriter;
     private WebDriver driver;
 
-    public MainCrawler() {
-        extendedAppInfoCrawler = new ExtendedAppInfoCrawler();
-        dbWriter = new DBWriter(DB_NAME, COLLLECTION_NAME);
-        driver = createSafariDriver();
-    }
-
-    public void crawl() {
-        String url = playUrlNew;
-        System.out.println("Crawling url category: " + url);
-        List<ExtendedAppInfo> appInfos = extendedAppInfoCrawler.crawlWithSeeMore(url);
-        dbWriter.writeAppInfosToDb(appInfos, COLLLECTION_NAME);
-        cleanup();
+    public AppLinksCrawler() {
+        this.extendedAppInfoCrawler = new ExtendedAppInfoCrawler();
+        this.dbWriter = new DBWriter(DB_NAME, COLLLECTION_NAME);
+        this.driver = createSafariDriver();
     }
 
     public void crawlAppUrls() {
@@ -65,7 +57,6 @@ public class MainCrawler {
         for (String moreLink : moreLinks) {
             findAppLinks(moreLink);
         }
-        driver.quit();
         cleanup();
     }
 
@@ -73,17 +64,17 @@ public class MainCrawler {
         goToUrl(driver, moreLink);
         sleep(2000);
 
-        Set<String> appUrlsSet = new HashSet();
+        Set<String> appLinksSet = new HashSet();
         while (true) {
             List<WebElement> webElementLinks = driver.findElements(By.className("title"));
-            int oldSize = appUrlsSet.size();
+            int oldSize = appLinksSet.size();
             for (WebElement webElementLink : webElementLinks) {
                 String href = webElementLink.getAttribute("href");
                 if (!Strings.isNullOrEmpty(href)) {
-                    appUrlsSet.add(webElementLink.getAttribute("href"));
+                    appLinksSet.add(webElementLink.getAttribute("href"));
                 }
             }
-            if (oldSize == appUrlsSet.size()) {
+            if (oldSize == appLinksSet.size()) {
                 if (tryClickingOnSeeMoreButton()) {
                     continue;
                 }
@@ -91,14 +82,17 @@ public class MainCrawler {
                     break;
                 }
             }
-            scrollPage(driver);
-            sleep(2000);
+            scrollPageWithSleep(driver);
         }
-        List<String> appUrlsList = new ArrayList();
-        appUrlsList.addAll(appUrlsSet);
-        for (int i = 0; i < appUrlsList.size(); i += BATCH_SIZE) {
-            int end = (i + BATCH_SIZE) < appUrlsList.size() ? (i + BATCH_SIZE) : appUrlsList.size();
-            int linksWritten = dbWriter.writeAppLinksToDb(appUrlsList.subList(i, end));
+        writeAppLinks(appLinksSet);
+    }
+
+    private void writeAppLinks(Set<String> appLinksSet) {
+        List<String> appLinksList = new ArrayList();
+        appLinksList.addAll(appLinksSet);
+        for (int i = 0; i < appLinksList.size(); i += BATCH_SIZE) {
+            int end = (i + BATCH_SIZE) < appLinksList.size() ? (i + BATCH_SIZE) : appLinksList.size();
+            int linksWritten = dbWriter.writeAppLinksToDb(appLinksList.subList(i, end));
             log.info("We have written " + linksWritten + " new links to the db.");
         }
     }
@@ -109,21 +103,20 @@ public class MainCrawler {
             WebElement seeMoreButton = driver.findElement(By.id("show-more-button"));
             String displayValue = seeMoreButton.getCssValue("display");
             if (!"none".equals(displayValue)) {
-                scrollPage(driver, 300);
+                scrollPageWithSleep(driver, 300);
                 log.info("See More button is shown, clicking on it.");
-                sleep(2000);
-                JavascriptExecutor executor = (JavascriptExecutor) driver;
-                executor.executeScript("arguments[0].click();", seeMoreButton);
-                sleep(2000);
-
+                clickOnElementWithJs(driver, seeMoreButton);
+                sleep();
+                // Sometimes the click on the See More button does not work,
+                // so we try 3 times and if it does not work we give up.
                 for (int i = 0; i < 3; i++) {
                     seeMoreButton = driver.findElement(By.id("show-more-button"));
                     displayValue = seeMoreButton.getCssValue("display");
                     if ("none".equals(displayValue)) {
                         return true;
                     }
-                    executor.executeScript("arguments[0].click();", seeMoreButton);
-                    sleep(2000);
+                    clickOnElementWithJs(driver, seeMoreButton);
+                    sleep();
                 }
                 return false;
             }
@@ -169,8 +162,7 @@ public class MainCrawler {
             if (tryClickingOnFooterLink()) {
                 break;
             }
-            scrollPage(driver);
-            sleep(2000);
+            scrollPageWithSleep(driver);
         }
         return moreLinks;
     }
@@ -187,21 +179,12 @@ public class MainCrawler {
         return moreLinks;
     }
 
-    private void printResults(List<ExtendedAppInfo> appInfos) {
-        System.out.println("--------------------------------------------");
-        for (ExtendedAppInfo appInfo : appInfos) {
-            System.out.println(appInfo);
-            System.out.println();
-        }
-        System.out.println("--------------------------------------------");
-    }
-
     public void cleanup() {
-        extendedAppInfoCrawler.finish();
+        driver.quit();
     }
 
     public static void main(String[] args) {
-        MainCrawler mainCrawler = new MainCrawler();
+        AppLinksCrawler mainCrawler = new AppLinksCrawler();
         mainCrawler.crawlAppUrls();
     }
 }

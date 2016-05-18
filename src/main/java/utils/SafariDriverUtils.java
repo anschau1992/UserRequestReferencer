@@ -9,6 +9,9 @@ import org.openqa.selenium.safari.SafariDriver;
  * Safari Driver utility methods.
  */
 public final class SafariDriverUtils {
+
+    public static final int DEFAULT_SLEEP_MILLIS = 2000;
+
     private SafariDriverUtils() {
 
     }
@@ -29,30 +32,34 @@ public final class SafariDriverUtils {
         jsx.executeScript("window.scrollBy(0,1200)", "");
     }
 
+    public static void scrollPageWithSleep(WebDriver driver) {
+        scrollPage(driver);
+        sleep(2000);
+    }
+
+    public static void scrollPageWithSleep(WebDriver driver, int yOffset) {
+        scrollPage(driver, yOffset);
+        sleep(2000);
+    }
+
+    public static void sleep() {
+        sleep(DEFAULT_SLEEP_MILLIS);
+    }
+
     public static void scrollPage(WebDriver driver, int yOffset) {
         JavascriptExecutor jsx = (JavascriptExecutor) driver;
         jsx.executeScript("window.scrollBy(0," + yOffset + ")", "");
     }
 
-    public static void scrollPage(WebDriver driver, int xAxis, int yAxis) {
-        JavascriptExecutor jse = (JavascriptExecutor) driver;
-        jse.executeScript("window.scrollBy(" + xAxis + "," + yAxis + ")", "");
+    public static String getTextContent(WebDriver driver, WebElement webElement) {
+        JavascriptExecutor executor = (JavascriptExecutor) driver;
+        return String.valueOf(executor.executeScript("return arguments[0].textContent", webElement));
     }
 
     public static void scrollToElement(WebDriver driver, String className) {
         WebElement element = driver.findElement(By.className(className));
         Actions actions = new Actions(driver);
         actions.moveToElement(element);
-    }
-
-    public static void scrollToElement(WebDriver driver, WebElement element) {
-        Actions actions = new Actions(driver);
-        actions.moveToElement(element);
-    }
-
-    public static void scrollToElement(WebDriver driver, WebElement element, int xOffset, int yOffset) {
-        Actions actions = new Actions(driver);
-        actions.moveToElement(element, xOffset, yOffset);
     }
 
     public static void sleep(int milliseconds) {
@@ -69,5 +76,30 @@ public final class SafariDriverUtils {
             return "";
         }
         return text.trim().toLowerCase();
+    }
+
+    public static void clickOnElementWithJs(WebDriver driver, WebElement element) {
+        JavascriptExecutor executor = (JavascriptExecutor) driver;
+        executor.executeScript("arguments[0].click();", element);
+    }
+
+    public static String cleanupText(String text, String[] startsWithStrings, String endsWith) {
+        text = text.trim();
+        for (String startsWith : startsWithStrings) {
+            if (!Strings.isNullOrEmpty(startsWith) && text.toLowerCase().startsWith(startsWith.toLowerCase())) {
+                text = text.substring(startsWith.length());
+                text = text.trim();
+                continue;
+            }
+        }
+        if (!Strings.isNullOrEmpty(endsWith) && text.toLowerCase().endsWith(endsWith.toLowerCase())) {
+            text = text.substring(0, text.length() - endsWith.length());
+            text = text.trim();
+        }
+        return text;
+    }
+
+    public static String cleanupText(String text, String startsWith, String endsWith) {
+        return cleanupText(text, new String[]{startsWith}, endsWith);
     }
 }

@@ -51,7 +51,7 @@
                     </execution>
                 </executions>
                 <configuration>
-                    <mainClass>appsInfoCrawler.MainCrawler</mainClass>
+                    <mainClass>appsInfoCrawler.AppLinksCrawler</mainClass>
                 </configuration>
             </plugin>
 
@@ -69,7 +69,7 @@
                     </execution>
                 </executions>
                 <configuration>
-                    <mainClass>appsInfoCrawler.MainCrawler</mainClass>
+                    <mainClass>appsInfoCrawler.AppsMetadataCrawler</mainClass>
                     <cleanupDaemonThreads>false</cleanupDaemonThreads>
                 </configuration>
             </plugin>

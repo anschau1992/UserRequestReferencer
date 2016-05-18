@@ -1,6 +1,6 @@
 package appsInfoCrawler;
 
-import com.google.common.base.Strings;
+import com.gargoylesoftware.htmlunit.ElementNotFoundException;
 import org.openqa.selenium.By;
 import org.openqa.selenium.NoSuchElementException;
 import org.openqa.selenium.WebDriver;
@@ -9,9 +9,8 @@ import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 
 import java.util.ArrayList;
-import java.util.HashSet;
 import java.util.List;
-import java.util.Set;
+import java.util.logging.Logger;
 
 import static utils.SafariDriverUtils.*;
 
@@ -19,7 +18,8 @@ import static utils.SafariDriverUtils.*;
  * Selenium crawler that crawls the extended apps info for a given url with a specific category.
  */
 public class ExtendedAppInfoCrawler {
-    private static final Integer MAX_APPS = 100;
+    private static final String PLAY_PREFIX = "https://play.google.com/store/apps/details?id=";
+    private static final Logger log = Logger.getLogger(ExtendedAppInfoCrawler.class.getName());
     private static final String INSTALL = "install";
     private static final String BUY = " buy";
     public static final String COMMA = ",";
@@ -35,69 +35,10 @@ public class ExtendedAppInfoCrawler {
         this.driver = driver;
     }
 
-    public List<ExtendedAppInfo> crawlWithSeeMore(String url) {
-        goToUrl(driver, url);
-        return crawlMoreLinks(findMoreLinks());
-    }
-
-    private Set<String> findMoreLinks() {
-        List<WebElement> seeMoreLinks = driver.findElements(By.className("see-more"));
-        Set<String> moreLinks = new HashSet();
-        for (WebElement seeMoreLink : seeMoreLinks) {
-            moreLinks.add(seeMoreLink.getAttribute("href"));
-        }
-        return moreLinks;
-    }
-
-    public List<ExtendedAppInfo> crawlMoreLinks(Set<String> moreLinks) {
-        List<ExtendedAppInfo> appInfos = new ArrayList();
-        for (String moreLink : moreLinks) {
-            appInfos.addAll(crawl(moreLink));
-        }
-        return appInfos;
-    }
-
-    public List<ExtendedAppInfo> crawl(String subcategoryUrl) {
-        goToUrl(driver, subcategoryUrl);
-        List<ExtendedAppInfo> appInfos = new ArrayList();
-        while (true) {
-            appInfos.addAll(crawlAppInfos(findAppUrls()));
-            if (showMoreIsVisible(driver)) {
-                break;
-            }
-            scrollPage(driver);
-            sleep(2000);
-        }
-        return appInfos;
-    }
-
-    private boolean showMoreIsVisible(WebDriver driver) {
-        WebElement element = driver.findElement(By.id("show-more-button"));
-        return element != null && element.isDisplayed();
-    }
-
-    private Set<String> findAppUrls() {
-        List<WebElement> webElementLinks = driver.findElements(By.className("title"));
-        Set<String> appUrls = new HashSet();
-        for (WebElement webElementLink : webElementLinks) {
-            String href = webElementLink.getAttribute("href");
-            if (!Strings.isNullOrEmpty(href)) {
-                appUrls.add(webElementLink.getAttribute("href"));
-            }
-        }
-        return appUrls;
-    }
-
-    private List<ExtendedAppInfo> crawlAppInfos(Set<String> appUrls) {
+    public List<ExtendedAppInfo> crawlAppInfos(Iterable<String> appIds) {
         List<ExtendedAppInfo> appInfos = new ArrayList<ExtendedAppInfo>();
-        int i = 0;
-        for (String appUrl : appUrls) {
-            if (i++ >= MAX_APPS) {
-                System.out.println(">>>>>>>>>>> limit reached");
-                break;
-            }
-
-            ExtendedAppInfo appInfo = crawlAppInfo(appUrl);
+        for (String appId : appIds) {
+            ExtendedAppInfo appInfo = crawlAppInfo(PLAY_PREFIX + appId);
             if (appInfo != null) {
                 appInfos.add(appInfo);
             }
@@ -110,35 +51,123 @@ public class ExtendedAppInfoCrawler {
             goToAppUrl(appUrl);
             return extractAppInfo(appUrl);
         } catch (Exception e) {
-            System.out.println("Skipping app with url " + appUrl + " that caused exception: " + e.getMessage());
+            log.info("Skipping app with url " + appUrl + " that caused exception: " + e.getMessage());
         }
         return null;
     }
 
     private void goToAppUrl(String appUrl) {
-        System.out.println("Navigating to " + appUrl);
+        log.info("Navigating to " + appUrl);
         goToUrl(driver, appUrl);
         WebDriverWait wait = new WebDriverWait(driver, 10);
+        // some apps might not have reviewers, but we want to ignore those anyway
         wait.until(ExpectedConditions.visibilityOfElementLocated(By.className("reviewers-small")));
     }
 
     private ExtendedAppInfo extractAppInfo(String appUrl) {
         String googleAppName = extractGoogleAppName(appUrl);
-        String appTitle = extractAppTitle(driver);
+        String appTitle = extractAppTitle();
         ExtendedAppInfo appInfo = new ExtendedAppInfo(appTitle, googleAppName, googleAppName);
-        appInfo.setPrice(extractPrice(driver, appUrl));
-        appInfo.setStarRating(Double.valueOf(extractStarRating(driver)));
-        appInfo.setBadge(extractBadge(driver));
-        appInfo.setAuthor(extractAuthor(driver));
-        appInfo.setCategory(extractCategory(driver));
-        appInfo.setTotalNrOfReviews(Long.valueOf(extractTotalNrOfReviews(driver)));
-        appInfo.setReviewsPerStars(extractReviewsPerStar(driver));
-        appInfo.setDescription(extractDescription(driver));
-        appInfo.setWhatsNew(extractWhatsNew(driver));
+        appInfo.setPrice(extractPrice(appUrl));
+        appInfo.setStarRating(Double.valueOf(extractStarRating()));
+        appInfo.setBadge(extractBadge());
+        appInfo.setAuthor(extractAuthor());
+        appInfo.setCategory(extractCategory());
+        appInfo.setTotalNrOfReviews(Long.valueOf(extractTotalNrOfReviews()));
+        appInfo.setReviewsPerStars(extractReviewsPerStar());
+        appInfo.setDescription(extractDescription());
+        appInfo.setWhatsNew(extractWhatsNew());
+        extractAdditionalInfo(appInfo);
         return appInfo;
     }
 
-    private double extractPrice(WebDriver driver, String appUrl) {
+    private void extractAdditionalInfo(ExtendedAppInfo appInfo) {
+        scrollToBottomOfPage();
+        appInfo.setLastUpdates(extractLastUpdated());
+        appInfo.setSize(extractSize());
+        appInfo.setInstalls(extractInstalls());
+        appInfo.setCurrentVersion(extractCurrentVersion());
+        appInfo.setRequiredAndroidVersion(extractRequiredAndroidVersion());
+        appInfo.setContentRating(extractContentRating());
+        appInfo.setPermissions(extractPermissions());
+        appInfo.setInAppProducts(extractInAppProducts());
+    }
+
+    private void scrollToBottomOfPage() {
+        scrollToElement(driver, "vat-footer-link");
+        sleep();
+    }
+
+    private String extractElementContent(By by) {
+        try {
+            WebElement element = driver.findElement(by);
+            return getTextContent(driver, element);
+        } catch (ElementNotFoundException e) {
+
+        } catch (NoSuchElementException e) {
+
+        }
+        return "";
+    }
+
+    private String extractLastUpdated() {
+        return extractElementContent(By.cssSelector("div[itemprop='datePublished']"));
+    }
+
+    private String extractSize() {
+        return extractElementContent(By.cssSelector("div[itemprop='fileSize']"));
+    }
+
+    private String extractInstalls() {
+        return extractElementContent(By.cssSelector("div[itemprop='numDownloads']"));
+    }
+
+    private String extractCurrentVersion() {
+        return extractElementContent(By.cssSelector("div[itemprop='softwareVersion']"));
+    }
+
+    private String extractRequiredAndroidVersion() {
+        return extractElementContent(By.cssSelector("div[itemprop='operatingSystems']"));
+    }
+
+    private String extractContentRating() {
+        return extractElementContent(By.cssSelector("div[itemprop='contentRating']"));
+    }
+
+    private String extractPermissions() {
+        try {
+            WebElement viewPermissionsButton = driver.findElement(By.className("id-view-permissions-details"));
+            clickOnElementWithJs(driver, viewPermissionsButton);
+            sleep();
+            WebElement permissionsDetails = driver.findElement(By.className("id-permission-buckets"));
+            String permissionsDetailsString = getTextContent(driver, permissionsDetails);
+            WebElement closeButton = driver.findElement(By.id("close-dialog-button"));
+            clickOnElementWithJs(driver, closeButton);
+            sleep();
+            return permissionsDetailsString;
+        } catch (ElementNotFoundException e) {
+
+        }
+        return "";
+    }
+
+    private String extractInAppProducts() {
+        try {
+            List<WebElement> metaInfos = driver.findElements(By.className("meta-info"));
+            for (WebElement metaInfo : metaInfos) {
+                WebElement title = metaInfo.findElement(By.className("title"));
+                if ("In-app Products".equals(getTextContent(driver, title))) {
+                    WebElement content = metaInfo.findElement(By.className("content"));
+                    return getTextContent(driver, content);
+                }
+            }
+        } catch (ElementNotFoundException e) {
+
+        }
+        return "";
+    }
+
+    private double extractPrice(String appUrl) {
         WebElement priceElement = driver.findElement(By.className("price"));
         String priceText = getText(priceElement);
         if (priceText.indexOf(INSTALL) != -1) {
@@ -155,12 +184,11 @@ public class ExtendedAppInfoCrawler {
         return appUrl.substring(index + 3);
     }
 
-    private String extractAppTitle(WebDriver driver) {
-        WebElement title = driver.findElement(By.className("id-app-title"));
-        return title.getText();
+    private String extractAppTitle() {
+        return extractElementContent(By.className("id-app-title"));
     }
 
-    private String extractStarRating(WebDriver driver) {
+    private String extractStarRating() {
         WebElement starRating = driver.findElement(By.className("star-rating-non-editable-container"));
         String text = starRating.getAttribute("aria-label");
         int startIndex = 6;
@@ -168,31 +196,23 @@ public class ExtendedAppInfoCrawler {
         return text.substring(startIndex, endIndex);
     }
 
-    private String extractBadge(WebDriver driver) {
-        try {
-            WebElement badge = driver.findElement(By.className("badge-title"));
-            return badge.getText();
-        } catch (NoSuchElementException e) {
-            return "";
-        }
+    private String extractBadge() {
+        return extractElementContent(By.className("badge-title"));
     }
 
-    private String extractAuthor(WebDriver driver) {
-        WebElement author = driver.findElement(By.className("primary"));
-        return author.getText();
+    private String extractAuthor() {
+        return extractElementContent(By.className("primary"));
     }
 
-    private String extractCategory(WebDriver driver) {
-        WebElement category = driver.findElement(By.className("category"));
-        return category.getText();
+    private String extractCategory() {
+        return extractElementContent(By.className("category"));
     }
 
-    private String extractTotalNrOfReviews(WebDriver driver) {
-        WebElement totalNrOfReviews = driver.findElement(By.className("rating-count"));
-        return totalNrOfReviews.getText().replace(",", "");
+    private String extractTotalNrOfReviews() {
+        return extractElementContent(By.className("rating-count")).replace(",", "");
     }
 
-    private long[] extractReviewsPerStar(WebDriver driver) {
+    private long[] extractReviewsPerStar() {
         String[] classNames = {"five", "four", "three", "two", "one"};
         // TODO(aci): refactor to constant
         long[] reviewsPerStar = new long[5];
@@ -205,33 +225,23 @@ public class ExtendedAppInfoCrawler {
         return reviewsPerStar;
     }
 
-    private String extractDescription(WebDriver driver) {
+    private String extractDescription() {
         WebElement description = driver.findElement(By.className("description"));
-        String descriptionText = description.getText();
-        if (!descriptionText.contains("READ MORE")) {
-            return descriptionText;
-        }
-        WebElement readMoreButton = driver.findElement(By.className("show-more"));
-        readMoreButton.click();
-        WebDriverWait wait = new WebDriverWait(driver, 20);
-        wait.until(ExpectedConditions.invisibilityOfElementLocated(By.className("show-more")));
-        sleep(2000);
-        description = driver.findElement(By.className("description"));
-        return description.getText();
+        return cleanupText(getTextContent(driver, description), "", "Read more");
     }
 
-    private String extractWhatsNew(WebDriver driver) {
+    private String extractWhatsNew() {
         try {
             scrollToElement(driver, "whatsnew");
             WebElement whatsnew = driver.findElement(By.className("whatsnew"));
-            return whatsnew.getText();
+            return cleanupText(getTextContent(driver, whatsnew), new String[]{"What's New", "Whats new"}, "Read more");
         } catch (NoSuchElementException e) {
             return "";
         }
     }
 
     public void finish() {
-        System.out.println("Quitting the driver.");
+        log.info("Quitting the driver.");
         driver.quit();
     }
 }
