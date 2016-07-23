@@ -74,8 +74,8 @@ public class GooglePlayStoreCrawler {
         return version;
     }
     private void prepareReviews(){
-        clickNextButton();
         scrollPage(0,-250);
+        clickNextButton();
         changeReviewSortOrderToNewest();
         filterReviewsByLatestVersion();
         moveHoveSoItShowsReviewDate();
@@ -91,6 +91,8 @@ public class GooglePlayStoreCrawler {
             nextButton.click();
         } catch (Throwable error) {
             System.err.println("No Next-Button found");
+            driver.navigate().refresh();
+            clickNextButton();
         }
     }
     private void scrollPage(int xAxis, int yAxis){
