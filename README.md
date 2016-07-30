@@ -26,5 +26,5 @@ argv[1]: WebBrowser ('safari' or 'firefox')
 
 
 ##Useful Links
-[Selenium Tutorial](http://www.tutorialspoint.com/selenium/)
-[MongoDB Tutorial](http://www.tutorialspoint.com/mongodb/)
+- [Selenium Tutorial](http://www.tutorialspoint.com/selenium/)
+- [MongoDB Tutorial](http://www.tutorialspoint.com/mongodb/)
