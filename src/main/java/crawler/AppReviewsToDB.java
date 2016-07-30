@@ -2,20 +2,16 @@ package crawler;
 
 
 import java.io.File;
-import java.util.ArrayList;
 import java.util.Date;
 import java.util.List;
-import org.ardoc.Parser;
-import org.ardoc.Result;
-import org.ardoc.UnknownCombinationException;
-import review.ArDocClassification;
+
 import review.Review;
 import server.DBWriter;
 
 import static java.lang.Thread.sleep;
 
 
-public  class Crawler implements Constants {
+public  class AppReviewsToDB implements Constants {
     private Date lastCrawlDate;
     private GooglePlayStoreCrawler googlePlayStoreCrawler;
     private DBWriter dbWriter;
@@ -28,9 +24,9 @@ public  class Crawler implements Constants {
         String csvPath = args[0];
         UsingBrowser browser = UsingBrowser.valueOf(args[1].toUpperCase());
 
-        Crawler mainCrawler = new Crawler(csvPath, browser);
-        mainCrawler.writeAppInfosToDB();
-        mainCrawler.crawlForEachAPP();
+        AppReviewsToDB mainAppReviewsToDB = new AppReviewsToDB(csvPath, browser);
+        mainAppReviewsToDB.writeAppInfosToDB();
+        mainAppReviewsToDB.crawlForEachAPP();
 
     }
 
@@ -50,7 +46,7 @@ public  class Crawler implements Constants {
     }
 
 
-    private Crawler(String appInfosCSV, UsingBrowser browser) {
+    private AppReviewsToDB(String appInfosCSV, UsingBrowser browser) {
         this.googlePlayStoreCrawler = new GooglePlayStoreCrawler(browser);
         this.dbWriter = new DBWriter(DBNAME, REVIEW_COLLLECTION, APP_INFOS_COLLLECTION);
 
