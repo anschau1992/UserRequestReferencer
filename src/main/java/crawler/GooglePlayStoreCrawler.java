@@ -23,14 +23,14 @@ import java.util.Locale;
 
 
 public class GooglePlayStoreCrawler {
-    //TODO: move them to right place --> Constants or into method
     private static final String play_store_base_link = "https://play.google.com/store/apps/details?id=";
     private static final String next_reviews_button = "//button[@aria-label='See More' and @class='expand-button expand-next']";
     private static final String version_xpath = "//*[@id=\"body-content\"]/div/div/div[1]/div[4]/div/div[2]/div[4]/div[2]";
+    private static final String sortOrder_xpath = "//button[contains(.,'Helpfulness')]";
+    private static final String newestOrder_xpath = "//button[contains(.,'Newest')]";
     private static final String reviews_language = "en";
 
     private String appVersion;
-
     private Date dateOfLastCrawl = null; // is given as parameter if already crawled before
     private boolean dateOfLastCrawlIsReached = false;
 
@@ -38,11 +38,22 @@ public class GooglePlayStoreCrawler {
     private WebDriver driver = null;
     private WebDriverWait wait = null;
 
+    int tryNextButtonClick = 0;
+    int trySortOrderClick = 0;
+    int tryChangeOrder = 0;
 
-    public GooglePlayStoreCrawler() {
-        driver = new SafariDriver();
-        //set the browser outside of the monitor
-        driver.manage().window().setPosition(new Point(-2000, -2000));
+
+
+    public GooglePlayStoreCrawler(UsingBrowser browser) {
+
+        switch (browser) {
+            case SAFARI:
+                driver = new SafariDriver();
+                break;
+            case FIREFOX:
+                driver = new FirefoxDriver();
+                break;
+        }
         driver.manage().window().maximize();
     }
 
@@ -58,7 +69,7 @@ public class GooglePlayStoreCrawler {
 
     private void  setupDriverWithLink(){
         //open Google Play Store App
-        String appLink = play_store_base_link + appInfo.getId() + "." + appInfo.getLinkName() + "&hl=" + reviews_language;
+        String appLink = play_store_base_link + appInfo.getPlayStoreLinkID() + "&hl=" + reviews_language;
         driver.navigate().to(appLink);
     }
     private String readAppVersion() {
@@ -74,53 +85,84 @@ public class GooglePlayStoreCrawler {
         return version;
     }
     private void prepareReviews(){
-        scrollPage(0,-250);
+
         clickNextButton();
+        scrollPage(0,-250);
         changeReviewSortOrderToNewest();
         filterReviewsByLatestVersion();
         moveHoveSoItShowsReviewDate();
     }
 
     public void clickNextButton() {
-        //Wait until next button is clickable
-        this.wait = new WebDriverWait(driver, 10);
-        try{
-            this.wait.until(ExpectedConditions.elementToBeClickable(By.xpath(next_reviews_button)));
 
-            WebElement nextButton = driver.findElements(By.xpath(next_reviews_button)).get(1);
-            nextButton.click();
-        } catch (Throwable error) {
-            System.err.println("No Next-Button found");
-            driver.navigate().refresh();
-            clickNextButton();
+        if(tryNextButtonClick < 3) {
+            //Wait until next button is clickable
+            this.wait = new WebDriverWait(driver, 10);
+            try{
+                this.wait.until(ExpectedConditions.elementToBeClickable(By.xpath(next_reviews_button)));
+
+                WebElement nextButton = driver.findElements(By.xpath(next_reviews_button)).get(1);
+                nextButton.click();
+                tryNextButtonClick = 0;
+            } catch (Throwable error) {
+                System.err.println("No Next-Button found");
+                tryNextButtonClick++;
+                clickNextButton();
+            }
+        } else {
+            System.err.println("Error: Next-Button is not clickable");
+            driver.quit();
+            System.exit(-1);
         }
+
     }
+
     private void scrollPage(int xAxis, int yAxis){
         JavascriptExecutor jse = (JavascriptExecutor)driver;
         jse.executeScript("window.scrollBy(" + xAxis + "," + yAxis + ")", "");
     }
+
     private void changeReviewSortOrderToNewest() {
-        //Open sortOrder Dropdown menu
-        this.wait = new WebDriverWait(driver, 10);
-        this.wait.until(ExpectedConditions.elementToBeClickable(By.className("dropdown-menu")));
-        WebElement sortOrderButton = driver.findElement(By.xpath("//button[contains(.,'Helpfulness')]"));
-        sortOrderButton.click();
+        if(trySortOrderClick < 3) {
+            //Open sortOrder Dropdown menu
+            this.wait = new WebDriverWait(driver, 10);
+            try{
+                this.wait.until(ExpectedConditions.elementToBeClickable(By.className("dropdown-menu")));
+                WebElement sortOrderButton = driver.findElement(By.xpath(sortOrder_xpath));
+                sortOrderButton.click();
+                trySortOrderClick = 0;
+            } catch (Throwable error) {
+                System.err.println("No Sort-Button found");
+                trySortOrderClick++;
+                sleep(2000);
+                changeReviewSortOrderToNewest();
+            }
+        } else {
+            System.err.println("Error: Sort-Button is not clickable");
+            driver.quit();
+            System.exit(-1);
+        }
 
-        //Change order to 'Newest'
-        this.wait = new WebDriverWait(driver, 10);
-        WebElement newestOrderButton = driver.findElement(By.xpath("//button[contains(.,'Newest')]"));
-        clickButtonWithCatch(newestOrderButton);
-
+        clickNewestOrder();
     }
 
-    private void clickButtonWithCatch(WebElement button) {
-        try{
-            this.wait.until(ExpectedConditions.elementToBeClickable(button));
-            button.click();
-        }catch (Exception e) {
-            sleep(5000);
-            System.err.print(e + " // Waiting for 5 seconds!");
-            button.click();
+    private void clickNewestOrder() {
+        if(tryChangeOrder < 3) {
+            try {
+                this.wait = new WebDriverWait(driver, 10);
+                WebElement newestOrderButton = driver.findElement(By.xpath(newestOrder_xpath));
+                newestOrderButton.click();
+                tryChangeOrder = 0;
+            }catch (Throwable error) {
+                System.err.println("No Newest-Button found");
+                tryChangeOrder++;
+                sleep(2000);
+                clickNewestOrder();
+            }
+        } else {
+            System.err.println("Error: Newest-Button is not clickable");
+            driver.quit();
+            System.exit(-1);
         }
     }
 
@@ -138,13 +180,22 @@ public class GooglePlayStoreCrawler {
         //Change filter to 'Only latest'
         this.wait = new WebDriverWait(driver, 10);
         WebElement latestVersionButton = driver.findElement(By.xpath("//button[contains(.,'Latest Version')]"));
-        clickButtonWithCatch(latestVersionButton);
+        try{
+            latestVersionButton.click();
+        } catch (Exception e) {
+            sleep(2000);
+            latestVersionButton.click();
+        }
     }
     //Focuses the mousehover somewhere else, otherwise review date is hidden
     private void moveHoveSoItShowsReviewDate() {
         WebElement hoverElement = driver.findElement(By.className("score"));
         Actions builder = new Actions(driver);
-        //builder.moveToElement(hoverElement).perform();
+
+
+
+
+          builder.moveToElement(hoverElement).perform();
     }
 
     public List<Review> getReviewsOfPage(){
@@ -178,7 +229,7 @@ public class GooglePlayStoreCrawler {
 
     private List<Review> reviewsSortedOutByDate(List<WebElement> crawledReviews, Date dateOfLastCrawl) {
         List<Review> sortedReviews = new ArrayList<Review>();
-        DateFormat formatter = new SimpleDateFormat("MMMM dd,yyyy", Locale.ENGLISH);
+        DateFormat formatter = new SimpleDateFormat("MMMM dd, yyyy", Locale.ENGLISH);
         Date date = null;
 
         for (WebElement review : crawledReviews) {
@@ -190,7 +241,7 @@ public class GooglePlayStoreCrawler {
                 String ratingStarWidth = review.findElement(By.className("current-rating")).getAttribute("style");
                 int ratingStars = getRatingsStarByStyleAttribute(ratingStarWidth);
 
-                if(dateOfLastCrawl != null){
+                if(dateOfLastCrawl != null && dateAsText != null){
                     //Parse date into Dateformat
                     try {
                         date = formatter.parse(dateAsText);
@@ -263,5 +314,3 @@ public class GooglePlayStoreCrawler {
         this.dateOfLastCrawlIsReached = dateOfLastCrawlIsReached;
     }
 }
-
-

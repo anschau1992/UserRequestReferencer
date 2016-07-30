@@ -8,11 +8,10 @@ import java.util.List;
 
 public interface Constants {
 
-    String DBNAME = "review";
-    String COLLLECTIONNAME = "review" +
-            "" +
-            "" +
-            "   second";
+    String DBNAME = "testReviews";
+    String REVIEW_COLLLECTION = "reviews";
+    String APP_INFOS_COLLLECTION = "appInfos";
+
     int REVIEWSPERAPPLIMIT = 500;
 
     AppInfo [] APP_INFOS =
@@ -64,12 +63,12 @@ public interface Constants {
 //            new AppInfo("AcDisplay", "achep.acdisplay", "com"),
 //            new AppInfo("Amaze File Manager", "amaze.filemanager", "com"),
 //            new AppInfo("Clip Stack ✓ Clipboard Manager", "catchingnow.tinyclipboardmanager", "com"),
-            new AppInfo("ConnectBot", "connectbot", "org"),
-            new AppInfo("DashClock Widget", "nurik.roman.dashclock", "net"),
-            new AppInfo("Device Control [root]", "namelessrom.devicecontrol", "org"),
-            new AppInfo("OS Monitor", "eolwral.osmonitor", "com"),
-            new AppInfo("Terminal Emulator for Android", "androidterm", "jackpal"),
-            new AppInfo("c:geo", "geocaching", "cgeo"),
+//            new AppInfo("ConnectBot", "connectbot", "org"),
+//            new AppInfo("DashClock Widget", "nurik.roman.dashclock", "net"),
+//            new AppInfo("Device Control [root]", "namelessrom.devicecontrol", "org"),
+//            new AppInfo("OS Monitor", "eolwral.osmonitor", "com"),
+//            new AppInfo("Terminal Emulator for Android", "androidterm", "jackpal"),
+//            new AppInfo("c:geo", "geocaching", "cgeo"),
 
 
     };

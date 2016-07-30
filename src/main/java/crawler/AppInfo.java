@@ -2,22 +2,27 @@ package crawler;
 
 public class AppInfo {
     final String name;
-    final String id;
-    final String linkName;
+    final String category;
+    final String playStoreLinkID;
+    final String sourceCodeLink;
 
-    public AppInfo(String name, String linkName, String id) {
+    public AppInfo(String name, String category, String linkName, String sourceCodeLink) {
         this.name = name;
-        this.linkName = linkName;
-        this.id = id;
+        this.category = category;
+        this.playStoreLinkID = linkName;
+        this.sourceCodeLink = sourceCodeLink;
     }
 
-    public String getId() {
-        return id;
+    public String getSourceCodeLink() {
+        return sourceCodeLink;
     }
     public String getName() {
         return name;
     }
-    public String getLinkName() {
-        return linkName;
+    public String getPlayStoreLinkID() {
+        return playStoreLinkID;
+    }
+    public String getCategory() {
+        return category;
     }
 }
