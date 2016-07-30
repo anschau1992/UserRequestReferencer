@@ -19,6 +19,7 @@ The csv-File must have the following format:
 There is a example-csv under ./docs/testAppInfos.csv
 
 ## Run the application
+Start MongoDB with firing 'mongod' in the console. Make sure it runs on default port 27017
 Run 'AppReviewsToDB' with arguments:
 argv[0]: csv-Path (f.ex './docs/testAppInfos.csv')
 argv[1]: WebBrowser ('safari' or 'firefox')
@@ -26,3 +27,4 @@ argv[1]: WebBrowser ('safari' or 'firefox')
 
 ##Useful Links
 [Selenium Tutorial](http://www.tutorialspoint.com/selenium/)
+[MongoDB Tutorial](http://www.tutorialspoint.com/mongodb/)
