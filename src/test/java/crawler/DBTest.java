@@ -1,4 +1,4 @@
-package server;
+package crawler;
 
 import com.mongodb.*;
 import crawler.Constants;

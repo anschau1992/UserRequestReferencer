@@ -9,16 +9,26 @@ import java.util.List;
 
 
 public interface Constants {
-
-    String DBNAME = "testreviews";
-    String REVIEW_COLLLECTION = "reviews";
-    String APP_INFOS_COLLLECTION = "appInfos";
-    String PRECLASSIFICATION_EXPORT_PATH = "./docs/preclassification.csv";
-    String CSV_SPLIT =";";
-
     int MONGODB_PORT = 27017;
     int REVIEWSPERAPPLIMIT = 500;
 
+    String DBNAME_TEST = "testreviews";
+    String REVIEW_COLLLECTION_TEST = "reviews";
+    String APP_INFOS_COLLLECTION_TEST = "appInfos";
+
+    //TODO: GIVE PROPER NAME FOR REAL REVIEWS
+    String DBNAME = "testreviews";
+    String REVIEW_COLLLECTION = "reviews";
+    String APP_INFOS_COLLLECTION = "appInfos";
+
+    // Preclassification
+    String PRECLASSIFICATION_EXPORT_PATH = "./docs/preclassification.csv";
+    String CSV_SPLIT =";";
+
+    //Stanford NLP
+    String [] RELEVANT_TYPED_DEPENDENCIES = {"nsubj", "dobj", "aux", "xcomp"};
+
+    //TODO: remove when all copied
     AppInfo[] APP_INFOS =
             {
             //Testing apps

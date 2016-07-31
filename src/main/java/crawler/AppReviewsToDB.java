@@ -6,7 +6,6 @@ import java.util.Date;
 import java.util.List;
 
 import review.Review;
-import server.DBWriter;
 
 import static java.lang.Thread.sleep;
 
@@ -48,7 +47,7 @@ public  class AppReviewsToDB implements Constants {
 
     private AppReviewsToDB(String appInfosCSV, UsingBrowser browser) {
         this.googlePlayStoreCrawler = new GooglePlayStoreCrawler(browser);
-        this.dbWriter = new DBWriter(DBNAME, REVIEW_COLLLECTION, APP_INFOS_COLLLECTION);
+        this.dbWriter = new DBWriter(DBNAME_TEST, REVIEW_COLLLECTION_TEST, APP_INFOS_COLLLECTION_TEST);
 
         CSVReader csvReader = new CSVReader();
         this.appInfos = csvReader.transformToAppInfos(appInfosCSV);

@@ -2,8 +2,6 @@ package preclassification;
 
 import com.mongodb.*;
 import crawler.Constants;
-import org.bson.Document;
-import org.bson.conversions.Bson;
 import org.bson.types.ObjectId;
 
 import java.io.BufferedReader;
@@ -67,7 +65,7 @@ public class PreclassificationDBImport implements Constants{
     }
 
     public static void main(String args[]) {
-        PreclassificationDBImport preclassificationDBImport = new PreclassificationDBImport(MONGODB_PORT, DBNAME, REVIEW_COLLLECTION);
+        PreclassificationDBImport preclassificationDBImport = new PreclassificationDBImport(MONGODB_PORT, DBNAME_TEST, REVIEW_COLLLECTION_TEST);
         preclassificationDBImport.importPreClassificationIntoDB();
     }
 }

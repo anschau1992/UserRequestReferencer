@@ -1,21 +1,17 @@
 package preclassification;
 
-import com.gargoylesoftware.htmlunit.javascript.host.dom.Document;
 import com.mongodb.*;
-import com.mongodb.client.FindIterable;
-import com.mongodb.client.MongoCollection;
-import com.mongodb.client.MongoDatabase;
 import crawler.Constants;
 
 import java.io.FileWriter;
 import java.io.IOException;
 
-public class ReviewCSVExport implements Constants {
+public class ReviewCSVExportPreClass implements Constants {
 
 
     DBCollection collection;
 
-    private ReviewCSVExport(int portnumb, String dbName, String collectionName) {
+    private ReviewCSVExportPreClass(int portnumb, String dbName, String collectionName) {
         MongoClient mongoClient = new MongoClient("localhost", portnumb);
         DB db = mongoClient.getDB(dbName);
         this.collection = db.getCollection(collectionName);
@@ -44,7 +40,7 @@ public class ReviewCSVExport implements Constants {
             System.out.println("CSV file was created successfully");
 
         } catch (IOException e) {
-            System.err.println("Error while opening file in ReviewCSVExport");
+            System.err.println("Error while opening file in ReviewCSVExportPreClass");
             e.printStackTrace();
         } finally {
             try {
@@ -59,7 +55,7 @@ public class ReviewCSVExport implements Constants {
     }
 
     public static void main(String args[]) {
-        ReviewCSVExport reviewCSVExport = new ReviewCSVExport(MONGODB_PORT, DBNAME, REVIEW_COLLLECTION);
-        reviewCSVExport.createReviewsInCSV();
+        ReviewCSVExportPreClass reviewCSVExportPreClass = new ReviewCSVExportPreClass(MONGODB_PORT, DBNAME_TEST, REVIEW_COLLLECTION_TEST);
+        reviewCSVExportPreClass.createReviewsInCSV();
     }
 }

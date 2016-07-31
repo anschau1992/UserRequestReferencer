@@ -1,4 +1,4 @@
-package server;
+package crawler;
 
 import com.mongodb.BasicDBObject;
 import com.mongodb.MongoClient;
