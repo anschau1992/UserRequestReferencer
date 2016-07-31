@@ -37,6 +37,7 @@ public class GooglePlayStoreCrawler {
     AppInfo appInfo = null;
     private WebDriver driver = null;
     private WebDriverWait wait = null;
+    private UsingBrowser browser;
 
     int tryNextButtonClick = 0;
     int trySortOrderClick = 0;
@@ -45,7 +46,7 @@ public class GooglePlayStoreCrawler {
 
 
     public GooglePlayStoreCrawler(UsingBrowser browser) {
-
+        this.browser = browser;
         switch (browser) {
             case SAFARI:
                 driver = new SafariDriver();
@@ -192,10 +193,9 @@ public class GooglePlayStoreCrawler {
         WebElement hoverElement = driver.findElement(By.className("score"));
         Actions builder = new Actions(driver);
 
-
-
-
-          builder.moveToElement(hoverElement).perform();
+            if(browser == UsingBrowser.FIREFOX) {
+                builder.moveToElement(hoverElement).perform();
+            }
     }
 
     public List<Review> getReviewsOfPage(){

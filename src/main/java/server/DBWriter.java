@@ -83,9 +83,11 @@ public class DBWriter {
                 .append("reviewText", review.getReviewText())
                 .append("date", review.getReviewDate())
                 .append("ratingStars", review.getRatingStars())
-                .append("classification", review.getArDocClassification().toString())
+                .append("ardocclass", review.getArDocClassification().toString())
                 .append("app", review.getApp())
                 .append("appVersion", review.getAppVersion())
+                .append("preclassification", null)
+                .append("subclassification", null)
         );
     }
 

@@ -1,19 +1,13 @@
 package server;
 
 import com.mongodb.*;
-import com.mongodb.client.FindIterable;
-import com.mongodb.client.MongoCollection;
-import com.mongodb.client.MongoCursor;
-import com.mongodb.client.MongoDatabase;
-import crawler.AppInfo;
 import crawler.Constants;
-import org.bson.Document;
 import org.junit.Test;
 
 
 
 
-public class DBTest implements Constants{
+public class DBTest implements Constants {
     String dbname = "review";
     String dbCollection = "review";
 

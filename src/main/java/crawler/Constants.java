@@ -1,5 +1,7 @@
 package crawler;
 
+import crawler.AppInfo;
+
 import java.lang.reflect.Array;
 import java.util.ArrayList;
 import java.util.Date;
@@ -8,13 +10,16 @@ import java.util.List;
 
 public interface Constants {
 
-    String DBNAME = "testReviews";
+    String DBNAME = "testreviews";
     String REVIEW_COLLLECTION = "reviews";
     String APP_INFOS_COLLLECTION = "appInfos";
+    String PRECLASSIFICATION_EXPORT_PATH = "./docs/preclassification.csv";
+    String CSV_SPLIT =";";
 
+    int MONGODB_PORT = 27017;
     int REVIEWSPERAPPLIMIT = 500;
 
-    AppInfo [] APP_INFOS =
+    AppInfo[] APP_INFOS =
             {
             //Testing apps
 //            new AppInfo("Ketch App", "ketchapp.stack", "com"),

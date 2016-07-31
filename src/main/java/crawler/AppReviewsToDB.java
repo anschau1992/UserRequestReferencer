@@ -40,7 +40,7 @@ public  class AppReviewsToDB implements Constants {
                 System.exit(0);
             }
         } else {
-            System.err.println("The number of given argument is not correct! First argument must be relative path to csv-File");
+            System.err.println("The number of given argument is not correct! 1: csv-Path 2: browser");
             System.exit(0);
         }
     }

@@ -13,7 +13,7 @@ import java.util.List;
  * csv must be in format:
  *  appName;playstoreLink;sourceCodeLink
  */
-public class CSVReader {
+public class CSVReader implements Constants {
     BufferedReader br;
     String line;
     String csvSplitBy = ";";
@@ -32,7 +32,7 @@ public class CSVReader {
                 lineCount++;
                 try {
                     //use separator
-                    String [] appElement = line.split(csvSplitBy);
+                    String [] appElement = line.split(CSV_SPLIT);
                     AppInfo appInfo = createAppInfo(appElement);
                     appInfos.add(appInfo);
                 } catch (Exception e) {
