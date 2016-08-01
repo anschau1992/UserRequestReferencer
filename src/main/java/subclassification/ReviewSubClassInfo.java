@@ -12,13 +12,15 @@ public class ReviewSubClassInfo {
     PreClassification preClassification;
     int sentimentScore;
     NLPType nlpType;
+    int ratingStars;
     RealVector termsVector;
 
 
-    public ReviewSubClassInfo(String id, String reviewText, PreClassification preClassification) {
+    public ReviewSubClassInfo(String id, String reviewText, PreClassification preClassification, int ratingStars) {
         this.id = id;
         this.reviewText = reviewText;
         this.preClassification = preClassification;
+        this.ratingStars = ratingStars;
     }
 
     public String getId() {
@@ -55,5 +57,13 @@ public class ReviewSubClassInfo {
 
     public void setTermsVector(RealVector termsVector) {
         this.termsVector = termsVector;
+    }
+
+    public int getRatingStars() {
+        return ratingStars;
+    }
+
+    public void setRatingStars(int ratingStars) {
+        this.ratingStars = ratingStars;
     }
 }
