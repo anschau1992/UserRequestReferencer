@@ -86,8 +86,8 @@ public class DBWriter {
                 .append("ardocclass", review.getArDocClassification().toString())
                 .append("app", review.getApp())
                 .append("appVersion", review.getAppVersion())
-                .append("preclassification", null)
-                .append("subclassification", null)
+                .append("preclassification", review.getPreClassification().toString())
+                .append("subclassification", review.getSubClassification())
         );
     }
 

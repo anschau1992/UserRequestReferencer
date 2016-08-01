@@ -21,12 +21,24 @@ public interface Constants {
     String REVIEW_COLLLECTION = "reviews";
     String APP_INFOS_COLLLECTION = "appInfos";
 
+    String TRAININGSET_COLLECTION = "trainingset";
+
     // Preclassification
     String PRECLASSIFICATION_EXPORT_PATH = "./docs/preclassification.csv";
     String CSV_SPLIT =";";
 
     //Stanford NLP
+    String ARDOC_SEARCH_METHOD = "NLP+TA+SA";
     String [] RELEVANT_TYPED_DEPENDENCIES = {"nsubj", "dobj", "aux", "xcomp"};
+
+    //VectorSpaceModel
+    String TRAININGSET_CSV_PATH = "./docs/trainingset.csv";
+    String REVIEW_TEXT = "review_text";
+    String INDEXER_DIRECTORY = "./docs/vsm/index";
+    String INDEXER_DIRECTORY_TEST = "./docs/vsm/index_test";
+
+
+
 
     //TODO: remove when all copied
     AppInfo[] APP_INFOS =
@@ -88,5 +100,5 @@ public interface Constants {
 
     };
 
-    String ARDOC_SEARCH_METHOD = "NLP+TA+SA";
+
 }

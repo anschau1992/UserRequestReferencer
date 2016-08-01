@@ -49,7 +49,7 @@ public  class AppReviewsToDB implements Constants {
         this.googlePlayStoreCrawler = new GooglePlayStoreCrawler(browser);
         this.dbWriter = new DBWriter(DBNAME_TEST, REVIEW_COLLLECTION_TEST, APP_INFOS_COLLLECTION_TEST);
 
-        CSVReader csvReader = new CSVReader();
+        AppInfoCSVReader csvReader = new AppInfoCSVReader();
         this.appInfos = csvReader.transformToAppInfos(appInfosCSV);
     }
 

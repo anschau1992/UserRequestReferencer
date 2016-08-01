@@ -13,16 +13,22 @@ public class ReviewExportSubClass implements Constants {
 
 
     DBCollection collection;
+    PreClassification choosenPreClassification;
 
-    public ReviewExportSubClass(int portnumb, String dbName, String collectionName) {
+    public ReviewExportSubClass(int portnumb, String dbName, String collectionName,
+                                PreClassification choosenPreclassification) {
+        this.choosenPreClassification = choosenPreclassification;
+
         MongoClient mongoClient = new MongoClient("localhost", portnumb);
         DB db = mongoClient.getDB(dbName);
         this.collection = db.getCollection(collectionName);
     }
 
     public List<ReviewSubClassInfo> createReviewSubClassInfo() {
+        DBCursor reviews;
+        BasicDBObject query = new BasicDBObject("preclassification", choosenPreClassification.toString());
+        reviews = collection.find(query);
 
-        DBCursor reviews = collection.find();
         List<ReviewSubClassInfo> reviewSubClassInfos = new ArrayList<ReviewSubClassInfo>();
         try {
             while (reviews.hasNext()) {

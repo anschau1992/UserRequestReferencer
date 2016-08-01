@@ -13,12 +13,12 @@ import java.util.List;
  * csv must be in format:
  *  appName;playstoreLink;sourceCodeLink
  */
-public class CSVReader implements Constants {
+public class AppInfoCSVReader implements Constants {
     BufferedReader br;
     String line;
     String csvSplitBy = ";";
 
-    public CSVReader() {
+    public AppInfoCSVReader() {
         line = "";
     }
 

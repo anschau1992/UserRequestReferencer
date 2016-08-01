@@ -2,24 +2,49 @@ package subclassification;
 
 import crawler.Constants;
 import edu.stanford.nlp.trees.TypedDependency;
+import preclassification.PreClassification;
 import subclassification.stanfordNLP.NLPType;
 import subclassification.stanfordNLP.NLPTypeDecider;
 import subclassification.stanfordNLP.StanfordNLP;
+import subclassification.vectorSpaceModel.VectorSpaceModel;
 
+import java.io.IOException;
 import java.util.List;
 
 public class SubClassifier implements Constants{
 
 
-    public static void main( String [] args) {
+    public static void main( String [] args) throws IOException {
+        PreClassification choosenPreClassification;
+        try{
+            choosenPreClassification = PreClassification.valueOf(args[0]);
+        }catch (IllegalArgumentException e) {
+            throw new RuntimeException(
+                    "Invalid value for enum " + args[0]);
+        }
+
+        List<String> matrixTerms;
         List<ReviewSubClassInfo> reviewInfos;
+        List <ReviewSubClassInfo> trainingSet;
 
-        //Read in reviews with preClassification of DB
-        ReviewExportSubClass exporter = new ReviewExportSubClass(MONGODB_PORT, DBNAME_TEST, REVIEW_COLLLECTION_TEST);
+        //1. Read out reviews with preClassification-filter of DB
+        ReviewExportSubClass exporter = new ReviewExportSubClass(MONGODB_PORT, DBNAME_TEST,
+                REVIEW_COLLLECTION_TEST, choosenPreClassification);
         reviewInfos = exporter.createReviewSubClassInfo();
+        //2. Read out trainingset with preClassification-filter of DB
+        ReviewExportSubClass trainingSetExporter = new ReviewExportSubClass(MONGODB_PORT, DBNAME_TEST,
+                TRAININGSET_COLLECTION, choosenPreClassification);
+        trainingSet = trainingSetExporter.createReviewSubClassInfo();
 
+        //3. SentimentScore & NLP
         reviewInfos = setSentimentScoreAndNLPType(reviewInfos);
+        trainingSet = setSentimentScoreAndNLPType(trainingSet);
 
+        //4. VSM: TermsVector
+        VectorSpaceModel vsm = new VectorSpaceModel(reviewInfos, trainingSet);
+        matrixTerms = vsm.getMatrixTerms();
+        reviewInfos = vsm.getReviewTermVector();
+        trainingSet = vsm.getTrainingSetTermVector();
 
 
 

@@ -1,5 +1,7 @@
 package review;
 
+import preclassification.PreClassification;
+
 import java.util.Date;
 import java.util.Map;
 
@@ -11,6 +13,8 @@ public class Review {
     private String app;
     private String appVersion;
     private ArDocClassification arDocClassification;
+    private PreClassification preClassification = null;
+    private String subClassification = null;
     private Map<String, Double> wordsWithWeights = null;
 
     public Review(String reviewAuthor, String reviewText, Date reviewDate,int ratingStars, String appVersion){
@@ -43,6 +47,22 @@ public class Review {
 
     public void setArDocClassification(ArDocClassification arDocClassification) {
         this.arDocClassification = arDocClassification;
+    }
+
+    public PreClassification getPreClassification() {
+        return preClassification;
+    }
+
+    public void setPreClassification(PreClassification preClassification) {
+        this.preClassification = preClassification;
+    }
+
+    public String getSubClassification() {
+        return subClassification;
+    }
+
+    public void setSubClassification(String subClassification) {
+        this.subClassification = subClassification;
     }
 
     public void setWordsWithWeights(Map<String, Double> wordsWithWeights) {

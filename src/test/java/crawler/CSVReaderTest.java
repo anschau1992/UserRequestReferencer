@@ -13,12 +13,12 @@ import static org.junit.Assert.assertEquals;
 public class CSVReaderTest {
 
     String csvPath = "./docs/testAppInfos.csv";
-    CSVReader csvReader;
+    AppInfoCSVReader csvReader;
     List<AppInfo> appInfos;
 
     @Before
     public void setupCSVReader() {
-        csvReader = new CSVReader();
+        csvReader = new AppInfoCSVReader();
         appInfos = csvReader.transformToAppInfos(csvPath);
     }
 
