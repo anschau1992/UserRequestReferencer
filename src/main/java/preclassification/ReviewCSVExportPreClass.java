@@ -20,7 +20,7 @@ public class ReviewCSVExportPreClass implements Constants {
     private void createReviewsInCSV() {
         FileWriter fileWriter = null;
         try {
-            fileWriter = new FileWriter(PRECLASSIFICATION_EXPORT_PATH);
+            fileWriter = new FileWriter(PRECLASSIFICATION_EXPORT_PATH_TEST);
             DBCursor reviews = collection.find();
 
             try {

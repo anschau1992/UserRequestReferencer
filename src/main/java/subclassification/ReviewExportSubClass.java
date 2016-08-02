@@ -37,8 +37,14 @@ public class ReviewExportSubClass implements Constants {
                 String reviewText = review.get("reviewText").toString();
                 PreClassification preclassification = PreClassification.valueOf(review.get("preclassification").toString());
                 int ratingStars = (Integer) review.get("ratingStars");
+                String subclassification = review.get("subclassification").toString();
 
                 ReviewSubClassInfo reviewSubClassInfo = new ReviewSubClassInfo(id, reviewText, preclassification, ratingStars);
+                if(subclassification != null) {
+                    reviewSubClassInfo.setSubClassification(subclassification);
+                } else {
+                    reviewSubClassInfo.setSubClassification(null);
+                }
                 reviewSubClassInfos.add(reviewSubClassInfo);
             }
         } finally {

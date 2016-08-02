@@ -10,6 +10,7 @@ public class ReviewSubClassInfo {
     String id;
     String reviewText;
     PreClassification preClassification;
+    String subClassification;
     int sentimentScore;
     NLPType nlpType;
     int ratingStars;
@@ -65,5 +66,13 @@ public class ReviewSubClassInfo {
 
     public void setRatingStars(int ratingStars) {
         this.ratingStars = ratingStars;
+    }
+
+    public String getSubClassification() {
+        return subClassification;
+    }
+
+    public void setSubClassification(String subClassification) {
+        this.subClassification = subClassification;
     }
 }

@@ -14,7 +14,7 @@ import java.util.List;
 public class SubClassifier implements Constants{
 
 
-    public static void main( String [] args) throws IOException {
+    public static void main( String [] args) throws Exception {
         PreClassification choosenPreClassification;
         try{
             choosenPreClassification = PreClassification.valueOf(args[0]);
@@ -46,7 +46,7 @@ public class SubClassifier implements Constants{
         reviewInfos = vsm.getReviewTermVector();
         trainingSet = vsm.getTrainingSetTermVector();
 
-
+        WekaCreator wekaCreator = new WekaCreator(matrixTerms, reviewInfos, trainingSet, choosenPreClassification);
 
 
         System.out.println(reviewInfos);

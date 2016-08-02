@@ -1,20 +1,21 @@
 package subclassification;
 
+import org.apache.commons.math3.linear.RealVector;
 import preclassification.PreClassification;
 import subclassification.stanfordNLP.NLPType;
 import subclassification.subclasses.*;
-import weka.core.Attribute;
-import weka.core.FastVector;
+import weka.classifiers.Classifier;
+import weka.classifiers.Evaluation;
+import weka.classifiers.trees.J48;
+import weka.core.*;
 
 import java.util.List;
-
-import static preclassification.PreClassification.*;
 
 public class WekaCreator{
 
     List<String> matrixterms;
     List<ReviewSubClassInfo> reviewInfos;
-    List <ReviewSubClassInfo> trainingSet;
+    List <ReviewSubClassInfo> trainingSetReviews;
 
     int termsSize;
     int reviewInfosSize;
@@ -22,14 +23,14 @@ public class WekaCreator{
 
 
     public WekaCreator(List<String> matrixterms, List<ReviewSubClassInfo> reviewInfos,
-                       List <ReviewSubClassInfo> trainingSet, PreClassification preClassification) {
+                       List <ReviewSubClassInfo> trainingSetReviews, PreClassification preClassification) throws Exception {
         this.matrixterms = matrixterms;
         this.reviewInfos = reviewInfos;
-        this.trainingSet = trainingSet;
+        this.trainingSetReviews = trainingSetReviews;
 
         this.termsSize = matrixterms.size();
         this.reviewInfosSize = reviewInfos.size();
-        this.trainingSetSize = trainingSet.size();
+        this.trainingSetSize = trainingSetReviews.size();
         FastVector fvWekaAttributes = addTermsAsAttr(matrixterms);
 
         //add all other attributes
@@ -42,6 +43,33 @@ public class WekaCreator{
         fvWekaAttributes.addElement(nlpTypeAttr);
         fvWekaAttributes.addElement(ratingAttr);
         fvWekaAttributes.addElement(subClassAttr);
+
+        //create training set
+        Instances trainingSet = new Instances(preClassification.toString() + " training-set", fvWekaAttributes, trainingSetSize);
+        trainingSet = fillReviewSet(trainingSet, trainingSetReviews, fvWekaAttributes);
+
+        trainingSet.setClassIndex(termsSize + 3);
+
+        //add classifier-mode
+        Classifier cModel = (Classifier) new J48();
+        cModel.buildClassifier(trainingSet);
+
+        //create testing set
+        Instances testingSet = new Instances(preClassification.toString() + " testing.set", fvWekaAttributes, reviewInfosSize);
+        testingSet = fillReviewSet(testingSet, reviewInfos, fvWekaAttributes);
+
+        //set class attribute
+        testingSet.setClassIndex(termsSize + 3);
+
+        //Test the model
+        Evaluation eTest = new Evaluation(trainingSet);
+        eTest.evaluateModel(cModel, testingSet);
+        //print in Weka-Exlporer:
+        String strSummary = eTest.toSummaryString();
+        System.out.println(strSummary);
+
+        //get confusionmatrix
+        double [][] cmMatrix = eTest.confusionMatrix();
     }
 
     private FastVector addTermsAsAttr(List<String> matrixterms) {
@@ -65,6 +93,7 @@ public class WekaCreator{
         FastVector fvSubClasses = new FastVector();
         switch (preclassification) {
             case USAGE: {
+
                 for(SUBCLASS_USAGE type : SUBCLASS_USAGE.values()) {
                     fvSubClasses.addElement(type.toString());
                 }
@@ -91,6 +120,25 @@ public class WekaCreator{
             }
         }
         return new Attribute("subclassification", fvSubClasses);
+    }
+
+    private Instances fillReviewSet(Instances trainingSet, List<ReviewSubClassInfo> reviewsSet, FastVector fvWekaAttributes) {
+        for (ReviewSubClassInfo review: reviewsSet) {
+            Instance trainingInstance = new Instance(trainingSet.numAttributes());
+
+            RealVector terms = review.getTermsVector();
+            //fill in attributes for a review
+            for(int i = 0; i < termsSize; i++) {
+                trainingInstance.setValue((Attribute)fvWekaAttributes.elementAt(i), terms.getEntry(i));
+            }
+            trainingInstance.setValue((Attribute)fvWekaAttributes.elementAt(termsSize), review.getSentimentScore());
+            trainingInstance.setValue((Attribute)fvWekaAttributes.elementAt(termsSize +1), review.getNlpType().toString());
+            trainingInstance.setValue((Attribute)fvWekaAttributes.elementAt(termsSize +2), review.getRatingStars());
+            trainingInstance.setValue((Attribute)fvWekaAttributes.elementAt(termsSize +3), review.getSubClassification());
+
+            trainingSet.add(trainingInstance);
+        }
+        return trainingSet;
     }
 
 

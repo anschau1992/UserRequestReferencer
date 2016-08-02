@@ -250,7 +250,6 @@ public class GooglePlayStoreCrawler {
                     }
                     //add to List if newer than lastCrawl
                     if(date.after(dateOfLastCrawl)) {
-                        //TODO: get the real number of stars
                         Review newReview = new Review(author, reviewText, date, ratingStars, appVersion);
                         sortedReviews.add(newReview);
                     }else{
