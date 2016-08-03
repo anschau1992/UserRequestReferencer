@@ -5,6 +5,7 @@ import preclassification.PreClassification;
 import subclassification.stanfordNLP.NLPType;
 
 import java.util.List;
+import java.util.Map;
 
 public class ReviewSubClassInfo {
     String id;
@@ -15,6 +16,7 @@ public class ReviewSubClassInfo {
     NLPType nlpType;
     int ratingStars;
     RealVector termsVector;
+    Map <String, Double> subClassFDistribution;
 
 
     public ReviewSubClassInfo(String id, String reviewText, PreClassification preClassification, int ratingStars) {
@@ -74,5 +76,13 @@ public class ReviewSubClassInfo {
 
     public void setSubClassification(String subClassification) {
         this.subClassification = subClassification;
+    }
+
+    public Map<String, Double> getSubClassFDistribution() {
+        return subClassFDistribution;
+    }
+
+    public void setSubClassFDistribution(Map<String, Double> subClassFDistribution) {
+        this.subClassFDistribution = subClassFDistribution;
     }
 }
