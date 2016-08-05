@@ -1,15 +1,8 @@
 package helper;
 
-import crawler.AppInfo;
 import crawler.Constants;
 import crawler.DBWriter;
-import review.Review;
 
-import java.io.BufferedReader;
-import java.io.FileNotFoundException;
-import java.io.FileReader;
-import java.io.IOException;
-import java.util.ArrayList;
 import java.util.List;
 
 /**
@@ -17,11 +10,19 @@ import java.util.List;
  * Once the training set is in DB, there is no need for further use of it
  */
 public class TrainingSetToDB implements Constants{
-    public static void main(String[] args) {
+    private String dbName;
+    public TrainingSetToDB(boolean testMode) {
+        if(testMode) {
+            dbName = DBNAME_TEST;
+        } else{
+            dbName = DBNAME;
+        }
+    }
+
+    public void  writeTrainingSetIntoDB() {
         TrainingSetCSVReader reader = new TrainingSetCSVReader();
         List<Review> trainingSetReviews = reader.transformToReviews(TRAININGSET_CSV_PATH);
-
-        DBWriter dbWriter = new DBWriter(DBNAME_TEST,TRAININGSET_COLLECTION, APP_INFOS_COLLLECTION);
+        DBWriter dbWriter = new DBWriter(this.dbName,TRAININGSET_COLLECTION, APP_INFOS_COLLLECTION);
         dbWriter.writeReviewsToDB(trainingSetReviews);
     }
 }

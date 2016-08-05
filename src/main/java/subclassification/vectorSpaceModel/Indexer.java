@@ -20,7 +20,7 @@ public class Indexer implements Constants{
     public Indexer (String indexDir) throws IOException {
         Path path = Paths.get(indexDir);
         Directory dir = FSDirectory.open(path);
-        IndexWriterConfig config = new IndexWriterConfig(new CombinedAnalyzer());
+        IndexWriterConfig config = new IndexWriterConfig(new NewAnalyzer());
         writer = new IndexWriter(dir, config);
     }
 

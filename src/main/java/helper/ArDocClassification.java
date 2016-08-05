@@ -1,4 +1,4 @@
-package review;
+package helper;
 
 public enum ArDocClassification {
     FEATURE_REQUEST,

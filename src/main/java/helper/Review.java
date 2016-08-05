@@ -1,11 +1,14 @@
-package review;
+package helper;
 
+import org.apache.commons.math3.linear.RealVector;
 import preclassification.PreClassification;
+import subclassification.stanfordNLP.NLPType;
 
 import java.util.Date;
 import java.util.Map;
 
 public class Review {
+    private String id;
     private String reviewAuthor;
     private String reviewText;
     private Date reviewDate;
@@ -15,7 +18,14 @@ public class Review {
     private ArDocClassification arDocClassification;
     private PreClassification preClassification = null;
     private String subClassification = null;
-    private Map<String, Double> wordsWithWeights = null;
+    private int sentimentScore;
+    private NLPType nlpType;
+    RealVector termsVector;
+    Map <String, Double> subClassFDistribution;
+
+    private boolean wekaCorrectClassified = false;
+
+
 
     public Review(String reviewAuthor, String reviewText, Date reviewDate,int ratingStars, String appVersion){
         this.reviewAuthor = reviewAuthor;
@@ -23,6 +33,13 @@ public class Review {
         this.reviewDate = reviewDate;
         this.ratingStars = ratingStars;
         this.appVersion = appVersion;
+    }
+
+    public Review(String id, String reviewText, PreClassification preClassification, int ratingStars) {
+        this.id = id;
+        this.reviewText = reviewText;
+        this.preClassification = preClassification;
+        this.ratingStars = ratingStars;
     }
 
     public String getReviewAuthor() {
@@ -65,14 +82,6 @@ public class Review {
         this.subClassification = subClassification;
     }
 
-    public void setWordsWithWeights(Map<String, Double> wordsWithWeights) {
-        this.wordsWithWeights = wordsWithWeights;
-    }
-
-    public Map<String, Double> getWordsWithWeights(){
-        return this.wordsWithWeights;
-    }
-
     public String getApp() {
         return app;
     }
@@ -83,5 +92,53 @@ public class Review {
 
     public String getAppVersion() {
         return appVersion;
+    }
+
+    public String getId() {
+        return id;
+    }
+
+    public void setId(String id) {
+        this.id = id;
+    }
+
+    public int getSentimentScore() {
+        return sentimentScore;
+    }
+
+    public void setSentimentScore(int sentimentScore) {
+        this.sentimentScore = sentimentScore;
+    }
+
+    public NLPType getNlpType() {
+        return nlpType;
+    }
+
+    public void setNlpType(NLPType nlpType) {
+        this.nlpType = nlpType;
+    }
+
+    public Map<String, Double> getSubClassFDistribution() {
+        return subClassFDistribution;
+    }
+
+    public void setSubClassFDistribution(Map<String, Double> subClassFDistribution) {
+        this.subClassFDistribution = subClassFDistribution;
+    }
+
+    public RealVector getTermsVector() {
+        return termsVector;
+    }
+
+    public void setTermsVector(RealVector termsVector) {
+        this.termsVector = termsVector;
+    }
+
+    public boolean isWekaCorrectClassified() {
+        return wekaCorrectClassified;
+    }
+
+    public void setWekaCorrectClassified(boolean wekaCorrectClassified) {
+        this.wekaCorrectClassified = wekaCorrectClassified;
     }
 }

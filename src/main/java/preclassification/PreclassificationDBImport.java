@@ -9,20 +9,36 @@ import java.io.BufferedReader;
 import java.io.FileNotFoundException;
 import java.io.FileReader;
 import java.io.IOException;
+import java.util.Set;
 
+/**
+ * if 'testmode' = true, update reviews from 'preclassification_test.csv' into DB 'testReviews' with manually written preclassification
+ * if 'testmode' = false, update reviews from 'preclassification.csv' into DB 'reviews'
+ */
 public class PreclassificationDBImport implements Constants {
 
+    DB db;
     DBCollection collection;
 
-    private PreclassificationDBImport(int portnumb, String dbName, String collectionName) {
-        MongoClient mongoClient = new MongoClient("localhost", portnumb);
-        DB db = mongoClient.getDB(dbName);
+    public PreclassificationDBImport(boolean testMode) {
+        int portnumb = MONGODB_PORT;
+        String dbName;
+        String collectionName;
+        if(testMode) {
+            dbName = DBNAME_TEST;
+            collectionName = REVIEW_COLLLECTION_TEST;
+        }else {
+            dbName = DBNAME;
+            collectionName = REVIEW_COLLLECTION;
+        }
+        MongoClient mongoClient = new MongoClient("Localhost", portnumb);
+        db = mongoClient.getDB(dbName);
         this.collection = db.getCollection(collectionName);
     }
 
-    private void importPreClassificationIntoDB() {
+    public void importPreClassificationIntoDB() {
         try {
-            BufferedReader br = new BufferedReader(new FileReader(PRECLASSIFICATION_IMPORT_PATH_TEST));
+            BufferedReader br = new BufferedReader(new FileReader(PRECLASSIFICATION_IMPORT_PATH));
             String line = br.readLine();
             int lineCount = 0;
             while (line != null) {
@@ -117,9 +133,13 @@ public class PreclassificationDBImport implements Constants {
         }
     }
 
-
-    public static void main(String args[]) {
-        PreclassificationDBImport preclassificationDBImport = new PreclassificationDBImport(MONGODB_PORT, DBNAME_TEST, REVIEW_COLLLECTION_TEST);
-        preclassificationDBImport.importPreClassificationIntoDB();
+    public boolean collectionExists(final String collectionName) {
+        Set<String> collectionNames = db.getCollectionNames();
+        for (final String name : collectionNames) {
+            if (name.equalsIgnoreCase(collectionName)) {
+                return true;
+            }
+        }
+        return false;
     }
 }

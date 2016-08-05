@@ -5,9 +5,8 @@ import com.mongodb.MongoClient;
 import com.mongodb.client.FindIterable;
 import com.mongodb.client.MongoCollection;
 import com.mongodb.client.MongoDatabase;
-import crawler.AppInfo;
 import org.bson.Document;
-import review.Review;
+import helper.Review;
 
 import java.util.*;
 

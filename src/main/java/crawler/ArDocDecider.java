@@ -3,8 +3,8 @@ package crawler;
 import org.ardoc.Parser;
 import org.ardoc.Result;
 import org.ardoc.UnknownCombinationException;
-import review.ArDocClassification;
-import review.Review;
+import helper.ArDocClassification;
+import helper.Review;
 
 import java.util.ArrayList;
 import java.util.List;

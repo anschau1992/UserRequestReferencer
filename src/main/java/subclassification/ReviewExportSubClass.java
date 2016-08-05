@@ -3,9 +3,8 @@ package subclassification;
 import com.mongodb.*;
 import crawler.Constants;
 import preclassification.PreClassification;
+import helper.Review;
 
-import java.io.FileWriter;
-import java.io.IOException;
 import java.util.ArrayList;
 import java.util.List;
 
@@ -24,34 +23,34 @@ public class ReviewExportSubClass implements Constants {
         this.collection = db.getCollection(collectionName);
     }
 
-    public List<ReviewSubClassInfo> createReviewSubClassInfo() {
-        DBCursor reviews;
+    public List<Review> createReviewSubClassInfo() {
+        DBCursor reviewsbyPreClass;
         BasicDBObject query = new BasicDBObject("preclassification", choosenPreClassification.toString());
-        reviews = collection.find(query);
+        reviewsbyPreClass = collection.find(query);
 
-        List<ReviewSubClassInfo> reviewSubClassInfos = new ArrayList<ReviewSubClassInfo>();
+        List<Review> reviews = new ArrayList<Review>();
         try {
-            while (reviews.hasNext()) {
-                DBObject review = reviews.next();
-                String id = review.get("_id").toString();
-                String reviewText = review.get("reviewText").toString();
-                PreClassification preclassification = PreClassification.valueOf(review.get("preclassification").toString());
-                int ratingStars = (Integer) review.get("ratingStars");
-                String subclassification = review.get("subclassification").toString();
+            while (reviewsbyPreClass.hasNext()) {
+                DBObject reviewByPreClass = reviewsbyPreClass.next();
+                String id = reviewByPreClass.get("_id").toString();
+                String reviewText = reviewByPreClass.get("reviewText").toString();
+                PreClassification preclassification = PreClassification.valueOf(reviewByPreClass.get("preclassification").toString());
+                int ratingStars = (Integer) reviewByPreClass.get("ratingStars");
+                String subclassification = reviewByPreClass.get("subclassification").toString();
 
-                ReviewSubClassInfo reviewSubClassInfo = new ReviewSubClassInfo(id, reviewText, preclassification, ratingStars);
+                Review review = new Review(id, reviewText, preclassification, ratingStars);
                 if(subclassification != null) {
-                    reviewSubClassInfo.setSubClassification(subclassification);
+                    review.setSubClassification(subclassification);
                 } else {
-                    reviewSubClassInfo.setSubClassification(null);
+                    review.setSubClassification(null);
                 }
-                reviewSubClassInfos.add(reviewSubClassInfo);
+                reviews.add(review);
             }
         } finally {
-            reviews.close();
+            reviewsbyPreClass.close();
         }
         System.out.println("Successfully created all ReviewSubclassInfo's out of DB");
 
-        return reviewSubClassInfos;
+        return reviews;
     }
 }

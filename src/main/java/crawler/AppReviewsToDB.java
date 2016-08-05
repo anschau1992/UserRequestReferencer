@@ -5,7 +5,7 @@ import java.io.File;
 import java.util.Date;
 import java.util.List;
 
-import review.Review;
+import helper.Review;
 
 import static java.lang.Thread.sleep;
 

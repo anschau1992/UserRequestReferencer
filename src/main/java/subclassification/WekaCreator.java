@@ -3,12 +3,13 @@ package subclassification;
 import crawler.Constants;
 import org.apache.commons.math3.linear.RealVector;
 import preclassification.PreClassification;
+import helper.Review;
 import subclassification.stanfordNLP.NLPType;
 import subclassification.subclasses.*;
 import weka.classifiers.Classifier;
-import weka.classifiers.Evaluation;
 import weka.classifiers.trees.J48;
 import weka.core.*;
+import weka.filters.unsupervised.instance.NonSparseToSparse;
 
 import java.util.HashMap;
 import java.util.List;
@@ -18,25 +19,30 @@ public class WekaCreator implements Constants {
 
     private int termsSize;
     private PreClassification preClassification;
-    List<ReviewSubClassInfo> reviewInfos;
+    List<Review> reviews;
 
     Instances trainingSet;
     Instances testingSet;
     Classifier cModel;
 
-    public WekaCreator(List<String> matrixterms, List<ReviewSubClassInfo> reviewInfos,
-                       List<ReviewSubClassInfo> trainingSetReviews, PreClassification preClassification) throws Exception {
-        this.reviewInfos = reviewInfos;
+    public WekaCreator(List<String> matrixterms, List<Review> reviews,
+                       List<Review> trainingSetReviews, PreClassification preClassification) throws Exception {
+        this.reviews = reviews;
         this.preClassification = preClassification;
         this.termsSize = matrixterms.size();
 
-        int reviewInfosSize = reviewInfos.size();
+        int reviewInfosSize = reviews.size();
         int trainingSetSize = trainingSetReviews.size();
 
         FastVector fvWekaAttributes = createAttributes(matrixterms);
 
         trainingSet = createReviewSet(fvWekaAttributes, trainingSetSize, trainingSetReviews);
-        testingSet = createReviewSet(fvWekaAttributes, reviewInfosSize, reviewInfos);
+        testingSet = createReviewSet(fvWekaAttributes, reviewInfosSize, reviews);
+
+        //create NoneSparseToSparse
+        NonSparseToSparse sp = new NonSparseToSparse();
+        sp.setInputFormat(trainingSet);
+        sp.setInputFormat(testingSet);
 
         //add classifier-mode
         cModel = (Classifier) new J48();
@@ -129,16 +135,16 @@ public class WekaCreator implements Constants {
         return new Attribute("subclassification", fvSubClasses);
     }
 
-    private Instances createReviewSet(FastVector fvWekaAttributes, int reviewSetSize, List<ReviewSubClassInfo> reviewInfos) {
+    private Instances createReviewSet(FastVector fvWekaAttributes, int reviewSetSize, List<Review> reviews) {
         Instances reviewSet = new Instances(preClassification.toString(), fvWekaAttributes, reviewSetSize);
-        reviewSet = fillReviewSet(reviewSet, reviewInfos, fvWekaAttributes);
+        reviewSet = fillReviewSet(reviewSet, reviews, fvWekaAttributes);
         reviewSet.setClassIndex(termsSize + 3);
 
         return reviewSet;
     }
 
-    private Instances fillReviewSet(Instances trainingSet, List<ReviewSubClassInfo> reviewsSet, FastVector fvWekaAttributes) {
-        for (ReviewSubClassInfo review : reviewsSet) {
+    private Instances fillReviewSet(Instances trainingSet, List<Review> reviewsSet, FastVector fvWekaAttributes) {
+        for (Review review : reviewsSet) {
             Instance trainingInstance = new Instance(trainingSet.numAttributes());
 
             RealVector terms = review.getTermsVector();
@@ -164,7 +170,7 @@ public class WekaCreator implements Constants {
         return trainingSet;
     }
 
-    public List<ReviewSubClassInfo> fillDistributionValues() throws Exception {
+    public List<Review> fillDistributionValues() throws Exception {
         //use classifier on testSet
 
         for (int i = 0; i < testingSet.numInstances(); i++) {
@@ -176,8 +182,8 @@ public class WekaCreator implements Constants {
             for(int j=0; j < fDistribution.length; j++) {
                 fDistributionMap.put(testInstance.classAttribute().value(j),fDistribution[j]);
             }
-            reviewInfos.get(i).setSubClassFDistribution(fDistributionMap);
+            reviews.get(i).setSubClassFDistribution(fDistributionMap);
         }
-        return reviewInfos;
+        return reviews;
     }
 }

@@ -2,8 +2,6 @@ package helper;
 
 import crawler.Constants;
 import preclassification.PreClassification;
-import review.ArDocClassification;
-import review.Review;
 
 import java.io.BufferedReader;
 import java.io.FileNotFoundException;

@@ -5,8 +5,8 @@
 //import crawler.AppInfo;
 //import org.junit.After;
 //import org.junit.Test;
-//import review.ArDocClassification;
-//import review.Review;
+//import helper.ArDocClassification;
+//import helper.Review;
 //
 //import java.util.ArrayList;
 //import java.util.Calendar;
