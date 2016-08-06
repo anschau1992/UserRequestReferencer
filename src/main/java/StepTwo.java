@@ -15,28 +15,33 @@ import java.util.Set;
 public class StepTwo implements Constants {
     public static void main(String[] args) throws Exception {
         argumentCheck(args);
+        String dbName;
 
         PreClassification preclassification = PreClassification.valueOf(args[0]);
-        boolean testMode = (args[1].equals("test"));
+        if(args[1].equals("test")) {
+            dbName = DBNAME_TEST;
+        } else {
+            dbName = DBNAME;
+        }
 
         //2. Update review's preclassification
-        PreclassificationDBImport preClassImport = new PreclassificationDBImport(testMode);
+        PreclassificationDBImport preClassImport = new PreclassificationDBImport(dbName);
         preClassImport.importPreClassificationIntoDB();
 
         //write trainingSet into DB if not done yet
         if(!preClassImport.collectionExists(TRAININGSET_COLLECTION)) {
             System.out.println("Loading Training-Set into DB");
-            TrainingSetToDB trainingSetToDB = new TrainingSetToDB(testMode);
+            TrainingSetToDB trainingSetToDB = new TrainingSetToDB(dbName);
             trainingSetToDB.writeTrainingSetIntoDB();
         }
 
         //3. Subclassify the reviews
-        SubClassifier subClassifier = new SubClassifier(testMode, preclassification);
+        SubClassifier subClassifier = new SubClassifier(dbName, preclassification);
         List<Review> reviews = subClassifier.subClassify();
 
         //TODO run SoureCodeLinker
         //4. SourceCode Linking
-        SourceCodeLinker sourceCodeLinker = new SourceCodeLinker(reviews);
+        SourceCodeLinker sourceCodeLinker = new SourceCodeLinker(reviews, dbName);
 
     }
 

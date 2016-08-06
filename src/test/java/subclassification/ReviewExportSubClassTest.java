@@ -15,7 +15,7 @@ public class ReviewExportSubClassTest implements Constants {
 
     @Before
     public void createTestReviewInfos() {
-        ReviewExportSubClass exporter = new ReviewExportSubClass(MONGODB_PORT, DBNAME_TEST, REVIEW_COLLLECTION_TEST, PreClassification.USAGE);
+        ReviewExportSubClass exporter = new ReviewExportSubClass(MONGODB_PORT, DBNAME_TEST, REVIEW_COLLLECTION, PreClassification.USAGE);
         review = exporter.createReviewSubClassInfo();
     }
     @Test

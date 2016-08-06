@@ -55,7 +55,7 @@ public class ReviewCSVExportPreClass implements Constants {
     }
 
     public static void main(String args[]) {
-        ReviewCSVExportPreClass reviewCSVExportPreClass = new ReviewCSVExportPreClass(MONGODB_PORT, DBNAME_TEST, REVIEW_COLLLECTION_TEST);
+        ReviewCSVExportPreClass reviewCSVExportPreClass = new ReviewCSVExportPreClass(MONGODB_PORT, DBNAME_TEST, REVIEW_COLLLECTION);
         reviewCSVExportPreClass.createReviewsInCSV();
     }
 }

@@ -13,14 +13,12 @@ public interface Constants {
     int REVIEWSPERAPPLIMIT = 500;
 
     String DBNAME_TEST = "testreviews";
-    String REVIEW_COLLLECTION_TEST = "reviews";
-    String APP_INFOS_COLLLECTION_TEST = "appInfos";
     String ARFF_EMPTY_SIGN = "?";
 
     //TODO: GIVE PROPER NAME FOR REAL REVIEWS
     String DBNAME = "review";
     String REVIEW_COLLLECTION = "review";
-    String APP_INFOS_COLLLECTION = "appInfos";
+    String APP_INFOS_COLLLECTION = "appinfos";
 
     String TRAININGSET_COLLECTION = "trainingset";
 
@@ -40,4 +38,8 @@ public interface Constants {
     String REVIEW_TEXT = "review_text";
     String INDEXER_DIRECTORY = "./docs/vsm/index";
     String INDEXER_DIRECTORY_TEST = "./docs/vsm/index_test";
+
+    //SourceCodeLinker
+    String GITHUBLINK_START = "https://github.com/";
+    String GITHUB_ZIP = "/archive/master.zip";
 }

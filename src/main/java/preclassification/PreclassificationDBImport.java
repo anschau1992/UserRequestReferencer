@@ -20,17 +20,10 @@ public class PreclassificationDBImport implements Constants {
     DB db;
     DBCollection collection;
 
-    public PreclassificationDBImport(boolean testMode) {
+    public PreclassificationDBImport(String dbName) {
         int portnumb = MONGODB_PORT;
-        String dbName;
-        String collectionName;
-        if(testMode) {
-            dbName = DBNAME_TEST;
-            collectionName = REVIEW_COLLLECTION_TEST;
-        }else {
-            dbName = DBNAME;
-            collectionName = REVIEW_COLLLECTION;
-        }
+        String collectionName = REVIEW_COLLLECTION;
+
         MongoClient mongoClient = new MongoClient("Localhost", portnumb);
         db = mongoClient.getDB(dbName);
         this.collection = db.getCollection(collectionName);

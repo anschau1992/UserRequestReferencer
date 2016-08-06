@@ -17,14 +17,9 @@ public class SubClassifier implements Constants {
     String collectionName;
     PreClassification preClassification;
 
-    public SubClassifier(boolean testmode, PreClassification preClassification) {
-        if(testmode) {
-            dbName = DBNAME_TEST;
-            collectionName = REVIEW_COLLLECTION;
-        }else {
-            dbName = DBNAME;
-            collectionName = REVIEW_COLLLECTION_TEST;
-        }
+    public SubClassifier(String dbName, PreClassification preClassification) {
+        this.dbName = dbName;
+        this.collectionName = REVIEW_COLLLECTION;
         this.preClassification = preClassification;
     }
 

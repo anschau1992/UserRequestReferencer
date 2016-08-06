@@ -24,6 +24,7 @@ public class SubClassComparer implements Constants {
             Map.Entry<String, Double> highestDistributionClass = getHighestNumbPosition(review.getSubClassFDistribution());
             //subClass not defined
             if (review.getSubClassification().equals(ARFF_EMPTY_SIGN) || review.getSubClassification() == null) {
+                review.setWekaCorrectClassified(true);
                 review.setSubClassification(highestDistributionClass.getKey());
                 printNewSubclass(highestDistributionClass, review);
             } else {
