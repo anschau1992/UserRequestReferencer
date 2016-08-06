@@ -21,8 +21,15 @@ public class SourceCodeLinker implements Constants {
         linkingReviews = hashRelevantReviews(reviews);
         Map<String, String> sourceCodeLinks = getSourceCodeLink();
 
+        //Get sourceCode files into /sourceCode
         SourceCodeCrawler sourceCodeCrawler = new SourceCodeCrawler();
         sourceCodeCrawler.crawl(appNames, sourceCodeLinks);
+
+        //TODO foreach file (recursive) check format(take .java .xml) --> call indexer with File
+        //TODO build proper index for sourceCode-files in lucene --> use different indexer with different analyzer?
+        SourceCodeIndexer sci = new SourceCodeIndexer();
+
+        //TODO foreach review in linkingReviews --> preprocessing with narrow goal-folders down
 
         System.out.println("testing");
     }

@@ -41,7 +41,6 @@ public class SourceCodeCrawler implements Constants {
      * @throws IOException
      */
     private String downloadZIPFile(String appName, String sourceCodeLink) throws IOException {
-        String zipPath = "zip";
         String filePath = null;
         if(sourceCodeLink.startsWith(GITHUBLINK_START)) {
             URL url = new URL(sourceCodeLink + GITHUB_ZIP);
@@ -52,12 +51,12 @@ public class SourceCodeCrawler implements Constants {
             String fileName = appName.replaceAll(" ", "_").toLowerCase() + ".zip";
 
             //create folder if not exists
-            if (!new File(zipPath).exists()) {
+            if (!new File(ZIP_FOLDER_PATH).exists()) {
                 System.out.println("Creating folder '/zip'");
-                new File(zipPath).mkdirs();
+                new File(ZIP_FOLDER_PATH).mkdirs();
             }
 
-            filePath = zipPath +"/"+ fileName;
+            filePath = ZIP_FOLDER_PATH +"/"+ fileName;
             File zipFile = new File(filePath);
             if(!zipFile.exists()) {
                 System.out.println("Download source file of app: \"" + appName+"\"");
