@@ -43,5 +43,8 @@ public interface Constants {
     String GITHUBLINK_START = "https://github.com/";
     String GITHUB_ZIP = "/archive/master.zip";
     String ZIP_FOLDER_PATH = "zip";
+    String SOURCE_CODE_PATH = "sourceCode";
     String INDEX_FOLDER_PATH = "lucene_index";
+    int SEARCH_RESULT_NUMB = 10;
+    float CATEGORY_BOOST = 3.0f;
 }

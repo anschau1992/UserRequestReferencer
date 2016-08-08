@@ -2,6 +2,7 @@ package codeLinking;
 
 import crawler.Constants;
 import helper.Review;
+import org.apache.lucene.queryparser.classic.ParseException;
 import org.junit.Before;
 import org.junit.Test;
 import preclassification.PreClassification;
@@ -25,7 +26,7 @@ public class SourceCodeLinkerTest implements Constants {
 
     List<Review> reviews = new ArrayList<Review>();
     @Before
-    public void setUpReviews() throws IOException {
+    public void setUpReviews() throws IOException, ParseException {
         Review review1 = new Review("57291d8c507c69054da8ee23", "Crashes I use this so as my default wallpaper app," +
                 " but lately it has been crashing like crazy, and I have been reporting it every time it crashes," +
                 " please fix it, I hate my static wallpaper now."
@@ -96,13 +97,13 @@ public class SourceCodeLinkerTest implements Constants {
         assertEquals("List 'A Comic Viewer' contains 2 reviews", 2, hashedReviews.get("A Comic Viewer").size());
     }
 
-    @Test
-    public void testAppNames() {
-        Map<String, List<Review>>  hashedReviews = scl.getLinkingReviews();
-        List<String> appNames = scl.getAppNames();
-        assertEquals("List-size is two, cause there are two different apps", 2, appNames.size());
-        assertEquals("First app is 'Muzei Live Wallpaper' ", "Muzei Live Wallpaper", appNames.get(0));
-        assertEquals("First app is 'A Comic Viewer' ", "A Comic Viewer", appNames.get(1));
-    }
+//    @Test
+//    public void testAppNames() {
+//        Map<String, List<Review>>  hashedReviews = scl.getLinkingReviews();
+//        List<String> appNames = scl.getAppNames();
+//        assertEquals("List-size is two, cause there are two different apps", 2, appNames.size());
+//        assertEquals("First app is 'Muzei Live Wallpaper' ", "Muzei Live Wallpaper", appNames.get(0));
+//        assertEquals("First app is 'A Comic Viewer' ", "A Comic Viewer", appNames.get(1));
+//    }
 
 }

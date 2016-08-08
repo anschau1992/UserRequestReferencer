@@ -26,12 +26,11 @@ public class SourceCodeCrawler implements Constants {
             UnzipUtility unzipUtility = new UnzipUtility();
             String fileName = appName.replaceAll(" ", "_").toLowerCase();
             //create sourceCode-folder if not exists
-            String sourceCodefolder = "sourceCode";
-            if (!new File(sourceCodefolder).exists()) {
+            if (!new File(SOURCE_CODE_PATH).exists()) {
                 System.out.println("Creating folder '/sourceCode'");
-                new File(sourceCodefolder).mkdirs();
+                new File(SOURCE_CODE_PATH).mkdirs();
             }
-            unzipUtility.unzip(zipPath,sourceCodefolder + "/" + fileName);
+            unzipUtility.unzip(zipPath,SOURCE_CODE_PATH + "/" + fileName);
         }
     }
 

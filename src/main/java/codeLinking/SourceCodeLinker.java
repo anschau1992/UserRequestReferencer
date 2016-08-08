@@ -1,11 +1,15 @@
 package codeLinking;
 
 import com.mongodb.*;
-import crawler.AppInfo;
 import crawler.Constants;
 import helper.Review;
+import org.apache.lucene.queryparser.classic.ParseException;
 
+import java.io.File;
 import java.io.IOException;
+
+import java.nio.file.Path;
+import java.nio.file.Paths;
 import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.List;
@@ -16,7 +20,7 @@ public class SourceCodeLinker implements Constants {
     private Map<String, List<Review>> linkingReviews;
     private List<String> appNames;
 
-    public SourceCodeLinker(List<Review> reviews, String dbName) throws IOException {
+    public SourceCodeLinker(List<Review> reviews, String dbName) throws IOException, ParseException {
         this.dbName = dbName;
         linkingReviews = hashRelevantReviews(reviews);
         Map<String, String> sourceCodeLinks = getSourceCodeLink();
@@ -25,18 +29,34 @@ public class SourceCodeLinker implements Constants {
         SourceCodeCrawler sourceCodeCrawler = new SourceCodeCrawler();
         sourceCodeCrawler.crawl(appNames, sourceCodeLinks);
 
-        //TODO foreach file (recursive) check format(take .java .xml) --> call indexer with File
-        //TODO build proper index for sourceCode-files in lucene --> use different indexer with different analyzer?
-        SourceCodeIndexer sci = new SourceCodeIndexer();
+        //create Index for each app
+        RecursiveFileReader recursiveFileReader = new RecursiveFileReader();
+        if (new File(SOURCE_CODE_PATH).exists()) {
+            for (String appName : appNames) {
+                String fileName = appName.replaceAll(" ", "_").toLowerCase();
+                File file = new File(SOURCE_CODE_PATH + "/" + fileName);
+                recursiveFileReader.readeFiles(file, fileName);
+            }
+        } else {
+            System.out.println("There is no source-code! Program is turning off");
+            System.exit(0);
+        }
+
 
         //TODO foreach review in linkingReviews --> preprocessing with narrow goal-folders down
-
-        System.out.println("testing");
+        SourceCodeSearcher sourceCodeSearcher = new SourceCodeSearcher();
+        for (String appName: appNames) {
+            String fileName = appName.replaceAll(" ", "_").toLowerCase();
+            Path path = Paths.get("./"+ INDEX_FOLDER_PATH + "/" + fileName);
+            List<Review> appReviews = linkingReviews.get(appName);
+            sourceCodeSearcher.searchForReviews(path, appReviews);
+        }
     }
 
 
     /**
      * hashes the reviews by App's, and filters the wrong subclassified out
+     *
      * @param reviews
      * @return a hash with List of reviews split by App-name
      */
