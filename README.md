@@ -11,21 +11,45 @@ With the second application (Two_Linking.main()) the preclassified reviewText ar
 - Install Selenium extension for Safari, if running on Mac: WebDriver:http://elementalselenium.com/tips/69-safari
 - Install the standard Firefox Browser, if running on Windows: https://www.mozilla.org/en-US/firefox/new/
 
-##Process
-The requested apps have to be written down in a .csv-file, which path has to be given as an argument for the application.
+##Process - Run the application
+![alt tag](https://github.com/anschau1992/UserRequestLocalizer/blob/developer/ba_URL_process_app.png)
 
-The csv-File must have the following format:
-##'app-Name;app-Category; link-ID*; source-code-ID'.
-*the string behind "id=" from the Link of a App.
-==> f. ex: https://play.google.com/store/apps/details?id=Draziw.Button.Mines has Link-ID: 'Draziw.Button.Mines'.
-There is a example-csv under ./docs/testAppInfos.csv
+1. In ./docs/appInfos.csv the apps you want to crawl can be added. Make sure the csv-file always has the proper format of:
+   ```
+   appname;category;id;sourceCodeLink*
+   ```
+   where id is the end of the Google Play Store link.
+   
+   f.ex:  https://play.google.com/store/apps/details?id=com.duckduckgo.mobile.android&hl=en
+      ==> id: com.duckduckgo.mobile.android
+      
+  *until now it only works with sourceCode referencing to a GitHub-repository!
+  
+2. Start the local MongoDb with firing 'mongod' in the console. Make sure it runs on default port 27017
+3. Run One_Crawling.main() with arguments:
+  ```
+  <csvPath> <browser> <mode>
+  ```
+  whereas <csvPath> is the filePath to the Appinfos, <browser> is either 'firefox' or 'safari' and <moded> is 'test' or 'prod'
+  When choosen 'test' the reviews are stored in a DB 'testreviews' otherwise in one called 'review'
+4. Open the new created csv-File 'preclassification.csv'. Do Preclassification and Subclassification(optional) based on the [predefined heuristics](https://github.com/anschau1992/UserRequestLocalizer/blob/developer/docs/preclassification_heuristics.pdf) for the reviews. Create for that a csv-file './docs/preclassification_with_classes' with the format:
 
-## Run the application
-- Start MongoDB with firing 'mongod' in the console. Make sure it runs on default port 27017
-- Run 'AppReviewsToDB' with arguments:
-- argv[0]: csv-Path (f.ex './docs/testAppInfos.csv')
-- argv[1]: WebBrowser ('safari' or 'firefox')
+ ```
+reviewID;reviewText;preclassification;subclassification
+ ```
+ 
+Not every review must have a defined pre- & subclassification in the file.
 
+5. Start Two_Linking.main() with arguments:
+
+ ```
+ <preclassification> <mode>
+  ```
+  
+  Where <preclassification> is either 'RESSOURCES', 'PRICING', 'PROTECTION', 'USAGE', 'COMPATIBILITY'
+  
+6. The result for the SourceCode-Linking is printed into the file 'scoring-result.txt' 
+  
 
 ##Useful Links
 - [Selenium Tutorial](http://www.tutorialspoint.com/selenium/)
