@@ -30,6 +30,9 @@ With the second application (Two_Linking.main()) the preclassified reviewText ar
   - Where \<preclassification\> is either 'RESSOURCES', 'PRICING', 'PROTECTION', 'USAGE', 'COMPATIBILITY'
 6. The result for the SourceCode-Linking is printed into the file 'scoring-result.txt' 
   
+##Testing 
+
+For testing the SourceCode-Linking with a self-written review, you can use the Test './src/test/codeLinking/SourceCodeLinkerTest.java and change the reviews with your own text. The result of the linking will be printed into the scoring_result.txt
 
 ##Useful Links
 - [Selenium Tutorial](http://www.tutorialspoint.com/selenium/)
