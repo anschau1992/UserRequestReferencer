@@ -1,15 +1,17 @@
-# bachelor_thesis_reviewCrawler
+# URL - UserRequestLocalizer
 
 ## Introduction
-This application gathers reviews for Google Play Store apps using Selenium Webdriver and stores the information into the local MongoDB.
-The apps to crawl needed to be saved in a csv-File.
-The app gathers reviews and appInformation for the work in my Bachelor Thesis.
+As a part of my bachelor thesis I developed this prototype. The idea of the project is to link review of specific Application in the Google Play Store with the corresponding Source Code file. So a developer can faster find the location of a f.ex bugfix or error.
+
+The first application (One_Crawling.main()) crawls reviews of listed apps and stores them into a local MongoDatabase. Afterwards it exports the review text into a csv-File, so a manual preclassification can be done. 
+With the second application (Two_Linking.main()) the preclassified reviewText are imported again into the DB. The reviews will be subclassified with WEKA based on the preclassification and at last the best fitting files of the source-code will be listed for each review. The goal is to find the location in the app, where the review is referencing on it.
 
 ##Setup
 - Install mongodb v3.2.4 : https://docs.mongodb.com/manual/installation/
-- Install Selenium extension for Safari, if prefer Safari Webdriver(recommended) before Firefox: WebDriver:http://elementalselenium.com/tips/69-safari
+- Install Selenium extension for Safari, if running on Mac: WebDriver:http://elementalselenium.com/tips/69-safari
+- Install the standard Firefox Browser, if running on Windows: https://www.mozilla.org/en-US/firefox/new/
 
-## csv-file
+##Process
 The requested apps have to be written down in a .csv-file, which path has to be given as an argument for the application.
 
 The csv-File must have the following format:
