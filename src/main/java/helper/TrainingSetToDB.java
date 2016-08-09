@@ -1,6 +1,5 @@
 package helper;
 
-import crawler.Constants;
 import crawler.DBWriter;
 
 import java.util.List;

@@ -1,3 +1,39 @@
 Duck Duck GO;Internet;com.duckduckgo.mobile.android;https://github.com/johanhil/ddg-android
 Xabber;Instant Messaging;com.xabber.android;https://github.com/redsolution/xabber-android
 Marine Compass;Navigation;net.pierrox.mcompass;http://svn.pierrox.net/mcompass/trunk
+Adblock Plus;Internet;org.adblockplus.adblockplussbrowser&hl=en;https://hg.adblockplus.org/adblockplusandroid
+A Comic Viewer;Reading;net.androidcomics.acv&hl=en;https://github.com/robotmedia/droid-comic-viewer
+Bankdroid;Money;com.liato.bankdroid;https://github.com/liato/android-bankdroid
+Abstract Art;Theming;net.georgewhiteside.android.abstractart;https://github.com/gwhiteside/abstract-art
+MultiPicture Live Wallpaper;Theming;org.tamanegi.wallpaper.multipicture;https://github.com/lllllT/MultiPictureLiveWallpaper
+Pixel Dungeon;Games;com.watabou.pixeldungeon;https://github.com/watabou/pixel-dungeon
+BatteryBot Battery Indicator;Systen;com.darshancomputing.BatteryIndicator;https://github.com/darshan-/Battery-Indicator-Free
+Autostarts;System;com.elsdoerfer.android.autostarts;https://github.com/miracle2k/android-autostarts
+Calculator;Science & Education;com.android2.calculator3;https://github.com/Xlythe/Calculator
+Bubble level;Science & Education;net.androgames.level;https://github.com/avianey/Level
+CatLog;Development;com.nolanlawson.logcat;https://github.com/nolanlawson/Catlog
+Network Log;Development;com.googlecode.networklog;https://github.com/pragma-/networklog
+OctoDroid;Development;com.gh4a;https://github.com/slapperwan/gh4a
+QKSMS - Open Source SMS & MMS;Communication;com.moez.QKSMS;https://github.com/qklabs/qksms
+Signal Private Messenger;Communication;org.thoughtcrime.securesms;https://github.com/WhisperSystems/Signal-Android
+AnkiDroid Flashcards;Education;com.ichi2.anki;https://github.com/ankidroid/Anki-Android
+Financius - Expense Manager;Finance;com.code44.finance;https://github.com/mvarnagiris/financius-public
+2048;Games;com.uberspot.a2048;https://github.com/uberspot/2048-android
+Simon Tatham's Puzzles;Games;name.boyle.chris.sgtpuzzles;https://github.com/chrisboyle/sgtpuzzles
+AntennaPod;Multimedia;de.danoeh.antennapod;https://github.com/AntennaPod/AntennaPod
+Last.fm;Multimedia;fm.last.android;https://github.com/lastfm/lastfm-android
+SeriesGuide;Multimedia;com.battlelancer.seriesguide;https://github.com/UweTrottmann/SeriesGuide
+Muzei Live Wallpaper;Personalisation;net.nurik.roman.muzei;https://github.com/romannurik/muzei
+Wally;Personalisation;com.musenkishi.wally;https://github.com/Musenkishi/wally
+Turbo Editor ( Text Editor );Productivity;com.maskyn.fileeditor;https://github.com/vmihalachi/turbo-editor
+Tweet Lanes;Social Network;com.tweetlanes.android;https://github.com/chrislacy/TweetLanes
+Twidere for Twitter;Social Network;org.mariotaku.twidere;https://github.com/TwidereProject/Twidere-Android/
+AcDisplay;Tools;com.achep.acdisplay;https://github.com/AChep/AcDisplay
+Amaze File Manager;Tools;com.amaze.filemanager;https://github.com/arpitkh96/AmazeFileManager
+Clip Stack _ Clipboard Manager;Tools;com.catchingnow.tinyclipboardmanager;https://github.com/heruoxin/Clip-Stack
+ConnectBot;Tools (Development);org.connectbot;https://github.com/numixproject/org.numixproject.croma
+DashClock Widget;Tools;net.nurik.roman.dashclock;https://github.com/romannurik/dashclock
+Device Control [root];Tools (Development);org.namelessrom.devicecontrol;https://github.com/Evisceration/DeviceControl
+OS Monitor;Tools;com.eolwral.osmonitor;https://github.com/eolwral/OSMonitor
+Terminal Emulator for Android;Tools (Development);jackpal.androidterm;https://github.com/jackpal/Android-Terminal-Emulator
+c:geo;Travel & Local;cgeo.geocaching;https://github.com/cgeo/cgeo

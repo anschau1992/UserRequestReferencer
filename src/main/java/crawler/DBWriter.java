@@ -5,6 +5,7 @@ import com.mongodb.MongoClient;
 import com.mongodb.client.FindIterable;
 import com.mongodb.client.MongoCollection;
 import com.mongodb.client.MongoDatabase;
+import helper.Constants;
 import org.bson.Document;
 import helper.Review;
 
@@ -32,6 +33,10 @@ public class DBWriter implements Constants {
         return cleanName.replaceAll(" ", "");
     }
 
+    /**
+     * Write all the AppInfos of ./docs/appInfos.csv,
+     * which are not yet in the DB  into collection 'appInfos'
+     */
     public void writeAppInfosToDB(List<AppInfo> appInfos) {
         int newAppsCount = 0;
         MongoCollection mongoCollection = db.getCollection(cleanName(appInfoCollectionName));
@@ -45,6 +50,12 @@ public class DBWriter implements Constants {
         System.out.println("New added AppInfos in DB: " + newAppsCount);
     }
 
+    /**
+     * Checks if the given Object AppInfo is already written into the DB-collection
+     * @param appInfo
+     * @param mongoCollection
+     * @return true if the app is not in DB, false otherwise
+     */
     private boolean appIsNotOnDB(AppInfo appInfo, MongoCollection mongoCollection) {
         FindIterable iterable = mongoCollection.find(new Document("name", appInfo.getName()));
         if (iterable.first() != null) {

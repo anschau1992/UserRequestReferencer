@@ -1,8 +1,7 @@
 package codeLinking;
 
-import crawler.Constants;
+import helper.Constants;
 import helper.Review;
-import org.apache.lucene.analysis.Analyzer;
 import org.apache.lucene.analysis.TokenStream;
 import org.apache.lucene.analysis.core.SimpleAnalyzer;
 import org.apache.lucene.analysis.tokenattributes.CharTermAttribute;
@@ -11,19 +10,15 @@ import org.apache.lucene.document.Document;
 import org.apache.lucene.index.DirectoryReader;
 import org.apache.lucene.index.IndexReader;
 import org.apache.lucene.index.Term;
-import org.apache.lucene.queries.TermsQuery;
 import org.apache.lucene.queryparser.classic.ParseException;
 import org.apache.lucene.queryparser.classic.QueryParser;
 import org.apache.lucene.search.*;
 import org.apache.lucene.store.Directory;
 import org.apache.lucene.store.FSDirectory;
 import preclassification.PreClassification;
-import subclassification.subclasses.SUBCLASS_COMPATIBILITY;
 import subclassification.subclasses.SUBCLASS_PROTECTION;
-import subclassification.subclasses.SUBCLASS_RESSOURCES;
 import subclassification.subclasses.SUBCLASS_USAGE;
 
-import java.io.File;
 import java.io.IOException;
 import java.nio.file.Path;
 import java.util.List;
@@ -43,6 +38,8 @@ public class SourceCodeSearcher implements Constants{
         IndexReader reader = DirectoryReader.open(dir);
         IndexSearcher searcher = new IndexSearcher(reader);
         QueryParser parser = new QueryParser("content", new SimpleAnalyzer());
+
+        ScoreFileCreator fileCreator = new ScoreFileCreator(RESULT_FILE);
 
         for (Review review : appReviews) {
             //TODO create query with reviewtext
@@ -66,8 +63,6 @@ public class SourceCodeSearcher implements Constants{
             IndexCategory  category = defineIndexCategory(review);
             if(category != IndexCategory.OTHER) {
                 bq.add(new TermQuery(new Term("category", category.toString())), BooleanClause.Occur.SHOULD);
-                //TODO remove just testing purpose
-                System.out.println("[" + category.toString() + "]");
             }
 
 
@@ -75,9 +70,10 @@ public class SourceCodeSearcher implements Constants{
 
             TopDocs hits = searcher.search(query, SEARCH_RESULT_NUMB);
 
+            //print result into File
+            fileCreator.writeScore(review, hits, searcher);
 
-            //TODO load searche with query
-            //perform search
+            //Print into console
             System.out.println("++++++++++++++++++Score for review: " + review.getReviewText() +"+++++++++++++++++");
             System.out.println("Preclassification: " + review.getPreClassification() + "\t Subclassification: " + review.getSubClassification());
             for(ScoreDoc scoreDoc: hits.scoreDocs) {
@@ -86,6 +82,8 @@ public class SourceCodeSearcher implements Constants{
             }
             System.out.println("+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++");
         }
+        System.out.println("Succeccfully finished File-linking for all reviews");
+        fileCreator.closeWriter();
     }
 
     /**

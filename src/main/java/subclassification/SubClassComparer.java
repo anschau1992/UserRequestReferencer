@@ -1,6 +1,6 @@
 package subclassification;
 
-import crawler.Constants;
+import helper.Constants;
 import helper.Review;
 
 import java.util.List;

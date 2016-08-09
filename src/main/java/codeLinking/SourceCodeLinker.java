@@ -1,7 +1,7 @@
 package codeLinking;
 
 import com.mongodb.*;
-import crawler.Constants;
+import helper.Constants;
 import helper.Review;
 import org.apache.lucene.queryparser.classic.ParseException;
 

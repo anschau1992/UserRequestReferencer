@@ -1,6 +1,6 @@
 package subclassification;
 
-import crawler.Constants;
+import helper.Constants;
 import org.apache.commons.math3.linear.RealVector;
 import preclassification.PreClassification;
 import helper.Review;

@@ -1,6 +1,6 @@
 package subclassification.vectorSpaceModel;
 
-import crawler.Constants;
+import helper.Constants;
 import org.apache.lucene.queryparser.classic.ParseException;
 import org.junit.Before;
 import org.junit.Test;

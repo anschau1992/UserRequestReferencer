@@ -1,7 +1,7 @@
 package subclassification.vectorSpaceModel;
 
 
-import crawler.Constants;
+import helper.Constants;
 import org.apache.commons.math3.linear.Array2DRowRealMatrix;
 import org.apache.commons.math3.linear.RealMatrix;
 import org.apache.lucene.index.*;

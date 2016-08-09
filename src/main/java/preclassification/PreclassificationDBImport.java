@@ -1,7 +1,7 @@
 package preclassification;
 
 import com.mongodb.*;
-import crawler.Constants;
+import helper.Constants;
 import org.bson.types.ObjectId;
 import subclassification.subclasses.*;
 

@@ -1,12 +1,9 @@
 package subclassification.stanfordNLP;
 
-import crawler.Constants;
+import helper.Constants;
 import edu.stanford.nlp.trees.TypedDependency;
 import org.junit.Before;
 import org.junit.Test;
-
-import java.util.HashMap;
-import java.util.List;
 
 import static org.junit.Assert.assertEquals;
 

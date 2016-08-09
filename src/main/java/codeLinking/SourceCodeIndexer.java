@@ -1,6 +1,6 @@
 package codeLinking;
 
-import crawler.Constants;
+import helper.Constants;
 import org.apache.lucene.analysis.util.CharArraySet;
 import org.apache.lucene.document.Document;
 import org.apache.lucene.document.Field;
@@ -47,7 +47,11 @@ public class SourceCodeIndexer implements Constants {
 
             String content = new String(Files.readAllBytes(Paths.get(file.getPath())));
             String id = file.getPath().substring(SOURCE_CODE_PATH.length());
-            content = splitCamelCase(content);
+
+            //split camelCase if java-files
+            if(indexJava) {
+                content = splitCamelCase(content);
+            }
 
             Document doc = new Document();
             doc.add(new Field("id", id,
@@ -82,14 +86,14 @@ public class SourceCodeIndexer implements Constants {
     }
 
     private IndexWriter getJavaWriter(Directory directory) throws IOException {
-        //CharArraySet stopWords = getStopWords("./src/main/java/javaStopList.csv");
-        IndexWriterConfig config = new IndexWriterConfig(new JavaCodeAnalyzer());
+        CharArraySet stopWords = getStopWords("./src/main/java/javaStopList.csv");
+        IndexWriterConfig config = new IndexWriterConfig(new JavaCodeAnalyzer(stopWords));
         return new IndexWriter(directory, config);
     }
 
     private IndexWriter getXMLWriter(Directory directory) throws IOException {
-        //TODO create to XMLCodeAnalyzer
-        IndexWriterConfig config = new IndexWriterConfig(new JavaCodeAnalyzer());
+        CharArraySet stopWords = getStopWords("./src/main/java/xmlStopList.csv");
+        IndexWriterConfig config = new IndexWriterConfig(new XMLCodeAnalyzer());
         return new IndexWriter(directory, config);
     }
 

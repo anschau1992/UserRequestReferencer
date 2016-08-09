@@ -1,6 +1,5 @@
 package helper;
 
-import crawler.Constants;
 import preclassification.PreClassification;
 
 import java.io.BufferedReader;

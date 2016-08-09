@@ -1,6 +1,6 @@
 package subclassification.vectorSpaceModel;
 
-import crawler.Constants;
+import helper.Constants;
 import org.apache.commons.math3.linear.RealMatrix;
 import org.apache.commons.math3.linear.RealVector;
 import helper.Review;

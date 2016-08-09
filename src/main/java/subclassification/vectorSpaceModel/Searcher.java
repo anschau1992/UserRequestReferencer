@@ -1,6 +1,6 @@
 package subclassification.vectorSpaceModel;
 
-import crawler.Constants;
+import helper.Constants;
 import org.apache.lucene.document.Document;
 import org.apache.lucene.index.DirectoryReader;
 import org.apache.lucene.index.IndexReader;

@@ -1,7 +1,7 @@
 package crawler;
 
 import com.mongodb.*;
-import crawler.Constants;
+import helper.Constants;
 import org.junit.Test;
 
 

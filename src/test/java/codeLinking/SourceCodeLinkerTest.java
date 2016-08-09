@@ -1,16 +1,16 @@
 package codeLinking;
 
-import crawler.Constants;
+import helper.Constants;
 import helper.Review;
 import org.apache.lucene.queryparser.classic.ParseException;
 import org.junit.Before;
 import org.junit.Test;
 import preclassification.PreClassification;
 import subclassification.subclasses.SUBCLASS_RESSOURCES;
+import subclassification.subclasses.SUBCLASS_USAGE;
 
 import java.io.IOException;
 import java.util.ArrayList;
-import java.util.Date;
 import java.util.List;
 import java.util.Map;
 
@@ -85,6 +85,44 @@ public class SourceCodeLinkerTest implements Constants {
         reviews.add(review4);
         reviews.add(review5);
         reviews.add(review6);
+
+
+        Review review7 = new Review("57291016507c69054da8e0a6","Please fix the theming options.",
+                PreClassification.USAGE, 1);
+        review7.setApp("Xabber");
+        review7.setSubClassification(SUBCLASS_USAGE.UI.toString());
+        review7.setWekaCorrectClassified(true);
+
+        Review review8 = new Review("57291016507c69054da8e0a6","Display is not updated" +
+                " on home screen Recently I have noticed that the home screen widget is not" +
+                " updating with the proper battery % after it has been charged. I would have " +
+                "50% batt, but it would say 15% on the widget. I need to open the app itself" +
+                " and then close it, in order for the widget to be updated",
+                PreClassification.USAGE, 3);
+        review8.setApp("BatteryBot Battery Indicator");
+        review8.setSubClassification(SUBCLASS_USAGE.UI.toString());
+        review8.setWekaCorrectClassified(true);
+
+        Review review9 = new Review("57291d53507c69054da8ee07", "I am glad the developer" +
+                " listened to the feedback of myself and others. No more forced purple widget." +
+                " We now have an option for a dark widget theme that can match most homescreen themes.",
+                PreClassification.USAGE, 3);
+        review9.setApp("BatteryBot Battery Indicator");
+        review9.setSubClassification(SUBCLASS_USAGE.UI.toString());
+        review9.setWekaCorrectClassified(true);
+
+
+        Review review0 = new Review("57291d53507c69054da8ee07", "Really love this application." +
+                " Will it be possible to customize the font color?",
+                PreClassification.USAGE, 3);
+        review0.setApp("AcDisplay");
+        review0.setSubClassification(SUBCLASS_USAGE.UI.toString());
+        review0.setWekaCorrectClassified(true);
+
+        reviews.add(review7);
+        reviews.add(review8);
+        reviews.add(review9);
+        reviews.add(review0);
 
         scl = new SourceCodeLinker(reviews, dbName);
     }

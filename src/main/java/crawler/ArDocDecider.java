@@ -1,5 +1,6 @@
 package crawler;
 
+import helper.Constants;
 import org.ardoc.Parser;
 import org.ardoc.Result;
 import org.ardoc.UnknownCombinationException;
@@ -9,6 +10,10 @@ import helper.Review;
 import java.util.ArrayList;
 import java.util.List;
 
+/**
+ * With the use of ARDOC:: http://www.ifi.uzh.ch/en/seal/people/panichella/tools/ARdoc.html
+ * the review will be classified
+ */
 public class ArDocDecider implements Constants {
     private static ArDocDecider uniqueInstance;
 

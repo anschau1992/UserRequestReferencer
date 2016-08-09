@@ -1,4 +1,4 @@
-package crawler;
+package helper;
 
 import crawler.AppInfo;
 
@@ -47,4 +47,5 @@ public interface Constants {
     String INDEX_FOLDER_PATH = "lucene_index";
     int SEARCH_RESULT_NUMB = 10;
     float CATEGORY_BOOST = 3.0f;
+    String RESULT_FILE =  "scoring_result.txt";
 }

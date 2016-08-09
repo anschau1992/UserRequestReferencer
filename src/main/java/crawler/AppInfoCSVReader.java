@@ -1,5 +1,7 @@
 package crawler;
 
+import helper.Constants;
+
 import java.io.BufferedReader;
 import java.io.FileNotFoundException;
 import java.io.FileReader;
@@ -11,7 +13,7 @@ import java.util.List;
  * Takes a csv-file with AppInfos and transforms them into AppInfo's Objects
  *
  * csv must be in format:
- *  appName;playstoreLink;sourceCodeLink
+ *  appName;category;playstoreLink;sourceCodeLink
  */
 public class AppInfoCSVReader implements Constants {
     BufferedReader br;
@@ -22,6 +24,11 @@ public class AppInfoCSVReader implements Constants {
         line = "";
     }
 
+    /**
+     * Transform each line of a given csv into a AppInfos object
+     * @param csvFile path to file
+     * @return List of AppInfo's object
+     */
     public List<AppInfo> transformToAppInfos (String csvFile) {
         List <AppInfo> appInfos = new ArrayList<AppInfo>();
         try{

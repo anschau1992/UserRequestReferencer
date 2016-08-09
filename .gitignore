@@ -1,3 +1,5 @@
 zip/*
 sourceCode/*
 docs/vsm/*
+lucene_index/*
+scoring_result.txt

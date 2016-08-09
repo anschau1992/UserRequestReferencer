@@ -1,6 +1,6 @@
 package subclassification;
 
-import crawler.Constants;
+import helper.Constants;
 import edu.stanford.nlp.trees.TypedDependency;
 import preclassification.PreClassification;
 import helper.Review;

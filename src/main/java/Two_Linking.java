@@ -1,7 +1,5 @@
 import codeLinking.SourceCodeLinker;
-import com.mongodb.DB;
-import com.mongodb.MongoClient;
-import crawler.Constants;
+import helper.Constants;
 import helper.Review;
 import helper.TrainingSetToDB;
 import preclassification.PreClassification;
@@ -9,10 +7,9 @@ import preclassification.PreclassificationDBImport;
 import subclassification.SubClassifier;
 
 import java.util.List;
-import java.util.Set;
 
 //TODO: better name
-public class StepTwo implements Constants {
+public class Two_Linking implements Constants {
     public static void main(String[] args) throws Exception {
         argumentCheck(args);
         String dbName;
@@ -24,11 +21,11 @@ public class StepTwo implements Constants {
             dbName = DBNAME;
         }
 
-        //2. Update review's preclassification
+        //2.1 Update review's preclassification
         PreclassificationDBImport preClassImport = new PreclassificationDBImport(dbName);
         preClassImport.importPreClassificationIntoDB();
 
-        //write trainingSet into DB if not done yet
+        //2.2 write trainingSet into DB if not done yet
         if(!preClassImport.collectionExists(TRAININGSET_COLLECTION)) {
             System.out.println("Loading Training-Set into DB");
             TrainingSetToDB trainingSetToDB = new TrainingSetToDB(dbName);
@@ -39,22 +36,22 @@ public class StepTwo implements Constants {
         SubClassifier subClassifier = new SubClassifier(dbName, preclassification);
         List<Review> reviews = subClassifier.subClassify();
 
-        //TODO run SoureCodeLinker
         //4. SourceCode Linking
         SourceCodeLinker sourceCodeLinker = new SourceCodeLinker(reviews, dbName);
 
     }
 
     /**
-     * Checks the given argument. Prints out crresponding error-message
+     * Checks the given argument. Prints out corresponding error-message
      * @param args
      */
     private static void argumentCheck(String[] args) {
         PreClassification preclassification = null;
         if(args.length != 2) {
-            System.out.println("Wrong number of arguments! Use of program: java StepTwo <preclassification> <test|prod>");
+            System.out.println("Wrong number of arguments! Use of program: java StepTwo <preclassification> <mode>");
             System.out.println("Whereas <preclassification> is one of the following arguments:");
             System.out.println("\t RESSOURCES, PRICING, PROTECTION, USAGE, COMPATIBILITY");
+            System.out.println("and mode is either 'test' or 'prod'");
 
             System.exit(0);
         }
@@ -68,8 +65,8 @@ public class StepTwo implements Constants {
         }
 
         if(!args[1].equals("test")  && !args[1].equals("prod")) {
-            System.out.println("Wrong preclassification! Use one of the following as second argument:");
-            System.out.println("test, prod");
+            System.out.println("Wrong mode! Use one of the following as second argument:");
+            System.out.println("\t test, prod");
             System.exit(0);
         }
     }

@@ -1,7 +1,7 @@
 package subclassification;
 
 import com.mongodb.*;
-import crawler.Constants;
+import helper.Constants;
 import preclassification.PreClassification;
 import helper.Review;
 
