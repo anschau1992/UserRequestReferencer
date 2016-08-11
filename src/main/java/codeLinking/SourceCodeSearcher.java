@@ -66,9 +66,9 @@ public class SourceCodeSearcher implements Constants{
             }
 
 
-            Query query = parser.parse(review.getReviewText());
+            //Query query = parser.parse(review.getReviewText());
 
-            TopDocs hits = searcher.search(query, SEARCH_RESULT_NUMB);
+            TopDocs hits = searcher.search(bq, SEARCH_RESULT_NUMB);
 
             //print result into File
             fileCreator.writeScore(review, hits, searcher);
@@ -84,6 +84,7 @@ public class SourceCodeSearcher implements Constants{
         }
         System.out.println("Succeccfully finished File-linking for all reviews");
         fileCreator.closeWriter();
+        reader.close();
     }
 
     /**

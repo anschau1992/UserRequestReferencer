@@ -31,6 +31,10 @@ public class RecursiveFileReader {
 
         sci.indexFile(javaFiles, fileName, true);
         sci.indexFile(xmlFiles, fileName, false);
+
+        //empty the lists
+        javaFiles = new ArrayList<File>();
+        xmlFiles = new ArrayList<File>();
     }
 
     private void filter(File[] files) throws IOException {

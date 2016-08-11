@@ -17,8 +17,11 @@ public class ScoreFileCreator {
 
     public void writeScore(Review review, TopDocs hits, IndexSearcher searcher) throws IOException {
 
-        writer.println("DB-Id: " + review.getId() + "\t Review: " + review.getReviewText());
-        writer.println("Preclassification: " + review.getPreClassification() + "\t Subclassification: " + review.getSubClassification());
+        writer.println("ID;App;Preclassification;Subclassification; Review");
+        writer.println(review.getId() + ";"+ review.getApp() + ";"
+                + review.getPreClassification() + ";" + review.getSubClassification() + ";"
+                + review.getReviewText() + ";");
+
         for(ScoreDoc scoreDoc: hits.scoreDocs) {
             Document doc = searcher.doc(scoreDoc.doc);
             writer.println(doc.get("id"));

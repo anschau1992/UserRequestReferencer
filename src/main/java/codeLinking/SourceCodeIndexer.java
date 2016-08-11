@@ -31,6 +31,7 @@ public class SourceCodeIndexer implements Constants {
             System.out.println("Creating folder '/" + INDEX_FOLDER_PATH + "'/" + fileName);
             new File(ZIP_FOLDER_PATH + "/" + fileName).mkdirs();
         }
+        System.out.println("Indexing " + fileName);
         Path path = Paths.get(INDEX_FOLDER_PATH + "/" + fileName);
         Directory directory = new SimpleFSDirectory(path);
 
@@ -43,8 +44,6 @@ public class SourceCodeIndexer implements Constants {
 
         IndexCategorisator categorisator = new IndexCategorisator();
         for (File file : files) {
-            System.out.println("Indexing " + file.getPath());
-
             String content = new String(Files.readAllBytes(Paths.get(file.getPath())));
             String id = file.getPath().substring(SOURCE_CODE_PATH.length());
 
@@ -86,13 +85,13 @@ public class SourceCodeIndexer implements Constants {
     }
 
     private IndexWriter getJavaWriter(Directory directory) throws IOException {
-        CharArraySet stopWords = getStopWords("./src/main/java/javaStopList.csv");
+        CharArraySet stopWords = getStopWords("./src/main/java/codeLinking/javaStopList.csv");
         IndexWriterConfig config = new IndexWriterConfig(new JavaCodeAnalyzer(stopWords));
         return new IndexWriter(directory, config);
     }
 
     private IndexWriter getXMLWriter(Directory directory) throws IOException {
-        CharArraySet stopWords = getStopWords("./src/main/java/xmlStopList.csv");
+        CharArraySet stopWords = getStopWords("./src/main/java/codeLinking/xmlStopList.csv");
         IndexWriterConfig config = new IndexWriterConfig(new XMLCodeAnalyzer());
         return new IndexWriter(directory, config);
     }

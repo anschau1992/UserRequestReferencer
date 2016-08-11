@@ -46,6 +46,10 @@ public class Review {
         return this.reviewAuthor;
     }
 
+    public void setReviewAuthor(String reviewAuthor) {
+        this.reviewAuthor = reviewAuthor;
+    }
+
     public String getReviewText() {
         return this.reviewText;
     }
@@ -92,6 +96,10 @@ public class Review {
 
     public String getAppVersion() {
         return appVersion;
+    }
+
+    public void setAppVersion(String appVersion) {
+        this.appVersion = appVersion;
     }
 
     public String getId() {

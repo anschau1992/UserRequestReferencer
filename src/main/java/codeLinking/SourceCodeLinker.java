@@ -4,6 +4,7 @@ import com.mongodb.*;
 import helper.Constants;
 import helper.Review;
 import org.apache.lucene.queryparser.classic.ParseException;
+import preclassification.PreClassification;
 
 import java.io.File;
 import java.io.IOException;
@@ -43,7 +44,6 @@ public class SourceCodeLinker implements Constants {
         }
 
 
-        //TODO foreach review in linkingReviews --> preprocessing with narrow goal-folders down
         SourceCodeSearcher sourceCodeSearcher = new SourceCodeSearcher();
         for (String appName: appNames) {
             String fileName = appName.replaceAll(" ", "_").toLowerCase();

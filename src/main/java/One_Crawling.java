@@ -149,7 +149,7 @@ public  class One_Crawling implements Constants {
             System.exit(0);
         }
 
-        if(!args[2].equals("test") && !args[1].equals("prod")) {
+        if(!args[2].equals("test") && !args[2].equals("prod")) {
             System.out.println("Wrong mode! Use one of the following as third argument:");
             System.out.println("\t test, prod");
             System.exit(0);
