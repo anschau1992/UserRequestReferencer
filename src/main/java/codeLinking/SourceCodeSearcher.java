@@ -90,7 +90,7 @@ public class SourceCodeSearcher implements Constants{
     /**
      * Decides a IndexCategory based on the Classification of a review.
      * This will be used for a boost on the corresponding files in the index
-     * @param review
+     * @param reviewC
      * @return
      */
     private IndexCategory defineIndexCategory(Review review) {
@@ -99,7 +99,7 @@ public class SourceCodeSearcher implements Constants{
 
         // Subclass UI ==> 'res'
         if(subclassification.equals(SUBCLASS_USAGE.UI.toString())) {
-            return  IndexCategory.RESSOURCES;
+            return  IndexCategory.UI;
 
         // Preclass 'RESSOURCES' ==> 'CONTENT_PROVIDER'
         } else if (preClassification == PreClassification.RESSOURCES){

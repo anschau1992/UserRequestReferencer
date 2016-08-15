@@ -34,6 +34,16 @@ public class StanfordNLP {
         lp = LexicalizedParser.loadModel(parserModel);
     }
 
+    /**
+     * Gives a number, which indicates the sentimentScore of a sentence as follows:
+     * 0:   very negative
+     * 1:   negative
+     * 2:   neutral
+     * 3:   positive
+     * 4:   very positive
+     * @param text the sentence to examine
+     * @return sentimentScore
+     */
     public int getSentimentScore(String text) {
         annotation = pipeline.process(text);
 

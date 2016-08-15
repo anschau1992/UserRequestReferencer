@@ -56,7 +56,6 @@ public class SourceCodeLinker implements Constants {
 
     /**
      * hashes the reviews by App's, and filters the wrong subclassified out
-     *
      * @param reviews
      * @return a hash with List of reviews split by App-name
      */

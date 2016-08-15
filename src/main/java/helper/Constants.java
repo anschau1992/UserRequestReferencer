@@ -39,6 +39,9 @@ public interface Constants {
     String INDEXER_DIRECTORY = "./docs/vsm/index";
     String INDEXER_DIRECTORY_TEST = "./docs/vsm/index_test";
 
+    //Subclassification
+    String SUBCLASS_FILE_PATH = "./subclass-result/";
+
     //SourceCodeLinker
     String GITHUBLINK_START = "https://github.com/";
     String GITHUB_ZIP = "/archive/master.zip";

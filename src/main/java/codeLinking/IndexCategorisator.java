@@ -10,8 +10,8 @@ public class IndexCategorisator {
      * @return IndexCategory
      */
     public IndexCategory categorise(String id, String content) {
-        if(id.contains("/res/") || id.contains("/ressources/")) {
-            return IndexCategory.RESSOURCES;
+        if(id.contains("/res/") || id.contains("/resources/") || id.contains("/ui") || id.contains("Activity")) {
+            return IndexCategory.UI;
         }else if (id.contains("AndroidManifest")) {
             return IndexCategory.ANDROID_MAINFEST;
         } else if (content.contains("service") || id.contains("Service")) {

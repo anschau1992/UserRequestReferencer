@@ -1,271 +1,7 @@
 ID;App;Preclassification;Subclassification; Review
-57a077045623ed07ff09d71f;A Comic Viewer;COMPATIBILITY;DEVICE;Nice app, just an improvement to be perfect It's easy to display a read, but when opening the options its hard since new phones does not have that phone. I have to click back and most of times close the app.;
-/a_comic_viewer/droid-comic-viewer-master/AndroidManifest.xml
-/a_comic_viewer/droid-comic-viewer-master/src/com/github/junrar/Volume.java
-/a_comic_viewer/droid-comic-viewer-master/src/com/github/junrar/impl/FileVolume.java
-/a_comic_viewer/droid-comic-viewer-master/src/com/github/junrar/VolumeManager.java
-/a_comic_viewer/droid-comic-viewer-master/src/net/robotmedia/acv/ui/ComicViewerActivity.java
-+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
-
-ID;App;Preclassification;Subclassification; Review
-57a078b75623ed07ff09d8e2;A Comic Viewer;COMPATIBILITY;HARDWARE;No preloading Takes time to load every image when reading in sd card, recommend Perfect Viewer by RookieStudio over this app;
-/a_comic_viewer/droid-comic-viewer-master/AndroidManifest.xml
-/a_comic_viewer/droid-comic-viewer-master/src/net/robotmedia/acv/ui/ACVDialogFactory.java
-/a_comic_viewer/droid-comic-viewer-master/res/values/strings.xml
-/a_comic_viewer/droid-comic-viewer-master/src/net/robotmedia/acv/ui/ComicViewerActivity.java
-/a_comic_viewer/droid-comic-viewer-master/src/net/robotmedia/acv/ui/widget/ComicView.java
-+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
-
-ID;App;Preclassification;Subclassification; Review
-57a101555623ed112dfbe306;A Comic Viewer;COMPATIBILITY;HARDWARE;SD Card Doesn't see the memory card where comics are stored so useless to me.;
-/a_comic_viewer/droid-comic-viewer-master/AndroidManifest.xml
-/a_comic_viewer/droid-comic-viewer-master/res/values/strings.xml
-/a_comic_viewer/droid-comic-viewer-master/src/net/robotmedia/acv/ui/settings/tablet/PremiumSettingsFragment.java
-/a_comic_viewer/droid-comic-viewer-master/src/net/robotmedia/acv/ui/SDBrowserActivity.java
-/a_comic_viewer/droid-comic-viewer-master/src/net/robotmedia/acv/ui/widget/SuperImageView.java
-+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
-
-ID;App;Preclassification;Subclassification; Review
-57a101555623ed112dfbe30a;A Comic Viewer;COMPATIBILITY;HARDWARE;Best Offline Reader I've tried many comic readers to read the comics saved to my sd card and this is the best by far.;
-/a_comic_viewer/droid-comic-viewer-master/AndroidManifest.xml
-/a_comic_viewer/droid-comic-viewer-master/src/net/robotmedia/acv/utils/StringUtils.java
-/a_comic_viewer/droid-comic-viewer-master/src/net/robotmedia/acv/logic/ServiceManager.java
-/a_comic_viewer/droid-comic-viewer-master/src/net/robotmedia/acv/comic/ZipComic.java
-/a_comic_viewer/droid-comic-viewer-master/src/net/robotmedia/acv/ui/ComicViewerActivity.java
-+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
-
-ID;App;Preclassification;Subclassification; Review
-57a079b25623ed07ff09da6e;MultiPicture Live Wallpaper;COMPATIBILITY;ANDROID_VERSION;Doesn't work Doesn't work on Android 5.1;
-/multipicture_live_wallpaper/MultiPictureLiveWallpaper-master/variant/plugin-lib/sample/AndroidManifest.xml
-/multipicture_live_wallpaper/MultiPictureLiveWallpaper-master/AndroidManifest.xml
-/multipicture_live_wallpaper/MultiPictureLiveWallpaper-master/variant/dnt/AndroidManifest.xml
-/multipicture_live_wallpaper/MultiPictureLiveWallpaper-master/variant/free/AndroidManifest.xml
-/multipicture_live_wallpaper/MultiPictureLiveWallpaper-master/variant/plugin-lib/sample/build.xml
-+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
-
-ID;App;Preclassification;Subclassification; Review
-57a07a405623ed07ff09db2c;MultiPicture Live Wallpaper;COMPATIBILITY;HARDWARE;Good app but... It doesn't works all the time. Sometimes it doesn't want to get a picture from the SD card. :/;
-/multipicture_live_wallpaper/MultiPictureLiveWallpaper-master/AndroidManifest.xml
-/multipicture_live_wallpaper/MultiPictureLiveWallpaper-master/variant/dnt/AndroidManifest.xml
-/multipicture_live_wallpaper/MultiPictureLiveWallpaper-master/variant/free/AndroidManifest.xml
-/multipicture_live_wallpaper/MultiPictureLiveWallpaper-master/variant/plugin-lib/sample/AndroidManifest.xml
-/multipicture_live_wallpaper/MultiPictureLiveWallpaper-master/src/org/tamanegi/wallpaper/multipicture/plugin/LazyPickService.java
-+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
-
-ID;App;Preclassification;Subclassification; Review
-57a101555623ed112dfbe305;MultiPicture Live Wallpaper;COMPATIBILITY;HARDWARE;Works well with pictures from SD Memory card too Good LWP slideshow. Samsung Galaxy S4 Active with Android 4.4.2;
-/multipicture_live_wallpaper/MultiPictureLiveWallpaper-master/AndroidManifest.xml
-/multipicture_live_wallpaper/MultiPictureLiveWallpaper-master/variant/dnt/AndroidManifest.xml
-/multipicture_live_wallpaper/MultiPictureLiveWallpaper-master/variant/free/AndroidManifest.xml
-/multipicture_live_wallpaper/MultiPictureLiveWallpaper-master/variant/plugin-lib/sample/AndroidManifest.xml
-/multipicture_live_wallpaper/MultiPictureLiveWallpaper-master/src/org/tamanegi/wallpaper/multipicture/plugin/PictureContentInfo.java
-+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
-
-ID;App;Preclassification;Subclassification; Review
-57a0805d5623ed091048e5ad;Calculator;COMPATIBILITY;DEVICE;Simple app, Amazing features I love this calculator. Some may think "how can one calculator be superior to the rest?", as I once did. However, I quickly realized just how when I went in search of a calculator that is enhanced for Android Wear. This calculator is the perfect answer for my needs, with a full-featured Wear app. It is clean, simple, uncluttered and similar to the stock/AOSP calculator app. The difference is in the expanded features, which are tucked nicely behind a few simple gestures. The floating calculator is genius!!!;
-/calculator/Calculator-lollipop/FloatingView/src/main/AndroidManifest.xml
-/calculator/Calculator-lollipop/GDK-ProgressBar/src/main/AndroidManifest.xml
-/calculator/Calculator-lollipop/ThemeEngine/src/main/AndroidManifest.xml
-/calculator/Calculator-lollipop/glass/src/main/AndroidManifest.xml
-/calculator/Calculator-lollipop/wear/src/main/AndroidManifest.xml
-+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
-
-ID;App;Preclassification;Subclassification; Review
-57a08abe5623ed0942ed7eca;Financius - Expense Manager;COMPATIBILITY;HARDWARE;Beautiful app, works great! Would love to see a widget for this, maybe even Android wear support. Absolutely fantastic app though!;
-/financius_-_expense_manager/financius-public-master/financius/src/main/AndroidManifest.xml
-/financius_-_expense_manager/financius-public-master/financius/src/main/java/com/code44/finance/services/StartupService.java
-/financius_-_expense_manager/financius-public-master/financius/src/main/java/com/code44/finance/ui/BaseFragment.java
-/financius_-_expense_manager/financius-public-master/financius/src/main/java/com/code44/finance/ui/common/BaseActivity.java
-/financius_-_expense_manager/financius-public-master/financius/src/main/java/com/code44/finance/modules/AppModule.java
-+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
-
-ID;App;Preclassification;Subclassification; Review
-57a08be45623ed0942ed7fc0;2048;COMPATIBILITY;ANDROID_VERSION;Keeps crashing Since I upgraded my android this game keeps crashing.;
-/2048/2048-android-master/AndroidManifest.xml
-/2048/2048-android-master/src/com/uberspot/a2048/MainActivity.java
-/2048/2048-android-master/res/menu/main.xml
-/2048/2048-android-master/res/values/dimens.xml
-/2048/2048-android-master/res/layout/activity_main.xml
-+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
-
-ID;App;Preclassification;Subclassification; Review
-57a08cd85623ed0942ed8122;Last.fm;COMPATIBILITY;ANDROID_VERSION;Used to work perfectly, now won't change the current scrobbling track unless the screen is on. Using Play Music on S6 Edge+ running marshmallow;
-/last.fm/lastfm-android-master/app/AndroidManifest.xml
-/last.fm/lastfm-android-master/LastFmAuthTest/AndroidManifest.xml
-/last.fm/lastfm-android-master/library/AndroidManifest.xml
-/last.fm/lastfm-android-master/app/src/fm/last/android/scrobbler/ScrobblerService.java
-/last.fm/lastfm-android-master/app/src/fm/last/android/player/RadioPlayerService.java
-+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
-
-ID;App;Preclassification;Subclassification; Review
-57a08cf95623ed0942ed8158;Last.fm;COMPATIBILITY;ANDROID_VERSION;Force closes every single time on Nexus 5x running Android 6. Can't even open it anymore. Appears to be scrobbling fine still though.;
-/last.fm/lastfm-android-master/library/AndroidManifest.xml
-/last.fm/lastfm-android-master/LastFmAuthTest/AndroidManifest.xml
-/last.fm/lastfm-android-master/app/AndroidManifest.xml
-/last.fm/lastfm-android-master/app/src/fm/last/android/utils/Rotate3dAnimation.java
-/last.fm/lastfm-android-master/app/src/fm/last/android/player/RadioPlayerService.java
-+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
-
-ID;App;Preclassification;Subclassification; Review
-57a08f005623ed0942ed83f7;Muzei Live Wallpaper;COMPATIBILITY;ANDROID_VERSION;Android N Not working on Android N beta;
-/muzei_live_wallpaper/muzei-master/example-contract-widget/src/main/AndroidManifest.xml
-/muzei_live_wallpaper/muzei-master/android-client-common/src/main/AndroidManifest.xml
-/muzei_live_wallpaper/muzei-master/source-featured-art/src/main/AndroidManifest.xml
-/muzei_live_wallpaper/muzei-master/example-source-500px/src/main/AndroidManifest.xml
-/muzei_live_wallpaper/muzei-master/example-watchface/src/main/AndroidManifest.xml
-+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
-
-ID;App;Preclassification;Subclassification; Review
-57a08f465623ed0942ed8450;Muzei Live Wallpaper;COMPATIBILITY;ANDROID_VERSION;Not working on marshmallow This used to work great but since upgrading to marshmallow it won't auto cycle through new wallpapers on multiple different extensions. It's stuck until I open the app or reinstall the extensions.;
-/muzei_live_wallpaper/muzei-master/main/src/main/AndroidManifest.xml
-/muzei_live_wallpaper/muzei-master/example-contract-widget/src/main/AndroidManifest.xml
-/muzei_live_wallpaper/muzei-master/android-client-common/src/main/AndroidManifest.xml
-/muzei_live_wallpaper/muzei-master/example-source-500px/src/main/AndroidManifest.xml
-/muzei_live_wallpaper/muzei-master/example-watchface/src/main/AndroidManifest.xml
-+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
-
-ID;App;Preclassification;Subclassification; Review
-57a10a335623ed119350d09c;Autostarts;COMPATIBILITY;DEVICE;Does not detect root on marshmallow I really like this application when it works to disable event conditions that start apps. Unfortunately it no longer detects root on my Galaxy S7 with systemless root su 2.71 or 2.68. Please make this compatible.;
-/autostarts/android-autostarts-master/AndroidManifest.xml
-/autostarts/android-autostarts-master/src/com/elsdoerfer/android/autostarts/ToggleTool.java
-/autostarts/android-autostarts-master/src/com/elsdoerfer/android/autostarts/ToggleService.java
-/autostarts/android-autostarts-master/src/com/elsdoerfer/android/autostarts/Utils.java
-/autostarts/android-autostarts-master/src/com/stericson/RootTools/RootTools.java
-+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
-
-ID;App;Preclassification;Subclassification; Review
-57a10a3e5623ed119350d09e;Autostarts;COMPATIBILITY;DEVICE;developer abandoned does not work on recent devices. developer abandoned this app back in 2014. do not buy.;
-/autostarts/android-autostarts-master/AndroidManifest.xml
-/autostarts/android-autostarts-master/src/com/elsdoerfer/android/autostarts/ListActivity.java
-/autostarts/android-autostarts-master/res/values/help.xml
-/autostarts/android-autostarts-master/src/com/stericson/RootTools/internal/RootToolsInternalMethods.java
-/autostarts/android-autostarts-master/src/com/elsdoerfer/android/autostarts/ReceiverReader.java
-+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
-
-ID;App;Preclassification;Subclassification; Review
-57a10a3f5623ed119350d09f;Autostarts;COMPATIBILITY;DEVICE;Overall, great app to have and use. lately i'm having a little problem. I'm using an HTC One M9 and its rooted but when I got to disable something. the app isn't letting me. I guess it is telling me that I don't have root when I know I do. has anyone experienced this lately?;
-/autostarts/android-autostarts-master/AndroidManifest.xml
-/autostarts/android-autostarts-master/src/com/elsdoerfer/android/autostarts/ReceiverReader.java
-/autostarts/android-autostarts-master/src/com/elsdoerfer/android/autostarts/ToggleTool.java
-/autostarts/android-autostarts-master/src/com/elsdoerfer/android/autostarts/LoadTask.java
-/autostarts/android-autostarts-master/src/com/elsdoerfer/android/autostarts/ListActivity.java
-+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
-
-ID;App;Preclassification;Subclassification; Review
-57a094565623ed09ac762796;Turbo Editor ( Text Editor );COMPATIBILITY;HARDWARE;Probably the only code editor that saves to the external sd card on lollipop;
-/turbo_editor_(_text_editor_)/turbo-editor-master/libraries/sharedCode/src/main/AndroidManifest.xml
-/turbo_editor_(_text_editor_)/turbo-editor-master/app/src/main/AndroidManifest.xml
-/turbo_editor_(_text_editor_)/turbo-editor-master/app-pro/src/main/AndroidManifest.xml
-/turbo_editor_(_text_editor_)/turbo-editor-master/libraries/FloatingActionButton/AndroidManifest.xml
-/turbo_editor_(_text_editor_)/turbo-editor-master/libraries/sharedCode/src/main/java/com/spazedog/lib/rootfw4/Shell.java
-+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
-
-ID;App;Preclassification;Subclassification; Review
-57a0948c5623ed09ac7627d2;Turbo Editor ( Text Editor );COMPATIBILITY;HARDWARE;I like it but it has a few bugs Whenever I go to open a file, it defaults to the app's storage directory instead of the main SD card, i.e /sdcard/Android/data/blah blah, but still lists the folders that are in /sdcard. When I then try and open any of these folders there is nothing in them. This is an irritating bug. Fix this and I will up the rating to 5 stars;
-/turbo_editor_(_text_editor_)/turbo-editor-master/app-pro/src/main/AndroidManifest.xml
-/turbo_editor_(_text_editor_)/turbo-editor-master/app/src/main/AndroidManifest.xml
-/turbo_editor_(_text_editor_)/turbo-editor-master/libraries/sharedCode/src/main/AndroidManifest.xml
-/turbo_editor_(_text_editor_)/turbo-editor-master/libraries/FloatingActionButton/AndroidManifest.xml
-/turbo_editor_(_text_editor_)/turbo-editor-master/libraries/sharedCode/src/main/java/com/spazedog/lib/rootfw4/utils/Filesystem.java
-+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
-
-ID;App;Preclassification;Subclassification; Review
-57a094c35623ed09ac7627ef;Tweet Lanes;COMPATIBILITY;ANDROID_VERSION;Best app for Twitter There are bugs, close app when trying to open any media and can't watch any media. Hope to improve it soon with marshmallow version.;
-/tweet_lanes/TweetLanes-master/android/libraries/SocialNetLib/AndroidManifest.xml
-/tweet_lanes/TweetLanes-master/android/libraries/TweetLanesCore/AndroidManifest.xml
-/tweet_lanes/TweetLanes-master/android/client/AndroidManifest.xml
-/tweet_lanes/TweetLanes-master/android/clientbeta/AndroidManifest.xml
-/tweet_lanes/TweetLanes-master/android/libraries/SocialNetLib/src/org/tweetalib/android/model/TwitterMediaEntity.java
-+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
-
-ID;App;Preclassification;Subclassification; Review
-57a094c35623ed09ac7627f0;Tweet Lanes;COMPATIBILITY;ANDROID_VERSION;Not as good as it used to be Since I got my update to Marshmallow,it crashes every time I click on an image. Hope there will be a bug fix for this.;
-/tweet_lanes/TweetLanes-master/android/client/AndroidManifest.xml
-/tweet_lanes/TweetLanes-master/android/clientbeta/AndroidManifest.xml
-/tweet_lanes/TweetLanes-master/android/libraries/SocialNetLib/AndroidManifest.xml
-/tweet_lanes/TweetLanes-master/android/libraries/TweetLanesCore/AndroidManifest.xml
-/tweet_lanes/TweetLanes-master/android/libraries/SocialNetLib/src/org/asynctasktex/AsyncTaskEx.java
-+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
-
-ID;App;Preclassification;Subclassification; Review
-57a094c65623ed09ac7627f2;Tweet Lanes;COMPATIBILITY;ANDROID_VERSION;Great app, but not work well with Marshmallow It has issue with Marshmallow when click on picture. Otherwise a perfect app.;
-/tweet_lanes/TweetLanes-master/android/client/AndroidManifest.xml
-/tweet_lanes/TweetLanes-master/android/clientbeta/AndroidManifest.xml
-/tweet_lanes/TweetLanes-master/android/libraries/SocialNetLib/AndroidManifest.xml
-/tweet_lanes/TweetLanes-master/android/libraries/TweetLanesCore/AndroidManifest.xml
-/tweet_lanes/TweetLanes-master/android/libraries/TweetLanesCore/src/com/tweetlanes/android/core/view/ProfileActivity.java
-+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
-
-ID;App;Preclassification;Subclassification; Review
-57a094c85623ed09ac7627f7;Tweet Lanes;COMPATIBILITY;ANDROID_VERSION;Hasn't been updated since Oct 2014 Force closes when opening a picture with Marshmallow. If it could be fixed I'd definitely stay with this app, however this hasn't received an update for a year and a half now, and seems forgotten. Time to move on I guess, shame, loved this app. UPDATE: Tried the official Twitter app, it's rubbish!! Now using TwitPane and it's really good.;
-/tweet_lanes/TweetLanes-master/android/client/AndroidManifest.xml
-/tweet_lanes/TweetLanes-master/android/clientbeta/AndroidManifest.xml
-/tweet_lanes/TweetLanes-master/android/libraries/SocialNetLib/AndroidManifest.xml
-/tweet_lanes/TweetLanes-master/android/libraries/TweetLanesCore/AndroidManifest.xml
-/tweet_lanes/TweetLanes-master/android/libraries/TweetLanesCore/src/com/tweetlanes/android/core/widget/urlimageviewhelper/DiskLruCache.java
-+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
-
-ID;App;Preclassification;Subclassification; Review
-57a094cd5623ed09ac7627ff;Tweet Lanes;COMPATIBILITY;ANDROID_VERSION;Used to be the best Twitter client ever but since the Marshmallow upgrade it crashes everytime I click on a photo. Unfortunately the contact developer feature elicits no response and I'm now looking for a replacement. Very disappointing.;
-/tweet_lanes/TweetLanes-master/android/client/AndroidManifest.xml
-/tweet_lanes/TweetLanes-master/android/clientbeta/AndroidManifest.xml
-/tweet_lanes/TweetLanes-master/android/libraries/SocialNetLib/AndroidManifest.xml
-/tweet_lanes/TweetLanes-master/android/libraries/TweetLanesCore/AndroidManifest.xml
-/tweet_lanes/TweetLanes-master/android/libraries/TweetLanesCore/src/com/tweetlanes/android/core/widget/urlimageviewhelper/DiskLruCache.java
-+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
-
-ID;App;Preclassification;Subclassification; Review
-57a096f25623ed09ac7629e6;AcDisplay;COMPATIBILITY;ANDROID_VERSION;Great, but seems to get frozen by Android 6.0.1 I love this app, but since upgrade to 6.0.1, the app gets frozen if there are no new notifications. This means the displayed time can be up to 30mins behind the actual time. Can I deactivate this “freezing”?;
-/acdisplay/AcDisplay-master/project/app/src/main/AndroidManifest.xml
-/acdisplay/AcDisplay-master/project/app/src/main/java/com/achep/acdisplay/notifications/NotificationPresenter.java
-/acdisplay/AcDisplay-master/project/app/src/main/java/com/achep/base/notifications/NotificationSpace.java
-/acdisplay/AcDisplay-master/project/app/src/main/java/com/achep/acdisplay/ui/fragments/settings/KeyguardSettings.java
-/acdisplay/AcDisplay-master/project/app/src/main/java/com/achep/acdisplay/ui/activities/settings/BlacklistActivity.java
-+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
-
-ID;App;Preclassification;Subclassification; Review
-57a101555623ed112dfbe304;AcDisplay;COMPATIBILITY;DEVICE;Worked just fine for a long time until now and made me almost buy a new phone I used this app for a long time on my Asus Zenfone 5. About 1 month ago, mostly right after unlocking the screen and sometimes randomly, the display tilts/shifts with an absurd angle and goes grayscale and then shortly after phone freezes, makes me do a hard reset. I thought it was a phone problem because I hadn't installed a new app. But then I thought maybe it's about this app, because it happened mostly after unlocking. So i disabled it and the problem solved. Hope this gets fixed. Cheers;
-/acdisplay/AcDisplay-master/project/app/src/main/AndroidManifest.xml
-/acdisplay/AcDisplay-master/project/app/src/main/java/com/achep/acdisplay/services/KeyguardService.java
-/acdisplay/AcDisplay-master/project/app/src/main/java/com/achep/acdisplay/plugins/xposed/OverrideHomeButton.java
-/acdisplay/AcDisplay-master/project/app/src/main/java/com/achep/acdisplay/ui/activities/KeyguardActivity.java
-/acdisplay/AcDisplay-master/project/app/src/main/java/uk/co/jarofgreen/lib/ShakeDetector.java
-+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
-
-ID;App;Preclassification;Subclassification; Review
-57a09ce65623ed09ff6db94f;OS Monitor;COMPATIBILITY;ANDROID_VERSION;Not compatible with android N update Shows everything you need to see what your phone is doing. With older versions of the os but nothing working after os update.;
-/os_monitor/OSMonitor-master/app/src/main/AndroidManifest.xml
-/os_monitor/OSMonitor-master/app/src/main/java/com/google/flatbuffers/FlatBufferBuilder.java
-/os_monitor/OSMonitor-master/app/src/main/java/com/google/flatbuffers/Table.java
-/os_monitor/OSMonitor-master/app/src/main/java/com/google/flatbuffers/Constants.java
-/os_monitor/OSMonitor-master/app/src/main/java/com/google/flatbuffers/Struct.java
-+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
-
-ID;App;Preclassification;Subclassification; Review
-57a101555623ed112dfbe307;QKSMS - Open Source SMS & MMS;COMPATIBILITY;HARDWARE;Dual sim? Wouldn't it be more convenient if we can choose from which sim card we like to send our messages from? This app is still great, though, but only 4 stars for now.;
-/qksms_-_open_source_sms_&_mms/qksms-master/QKSMS/src/main/AndroidManifest.xml
-/qksms_-_open_source_sms_&_mms/qksms-master/QKSMS/src/main/java/com/android/internal/telephony/PhoneConstants.java
-/qksms_-_open_source_sms_&_mms/qksms-master/QKSMS/src/main/java/android/net/ConnectivityManager.java
-/qksms_-_open_source_sms_&_mms/qksms-master/QKSMS/src/main/java/com/moez/QKSMS/mmssms/Transaction.java
-/qksms_-_open_source_sms_&_mms/qksms-master/QKSMS/src/main/java/com/moez/QKSMS/common/utils/MessageUtils.java
-+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
-
-ID;App;Preclassification;Subclassification; Review
-57a101555623ed112dfbe309;Terminal Emulator for Android;COMPATIBILITY;HARDWARE;problem with sd card path hello please fix it when ever i run commands it tells there is no specific path exist in sd card tho it was fully there;
-/terminal_emulator_for_android/Android-Terminal-Emulator-master/samples/pathbroadcasts/src/main/AndroidManifest.xml
-/terminal_emulator_for_android/Android-Terminal-Emulator-master/emulatorview/src/main/AndroidManifest.xml
-/terminal_emulator_for_android/Android-Terminal-Emulator-master/libtermexec/src/main/AndroidManifest.xml
-/terminal_emulator_for_android/Android-Terminal-Emulator-master/samples/intents/src/main/AndroidManifest.xml
-/terminal_emulator_for_android/Android-Terminal-Emulator-master/samples/telnet/src/main/AndroidManifest.xml
-+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
-
-ID;App;Preclassification;Subclassification; Review
-57a101555623ed112dfbe30f;Device Control [root];COMPATIBILITY;HARDWARE;Ultimate Control Hahaha &gt,:) Just one last thing. Hope you guys get a peek on this suggestion of mine... In the App Manager when you tap on the app? Can you put a Move to SD Card and Vice Versa so i dont need to go to my settings ?;
-/device_control_[root]/DeviceControl-master/app/src/main/AndroidManifest.xml
-/device_control_[root]/DeviceControl-master/modules/ExternalSources/src/main/AndroidManifest.xml
-/device_control_[root]/DeviceControl-master/app/src/main/java/org/namelessrom/devicecontrol/preferences/hardware/DisplayGamma.java
-/device_control_[root]/DeviceControl-master/app/src/main/java/org/namelessrom/devicecontrol/activities/FilePickerActivity.java
-/device_control_[root]/DeviceControl-master/app/src/main/java/org/namelessrom/devicecontrol/modules/appmanager/permissions/AppSecurityPermissions.java
+57a074075623ed07ff09d3fc;Duck Duck GO;PROTECTION;PRIVACY;But……….. ⚠️ Personal Data Shared;
+/duck_duck_go/ddg-android-master/AndroidManifest.xml
+/duck_duck_go/ddg-android-master/src/se/johanhil/duckduckgo/Help.java
 +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 
 ID;App;Preclassification;Subclassification; Review
@@ -275,6 +11,15 @@ ID;App;Preclassification;Subclassification; Review
 /duck_duck_go/ddg-android-master/src/se/johanhil/duckduckgo/DummyProvider.java
 /duck_duck_go/ddg-android-master/src/se/johanhil/duckduckgo/DuckDuckGo.java
 /duck_duck_go/ddg-android-master/src/se/johanhil/duckduckgo/DuckDuckGoSettings.java
++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+ID;App;Preclassification;Subclassification; Review
+57a074265623ed07ff09d432;Duck Duck GO;PROTECTION;PRIVACY;Dare I use anything but chrome? Yes, DuckDuckGo offers a great comparable search engine yes there are many featured Google products that are much better but at least a discreet search option exist when you need the privacy;
+/duck_duck_go/ddg-android-master/AndroidManifest.xml
+/duck_duck_go/ddg-android-master/src/se/johanhil/duckduckgo/DuckDuckGo.java
+/duck_duck_go/ddg-android-master/src/se/johanhil/duckduckgo/DummyProvider.java
+/duck_duck_go/ddg-android-master/src/se/johanhil/duckduckgo/DuckDuckGoSettings.java
+/duck_duck_go/ddg-android-master/src/se/johanhil/duckduckgo/Help.java
 +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 
 ID;App;Preclassification;Subclassification; Review
@@ -341,39 +86,28 @@ ID;App;Preclassification;Subclassification; Review
 +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 
 ID;App;Preclassification;Subclassification; Review
-57a08c015623ed0942ed7fd3;Simon Tatham's Puzzles;PROTECTION;PRIVACY;I spend hours on these Free, no ads, doesn't use my data, and fun!;
-/simon_tatham's_puzzles/sgtpuzzles-master/app/src/main/AndroidManifest.xml
-/simon_tatham's_puzzles/sgtpuzzles-master/app/src/androidTest/AndroidManifest.xml
-/simon_tatham's_puzzles/sgtpuzzles-master/app/src/main/java/name/boyle/chris/sgtpuzzles/GameView.java
-/simon_tatham's_puzzles/sgtpuzzles-master/app/src/main/java/name/boyle/chris/sgtpuzzles/GamePlay.java
-/simon_tatham's_puzzles/sgtpuzzles-master/app/src/main/java/name/boyle/chris/sgtpuzzles/SmallKeyboard.java
+57a0898a5623ed0942ed7d72;Signal Private Messenger;PROTECTION;SECURITY;As described Private secure encrypted messages;
+/signal_private_messenger/Signal-Android-master/src/org/thoughtcrime/securesms/contacts/avatars/ContactPhoto.java
+/signal_private_messenger/Signal-Android-master/src/org/thoughtcrime/securesms/contacts/avatars/BitmapContactPhoto.java
+/signal_private_messenger/Signal-Android-master/src/org/thoughtcrime/securesms/contacts/avatars/TransparentContactPhoto.java
+/signal_private_messenger/Signal-Android-master/src/org/thoughtcrime/securesms/contacts/avatars/GeneratedContactPhoto.java
+/signal_private_messenger/Signal-Android-master/src/org/thoughtcrime/securesms/attachments/PointerAttachment.java
 +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 
 ID;App;Preclassification;Subclassification; Review
-57a08f915623ed0942ed84af;Muzei Live Wallpaper;PROTECTION;PRIVACY;Should've implemented run-time permissions by now.;
-/muzei_live_wallpaper/muzei-master/android-client-common/src/main/AndroidManifest.xml
-/muzei_live_wallpaper/muzei-master/example-contract-widget/src/main/AndroidManifest.xml
-/muzei_live_wallpaper/muzei-master/example-source-500px/src/main/AndroidManifest.xml
-/muzei_live_wallpaper/muzei-master/example-watchface/src/main/AndroidManifest.xml
-/muzei_live_wallpaper/muzei-master/main/src/main/AndroidManifest.xml
+57a08a615623ed0942ed7e5b;Signal Private Messenger;PROTECTION;SECURITY;Safe and secure Very good for communication;
+/signal_private_messenger/Signal-Android-master/src/org/thoughtcrime/securesms/components/camera/CameraUtils.java
+/signal_private_messenger/Signal-Android-master/src/org/thoughtcrime/securesms/util/Base64.java
+/signal_private_messenger/Signal-Android-master/src/org/thoughtcrime/securesms/crypto/PRNGFixes.java
+/signal_private_messenger/Signal-Android-master/src/org/thoughtcrime/securesms/mms/RoundedCorners.java
+/signal_private_messenger/Signal-Android-master/src/org/thoughtcrime/securesms/util/task/SnackbarAsyncTask.java
 +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 
 ID;App;Preclassification;Subclassification; Review
-57a09ce35623ed09ff6db94b;OS Monitor;PROTECTION;PRIVACY;FAILS to work! Fails to work every time that I try starting it...with it instead just showing zeros for nearly everything. I've inquired with them several times about it, yet they've never responded. I'm rooted, and ALL other similar process-related Apps work correctly such as 3D Process Monitor, so why won't this one work???! VERY DISAPPOINTING! (NOTE: This App ONLY fails like this when its settings are set for it to "Enable Root Privilege", otherwise it works okay. It is "Granted" root but repeatedly keeps asking!);
-/os_monitor/OSMonitor-master/app/src/main/AndroidManifest.xml
-/os_monitor/OSMonitor-master/app/src/main/java/com/google/flatbuffers/FlatBufferBuilder.java
-/os_monitor/OSMonitor-master/app/src/main/java/com/google/flatbuffers/Table.java
-/os_monitor/OSMonitor-master/app/src/main/java/com/eolwral/osmonitor/util/CoreUtil.java
-/os_monitor/OSMonitor-master/app/src/main/java/com/eolwral/osmonitor/ui/ProcessFragment.java
-+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
-
-ID;App;Preclassification;Subclassification; Review
-57a09d165623ed09ff6db988;OS Monitor;PROTECTION;PRIVACY;A must have This is a must have app in my opinion. It shows you all your apps and what they are up to (hardware usage and Internet usage.) I also appreciate the developer(s) for making this advertisement free and it doesn't need crazy permissions.;
-/os_monitor/OSMonitor-master/app/src/main/AndroidManifest.xml
-/os_monitor/OSMonitor-master/app/src/main/java/com/google/flatbuffers/FlatBufferBuilder.java
-/os_monitor/OSMonitor-master/app/src/main/java/com/google/flatbuffers/Table.java
-/os_monitor/OSMonitor-master/app/src/main/java/com/google/flatbuffers/Constants.java
-/os_monitor/OSMonitor-master/app/src/main/java/com/google/flatbuffers/Struct.java
+57a0892f5623ed0942ed7cf4;Signal Private Messenger;PROTECTION;SECURITY;Good security;
+/signal_private_messenger/Signal-Android-master/src/org/thoughtcrime/securesms/components/camera/CameraUtils.java
+/signal_private_messenger/Signal-Android-master/src/org/thoughtcrime/securesms/crypto/PRNGFixes.java
+/signal_private_messenger/Signal-Android-master/src/org/thoughtcrime/redphone/RedPhoneService.java
 +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 
 ID;App;Preclassification;Subclassification; Review
@@ -401,6 +135,51 @@ ID;App;Preclassification;Subclassification; Review
 /signal_private_messenger/Signal-Android-master/src/org/thoughtcrime/securesms/crypto/PRNGFixes.java
 /signal_private_messenger/Signal-Android-master/src/org/thoughtcrime/redphone/signaling/signals/C2DMUnregistrationSignal.java
 /signal_private_messenger/Signal-Android-master/src/org/thoughtcrime/redphone/signaling/signals/C2DMRegistrationSignal.java
++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+ID;App;Preclassification;Subclassification; Review
+57a08c015623ed0942ed7fd3;Simon Tatham's Puzzles;PROTECTION;PRIVACY;I spend hours on these Free, no ads, doesn't use my data, and fun!;
+/simon_tatham's_puzzles/sgtpuzzles-master/app/src/main/AndroidManifest.xml
+/simon_tatham's_puzzles/sgtpuzzles-master/app/src/androidTest/AndroidManifest.xml
+/simon_tatham's_puzzles/sgtpuzzles-master/app/src/main/java/name/boyle/chris/sgtpuzzles/GameView.java
+/simon_tatham's_puzzles/sgtpuzzles-master/app/src/main/java/name/boyle/chris/sgtpuzzles/GamePlay.java
+/simon_tatham's_puzzles/sgtpuzzles-master/app/src/main/java/name/boyle/chris/sgtpuzzles/SmallKeyboard.java
++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+ID;App;Preclassification;Subclassification; Review
+57a08f915623ed0942ed84af;Muzei Live Wallpaper;PROTECTION;PRIVACY;Should've implemented run-time permissions by now.;
+/muzei_live_wallpaper/muzei-master/android-client-common/src/main/AndroidManifest.xml
+/muzei_live_wallpaper/muzei-master/example-contract-widget/src/main/AndroidManifest.xml
+/muzei_live_wallpaper/muzei-master/example-source-500px/src/main/AndroidManifest.xml
+/muzei_live_wallpaper/muzei-master/example-watchface/src/main/AndroidManifest.xml
+/muzei_live_wallpaper/muzei-master/main/src/main/AndroidManifest.xml
++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+ID;App;Preclassification;Subclassification; Review
+57a094945623ed09ac7627d9;Turbo Editor ( Text Editor );PROTECTION;PRIVACY;Simple and functional Thats how i like apps, without hundreds of permissions or functions but with exact the functions that are helpful and that you need;
+/turbo_editor_(_text_editor_)/turbo-editor-master/libraries/sharedCode/src/main/AndroidManifest.xml
+/turbo_editor_(_text_editor_)/turbo-editor-master/app/src/main/AndroidManifest.xml
+/turbo_editor_(_text_editor_)/turbo-editor-master/app-pro/src/main/AndroidManifest.xml
+/turbo_editor_(_text_editor_)/turbo-editor-master/libraries/FloatingActionButton/AndroidManifest.xml
+/turbo_editor_(_text_editor_)/turbo-editor-master/libraries/sharedCode/src/main/java/com/spazedog/lib/rootfw4/utils/Filesystem.java
++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+ID;App;Preclassification;Subclassification; Review
+57a09ce35623ed09ff6db94b;OS Monitor;PROTECTION;PRIVACY;FAILS to work! Fails to work every time that I try starting it...with it instead just showing zeros for nearly everything. I've inquired with them several times about it, yet they've never responded. I'm rooted, and ALL other similar process-related Apps work correctly such as 3D Process Monitor, so why won't this one work???! VERY DISAPPOINTING! (NOTE: This App ONLY fails like this when its settings are set for it to "Enable Root Privilege", otherwise it works okay. It is "Granted" root but repeatedly keeps asking!);
+/os_monitor/OSMonitor-master/app/src/main/AndroidManifest.xml
+/os_monitor/OSMonitor-master/app/src/main/java/com/google/flatbuffers/FlatBufferBuilder.java
+/os_monitor/OSMonitor-master/app/src/main/java/com/google/flatbuffers/Table.java
+/os_monitor/OSMonitor-master/app/src/main/java/com/eolwral/osmonitor/util/CoreUtil.java
+/os_monitor/OSMonitor-master/app/src/main/java/com/eolwral/osmonitor/ui/ProcessFragment.java
++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+ID;App;Preclassification;Subclassification; Review
+57a09d165623ed09ff6db988;OS Monitor;PROTECTION;PRIVACY;A must have This is a must have app in my opinion. It shows you all your apps and what they are up to (hardware usage and Internet usage.) I also appreciate the developer(s) for making this advertisement free and it doesn't need crazy permissions.;
+/os_monitor/OSMonitor-master/app/src/main/AndroidManifest.xml
+/os_monitor/OSMonitor-master/app/src/main/java/com/google/flatbuffers/FlatBufferBuilder.java
+/os_monitor/OSMonitor-master/app/src/main/java/com/google/flatbuffers/Table.java
+/os_monitor/OSMonitor-master/app/src/main/java/com/google/flatbuffers/Constants.java
+/os_monitor/OSMonitor-master/app/src/main/java/com/google/flatbuffers/Struct.java
 +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 
 ID;App;Preclassification;Subclassification; Review

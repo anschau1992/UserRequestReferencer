@@ -3,11 +3,13 @@ package subclassification;
 import helper.Constants;
 import helper.Review;
 
+import java.io.IOException;
 import java.util.List;
 import java.util.Map;
 
 public class SubClassComparer implements Constants {
-    public SubClassComparer() {
+    SubclassFileCreator fileCreator;
+    public SubClassComparer() throws IOException {
     }
 
     /**
@@ -16,9 +18,11 @@ public class SubClassComparer implements Constants {
      * @param reviews the reviews with the Weka result
      * @return review with new subclassifications
      */
-    public List<Review> compareWekaSubClass(List<Review> reviews) {
+    public List<Review> compareWekaSubClass(List<Review> reviews) throws IOException {
         double toClassify = 0;
         double correctClassified = 0;
+
+        fileCreator =  new SubclassFileCreator(SUBCLASS_FILE_PATH + reviews.get(0).getPreClassification().toString() + ".txt");
 
         for (Review review : reviews) {
             Map.Entry<String, Double> highestDistributionClass = getHighestNumbPosition(review.getSubClassFDistribution());
@@ -26,18 +30,21 @@ public class SubClassComparer implements Constants {
             if (review.getSubClassification().equals(ARFF_EMPTY_SIGN) || review.getSubClassification() == null) {
                 review.setWekaCorrectClassified(true);
                 review.setSubClassification(highestDistributionClass.getKey());
+                fileCreator.writeNewClassified(review, highestDistributionClass);
                 printNewSubclass(highestDistributionClass, review);
             } else {
                 toClassify++;
                 if (review.getSubClassification().equals(highestDistributionClass.getKey())) {
                     review.setWekaCorrectClassified(true);
                     correctClassified++;
+                    fileCreator.writeCorrectClassified(review);
                     System.out.println("====================================================================================================================");
                     System.out.println("Review: \"" + review.getReviewText() + "\"");
                     System.out.println("Correctly classified into subclass: " + review.getSubClassification());
                     System.out.println("====================================================================================================================");
                 } else {
                     review.setWekaCorrectClassified(false);
+                    fileCreator.writeWrongClassified(review, highestDistributionClass);
                     System.out.println("====================================================================================================================");
                     System.out.println("Review: \"" + review.getReviewText() + "\"");
                     System.out.println("Wrong classification:   Weka: " + highestDistributionClass.getKey() + "\t" + "DB:" + review.getSubClassification());
@@ -47,6 +54,8 @@ public class SubClassComparer implements Constants {
         }
 
         if (toClassify > 0.0) {
+            fileCreator.writeSummary(correctClassified, toClassify);
+            fileCreator.closeWriter();
             System.out.println("\n*****************************************************************************************************************************");
             System.out.println("Correct classified: " + (int) correctClassified + "\t Wrong classified: " + (int) (toClassify - correctClassified));
             System.out.println("Classification-Precision: " + (correctClassified / toClassify));

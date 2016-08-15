@@ -1,7 +1,7 @@
 package codeLinking;
 
 public enum IndexCategory {
-    RESSOURCES,
+    UI,
     SERVICE,
     CONTENT_PROVIDER,
     ANDROID_MAINFEST,
