@@ -2672,3 +2672,677 @@ ID;App;Preclassification;Subclassification; Review
 /amaze_file_manager/AmazeFileManager-master/src/main/java/com/amaze/filemanager/ui/views/Indicator.java
 +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 
+ID;App;Preclassification;Subclassification; Review
+57a0745a5623ed07ff09d496;Duck Duck GO;RESSOURCES;BATTERY;Why do we need Tor? To surf internet i need extra app to use,battery will drain so fast;
+/duck_duck_go/ddg-android-master/src/se/johanhil/duckduckgo/DuckDuckGo.java
+/duck_duck_go/ddg-android-master/src/se/johanhil/duckduckgo/DummyProvider.java
+/duck_duck_go/ddg-android-master/src/se/johanhil/duckduckgo/Help.java
+/duck_duck_go/ddg-android-master/src/se/johanhil/duckduckgo/DuckDuckGoSettings.java
+/duck_duck_go/ddg-android-master/AndroidManifest.xml
++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+ID;App;Preclassification;Subclassification; Review
+57a074895623ed07ff09d4cf;Xabber;RESSOURCES;BATTERY;Drains battery It's the top draining application on my phone, despite not using it most of the time. Makes it essentially unusable.;
+/xabber/xabber-android-master/xabber/src/main/java/com/xabber/android/data/notification/NotificationManager.java
+/xabber/xabber-android-master/xabber/src/main/java/com/xabber/android/data/account/AccountTable.java
+/xabber/xabber-android-master/xabber/src/main/java/com/xabber/android/data/message/phrase/PhraseTable.java
+/xabber/xabber-android-master/xabber/src/main/java/com/xabber/android/data/extension/file/FileUtils.java
+/xabber/xabber-android-master/xabber/src/main/java/com/xabber/android/data/extension/time/OnTimeReceivedListener.java
++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+ID;App;Preclassification;Subclassification; Review
+57a0749a5623ed07ff09d4e2;Xabber;RESSOURCES;BATTERY;Battery Drain off the charts! Tried to use this with Olark. The battery drain is mind blowing. Sucks my battery dry in 2 hours on my S6 Edge+ making the app useless. A shame.;
+/xabber/xabber-android-master/xabber/src/main/java/com/xabber/android/data/notification/NotificationManager.java
+/xabber/xabber-android-master/xabber/src/main/java/com/xabber/android/data/account/AccountTable.java
+/xabber/xabber-android-master/xabber/src/main/java/com/xabber/android/data/extension/file/FileUtils.java
+/xabber/xabber-android-master/xabber/src/main/java/com/xabber/android/data/message/phrase/PhraseTable.java
+/xabber/xabber-android-master/xabber/src/main/java/com/xabber/android/receiver/BootReceiver.java
++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+ID;App;Preclassification;Subclassification; Review
+57a076f75623ed07ff09d700;A Comic Viewer;RESSOURCES;MEMORY;Bi polar app... Update: After some years away from this app I decided to give it another go. Sad to see that after 4 years the same issues persist. Sill won't load certain comics after a few pages. Unbelievable. One minute I can read everything, the next I get "out of memory" prompts. What is that all about?;
+/a_comic_viewer/droid-comic-viewer-master/src/net/robotmedia/acv/logic/ShareViewTask.java
+/a_comic_viewer/droid-comic-viewer-master/src/net/robotmedia/acv/provider/DBHelper.java
+/a_comic_viewer/droid-comic-viewer-master/src/net/robotmedia/acv/provider/DBOpenHelper.java
+/a_comic_viewer/droid-comic-viewer-master/src/net/robotmedia/acv/provider/HistoryManager.java
+/a_comic_viewer/droid-comic-viewer-master/src/net/robotmedia/acv/logic/SetComicScreenAsTask.java
++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+ID;App;Preclassification;Subclassification; Review
+57a076f85623ed07ff09d703;A Comic Viewer;RESSOURCES;PERFORMANCE;No update in 4 years Crashes often. Keep looking for another reader;
+/a_comic_viewer/droid-comic-viewer-master/src/net/robotmedia/acv/adapter/RecentListBaseAdapter.java
+/a_comic_viewer/droid-comic-viewer-master/src/net/robotmedia/acv/logic/SetComicScreenAsTask.java
+/a_comic_viewer/droid-comic-viewer-master/src/net/robotmedia/acv/provider/DBOpenHelper.java
+/a_comic_viewer/droid-comic-viewer-master/src/net/robotmedia/acv/provider/HistoryManager.java
+/a_comic_viewer/droid-comic-viewer-master/src/net/robotmedia/acv/logic/ShareViewTask.java
++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+ID;App;Preclassification;Subclassification; Review
+57a076f85623ed07ff09d704;A Comic Viewer;RESSOURCES;PERFORMANCE;Crashed when going one page to another;
+/a_comic_viewer/droid-comic-viewer-master/src/net/robotmedia/acv/provider/DBHelper.java
+/a_comic_viewer/droid-comic-viewer-master/src/net/robotmedia/acv/provider/DBOpenHelper.java
+/a_comic_viewer/droid-comic-viewer-master/src/net/robotmedia/acv/provider/HistoryManager.java
+/a_comic_viewer/droid-comic-viewer-master/src/net/robotmedia/acv/logic/SetComicScreenAsTask.java
+/a_comic_viewer/droid-comic-viewer-master/src/net/robotmedia/acv/logic/ShareViewTask.java
++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+ID;App;Preclassification;Subclassification; Review
+57a076f85623ed07ff09d705;A Comic Viewer;RESSOURCES;MEMORY;Worthless Keeps saying not enough memory to open one single file. Others work just fine.;
+/a_comic_viewer/droid-comic-viewer-master/src/net/robotmedia/acv/provider/DBHelper.java
+/a_comic_viewer/droid-comic-viewer-master/src/net/robotmedia/acv/provider/DBOpenHelper.java
+/a_comic_viewer/droid-comic-viewer-master/src/net/robotmedia/acv/provider/HistoryManager.java
+/a_comic_viewer/droid-comic-viewer-master/src/net/robotmedia/acv/logic/ShareViewTask.java
+/a_comic_viewer/droid-comic-viewer-master/src/net/robotmedia/acv/logic/SetComicScreenAsTask.java
++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+ID;App;Preclassification;Subclassification; Review
+57a077045623ed07ff09d71e;A Comic Viewer;RESSOURCES;PERFORMANCE;Buggy, poor performance consistently, even on flagship phones. No excuse for a comic viewer that can't view comics.;
+/a_comic_viewer/droid-comic-viewer-master/src/net/robotmedia/acv/logic/ShareViewTask.java
+/a_comic_viewer/droid-comic-viewer-master/src/net/robotmedia/acv/logic/SetComicScreenAsTask.java
+/a_comic_viewer/droid-comic-viewer-master/src/net/robotmedia/acv/provider/DBOpenHelper.java
+/a_comic_viewer/droid-comic-viewer-master/src/net/robotmedia/acv/provider/DBHelper.java
+/a_comic_viewer/droid-comic-viewer-master/src/net/robotmedia/acv/provider/HistoryManager.java
++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+ID;App;Preclassification;Subclassification; Review
+57a0774d5623ed07ff09d794;A Comic Viewer;RESSOURCES;MEMORY;Great app, except for with CBR On most CBR files, it'll throw an error about being out of memory. Doesn't matter if you're on a device with 512mb, or 2gb of RAM, and will always do it on the same pages. Open it up in another reader, on the same device, zero problems. Long time user, but this has just got to be too much.;
+/a_comic_viewer/droid-comic-viewer-master/src/net/robotmedia/acv/provider/DBHelper.java
+/a_comic_viewer/droid-comic-viewer-master/src/net/robotmedia/acv/provider/HistoryManager.java
+/a_comic_viewer/droid-comic-viewer-master/src/net/robotmedia/acv/provider/DBOpenHelper.java
+/a_comic_viewer/droid-comic-viewer-master/src/net/robotmedia/acv/logic/ShareViewTask.java
+/a_comic_viewer/droid-comic-viewer-master/src/net/robotmedia/acv/logic/SetComicScreenAsTask.java
++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+ID;App;Preclassification;Subclassification; Review
+57a0778a5623ed07ff09d7ee;A Comic Viewer;RESSOURCES;MEMORY;Out of memory It used to work great, but now it runs out of memory when opening larger (10 meg+ files). Other comic readers open the comics fine. Also for ICS, it should remove the bottom bar when in full screen mode.;
+/a_comic_viewer/droid-comic-viewer-master/src/net/robotmedia/acv/logic/ShareViewTask.java
+/a_comic_viewer/droid-comic-viewer-master/src/net/robotmedia/acv/logic/SetComicScreenAsTask.java
+/a_comic_viewer/droid-comic-viewer-master/src/net/robotmedia/acv/provider/DBHelper.java
+/a_comic_viewer/droid-comic-viewer-master/src/net/robotmedia/acv/provider/DBOpenHelper.java
+/a_comic_viewer/droid-comic-viewer-master/src/net/robotmedia/acv/provider/HistoryManager.java
++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+ID;App;Preclassification;Subclassification; Review
+57a077c75623ed07ff09d82c;A Comic Viewer;RESSOURCES;MEMORY;Bad Runs out of memory on my way phone which is an S4;
+/a_comic_viewer/droid-comic-viewer-master/src/net/robotmedia/acv/logic/ShareViewTask.java
+/a_comic_viewer/droid-comic-viewer-master/src/net/robotmedia/acv/provider/DBOpenHelper.java
+/a_comic_viewer/droid-comic-viewer-master/src/net/robotmedia/acv/provider/HistoryManager.java
+/a_comic_viewer/droid-comic-viewer-master/src/net/robotmedia/acv/logic/SetComicScreenAsTask.java
+/a_comic_viewer/droid-comic-viewer-master/src/net/robotmedia/acv/provider/DBHelper.java
++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+ID;App;Preclassification;Subclassification; Review
+57a077e85623ed07ff09d853;A Comic Viewer;RESSOURCES;MEMORY;Memory bugs This is an awesome, user friendly app... When it works. Memory bugs cripple certain files I've used on other apps and devices successfully. Fix it and I'll give more stars.;
+/a_comic_viewer/droid-comic-viewer-master/src/net/robotmedia/acv/provider/DBOpenHelper.java
+/a_comic_viewer/droid-comic-viewer-master/src/net/robotmedia/acv/logic/SetComicScreenAsTask.java
+/a_comic_viewer/droid-comic-viewer-master/src/net/robotmedia/acv/provider/HistoryManager.java
+/a_comic_viewer/droid-comic-viewer-master/src/net/robotmedia/acv/logic/ShareViewTask.java
+/a_comic_viewer/droid-comic-viewer-master/src/net/robotmedia/acv/provider/DBHelper.java
++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+ID;App;Preclassification;Subclassification; Review
+57a0781e5623ed07ff09d87f;A Comic Viewer;RESSOURCES;MEMORY;Lack of memory Was running fine on my Galaxy note till till today saying a message like lack of memory and brought me back to the welcome screen;
+/a_comic_viewer/droid-comic-viewer-master/src/net/robotmedia/acv/logic/SetComicScreenAsTask.java
+/a_comic_viewer/droid-comic-viewer-master/src/net/robotmedia/acv/provider/DBOpenHelper.java
+/a_comic_viewer/droid-comic-viewer-master/src/net/robotmedia/acv/provider/HistoryManager.java
+/a_comic_viewer/droid-comic-viewer-master/src/net/robotmedia/acv/provider/DBHelper.java
+/a_comic_viewer/droid-comic-viewer-master/src/net/robotmedia/acv/logic/ShareViewTask.java
++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+ID;App;Preclassification;Subclassification; Review
+57a078465623ed07ff09d897;A Comic Viewer;RESSOURCES;MEMORY;I don't understand Started out great now always getting low or out of memory error. Got it set to low memory still doing it. Have over 2gb on phone free what's up????;
+/a_comic_viewer/droid-comic-viewer-master/src/net/robotmedia/acv/logic/ShareViewTask.java
+/a_comic_viewer/droid-comic-viewer-master/src/net/robotmedia/acv/logic/SetComicScreenAsTask.java
+/a_comic_viewer/droid-comic-viewer-master/src/net/robotmedia/acv/provider/HistoryManager.java
+/a_comic_viewer/droid-comic-viewer-master/src/net/robotmedia/acv/provider/DBHelper.java
+/a_comic_viewer/droid-comic-viewer-master/src/net/robotmedia/acv/provider/DBOpenHelper.java
++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+ID;App;Preclassification;Subclassification; Review
+57a078625623ed07ff09d8b0;A Comic Viewer;RESSOURCES;PERFORMANCE;Crashing Keeps crashing mid comic;
+/a_comic_viewer/droid-comic-viewer-master/src/net/robotmedia/acv/logic/SetComicScreenAsTask.java
+/a_comic_viewer/droid-comic-viewer-master/src/net/robotmedia/acv/logic/ShareViewTask.java
+/a_comic_viewer/droid-comic-viewer-master/src/net/robotmedia/acv/adapter/RecentListBaseAdapter.java
+/a_comic_viewer/droid-comic-viewer-master/src/net/robotmedia/acv/provider/DBHelper.java
+/a_comic_viewer/droid-comic-viewer-master/src/net/robotmedia/acv/provider/DBOpenHelper.java
++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+ID;App;Preclassification;Subclassification; Review
+57a078625623ed07ff09d8b1;A Comic Viewer;RESSOURCES;MEMORY;Needs a LOT of work! Far too many "memory" issues;
+/a_comic_viewer/droid-comic-viewer-master/src/net/robotmedia/acv/provider/DBOpenHelper.java
+/a_comic_viewer/droid-comic-viewer-master/src/net/robotmedia/acv/provider/HistoryManager.java
+/a_comic_viewer/droid-comic-viewer-master/src/net/robotmedia/acv/logic/SetComicScreenAsTask.java
+/a_comic_viewer/droid-comic-viewer-master/src/net/robotmedia/acv/logic/ShareViewTask.java
+/a_comic_viewer/droid-comic-viewer-master/src/net/robotmedia/acv/provider/DBHelper.java
++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+ID;App;Preclassification;Subclassification; Review
+57a0786e5623ed07ff09d8b6;A Comic Viewer;RESSOURCES;MEMORY;4/5 rans out of memory on larger comics, and sometimes zoom chages between pages, other thab that, works fine;
+/a_comic_viewer/droid-comic-viewer-master/src/net/robotmedia/acv/logic/ShareViewTask.java
+/a_comic_viewer/droid-comic-viewer-master/src/net/robotmedia/acv/provider/DBOpenHelper.java
+/a_comic_viewer/droid-comic-viewer-master/src/net/robotmedia/acv/logic/SetComicScreenAsTask.java
+/a_comic_viewer/droid-comic-viewer-master/src/net/robotmedia/acv/provider/HistoryManager.java
+/a_comic_viewer/droid-comic-viewer-master/src/net/robotmedia/acv/provider/DBHelper.java
++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+ID;App;Preclassification;Subclassification; Review
+57a078715623ed07ff09d8ba;A Comic Viewer;RESSOURCES;PERFORMANCE;Keeps Crashing Same problem that everyone else is having. "Opps" error has ruined any goodwill I had toward this app.;
+/a_comic_viewer/droid-comic-viewer-master/src/net/robotmedia/acv/provider/DBOpenHelper.java
+/a_comic_viewer/droid-comic-viewer-master/src/net/robotmedia/acv/provider/HistoryManager.java
+/a_comic_viewer/droid-comic-viewer-master/src/net/robotmedia/acv/logic/SetComicScreenAsTask.java
+/a_comic_viewer/droid-comic-viewer-master/src/net/robotmedia/acv/logic/ShareViewTask.java
+/a_comic_viewer/droid-comic-viewer-master/src/net/robotmedia/acv/provider/DBHelper.java
++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+ID;App;Preclassification;Subclassification; Review
+57a078745623ed07ff09d8be;A Comic Viewer;RESSOURCES;PERFORMANCE;No SD card support Was really good but now I can't view my SD card anymore... please fix;
+/a_comic_viewer/droid-comic-viewer-master/src/net/robotmedia/acv/adapter/RecentListBaseAdapter.java
+/a_comic_viewer/droid-comic-viewer-master/src/net/robotmedia/acv/provider/DBHelper.java
+/a_comic_viewer/droid-comic-viewer-master/src/net/robotmedia/acv/provider/DBOpenHelper.java
+/a_comic_viewer/droid-comic-viewer-master/src/net/robotmedia/acv/logic/ShareViewTask.java
+/a_comic_viewer/droid-comic-viewer-master/src/net/robotmedia/acv/provider/HistoryManager.java
++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+ID;App;Preclassification;Subclassification; Review
+57a078745623ed07ff09d8c0;A Comic Viewer;RESSOURCES;MEMORY;Memory error Keep getting a memory error on my s3...;
+/a_comic_viewer/droid-comic-viewer-master/src/net/robotmedia/acv/provider/DBOpenHelper.java
+/a_comic_viewer/droid-comic-viewer-master/src/net/robotmedia/acv/logic/SetComicScreenAsTask.java
+/a_comic_viewer/droid-comic-viewer-master/src/net/robotmedia/acv/provider/HistoryManager.java
+/a_comic_viewer/droid-comic-viewer-master/src/net/robotmedia/acv/logic/ShareViewTask.java
+/a_comic_viewer/droid-comic-viewer-master/src/net/robotmedia/acv/provider/DBHelper.java
++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+ID;App;Preclassification;Subclassification; Review
+57a0787e5623ed07ff09d8ca;A Comic Viewer;RESSOURCES;MEMORY;Not good. I've got a phone with 2GB of RAM and it is running out of memory?;
+/a_comic_viewer/droid-comic-viewer-master/src/net/robotmedia/acv/logic/ShareViewTask.java
+/a_comic_viewer/droid-comic-viewer-master/src/net/robotmedia/acv/provider/DBOpenHelper.java
+/a_comic_viewer/droid-comic-viewer-master/src/net/robotmedia/acv/provider/HistoryManager.java
+/a_comic_viewer/droid-comic-viewer-master/src/net/robotmedia/acv/logic/SetComicScreenAsTask.java
+/a_comic_viewer/droid-comic-viewer-master/src/net/robotmedia/acv/provider/DBHelper.java
++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+ID;App;Preclassification;Subclassification; Review
+57a078bb5623ed07ff09d8e4;A Comic Viewer;RESSOURCES;MEMORY;Good but could use fixing After a while I get a lot of errors saying the app is out of memory which fix themselves erratically and unpredictably so I can never read many files at one go. Other than that I enjoy the app's clean interface and ease of use.;
+/a_comic_viewer/droid-comic-viewer-master/src/net/robotmedia/acv/logic/ShareViewTask.java
+/a_comic_viewer/droid-comic-viewer-master/src/net/robotmedia/acv/provider/DBHelper.java
+/a_comic_viewer/droid-comic-viewer-master/src/net/robotmedia/acv/provider/DBOpenHelper.java
+/a_comic_viewer/droid-comic-viewer-master/src/net/robotmedia/acv/provider/HistoryManager.java
+/a_comic_viewer/droid-comic-viewer-master/src/net/robotmedia/acv/logic/SetComicScreenAsTask.java
++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+ID;App;Preclassification;Subclassification; Review
+57a078bb5623ed07ff09d8e7;A Comic Viewer;RESSOURCES;MEMORY;oops! used to love this app, now every comic i read comes up with oops! and something about being ou of memory. happens on both my phone and my tablet, both running different roms.;
+/a_comic_viewer/droid-comic-viewer-master/src/net/robotmedia/acv/logic/SetComicScreenAsTask.java
+/a_comic_viewer/droid-comic-viewer-master/src/net/robotmedia/acv/provider/DBOpenHelper.java
+/a_comic_viewer/droid-comic-viewer-master/src/net/robotmedia/acv/logic/ShareViewTask.java
+/a_comic_viewer/droid-comic-viewer-master/src/net/robotmedia/acv/provider/DBHelper.java
+/a_comic_viewer/droid-comic-viewer-master/src/net/robotmedia/acv/provider/HistoryManager.java
++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+ID;App;Preclassification;Subclassification; Review
+57a078be5623ed07ff09d8ea;A Comic Viewer;RESSOURCES;MEMORY;Unable to load Has a lot of problems loading comics do to a memory issue.;
+/a_comic_viewer/droid-comic-viewer-master/src/net/robotmedia/acv/provider/DBOpenHelper.java
+/a_comic_viewer/droid-comic-viewer-master/src/net/robotmedia/acv/provider/HistoryManager.java
+/a_comic_viewer/droid-comic-viewer-master/src/net/robotmedia/acv/logic/SetComicScreenAsTask.java
+/a_comic_viewer/droid-comic-viewer-master/src/net/robotmedia/acv/provider/DBHelper.java
+/a_comic_viewer/droid-comic-viewer-master/src/net/robotmedia/acv/logic/ShareViewTask.java
++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+ID;App;Preclassification;Subclassification; Review
+57a076f95623ed07ff09d709;A Comic Viewer;RESSOURCES;MEMORY;Memory error;
+/a_comic_viewer/droid-comic-viewer-master/src/net/robotmedia/acv/adapter/RecentListBaseAdapter.java
+/a_comic_viewer/droid-comic-viewer-master/src/net/robotmedia/acv/logic/SetComicScreenAsTask.java
+/a_comic_viewer/droid-comic-viewer-master/src/net/robotmedia/acv/logic/ShareViewTask.java
+/a_comic_viewer/droid-comic-viewer-master/src/net/robotmedia/acv/provider/DBHelper.java
+/a_comic_viewer/droid-comic-viewer-master/src/net/robotmedia/acv/provider/DBOpenHelper.java
++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+ID;App;Preclassification;Subclassification; Review
+57a08d0f5623ed0942ed817b;Last.fm;RESSOURCES;PERFORMANCE;Keeps crashing!;
+/last.fm/lastfm-android-master/app/src/fm/last/android/activity/Metadata.java
+/last.fm/lastfm-android-master/app/src/fm/last/android/activity/Profile.java
+/last.fm/lastfm-android-master/app/src/fm/last/android/activity/Profile_EventsTab.java
+/last.fm/lastfm-android-master/app/src/fm/last/android/activity/TicketProviderPopup.java
+/last.fm/lastfm-android-master/app/src/fm/last/android/SearchProvider.java
++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+ID;App;Preclassification;Subclassification; Review
+57a08cb15623ed0942ed80e7;Last.fm;RESSOURCES;PERFORMANCE;Almost there Few more tweaks will make this app perfect. Crashes randomly but not as often as previous builds.;
+/last.fm/lastfm-android-master/app/src/fm/last/android/activity/Metadata.java
+/last.fm/lastfm-android-master/app/src/fm/last/android/activity/Profile.java
+/last.fm/lastfm-android-master/app/src/fm/last/android/activity/Profile_EventsTab.java
+/last.fm/lastfm-android-master/app/src/fm/last/android/SearchProvider.java
+/last.fm/lastfm-android-master/app/docbook-xsl/html/param.xml
++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+ID;App;Preclassification;Subclassification; Review
+57a08d125623ed0942ed8180;Last.fm;RESSOURCES;PERFORMANCE;Cannot access the app anymore. Everytime I try to get onto the app, I get a crash report message telling me that it's not responding. I have tried to uninstall and reinstall, only to get the same result.;
+/last.fm/lastfm-android-master/app/src/fm/last/android/activity/Metadata.java
+/last.fm/lastfm-android-master/app/src/fm/last/android/activity/Profile.java
+/last.fm/lastfm-android-master/app/src/fm/last/android/SearchProvider.java
+/last.fm/lastfm-android-master/app/src/fm/last/android/activity/Profile_EventsTab.java
+/last.fm/lastfm-android-master/app/src/fm/last/android/widget/QuickContactProfileBubble.java
++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+ID;App;Preclassification;Subclassification; Review
+57a08d125623ed0942ed8182;Last.fm;RESSOURCES;PERFORMANCE;literally will not open. crashes every time i try to open it;
+/last.fm/lastfm-android-master/app/docbook-xsl/html/param.xml
+/last.fm/lastfm-android-master/app/src/fm/last/android/widget/QuickContactProfileBubble.java
+/last.fm/lastfm-android-master/app/src/fm/last/android/activity/Profile.java
+/last.fm/lastfm-android-master/app/src/fm/last/android/activity/Metadata.java
+/last.fm/lastfm-android-master/app/src/fm/last/android/activity/Profile_EventsTab.java
++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+ID;App;Preclassification;Subclassification; Review
+57a08d125623ed0942ed8183;Last.fm;RESSOURCES;PERFORMANCE;Keeps force closing It's been doing it for a week now -_-;
+/last.fm/lastfm-android-master/app/docbook-xsl/html/param.xml
+/last.fm/lastfm-android-master/app/src/fm/last/android/activity/Profile.java
+/last.fm/lastfm-android-master/app/src/fm/last/android/activity/Metadata.java
+/last.fm/lastfm-android-master/app/src/fm/last/android/activity/Profile_EventsTab.java
+/last.fm/lastfm-android-master/app/src/fm/last/android/SearchProvider.java
++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+ID;App;Preclassification;Subclassification; Review
+57a079055623ed07ff09d970;Abstract Art;RESSOURCES;PERFORMANCE;It's Like a Waking Dream Never lags, works much better than other apps that attempt to recreate the battle scenes from EarthBound. Highly recommended!;
+/abstract_art/abstract-art-master/src/net/georgewhiteside/android/abstractart/settings/BackgroundSelector.java
+/abstract_art/abstract-art-master/src/net/georgewhiteside/android/abstractart/BattleBackground.java
+/abstract_art/abstract-art-master/src/net/georgewhiteside/android/abstractart/ShaderFactory.java
+/abstract_art/abstract-art-master/src/org/jf/GLWallpaper/GLWallpaperService.java
+/abstract_art/abstract-art-master/src/net/georgewhiteside/android/abstractart/UniformGridView.java
++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+ID;App;Preclassification;Subclassification; Review
+57a079185623ed07ff09d990;Abstract Art;RESSOURCES;BATTERY;Grew up playing this Love it. Works great and doesn't drain battery;
+/abstract_art/abstract-art-master/src/net/georgewhiteside/android/abstractart/settings/ThumbnailAdapter.java
+/abstract_art/abstract-art-master/src/net/georgewhiteside/android/abstractart/Wallpaper.java
+/abstract_art/abstract-art-master/src/net/georgewhiteside/android/abstractart/ShaderFactory.java
+/abstract_art/abstract-art-master/src/net/georgewhiteside/android/abstractart/ImageLoader.java
+/abstract_art/abstract-art-master/src/net/georgewhiteside/android/abstractart/BattleBackground.java
++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+ID;App;Preclassification;Subclassification; Review
+57a079685623ed07ff09d9f5;Abstract Art;RESSOURCES;BATTERY;Superb! Absolutely spectacular. Emulates the Earthbound backgrounds beautifully without compromising battery life. A+ Material!;
+/abstract_art/abstract-art-master/src/org/jf/GLWallpaper/GLWallpaperService.java
+/abstract_art/abstract-art-master/src/net/georgewhiteside/android/abstractart/BattleBackground.java
+/abstract_art/abstract-art-master/src/sheetrock/panda/changelog/ChangeLog.java
+/abstract_art/abstract-art-master/src/net/georgewhiteside/android/abstractart/settings/BackgroundSelector.java
+/abstract_art/abstract-art-master/src/net/georgewhiteside/android/abstractart/GLOffscreenSurface.java
++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+ID;App;Preclassification;Subclassification; Review
+57a0797e5623ed07ff09da07;MultiPicture Live Wallpaper;RESSOURCES;BATTERY;Awesome A few weeks in, and I absolutely love this app. This app is absolutely terrific. And hasn't really drained my battery life yet. I have it on a rotating folder of pictures from trips around the world as my live wallpaper and it just seems awesome. can't feel stronger about it and that's why I gave it 5 stars;
+/multipicture_live_wallpaper/MultiPictureLiveWallpaper-master/src/org/tamanegi/wallpaper/multipicture/picsource/PictureUtils.java
+/multipicture_live_wallpaper/MultiPictureLiveWallpaper-master/src/org/tamanegi/wallpaper/multipicture/picsource/FolderSource.java
+/multipicture_live_wallpaper/MultiPictureLiveWallpaper-master/src/org/tamanegi/wallpaper/multipicture/picsource/SingleSource.java
+/multipicture_live_wallpaper/MultiPictureLiveWallpaper-master/src/org/tamanegi/wallpaper/multipicture/plugin/LazyPickService.java
+/multipicture_live_wallpaper/MultiPictureLiveWallpaper-master/src/org/tamanegi/wallpaper/multipicture/plugin/package-info.java
++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+ID;App;Preclassification;Subclassification; Review
+57a079a95623ed07ff09da5c;MultiPicture Live Wallpaper;RESSOURCES;BATTERY;It works Menu could be setup a little better, but no complaints. Works well & doesnt seem to affect battery life too much;
+/multipicture_live_wallpaper/MultiPictureLiveWallpaper-master/src/org/tamanegi/wallpaper/multipicture/picsource/PictureUtils.java
+/multipicture_live_wallpaper/MultiPictureLiveWallpaper-master/src/org/tamanegi/wallpaper/multipicture/picsource/SingleSource.java
+/multipicture_live_wallpaper/MultiPictureLiveWallpaper-master/src/org/tamanegi/wallpaper/multipicture/picsource/FolderSource.java
+/multipicture_live_wallpaper/MultiPictureLiveWallpaper-master/src/org/tamanegi/wallpaper/multipicture/plugin/LazyPickService.java
+/multipicture_live_wallpaper/MultiPictureLiveWallpaper-master/src/org/tamanegi/wallpaper/multipicture/plugin/package-info.java
++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+ID;App;Preclassification;Subclassification; Review
+57a079ba5623ed07ff09da7a;MultiPicture Live Wallpaper;RESSOURCES;MEMORY;Great app with low memory consumption;
+/multipicture_live_wallpaper/MultiPictureLiveWallpaper-master/src/org/tamanegi/wallpaper/multipicture/picsource/SingleSource.java
+/multipicture_live_wallpaper/MultiPictureLiveWallpaper-master/src/org/tamanegi/wallpaper/multipicture/picsource/FolderSource.java
+/multipicture_live_wallpaper/MultiPictureLiveWallpaper-master/src/org/tamanegi/wallpaper/multipicture/picsource/PictureUtils.java
+/multipicture_live_wallpaper/MultiPictureLiveWallpaper-master/src/org/tamanegi/wallpaper/multipicture/MultiPictureRenderer.java
+/multipicture_live_wallpaper/MultiPictureLiveWallpaper-master/src/org/tamanegi/wallpaper/multipicture/MultiPictureService.java
++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+ID;App;Preclassification;Subclassification; Review
+57a07a125623ed07ff09daec;MultiPicture Live Wallpaper;RESSOURCES;PERFORMANCE;One thing I only wish this app was able to switch wallpapers faster than an hour, like maybe every 30 seconds and every couple minutes.;
+/multipicture_live_wallpaper/MultiPictureLiveWallpaper-master/src/org/tamanegi/wallpaper/multipicture/picsource/PictureUtils.java
+/multipicture_live_wallpaper/MultiPictureLiveWallpaper-master/src/org/tamanegi/wallpaper/multipicture/picsource/SingleSource.java
+/multipicture_live_wallpaper/MultiPictureLiveWallpaper-master/src/org/tamanegi/wallpaper/multipicture/picsource/FolderSource.java
+/multipicture_live_wallpaper/MultiPictureLiveWallpaper-master/src/org/tamanegi/wallpaper/multipicture/plugin/LazyPickService.java
+/multipicture_live_wallpaper/MultiPictureLiveWallpaper-master/src/org/tamanegi/wallpaper/multipicture/plugin/package-info.java
++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+ID;App;Preclassification;Subclassification; Review
+57a07aa65623ed07ff09dba5;MultiPicture Live Wallpaper;RESSOURCES;PERFORMANCE;Doesnt all work Does not work in regard to having different picture per screen. Also takes long long time to call up the 'select picture from' sceeen.;
+/multipicture_live_wallpaper/MultiPictureLiveWallpaper-master/src/org/tamanegi/wallpaper/multipicture/picsource/SingleSource.java
+/multipicture_live_wallpaper/MultiPictureLiveWallpaper-master/src/org/tamanegi/wallpaper/multipicture/picsource/PictureUtils.java
+/multipicture_live_wallpaper/MultiPictureLiveWallpaper-master/src/org/tamanegi/wallpaper/multipicture/picsource/FolderSource.java
+/multipicture_live_wallpaper/MultiPictureLiveWallpaper-master/src/org/tamanegi/wallpaper/multipicture/plugin/LazyPickService.java
+/multipicture_live_wallpaper/MultiPictureLiveWallpaper-master/src/org/tamanegi/wallpaper/multipicture/plugin/ScreenInfo.java
++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+ID;App;Preclassification;Subclassification; Review
+57a0801b5623ed091048e52b;Autostarts;RESSOURCES;PERFORMANCE;Crashes everytime Cm12 lollipop. Refunded.;
+/autostarts/android-autostarts-master/src/com/elsdoerfer/android/autostarts/EventDetailsFragment.java
+/autostarts/android-autostarts-master/src/com/stericson/RootTools/execution/Shell.java
++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+ID;App;Preclassification;Subclassification; Review
+57a0801d5623ed091048e530;Autostarts;RESSOURCES;BATTERY;Great root tool Fantastic root tool for halting unnecessary process startups. Essential to my battery-saving routine.;
+/autostarts/android-autostarts-master/src/com/stericson/RootTools/execution/Shell.java
+/autostarts/android-autostarts-master/src/com/elsdoerfer/android/autostarts/EventDetailsFragment.java
+/autostarts/android-autostarts-master/src/com/stericson/RootTools/internal/RootToolsInternalMethods.java
+/autostarts/android-autostarts-master/src/com/stericson/RootTools/internal/InternalVariables.java
+/autostarts/android-autostarts-master/src/com/stericson/RootTools/execution/JavaCommandCapture.java
++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+ID;App;Preclassification;Subclassification; Review
+57a0892f5623ed0942ed7cf5;Signal Private Messenger;RESSOURCES;PERFORMANCE;Everytime I try to add an attachment to my text the app crashes...;
+/signal_private_messenger/Signal-Android-master/src/org/thoughtcrime/redphone/crypto/zrtp/ZRTPSocket.java
+/signal_private_messenger/Signal-Android-master/src/org/thoughtcrime/securesms/mms/AttachmentManager.java
+/signal_private_messenger/Signal-Android-master/src/org/thoughtcrime/securesms/contacts/ContactAccessor.java
+/signal_private_messenger/Signal-Android-master/src/org/thoughtcrime/securesms/contacts/ContactsCursorLoader.java
+/signal_private_messenger/Signal-Android-master/src/org/thoughtcrime/securesms/contacts/ContactSelectionListAdapter.java
++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+ID;App;Preclassification;Subclassification; Review
+57a08aca5623ed0942ed7edb;Financius - Expense Manager;RESSOURCES;PERFORMANCE;Application is crashing again and again whenever I'm changing any category. Please suggest Whenever I'm trying to switch category or going to select mode of payment app is getting hanged and getting crashed. I'm not sure what all information you are looking for. Please be more specific if you really care or delete this app.;
+/financius_-_expense_manager/financius-public-master/financius/src/main/java/com/code44/finance/data/providers/TransactionsProvider.java
+/financius_-_expense_manager/financius-public-master/financius/src/main/java/com/code44/finance/data/providers/ProviderUtils.java
+/financius_-_expense_manager/financius-public-master/financius/src/main/java/com/code44/finance/data/providers/BaseModelProvider.java
+/financius_-_expense_manager/financius-public-master/financius/src/main/java/com/code44/finance/data/backup/BackupDataImporter.java
+/financius_-_expense_manager/financius-public-master/financius/src/main/java/com/code44/finance/data/db/DBMigration.java
++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+ID;App;Preclassification;Subclassification; Review
+57a08ae35623ed0942ed7ee1;Financius - Expense Manager;RESSOURCES;PERFORMANCE;It was a good app Now it is crashing too often to the point it is barely usable :/;
+/financius_-_expense_manager/financius-public-master/financius/src/test/java/com/code44/finance/data/providers/AccountsProviderTest.java
+/financius_-_expense_manager/financius-public-master/financius/src/main/java/com/code44/finance/data/providers/TransactionsProvider.java
+/financius_-_expense_manager/financius-public-master/financius/src/test/java/com/code44/finance/data/providers/CurrenciesProviderTest.java
+/financius_-_expense_manager/financius-public-master/financius/src/main/java/com/code44/finance/modules/providers/AnalyticsProviderModule.java
+/financius_-_expense_manager/financius-public-master/financius/src/main/java/com/code44/finance/data/providers/ProviderUtils.java
++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+ID;App;Preclassification;Subclassification; Review
+57a08be45623ed0942ed7fbd;2048;RESSOURCES;PERFORMANCE;Lag city;
++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+ID;App;Preclassification;Subclassification; Review
+57a08be75623ed0942ed7fc2;2048;RESSOURCES;PERFORMANCE;Slow Since latest update, it's moving very slow. The animations are fine, but the time it takes from my finger movement to display is too slow. I was already moving ahead of the animations before, but now I don't even want to play due to the latency.;
+/2048/2048-android-master/src/com/uberspot/a2048/MainActivity.java
+/2048/2048-android-master/res/values/styles.xml
+/2048/2048-android-master/res/xml/changelog_master.xml
++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+ID;App;Preclassification;Subclassification; Review
+57a101565623ed112dfbe31f;2048;RESSOURCES;PERFORMANCE;Keeps crashing Since I upgraded my android this game keeps crashing.;
+/2048/2048-android-master/src/com/uberspot/a2048/MainActivity.java
+/2048/2048-android-master/res/menu/main.xml
+/2048/2048-android-master/res/values/dimens.xml
+/2048/2048-android-master/res/layout/activity_main.xml
+/2048/2048-android-master/AndroidManifest.xml
++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+ID;App;Preclassification;Subclassification; Review
+57a08ef65623ed0942ed83e6;Muzei Live Wallpaper;RESSOURCES;BATTERY;Massive battery drain Forced to uninstall after it cut battery life down to 4 hours per full charge. Battery could usually last a day otherwise. Everything else about the app worked fine.;
+/muzei_live_wallpaper/muzei-master/api/src/main/java/com/google/android/apps/muzei/api/MuzeiContract.java
+/muzei_live_wallpaper/muzei-master/api/src/main/java/com/google/android/apps/muzei/api/Artwork.java
+/muzei_live_wallpaper/muzei-master/android-client-common/src/main/java/com/google/android/apps/muzei/provider/MuzeiProvider.java
+/muzei_live_wallpaper/muzei-master/source-gallery/src/main/java/com/google/android/apps/muzei/gallery/GalleryArtSource.java
+/muzei_live_wallpaper/muzei-master/main/src/main/java/com/google/android/apps/muzei/SourceManager.java
++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+ID;App;Preclassification;Subclassification; Review
+57a08efd5623ed0942ed83f2;Muzei Live Wallpaper;RESSOURCES;PERFORMANCE;Lags down my system In idea this is a awesome app, but i've tried it on several phones and always the second result, it someone causes noticeable lag;
+/muzei_live_wallpaper/muzei-master/api/src/main/java/com/google/android/apps/muzei/api/MuzeiContract.java
+/muzei_live_wallpaper/muzei-master/api/src/main/java/com/google/android/apps/muzei/api/Artwork.java
+/muzei_live_wallpaper/muzei-master/android-client-common/src/main/java/com/google/android/apps/muzei/provider/MuzeiProvider.java
+/muzei_live_wallpaper/muzei-master/main/src/main/java/com/google/android/apps/muzei/sync/DownloadArtworkTask.java
+/muzei_live_wallpaper/muzei-master/main/src/main/java/com/google/android/apps/muzei/SourceManager.java
++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+ID;App;Preclassification;Subclassification; Review
+57a08f5c5623ed0942ed846f;Muzei Live Wallpaper;RESSOURCES;BATTERY;Works ok High battery drainage. Using htc one m7;
+/muzei_live_wallpaper/muzei-master/main/src/main/java/com/google/android/apps/muzei/sync/DownloadArtworkTask.java
+/muzei_live_wallpaper/muzei-master/main/src/main/java/com/google/android/apps/muzei/SourceManager.java
+/muzei_live_wallpaper/muzei-master/api/src/main/java/com/google/android/apps/muzei/api/Artwork.java
+/muzei_live_wallpaper/muzei-master/source-gallery/src/main/java/com/google/android/apps/muzei/gallery/GalleryStore.java
+/muzei_live_wallpaper/muzei-master/source-gallery/src/main/java/com/google/android/apps/muzei/gallery/GalleryArtSource.java
++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+ID;App;Preclassification;Subclassification; Review
+57a08f785623ed0942ed8492;Muzei Live Wallpaper;RESSOURCES;BATTERY;Hey Please fix it it drains my battery and it heats up my cpu of the phone really? And it mostly drains my battery more please fix two stars for now please fix it's a beautiful app please work on it more thx;
+/muzei_live_wallpaper/muzei-master/api/src/main/java/com/google/android/apps/muzei/api/MuzeiContract.java
+/muzei_live_wallpaper/muzei-master/api/src/main/java/com/google/android/apps/muzei/api/Artwork.java
+/muzei_live_wallpaper/muzei-master/source-gallery/src/main/java/com/google/android/apps/muzei/gallery/GalleryArtSource.java
+/muzei_live_wallpaper/muzei-master/main/src/main/java/com/google/android/apps/muzei/SourceManager.java
+/muzei_live_wallpaper/muzei-master/android-client-common/src/main/java/com/google/android/apps/muzei/provider/MuzeiProvider.java
++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+ID;App;Preclassification;Subclassification; Review
+57a08f875623ed0942ed84a0;Muzei Live Wallpaper;RESSOURCES;PERFORMANCE;Great idea It's great overall,but there is an issue with redraws when hitting the home button. Half of the wallpaper is black sometimes, takes about half a second to draw the rest of the wallpaper. It takes away from the experience, it feels cheap when it does that.;
+/muzei_live_wallpaper/muzei-master/api/src/main/java/com/google/android/apps/muzei/api/Artwork.java
+/muzei_live_wallpaper/muzei-master/api/src/main/java/com/google/android/apps/muzei/api/MuzeiContract.java
+/muzei_live_wallpaper/muzei-master/android-client-common/src/main/java/com/google/android/apps/muzei/provider/MuzeiProvider.java
+/muzei_live_wallpaper/muzei-master/main/src/main/java/com/google/android/apps/muzei/SourceManager.java
+/muzei_live_wallpaper/muzei-master/source-gallery/src/main/java/com/google/android/apps/muzei/gallery/GalleryArtSource.java
++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+ID;App;Preclassification;Subclassification; Review
+57a093175623ed09ac7625e4;Wally;RESSOURCES;PERFORMANCE;Hands down best wallpaper app but... It has been for awhile but it keeps crashing whenever I hit on an image thumbnail. Please fix the issue thanks.;
+/wally/wally-master/wally/src/main/java/com/musenkishi/wally/fragments/SavedImagesFragment.java
+/wally/wally-master/wally/src/main/java/com/musenkishi/wally/fragments/SearchFragment.java
+/wally/wally-master/wally/src/main/java/com/musenkishi/wally/muzei/WallyArtSource.java
+/wally/wally-master/wally/src/main/java/com/musenkishi/wally/fragments/RandomImagesFragment.java
+/wally/wally-master/wally/src/main/java/com/musenkishi/wally/fragments/LatestFragment.java
++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+ID;App;Preclassification;Subclassification; Review
+57a093175623ed09ac7625e5;Wally;RESSOURCES;PERFORMANCE;Where are new updates? But crashes after every 5 seconds so its usless plz fix it asap;
+/wally/wally-master/wally/src/main/java/com/musenkishi/wally/base/GridFragment.java
+/wally/wally-master/wally/src/main/java/com/musenkishi/wally/fragments/SearchFragment.java
+/wally/wally-master/wally/src/main/java/com/musenkishi/wally/base/WallyApplication.java
+/wally/wally-master/wally/src/main/java/com/musenkishi/wally/muzei/WallyArtSource.java
+/wally/wally-master/wally/src/main/java/com/musenkishi/wally/observers/FileReceiver.java
++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+ID;App;Preclassification;Subclassification; Review
+57a093185623ed09ac7625e7;Wally;RESSOURCES;PERFORMANCE;Decent Decent Wallpapers, but the app glitches often making it impossible to get some wallpapers;
+/wally/wally-master/wally/src/main/java/com/musenkishi/wally/muzei/WallyArtSource.java
+/wally/wally-master/wally/src/main/java/com/musenkishi/wally/fragments/SavedImagesFragment.java
+/wally/wally-master/dataprovider/src/main/java/com/musenkishi/wally/dataprovider/SharedPreferencesDataProvider.java
+/wally/wally-master/wally/src/main/java/com/musenkishi/wally/observers/FileReceiver.java
+/wally/wally-master/wally/src/main/java/com/musenkishi/wally/base/WallyApplication.java
++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+ID;App;Preclassification;Subclassification; Review
+57a093885623ed09ac7626a0;Wally;RESSOURCES;PERFORMANCE;Good but crashes Great source for high resolution photos but this app has way too many intermittent crash issues.;
+/wally/wally-master/wally/src/main/java/com/musenkishi/wally/base/WallyApplication.java
+/wally/wally-master/dataprovider/src/main/java/com/musenkishi/wally/dataprovider/SharedPreferencesDataProvider.java
+/wally/wally-master/wally/src/main/java/com/musenkishi/wally/muzei/WallyArtSource.java
+/wally/wally-master/wally/src/main/java/com/musenkishi/wally/fragments/RandomImagesFragment.java
+/wally/wally-master/wally/src/main/java/com/musenkishi/wally/fragments/LatestFragment.java
++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+ID;App;Preclassification;Subclassification; Review
+57a093bd5623ed09ac7626fb;Wally;RESSOURCES;MEMORY;Stop!! Stop making me download tons of amazing wallpapers! My phone ran out of memory :P;
+/wally/wally-master/wally/src/main/java/com/musenkishi/wally/fragments/SearchFragment.java
+/wally/wally-master/wally/src/main/java/com/musenkishi/wally/base/GridFragment.java
+/wally/wally-master/wally/src/main/java/com/musenkishi/wally/fragments/LatestFragment.java
+/wally/wally-master/wally/src/main/java/com/musenkishi/wally/fragments/RandomImagesFragment.java
+/wally/wally-master/wally/src/main/java/com/musenkishi/wally/fragments/ToplistFragment.java
++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+ID;App;Preclassification;Subclassification; Review
+57a094505623ed09ac76278e;Turbo Editor ( Text Editor );RESSOURCES;PERFORMANCE;Very poor performances It freezes when you try to scroll the code view in a medium sized file, and when even you try to open a second file. Without mentioning that it may crash at any time. It can't be used for serious coding.;
+/turbo_editor_(_text_editor_)/turbo-editor-master/libraries/sharedCode/src/main/java/sharedcode/turboeditor/dialogfragment/FileInfoDialog.java
+/turbo_editor_(_text_editor_)/turbo-editor-master/libraries/sharedCode/src/main/java/sharedcode/turboeditor/util/AccessStorageApi.java
+/turbo_editor_(_text_editor_)/turbo-editor-master/libraries/sharedCode/src/main/java/sharedcode/turboeditor/views/GoodScrollView.java
+/turbo_editor_(_text_editor_)/turbo-editor-master/libraries/sharedCode/src/main/java/com/spazedog/lib/rootfw4/utils/Filesystem.java
+/turbo_editor_(_text_editor_)/turbo-editor-master/libraries/sharedCode/src/main/java/com/spazedog/lib/rootfw4/Shell.java
++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+ID;App;Preclassification;Subclassification; Review
+57a094d25623ed09ac762807;Tweet Lanes;RESSOURCES;BATTERY;Has serious battery issues I dunno if it's a runaway process or something but this app can make my phone seriously hot, even after quitting.;
+/tweet_lanes/TweetLanes-master/android/libraries/TweetLanesCore/src/com/tweetlanes/android/core/widget/gestureimageview/GestureImageView.java
+/tweet_lanes/TweetLanes-master/android/libraries/TweetLanesCore/src/com/tweetlanes/android/core/widget/urlimageviewhelper/ContactContentUrlDownloader.java
+/tweet_lanes/TweetLanes-master/android/libraries/TweetLanesCore/src/com/tweetlanes/android/core/widget/urlimageviewhelper/DiskLruCache.java
+/tweet_lanes/TweetLanes-master/android/libraries/SocialNetLib/src/org/asynctasktex/AsyncTaskEx.java
+/tweet_lanes/TweetLanes-master/android/libraries/TweetLanesCore/src/com/tweetlanes/android/core/widget/urlimageviewhelper/UrlImageViewHelper.java
++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+ID;App;Preclassification;Subclassification; Review
+57a0954b5623ed09ac76286f;AcDisplay;RESSOURCES;BATTERY;Beautiful!! In love with this app .... It would be just amazing If it won't drain out too much battery and itd be crazy if this has a pattern lock (i really hope) and a custom wallpaper would be fab so ...can we see them ? This app basically deserves first place and the most downloaded app In the market under customisation!!!! Hopefully this app gets even more better with lots of cool stuff !!!!!, ,;
+/acdisplay/AcDisplay-master/project/app/src/main/java/com/achep/base/content/SharedList.java
+/acdisplay/AcDisplay-master/project/app/src/main/java/com/achep/acdisplay/providers/ToggleWidgetProvider.java
+/acdisplay/AcDisplay-master/project/app/src/main/java/com/achep/acdisplay/permissions/PermissionUsageStats.java
+/acdisplay/AcDisplay-master/project/app/src/main/java/com/achep/base/permissions/RuntimePermissions.java
+/acdisplay/AcDisplay-master/project/app/src/main/java/com/achep/base/providers/LogsProviderBase.java
++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+ID;App;Preclassification;Subclassification; Review
+57a0965d5623ed09ac762986;AcDisplay;RESSOURCES;BATTERY;Awsome app Great and handy app to read notification without opening the lock screen... Plz control battery drain;
+/acdisplay/AcDisplay-master/project/app/src/main/java/com/achep/acdisplay/providers/ToggleWidgetProvider.java
+/acdisplay/AcDisplay-master/project/app/src/main/java/com/achep/acdisplay/permissions/PermissionUsageStats.java
+/acdisplay/AcDisplay-master/project/app/src/main/java/com/achep/base/permissions/RuntimePermissions.java
+/acdisplay/AcDisplay-master/project/app/src/main/java/com/achep/base/utils/zen/ZenUtils.java
+/acdisplay/AcDisplay-master/project/app/src/main/java/com/achep/base/content/SharedList.java
++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+ID;App;Preclassification;Subclassification; Review
+57a097385623ed09ac762a1e;AcDisplay;RESSOURCES;BATTERY;Working good Eating a lot of battery.;
+/acdisplay/AcDisplay-master/project/app/src/main/java/com/achep/base/content/SharedList.java
+/acdisplay/AcDisplay-master/project/app/src/main/java/com/achep/base/utils/zen/ZenUtils.java
+/acdisplay/AcDisplay-master/project/app/src/main/java/com/achep/base/permissions/RuntimePermissions.java
+/acdisplay/AcDisplay-master/project/app/src/main/java/com/achep/acdisplay/permissions/PermissionUsageStats.java
+/acdisplay/AcDisplay-master/project/app/src/main/java/com/achep/base/providers/LogsProviderBase.java
++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+ID;App;Preclassification;Subclassification; Review
+57a0973d5623ed09ac762a28;AcDisplay;RESSOURCES;PERFORMANCE;Needs tweaking time lags to update when I take a peek at my phone;
+/acdisplay/AcDisplay-master/project/app/src/main/java/com/achep/base/content/SharedList.java
+/acdisplay/AcDisplay-master/project/app/src/main/java/com/achep/base/utils/zen/ZenUtils.java
+/acdisplay/AcDisplay-master/project/app/src/main/java/com/achep/base/permissions/RuntimePermissions.java
+/acdisplay/AcDisplay-master/project/app/src/main/java/com/achep/acdisplay/providers/ToggleWidgetProvider.java
+/acdisplay/AcDisplay-master/project/app/src/main/java/com/achep/acdisplay/permissions/PermissionUsageStats.java
++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+ID;App;Preclassification;Subclassification; Review
+57a101565623ed112dfbe320;AcDisplay;RESSOURCES;BATTERY;Drains my battery! This drains my battery. I can't deactivate this. I get a message saying an administrator must do it. IT'S MY PHONE. Is there a way to delete this app?;
+/acdisplay/AcDisplay-master/project/app/src/main/java/com/achep/base/content/SharedList.java
+/acdisplay/AcDisplay-master/project/app/src/main/java/com/achep/acdisplay/providers/ToggleWidgetProvider.java
+/acdisplay/AcDisplay-master/project/app/src/main/java/com/achep/base/permissions/RuntimePermissions.java
+/acdisplay/AcDisplay-master/project/app/src/main/java/com/achep/acdisplay/permissions/PermissionUsageStats.java
+/acdisplay/AcDisplay-master/project/app/src/main/java/com/achep/base/providers/LogsProviderBase.java
++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+ID;App;Preclassification;Subclassification; Review
+57a101565623ed112dfbe321;AcDisplay;RESSOURCES;BATTERY;For excellent power saving.... The sexiest and hottest lockscreen ever If u experience lot of battery drain or u want that sexy and hot look on ur phone then install this app.;
+/acdisplay/AcDisplay-master/project/app/src/main/java/com/achep/acdisplay/providers/ToggleWidgetProvider.java
+/acdisplay/AcDisplay-master/project/app/src/main/java/com/achep/base/content/SharedList.java
+/acdisplay/AcDisplay-master/project/app/src/main/java/com/achep/base/permissions/RuntimePermissions.java
+/acdisplay/AcDisplay-master/project/app/src/main/java/com/achep/acdisplay/permissions/PermissionUsageStats.java
+/acdisplay/AcDisplay-master/project/app/src/main/java/com/achep/base/providers/LogsProviderBase.java
++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+ID;App;Preclassification;Subclassification; Review
+57a101565623ed112dfbe322;AcDisplay;RESSOURCES;BATTERY;Great app! just wondering if you could implement an 'always on' display that uses low battery for AMOLED display users;
+/acdisplay/AcDisplay-master/project/app/src/main/java/com/achep/base/content/SharedList.java
+/acdisplay/AcDisplay-master/project/app/src/main/java/com/achep/acdisplay/providers/ToggleWidgetProvider.java
+/acdisplay/AcDisplay-master/project/app/src/main/java/com/achep/base/permissions/RuntimePermissions.java
+/acdisplay/AcDisplay-master/project/app/src/main/java/com/achep/acdisplay/permissions/PermissionUsageStats.java
+/acdisplay/AcDisplay-master/project/app/src/main/java/com/achep/base/providers/LogsProviderBase.java
++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+ID;App;Preclassification;Subclassification; Review
+57a101565623ed112dfbe327;AcDisplay;RESSOURCES;MEMORY;memory drain used to be great;
+/acdisplay/AcDisplay-master/project/app/src/main/java/com/achep/base/utils/zen/ZenUtils.java
+/acdisplay/AcDisplay-master/project/app/src/main/java/com/achep/base/content/SharedList.java
+/acdisplay/AcDisplay-master/project/app/src/main/java/com/achep/acdisplay/providers/ToggleWidgetProvider.java
+/acdisplay/AcDisplay-master/project/app/src/main/java/com/achep/acdisplay/permissions/PermissionUsageStats.java
+/acdisplay/AcDisplay-master/project/app/src/main/java/com/achep/base/permissions/RuntimePermissions.java
++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+ID;App;Preclassification;Subclassification; Review
+57a09be15623ed09ff6db861;ConnectBot;RESSOURCES;PERFORMANCE;Wow. I used to have a real DEC VT-100. Now I have one ...and more... and faster than 9600bps without UART glitching... in color... in my pocket. In an app that's better than the original. And a lot quieter than a TeleType. I'm the same age as the VT-100. Wow.;
+/connectbot/org.numixproject.croma-master/app/src/main/java/org/numixproject/croma/Utils.java
+/connectbot/org.numixproject.croma-master/app/src/main/java/org/numixproject/croma/ColorPickerActivity.java
+/connectbot/org.numixproject.croma-master/app/src/main/java/org/numixproject/croma/MainActivity.java
+/connectbot/org.numixproject.croma-master/app/src/main/java/org/numixproject/croma/CameraPreview.java
+/connectbot/org.numixproject.croma-master/app/src/main/java/org/numixproject/croma/BackupAgent.java
++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+ID;App;Preclassification;Subclassification; Review
+57a09bee5623ed09ff6db882;ConnectBot;RESSOURCES;PERFORMANCE;Awesome The console is fast enough to handle ascii animations :);
+/connectbot/org.numixproject.croma-master/app/src/main/java/org/numixproject/croma/ColorPickerActivity.java
+/connectbot/org.numixproject.croma-master/app/src/main/java/org/numixproject/croma/MainActivity.java
+/connectbot/org.numixproject.croma-master/app/src/main/java/org/numixproject/croma/BackupAgent.java
+/connectbot/org.numixproject.croma-master/app/src/main/java/org/numixproject/croma/CameraPreview.java
+/connectbot/org.numixproject.croma-master/app/src/main/java/org/numixproject/croma/Utils.java
++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+ID;App;Preclassification;Subclassification; Review
+57a09c0e5623ed09ff6db8af;ConnectBot;RESSOURCES;PERFORMANCE;Key exchange issue persists Randomly fails to connect to SSH host due to key exchange issue. Works fine with JuiceSSH. Will give 5 stars when fixed. Thanks.;
+/connectbot/org.numixproject.croma-master/app/src/main/java/org/numixproject/croma/MainActivity.java
+/connectbot/org.numixproject.croma-master/app/src/main/java/org/numixproject/croma/Tools.java
+/connectbot/org.numixproject.croma-master/app/src/main/java/org/numixproject/croma/BackupAgent.java
+/connectbot/org.numixproject.croma-master/app/src/main/java/org/numixproject/croma/CameraPreview.java
+/connectbot/org.numixproject.croma-master/app/src/main/java/org/numixproject/croma/HelpAnimator.java
++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+ID;App;Preclassification;Subclassification; Review
+57a09d0b5623ed09ff6db97a;OS Monitor;RESSOURCES;MEMORY;Works well... More concerned about the program's own overlay on the system, more than all program's together... On Moto 3G 3rd gen with 1gb ram prog needs more resources than whole system... Do I miss something? Please advise;
+/os_monitor/OSMonitor-master/app/src/main/java/com/eolwral/osmonitor/preference/OSMPreference.java
+/os_monitor/OSMonitor-master/app/src/main/java/com/eolwral/osmonitor/settings/SettingsHelper.java
+/os_monitor/OSMonitor-master/app/src/main/java/com/eolwral/osmonitor/provider/PreferenceContentProvider.java
+/os_monitor/OSMonitor-master/app/src/main/java/com/google/flatbuffers/Table.java
+/os_monitor/OSMonitor-master/app/src/main/java/com/google/flatbuffers/Struct.java
++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+ID;App;Preclassification;Subclassification; Review
+57a101565623ed112dfbe323;BatteryBot Battery Indicator;RESSOURCES;BATTERY;Great app This app is very good to keep up your battery.;
+/batterybot_battery_indicator/Battery-Indicator-Free-master/src/com/darshancomputing/BatteryIndicator/BatteryInfoAppWidgetProvider.java
+/batterybot_battery_indicator/Battery-Indicator-Free-master/res/values/strings.xml
+/batterybot_battery_indicator/Battery-Indicator-Free-master/src/com/darshancomputing/BatteryIndicator/HelpActivity.java
+/batterybot_battery_indicator/Battery-Indicator-Free-master/src/com/darshancomputing/BatteryIndicator/SettingsHelpActivity.java
+/batterybot_battery_indicator/Battery-Indicator-Free-master/src/com/darshancomputing/BatteryIndicator/BatteryInfoActivity.java
++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+ID;App;Preclassification;Subclassification; Review
+57a101565623ed112dfbe324;BatteryBot Battery Indicator;RESSOURCES;BATTERY;Like it! Used battery not for years. Simply appreciate and great to know exactly what the status of the battery is right on the home screen.;
+/batterybot_battery_indicator/Battery-Indicator-Free-master/src/com/darshancomputing/BatteryIndicator/SettingsActivity.java
+/batterybot_battery_indicator/Battery-Indicator-Free-master/src/com/darshancomputing/BatteryIndicator/SettingsHelpActivity.java
+/batterybot_battery_indicator/Battery-Indicator-Free-master/src/com/darshancomputing/BatteryIndicator/Str.java
+/batterybot_battery_indicator/Battery-Indicator-Free-master/src/com/darshancomputing/BatteryIndicator/CurrentInfoFragment.java
+/batterybot_battery_indicator/Battery-Indicator-Free-master/src/com/darshancomputing/BatteryIndicator/HelpActivity.java
++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+ID;App;Preclassification;Subclassification; Review
+57a101565623ed112dfbe325;BatteryBot Battery Indicator;RESSOURCES;MEMORY;Simple and lightweight Does what I wanted and that's just to show my remaining battery life in a percentage while being light on memory usage.;
+/batterybot_battery_indicator/Battery-Indicator-Free-master/src/com/darshancomputing/BatteryIndicator/CurrentInfoFragment.java
+/batterybot_battery_indicator/Battery-Indicator-Free-master/src/com/darshancomputing/BatteryIndicator/Str.java
+/batterybot_battery_indicator/Battery-Indicator-Free-master/src/com/darshancomputing/BatteryIndicator/SettingsActivity.java
+/batterybot_battery_indicator/Battery-Indicator-Free-master/src/com/darshancomputing/BatteryIndicator/BatteryInfoService.java
+/batterybot_battery_indicator/Battery-Indicator-Free-master/src/com/darshancomputing/BatteryIndicator/PredictorCore.java
++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+ID;App;Preclassification;Subclassification; Review
+57a101565623ed112dfbe326;BatteryBot Battery Indicator;RESSOURCES;MEMORY;Moto X I've had this app on 3other phones which all done the job well. Low memory, simple, no ads. Life is good. Thanks app makers. Highly recommended...;
+/batterybot_battery_indicator/Battery-Indicator-Free-master/src/com/darshancomputing/BatteryIndicator/BatteryInfoService.java
+/batterybot_battery_indicator/Battery-Indicator-Free-master/src/com/darshancomputing/BatteryIndicator/SettingsActivity.java
+/batterybot_battery_indicator/Battery-Indicator-Free-master/res/values/strings.xml
+/batterybot_battery_indicator/Battery-Indicator-Free-master/src/com/darshancomputing/BatteryIndicator/BatteryInfoAppWidgetProvider.java
+/batterybot_battery_indicator/Battery-Indicator-Free-master/src/com/darshancomputing/BatteryIndicator/HelpActivity.java
++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+ID;App;Preclassification;Subclassification; Review
+57a101565623ed112dfbe32b;BatteryBot Battery Indicator;RESSOURCES;BATTERY;Used to be great Now stuck at 99% and phones own indicator shows true value. Pain as rely on it and ended up with no battery yesterday...;
+/batterybot_battery_indicator/Battery-Indicator-Free-master/src/com/darshancomputing/BatteryIndicator/SettingsActivity.java
+/batterybot_battery_indicator/Battery-Indicator-Free-master/src/com/darshancomputing/BatteryIndicator/BatteryInfoService.java
+/batterybot_battery_indicator/Battery-Indicator-Free-master/src/com/darshancomputing/BatteryIndicator/PredictorCore.java
+/batterybot_battery_indicator/Battery-Indicator-Free-master/src/com/darshancomputing/BatteryIndicator/BatteryInfo.java
+/batterybot_battery_indicator/Battery-Indicator-Free-master/src/com/darshancomputing/BatteryIndicator/HelpActivity.java
++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+ID;App;Preclassification;Subclassification; Review
+57a101565623ed112dfbe328;Amaze File Manager;RESSOURCES;MEMORY;Fix please. So on other file manager if i open very large like conf file ex:apns config on /system/etc . then it not LAGS. Im using exynos note 3 btw. And in yours and some other it lags so much. Cant even scroll to bottom. Maybe allocate more ram? Or use all threads available? And remember hardware rendering :) great job btw. Best file manager;
+/amaze_file_manager/AmazeFileManager-master/src/main/java/com/amaze/filemanager/filesystem/FileUtil.java
+/amaze_file_manager/AmazeFileManager-master/src/main/java/com/amaze/filemanager/filesystem/MediaStoreHack.java
+/amaze_file_manager/AmazeFileManager-master/src/main/java/com/amaze/filemanager/utils/SmbStreamer/StreamServer.java
+/amaze_file_manager/AmazeFileManager-master/src/main/java/com/amaze/filemanager/utils/Futils.java
+/amaze_file_manager/AmazeFileManager-master/src/main/java/com/amaze/filemanager/ui/views/Indicator.java
++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
