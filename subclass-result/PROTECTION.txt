@@ -172,3 +172,177 @@ Correct classified: 28	 Wrong classified: 14
 Classification-Precision: 0.6666666666666666
 *****************************************************************************************************************************
 
+====================================================================================================================
+Review: "But……….. ⚠️ Personal Data Shared"
+Correctly classified into subclass: PRIVACY
+====================================================================================================================
+====================================================================================================================
+Review: "Great! Good but I hate the fact that it downloads the files into its data instead of in a folder which can be accessed"
+Correctly classified into subclass: PRIVACY
+====================================================================================================================
+====================================================================================================================
+Review: "Excellent The world doesn't know it, but this is what we all need."
+Wrong classification:   Weka: SECURITY	DB:PRIVACY
+====================================================================================================================
+====================================================================================================================
+Review: "Dare I use anything but chrome? Yes, DuckDuckGo offers a great comparable search engine yes there are many featured Google products that are much better but at least a discreet search option exist when you need the privacy"
+Correctly classified into subclass: PRIVACY
+====================================================================================================================
+====================================================================================================================
+Review: "Use DuckDuckGo, not Google DuckDuckGo will not spy on you like Google does, DuckDuckGo works better than Google with more security and privacy"
+Wrong classification:   Weka: SECURITY	DB:PRIVACY
+====================================================================================================================
+====================================================================================================================
+Review: "Duckduckgo Only one permission, unlike Google and shitbook."
+Correctly classified into subclass: PRIVACY
+====================================================================================================================
+====================================================================================================================
+Review: "Great privacy! Awesome. Definitely the company has a great future. Privacy is indeed taking much concern in recent years. Great work dev. Looking forward for a much light-faster app."
+Wrong classification:   Weka: SECURITY	DB:PRIVACY
+====================================================================================================================
+====================================================================================================================
+Review: "This is the best Free Non-Tracking search application to use on the Web. Google, Bing, Yahoo, Dog pile, AOL etc track and record EVERYTHING YOU WERE EVER SEARCHING FOR. No thanks I will only use DUCKDUCKGO as they "understand what Privacy TRULY IS." They do not lie about Any of the Services that they provide "unlike the others" such as, Bing, Google, Yahoo, Dog pile, AOL etc. Excetera"
+Wrong classification:   Weka: SECURITY	DB:PRIVACY
+====================================================================================================================
+====================================================================================================================
+Review: "Safe search engine Love the Stories section of the app. I enjoy also the "we don't track you" thing also :)"
+Wrong classification:   Weka: SECURITY	DB:PRIVACY
+====================================================================================================================
+====================================================================================================================
+Review: "Good App Works well, seems very secure and all, would ask the developers to seriously consider adding compatibility for a panic button app."
+Correctly classified into subclass: SECURITY
+====================================================================================================================
+====================================================================================================================
+Review: "Fb chat is showing some authentication error plz help in this"
+Correctly classified into subclass: SECURITY
+====================================================================================================================
+====================================================================================================================
+Review: "I am using it for years and it is very good. Please add authentication for running app. Thanks"
+Correctly classified into subclass: SECURITY
+====================================================================================================================
+====================================================================================================================
+Review: "No root rights request The application doesn't request for root rights on my Xperia Z1 with iHackers 6.2.1 ROM."
+Correctly classified into subclass: SECURITY
+====================================================================================================================
+====================================================================================================================
+Review: "Root access If your app need root access, you should have said so in the description!"
+Correctly classified into subclass: SECURITY
+====================================================================================================================
+====================================================================================================================
+Review: "It works. Requires root access to debug other apps."
+Correctly classified into subclass: SECURITY
+====================================================================================================================
+====================================================================================================================
+Review: "Great It is using root user. No other apps do that."
+Correctly classified into subclass: SECURITY
+====================================================================================================================
+====================================================================================================================
+Review: "I love this app!!! This is exactly what everyone needs installed to keep track of what apps are stealing your data and personal info. I found a somewhat 'legitimate' app making remote connections to their personal DSL IP in NY, hmmm that shouldn't be happening"
+Correctly classified into subclass: PRIVACY
+====================================================================================================================
+====================================================================================================================
+Review: "Great Security, Bad Calls I am grateful for this free app and the freedom it provides. Messaging is great, but calls can be rough. Good for anyone who does not want to subconciously alter their interactions with others as a result of knowing that the government collects everything - including private information to discredit those that disagree with it"
+Wrong classification:   Weka: SECURITY	DB:PRIVACY
+====================================================================================================================
+====================================================================================================================
+Review: "As described Private secure encrypted messages"
+Correctly classified into subclass: SECURITY
+====================================================================================================================
+====================================================================================================================
+Review: "Safe and secure Very good for communication"
+Correctly classified into subclass: SECURITY
+====================================================================================================================
+====================================================================================================================
+Review: "Sync security What about privacy? It's kinda dangerous to sync anything money-related without client-side encryption."
+Correctly classified into subclass: SECURITY
+====================================================================================================================
+====================================================================================================================
+Review: "I spend hours on these Free, no ads, doesn't use my data, and fun!"
+Correctly classified into subclass: PRIVACY
+====================================================================================================================
+====================================================================================================================
+Review: "Should've implemented run-time permissions by now."
+Correctly classified into subclass: PRIVACY
+====================================================================================================================
+====================================================================================================================
+Review: "Good security"
+Correctly classified into subclass: SECURITY
+====================================================================================================================
+====================================================================================================================
+Review: "Doesn't save system files Cannot save system files such as feature.xml. it says read only system. Then why the heck do you request for root access?? Why should I trust this app?"
+Wrong classification:   Weka: SECURITY	DB:PRIVACY
+====================================================================================================================
+====================================================================================================================
+Review: "Simple and functional Thats how i like apps, without hundreds of permissions or functions but with exact the functions that are helpful and that you need"
+Correctly classified into subclass: PRIVACY
+====================================================================================================================
+====================================================================================================================
+Review: "Thank you Mr. Lacy Many other annoying Twitter apps out there, want money, provide ads, and just make it inconvenient to use. I have switched to yours as I no longer trust Twitter's own with access to my contacts. Thank you for the work you've done on this."
+Wrong classification:   Weka: SECURITY	DB:PRIVACY
+====================================================================================================================
+====================================================================================================================
+Review: "FAILS to work! Fails to work every time that I try starting it...with it instead just showing zeros for nearly everything. I've inquired with them several times about it, yet they've never responded. I'm rooted, and ALL other similar process-related Apps work correctly such as 3D Process Monitor, so why won't this one work???! VERY DISAPPOINTING! (NOTE: This App ONLY fails like this when its settings are set for it to "Enable Root Privilege", otherwise it works okay. It is "Granted" root but repeatedly keeps asking!)"
+Correctly classified into subclass: PRIVACY
+====================================================================================================================
+====================================================================================================================
+Review: "A must have This is a must have app in my opinion. It shows you all your apps and what they are up to (hardware usage and Internet usage.) I also appreciate the developer(s) for making this advertisement free and it doesn't need crazy permissions."
+Correctly classified into subclass: PRIVACY
+====================================================================================================================
+====================================================================================================================
+Review: "Works great. Well designed and secure. Wish it asked for less permissions."
+Correctly classified into subclass: PRIVACY
+====================================================================================================================
+====================================================================================================================
+Review: "Clean The app is clean. No requirements for unnecessary permissions. I used it to delete some large unwanted files using disk space. What a pal Sally!"
+Correctly classified into subclass: PRIVACY
+====================================================================================================================
+====================================================================================================================
+Review: "Secure sigh of relief Excellent option to replace unsavory standard communication options (w/little or no security or encryption for sms/mms and everything involved in message creation, carrier channels, and recipient reception, entire process for communication period, not just the pipe that the message itself travels on (as is with vpn only setups). Signal excels at making your communication as secure & shielded as practically possible, in todays false sense of privacy via personal communication standards."
+Correctly classified into subclass: SECURITY
+====================================================================================================================
+====================================================================================================================
+Review: "Few problems, great otherwise From what I have seen the security and privacy are well implemented. There is a bit of a delay, but currently security and privacy come at a cost. I haven't found many bugs, the only glaring one is when you show all the apps you have open and slide to close Signal, the app sometimes pops back up or ends the screen where you can close apps."
+Wrong classification:   Weka: PRIVACY	DB:SECURITY
+====================================================================================================================
+====================================================================================================================
+Review: "Why does it always open on Root folder? I have not enabled root access, yet it always opens from root folder. I want it to always open from phone memory, and have the other tab as external sd card"
+Correctly classified into subclass: SECURITY
+====================================================================================================================
+====================================================================================================================
+Review: "Love it. But please add a feature of locking device by pattern or pin. Because once we get notification , we have to unlock acdisplay and then phone pattern. This is quite annoying. So it'd be better if you guys provide pattern or pin lock. Awesome work at last."
+Correctly classified into subclass: SECURITY
+====================================================================================================================
+====================================================================================================================
+Review: "Minimalistic - but not perfect. Ac display is fantastic and goes extremely well with my launcher on my LG Leon. But every app can be improved. Some improvements that I'd recommend is attempting to remove the constant ac bar notification. Annoying for some android users but nothing too major. Last but not least, I really hope to see different security locks like, a pin number, enter a pattern or swipe to unlock. That has been a very wanted feature with this app and I hope the devs/dev add this in a future update, but for right now. Great"
+Correctly classified into subclass: SECURITY
+====================================================================================================================
+====================================================================================================================
+Review: "Secure sigh of relief Excellent option to replace unsavory standard communication options (w/little or no security or encryption for sms/mms and everything involved in message creation, carrier channels, and recipient reception, entire process for communication period, not just the pipe that the message itself travels on (as is with vpn only setups). Signal excels at making your communication as secure & shielded as practically possible, in todays false sense of privacy via personal communication standards."
+Correctly classified into subclass: SECURITY
+====================================================================================================================
+====================================================================================================================
+Review: "Few problems, great otherwise From what I have seen the security and privacy are well implemented. There is a bit of a delay, but currently security and privacy come at a cost. I haven't found many bugs, the only glaring one is when you show all the apps you have open and slide to close Signal, the app sometimes pops back up or ends the screen where you can close apps."
+Wrong classification:   Weka: PRIVACY	DB:SECURITY
+====================================================================================================================
+====================================================================================================================
+Review: "A best and most reliable app! Appreciate how small yet mighty is this good app, with no added permissions. Thank you!"
+Correctly classified into subclass: PRIVACY
+====================================================================================================================
+====================================================================================================================
+Review: "Improve lockscreen Add the possibility to choose personal wallpaper like a photo and a security option like pin or pattern"
+Correctly classified into subclass: SECURITY
+====================================================================================================================
+====================================================================================================================
+Review: "Nice lockscreen! I used the lockscreen feature, and it looks well with the animation and the simple interface. Please add security option (pattern or pin) for the lockscreen, for the future update. Well done!"
+Correctly classified into subclass: SECURITY
+====================================================================================================================
+====================================================================================================================
+Review: "Privacy Great search engine"
+Wrong classification:   Weka: SECURITY	DB:PRIVACY
+====================================================================================================================
+
+*****************************************************************************************************************************
+Correct classified: 31	 Wrong classified: 11
+Classification-Precision: 0.7380952380952381
+*****************************************************************************************************************************
+
