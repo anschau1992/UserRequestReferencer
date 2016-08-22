@@ -10,7 +10,10 @@ import weka.classifiers.Classifier;
 import weka.classifiers.trees.J48;
 import weka.core.*;
 import weka.filters.unsupervised.instance.NonSparseToSparse;
+import weka.gui.treevisualizer.PlaceNode2;
+import weka.gui.treevisualizer.TreeVisualizer;
 
+import java.awt.*;
 import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
@@ -23,7 +26,7 @@ public class WekaCreator implements Constants {
 
     Instances trainingSet;
     Instances testingSet;
-    Classifier cModel;
+    J48 cModel;
 
     public WekaCreator(List<String> matrixterms, List<Review> reviews,
                        List<Review> trainingSetReviews, PreClassification preClassification) throws Exception {
@@ -45,7 +48,7 @@ public class WekaCreator implements Constants {
         sp.setInputFormat(testingSet);
 
         //add classifier-mode
-        cModel = (Classifier) new J48();
+        cModel =  new J48();
         cModel.buildClassifier(trainingSet);
 
         //use classifier
@@ -60,6 +63,21 @@ public class WekaCreator implements Constants {
             System.out.println("FDistribution for Instance #" + (i + 1) + ": " + fDistribution[0] + "|" + fDistribution[1]);
         }
 
+        //tree visualizer
+        final javax.swing.JFrame jf =
+                new javax.swing.JFrame("Weka Classifier Tree Visualizer: J48");
+        jf.setSize(500,400);
+        jf.getContentPane().setLayout(new BorderLayout());
+        TreeVisualizer tv = new TreeVisualizer(null, cModel.graph(), new PlaceNode2());
+        jf.getContentPane().add(tv, BorderLayout.CENTER);
+        jf.addWindowListener(new java.awt.event.WindowAdapter() {
+            public void windowClosing(java.awt.event.WindowEvent e) {
+                jf.dispose();
+            }
+        });
+
+        jf.setVisible(true);
+        tv.fitToScreen();
 
     }
 

@@ -1,0 +1,356 @@
+====================================================================================================================
+Review: "Best XMPP App. Bring Dark Back! Will get 5 stars when: Dark themes return. Please add ?style? Option, I don't enjoy new bubble type left/right post/reply layout, provide options including the previous all left&plain text style. OneUp it by doing a custom tunable styling options feature! Miss the red notice icon. Even so, best xmpp app by far! Just found VIP Version and will 'upgrade' soon. Copy/Quote works! But resuming from notification no longer respawns in the previous chat room, it always goes to main screen :( mwaa"
+Wrong classification:   Weka: PRICE	DB:LICENSING
+====================================================================================================================
+====================================================================================================================
+Review: "Wonderful, Love it! Im reading the Civil War story with this. I heard you gotta pay for it, I dont mind cause this is great."
+Wrong classification:   Weka: LICENSING	DB:PRICE
+====================================================================================================================
+====================================================================================================================
+Review: "Good for the price It is fast but there's a lot of memory issues especially when trying to read a large comic book with over a hundred pages"
+Correctly classified into subclass: PRICE
+====================================================================================================================
+====================================================================================================================
+Review: "Constant out of momory crashes In portrait or landscape mode reading trade paperback .cbr's causes constant crashes of files that when used on my computer read just fine. This is REALLY too bad, as it is a nice interface. Maybe it is just the size of some of these trade paperbacks that throws the app as smaller 45-60 page cbr's work, but if that was the case then using low memory mode would have had a positive effect (it hasn't). Another annoyance (though easily remedied) was the swipe menu. I'm giving 3 out of 5 stars in hope that they sort the crashing out on the free version...that might even convince me to buy the premium version (hint, hint)."
+Correctly classified into subclass: LICENSING
+====================================================================================================================
+====================================================================================================================
+Review: "Does not work I had the same issue with the low memory error so i uninstalled it affer only 10 hours.......if this issue gets fixed i would get it again and i qould probabl pay for the premium."
+Correctly classified into subclass: LICENSING
+====================================================================================================================
+====================================================================================================================
+Review: "Petty good, but few hiccups. This is an awesome reader. Every now and then ill get some kind of error trying to load certain files, but when that happens I just usually use an alternative reader. I'll be updating to the premium version for the hell of it."
+Correctly classified into subclass: LICENSING
+====================================================================================================================
+====================================================================================================================
+Review: "The best Thie cranks my nostalgia level to 11. This live wallpaper works flawlessly on my note 4. I loved it so much I donated 1$ to the creater :)"
+Correctly classified into subclass: PRICE
+====================================================================================================================
+====================================================================================================================
+Review: "Deserves no less than 5 stars There is a paid version. I can't imagine it could be any better than this. This is all I want in an earthbound live wallpaper. I'm going to now make a go launcher icon pack so that my contacts, aps, sms and camera are Ness, Paula Jeff and Poo. There is just one user who gave less that 5 stars. We should paint him blue."
+Correctly classified into subclass: LICENSING
+====================================================================================================================
+====================================================================================================================
+Review: "love it Thank you for this great EB. wallpaper. I also paid the donation for this app. I just wish you tossed in a song or something for the paid version. But all in all it is good, it will be my main wallpaper for years."
+Correctly classified into subclass: PRICE
+====================================================================================================================
+====================================================================================================================
+Review: "Perfect, simple and works great Even many plugins, you can get pictures from panoramio near you whiteout doing nothing... Obviously paid donation cheap version, it worth less than 2 bucks..."
+Correctly classified into subclass: PRICE
+====================================================================================================================
+====================================================================================================================
+Review: "Excellent I've tried and rejected about 5 other slideshow wallpaper apps but I stopped at this one. Works exactly how I want it to so far. And I'm surprised it's free... I usually have to pay for a decent app. (It asks for a donation, but it's not required.) Don't see any ads so far. Lovin' this."
+Correctly classified into subclass: PRICE
+====================================================================================================================
+====================================================================================================================
+Review: "best mobile RPG this game is really really hard, but fun too. There is a Steam version for $5 which is a very basic PC port. I bought that version too as a way of donating to the developers and I highly recommend you download this game."
+Correctly classified into subclass: PRICE
+====================================================================================================================
+====================================================================================================================
+Review: "Completely free, completely awesome. No ads, continually updated,great fun. A perfect roguelike for your Android device. Really do consider donating to this Dev,the game is worth a few quid at least and he gives it away 100% free with no ads or microtransactions at all.make sure to get this version, and not a copy trying to make money off this devs hard work."
+Correctly classified into subclass: LICENSING
+====================================================================================================================
+====================================================================================================================
+Review: "Amazing Just the best mobile game i have ever played AND ! The only good game that isnt a money grab. Also very challenging."
+Correctly classified into subclass: LICENSING
+====================================================================================================================
+====================================================================================================================
+Review: "Great game I Donated 5$. Please do so if you realize that you play this game often without seeing ads or having to pay for ad ons"
+Correctly classified into subclass: PRICE
+====================================================================================================================
+====================================================================================================================
+Review: "Great game, and completely free This game is lots of fun, and it's completely free, no in app purchases (I know, it's in the app permissions, but that's just to donate to the developers) if you're thinking of getting it, you definitely should at least try it!"
+Wrong classification:   Weka: PRICE	DB:LICENSING
+====================================================================================================================
+====================================================================================================================
+Review: "Excellent game I would have gladly paid $10 for."
+Wrong classification:   Weka: LICENSING	DB:PRICE
+====================================================================================================================
+====================================================================================================================
+Review: "Awesome game, but a idea... Can you make a DLC or something for like, a new chapter for Pixel Dungeon? Would be appreciated if you did. Example: Dracula's Curse of Pixel Dungeon. Just a example, probably something better. Also, make it be like $0.99 for DLC, or at least $2.00? Plz make a new chapter or something cool to the strory!"
+Wrong classification:   Weka: LICENSING	DB:PRICE
+====================================================================================================================
+====================================================================================================================
+Review: "best rogue-like around! this is an amazing game! it's free! they don't beat you over the head asking for a rating! IAP? nope! just a $5 donate button, which you will definitely want to hit after you see how awesome this game is!"
+Correctly classified into subclass: PRICE
+====================================================================================================================
+====================================================================================================================
+Review: "Stranger wouldn't understand Featured ; Intuitive ; Stable ; Anything you need :-) worth being paid for 😇"
+Correctly classified into subclass: LICENSING
+====================================================================================================================
+====================================================================================================================
+Review: "Stop looking elsewhere Of the logcat apps I've used, this is the best; line numbering, highlighting, filtering logs, saved output... definitely worth the donation."
+Wrong classification:   Weka: PRICE	DB:LICENSING
+====================================================================================================================
+====================================================================================================================
+Review: "Very Nice APP. Would be amazing if you could add Charts, Tables and pie Reports, with PDF export. Wouldn't mind having it on a paid version."
+Wrong classification:   Weka: PRICE	DB:LICENSING
+====================================================================================================================
+====================================================================================================================
+Review: "I love this app. Easy and nice interface. Although it is free it has alot of features like paid apps."
+Correctly classified into subclass: LICENSING
+====================================================================================================================
+====================================================================================================================
+Review: "had to re rate 5 stars perfect free game entertaining and long life games, really worth a download and developers you need to consider charging nothing to expensive but 10p a download would still be a bargain"
+Wrong classification:   Weka: LICENSING	DB:PRICE
+====================================================================================================================
+====================================================================================================================
+Review: "The only game you need I have played this game for years! If I had to pay a cent for every hour of this enjoyment this app has given me, it would cost me a lot of money, but thankfully it is free! :)"
+Wrong classification:   Weka: LICENSING	DB:PRICE
+====================================================================================================================
+====================================================================================================================
+Review: "Sources It is a very premium app, for no cost. It does it's job well, but it would be nice if it could support multiple sources and use a random source daily. Other than that, I would heavily recommend it."
+Correctly classified into subclass: LICENSING
+====================================================================================================================
+====================================================================================================================
+Review: "Support the devs, donate."
+Wrong classification:   Weka: LICENSING	DB:PRICE
+====================================================================================================================
+====================================================================================================================
+Review: "Only 601 lines shown I downloaded this app hoping to be able to view my long javascript files on mobile. I was dissapointed to see that only 601 lines are shown in it. Thinking it might be limitation of the free version i paid for paid version still it is showing 601 lines. I am very frustrated and dissapointed . Fix it and help me."
+Correctly classified into subclass: LICENSING
+====================================================================================================================
+====================================================================================================================
+Review: "License gone I bought this as at the time it was the best editor, when I was reinstalling my phone I couldn't get back the full version that I had bought, so I was tricked into making a donation for the full version which didn't work. So basically I have paid for this app twice and I won't be giving you anymore money, if you want me to assess the app as a proficient web dev then give me my license back and I will write another review. I am quite sure it was the devs who deleted my licence between versions and not my er"
+Correctly classified into subclass: LICENSING
+====================================================================================================================
+====================================================================================================================
+Review: "No updates! This app definitely has potential! but there's no consistent development. I really enjoy this app for the most part, but you can tell there are bugs that need to be addressed. Why not update your app and turn it into a real money maker! I would pay if this app was keep updated.. Just so you know, thanks"
+Correctly classified into subclass: LICENSING
+====================================================================================================================
+====================================================================================================================
+Review: "Please update lockscreen I love this app, but it constantly freezes my Galaxy S5 when the lockscreen is enabled. Pleas update this app! I would pay for this functionality"
+Wrong classification:   Weka: LICENSING	DB:PRICE
+====================================================================================================================
+====================================================================================================================
+Review: "Free open source and excellent."
+Correctly classified into subclass: LICENSING
+====================================================================================================================
+====================================================================================================================
+Review: "Malware got into my house last week (over a $%^ XP laptop). It seems to have gotten onto my phone (*OR* "TrustLook" is malware itself). Using OS Monitor, I actually saw an active connection to a server in China. This software is incredible. I refuse to let anything financial happen on my phone, but if you show us a web site where we can donate, I think you might get much more of a rewarding response from your users....."
+Correctly classified into subclass: PRICE
+====================================================================================================================
+====================================================================================================================
+Review: "Great Help me solve a rebooting problem (deserves donation)"
+Correctly classified into subclass: PRICE
+====================================================================================================================
+====================================================================================================================
+Review: "5Stars and highest donation 1) I don't only contact developers when having a problem or a request with an application, I also do so when being seriously impressed, which are the case with your 'ClipStack' application. This was obvious for acknowledgement after only 5 mins for my part. 2) You offer all functions in the free version  3) You ask for donation, but only to support you, not to unlock extra features, as they are already available in the free version. 4) The application does NOT take a lot of memory = it's a small size.  5) Simply, you have made a very nice looking interface and very easy to access from the drop-down menu at the top of screen. THANK YOU. In my head it yields: 'Make it work, but keep it simple', which is exactly what you did.  I find these reasons to be VERY high and humble service. Hence I donated the highest possible amount you've made available. Respect for you 'guys'. I will of course rate you on Google play store.  Yasemin Nielsen, Denmark/Norway"
+Correctly classified into subclass: PRICE
+====================================================================================================================
+====================================================================================================================
+Review: "Great This is the best free twitter client, if you're not willing to pay the 4.49 for Fenix. Easy to use, keep up the great work Chris Lacy!"
+Wrong classification:   Weka: LICENSING	DB:PRICE
+====================================================================================================================
+====================================================================================================================
+Review: "What's the point? I willing 'donated' $5 thinking I would unlock some extra content, or even the option to SAVE my progress. This is a fun FREE game, but I genuinely do feel cheated out of my money. Bottom line, fun game but not worth the $5 as there is no added content /value."
+Correctly classified into subclass: PRICE
+====================================================================================================================
+====================================================================================================================
+Review: "Loved it... A few suggestions... Try making this... Plz remove the item degrading features... It's kinda Annoying... That's all... Also I would not kill you even if u add some adds. Make it so that u get enough money to keep updating and donations remove adds. That would surely help u bring more content. But don't do too much adds. Just the right amount.... :)"
+Wrong classification:   Weka: PRICE	DB:LICENSING
+====================================================================================================================
+====================================================================================================================
+Review: "Best movie and TV show tracker app out there! Love this app, I use it daily! Also includes the option of going to premium for a one-time payment and not monthly payments like most of the other similar apps."
+Correctly classified into subclass: LICENSING
+====================================================================================================================
+====================================================================================================================
+Review: "Nice Nice, except paid app for battery charge alarm"
+Correctly classified into subclass: LICENSING
+====================================================================================================================
+====================================================================================================================
+Review: "Actually very excellent! It works great, it's light weight. There is no hidden spyware or Malware like no wifi disconnect, no picture takers, no direct phone calling without your knowledge. This is truly a sweet app. I will buy the paid version just because the writer of this app is so honest..."
+Correctly classified into subclass: LICENSING
+====================================================================================================================
+====================================================================================================================
+Review: "I figured out a way to calibrate it! Take a piece of foam larger than your phone/tablet. (I used 1' Styrofoam insulation) Float the foam in a bowl or your sink full of water. Place your phone on top of the foam and wait until it stops moving.......press calibrate. It should be fairly accurate at that point. I have a Samsung S2x with a battery that bulges out at the back and it was the only way I could figure out how to get level with it. Simple but useful app. Thanks. Edit- Decided to buy the 'Pro Version' Worth the $2 (Canadian :-) )"
+Correctly classified into subclass: LICENSING
+====================================================================================================================
+====================================================================================================================
+Review: "Open Source is only way to be safe AND PROVE APPS AREN'T ABUSING PERMISSIONS YOU ACCEPT. THE MINIMAL HARM IS THE SALE OF UR INFO TO AD COMPANIES OR HACKERS IF U PAY FOR ANYTHING WITH PHONE. BEWARE PEOPLE AND STICK TO DEVELOPMENT IN YOUR REGION IN CASE ABUSE SO REPORT GETS RESPONSE. THIS APP IS GREAT AND NEEDS A DONATE METHOD. I'll pay a lot to open source developers. Google+ me for info or any open source developers. Lets start a movement for a better internet. I'm so serious ill put lots of money where my mouth ism"
+Correctly classified into subclass: PRICE
+====================================================================================================================
+
+*****************************************************************************************************************************
+Correct classified: 30	 Wrong classified: 13
+Classification-Precision: 0.6976744186046512
+*****************************************************************************************************************************
+
+====================================================================================================================
+Review: "Best XMPP App. Bring Dark Back! Will get 5 stars when: Dark themes return. Please add ?style? Option, I don't enjoy new bubble type left/right post/reply layout, provide options including the previous all left&plain text style. OneUp it by doing a custom tunable styling options feature! Miss the red notice icon. Even so, best xmpp app by far! Just found VIP Version and will 'upgrade' soon. Copy/Quote works! But resuming from notification no longer respawns in the previous chat room, it always goes to main screen :( mwaa"
+Wrong classification:   Weka: PRICE	DB:LICENSING
+====================================================================================================================
+====================================================================================================================
+Review: "Wonderful, Love it! Im reading the Civil War story with this. I heard you gotta pay for it, I dont mind cause this is great."
+Wrong classification:   Weka: LICENSING	DB:PRICE
+====================================================================================================================
+====================================================================================================================
+Review: "Good for the price It is fast but there's a lot of memory issues especially when trying to read a large comic book with over a hundred pages"
+Correctly classified into subclass: PRICE
+====================================================================================================================
+====================================================================================================================
+Review: "Constant out of momory crashes In portrait or landscape mode reading trade paperback .cbr's causes constant crashes of files that when used on my computer read just fine. This is REALLY too bad, as it is a nice interface. Maybe it is just the size of some of these trade paperbacks that throws the app as smaller 45-60 page cbr's work, but if that was the case then using low memory mode would have had a positive effect (it hasn't). Another annoyance (though easily remedied) was the swipe menu. I'm giving 3 out of 5 stars in hope that they sort the crashing out on the free version...that might even convince me to buy the premium version (hint, hint)."
+Correctly classified into subclass: LICENSING
+====================================================================================================================
+====================================================================================================================
+Review: "Does not work I had the same issue with the low memory error so i uninstalled it affer only 10 hours.......if this issue gets fixed i would get it again and i qould probabl pay for the premium."
+Correctly classified into subclass: LICENSING
+====================================================================================================================
+====================================================================================================================
+Review: "Petty good, but few hiccups. This is an awesome reader. Every now and then ill get some kind of error trying to load certain files, but when that happens I just usually use an alternative reader. I'll be updating to the premium version for the hell of it."
+Correctly classified into subclass: LICENSING
+====================================================================================================================
+====================================================================================================================
+Review: "The best Thie cranks my nostalgia level to 11. This live wallpaper works flawlessly on my note 4. I loved it so much I donated 1$ to the creater :)"
+Correctly classified into subclass: PRICE
+====================================================================================================================
+====================================================================================================================
+Review: "Deserves no less than 5 stars There is a paid version. I can't imagine it could be any better than this. This is all I want in an earthbound live wallpaper. I'm going to now make a go launcher icon pack so that my contacts, aps, sms and camera are Ness, Paula Jeff and Poo. There is just one user who gave less that 5 stars. We should paint him blue."
+Correctly classified into subclass: LICENSING
+====================================================================================================================
+====================================================================================================================
+Review: "love it Thank you for this great EB. wallpaper. I also paid the donation for this app. I just wish you tossed in a song or something for the paid version. But all in all it is good, it will be my main wallpaper for years."
+Correctly classified into subclass: PRICE
+====================================================================================================================
+====================================================================================================================
+Review: "Perfect, simple and works great Even many plugins, you can get pictures from panoramio near you whiteout doing nothing... Obviously paid donation cheap version, it worth less than 2 bucks..."
+Correctly classified into subclass: PRICE
+====================================================================================================================
+====================================================================================================================
+Review: "Excellent I've tried and rejected about 5 other slideshow wallpaper apps but I stopped at this one. Works exactly how I want it to so far. And I'm surprised it's free... I usually have to pay for a decent app. (It asks for a donation, but it's not required.) Don't see any ads so far. Lovin' this."
+Correctly classified into subclass: PRICE
+====================================================================================================================
+====================================================================================================================
+Review: "best mobile RPG this game is really really hard, but fun too. There is a Steam version for $5 which is a very basic PC port. I bought that version too as a way of donating to the developers and I highly recommend you download this game."
+Correctly classified into subclass: PRICE
+====================================================================================================================
+====================================================================================================================
+Review: "Completely free, completely awesome. No ads, continually updated,great fun. A perfect roguelike for your Android device. Really do consider donating to this Dev,the game is worth a few quid at least and he gives it away 100% free with no ads or microtransactions at all.make sure to get this version, and not a copy trying to make money off this devs hard work."
+Correctly classified into subclass: LICENSING
+====================================================================================================================
+====================================================================================================================
+Review: "Amazing Just the best mobile game i have ever played AND ! The only good game that isnt a money grab. Also very challenging."
+Correctly classified into subclass: LICENSING
+====================================================================================================================
+====================================================================================================================
+Review: "Great game I Donated 5$. Please do so if you realize that you play this game often without seeing ads or having to pay for ad ons"
+Correctly classified into subclass: PRICE
+====================================================================================================================
+====================================================================================================================
+Review: "Great game, and completely free This game is lots of fun, and it's completely free, no in app purchases (I know, it's in the app permissions, but that's just to donate to the developers) if you're thinking of getting it, you definitely should at least try it!"
+Wrong classification:   Weka: PRICE	DB:LICENSING
+====================================================================================================================
+====================================================================================================================
+Review: "Excellent game I would have gladly paid $10 for."
+Wrong classification:   Weka: LICENSING	DB:PRICE
+====================================================================================================================
+====================================================================================================================
+Review: "Awesome game, but a idea... Can you make a DLC or something for like, a new chapter for Pixel Dungeon? Would be appreciated if you did. Example: Dracula's Curse of Pixel Dungeon. Just a example, probably something better. Also, make it be like $0.99 for DLC, or at least $2.00? Plz make a new chapter or something cool to the strory!"
+Correctly classified into subclass: LICENSING
+====================================================================================================================
+====================================================================================================================
+Review: "best rogue-like around! this is an amazing game! it's free! they don't beat you over the head asking for a rating! IAP? nope! just a $5 donate button, which you will definitely want to hit after you see how awesome this game is!"
+Correctly classified into subclass: PRICE
+====================================================================================================================
+====================================================================================================================
+Review: "Stranger wouldn't understand Featured ; Intuitive ; Stable ; Anything you need :-) worth being paid for 😇"
+Correctly classified into subclass: LICENSING
+====================================================================================================================
+====================================================================================================================
+Review: "Stop looking elsewhere Of the logcat apps I've used, this is the best; line numbering, highlighting, filtering logs, saved output... definitely worth the donation."
+Wrong classification:   Weka: PRICE	DB:LICENSING
+====================================================================================================================
+====================================================================================================================
+Review: "Very Nice APP. Would be amazing if you could add Charts, Tables and pie Reports, with PDF export. Wouldn't mind having it on a paid version."
+Wrong classification:   Weka: PRICE	DB:LICENSING
+====================================================================================================================
+====================================================================================================================
+Review: "I love this app. Easy and nice interface. Although it is free it has alot of features like paid apps."
+Correctly classified into subclass: LICENSING
+====================================================================================================================
+====================================================================================================================
+Review: "had to re rate 5 stars perfect free game entertaining and long life games, really worth a download and developers you need to consider charging nothing to expensive but 10p a download would still be a bargain"
+Wrong classification:   Weka: LICENSING	DB:PRICE
+====================================================================================================================
+====================================================================================================================
+Review: "The only game you need I have played this game for years! If I had to pay a cent for every hour of this enjoyment this app has given me, it would cost me a lot of money, but thankfully it is free! :)"
+Wrong classification:   Weka: LICENSING	DB:PRICE
+====================================================================================================================
+====================================================================================================================
+Review: "Sources It is a very premium app, for no cost. It does it's job well, but it would be nice if it could support multiple sources and use a random source daily. Other than that, I would heavily recommend it."
+Correctly classified into subclass: LICENSING
+====================================================================================================================
+====================================================================================================================
+Review: "Support the devs, donate."
+Wrong classification:   Weka: LICENSING	DB:PRICE
+====================================================================================================================
+====================================================================================================================
+Review: "Only 601 lines shown I downloaded this app hoping to be able to view my long javascript files on mobile. I was dissapointed to see that only 601 lines are shown in it. Thinking it might be limitation of the free version i paid for paid version still it is showing 601 lines. I am very frustrated and dissapointed . Fix it and help me."
+Correctly classified into subclass: LICENSING
+====================================================================================================================
+====================================================================================================================
+Review: "License gone I bought this as at the time it was the best editor, when I was reinstalling my phone I couldn't get back the full version that I had bought, so I was tricked into making a donation for the full version which didn't work. So basically I have paid for this app twice and I won't be giving you anymore money, if you want me to assess the app as a proficient web dev then give me my license back and I will write another review. I am quite sure it was the devs who deleted my licence between versions and not my er"
+Correctly classified into subclass: LICENSING
+====================================================================================================================
+====================================================================================================================
+Review: "No updates! This app definitely has potential! but there's no consistent development. I really enjoy this app for the most part, but you can tell there are bugs that need to be addressed. Why not update your app and turn it into a real money maker! I would pay if this app was keep updated.. Just so you know, thanks"
+Correctly classified into subclass: LICENSING
+====================================================================================================================
+====================================================================================================================
+Review: "Please update lockscreen I love this app, but it constantly freezes my Galaxy S5 when the lockscreen is enabled. Pleas update this app! I would pay for this functionality"
+Wrong classification:   Weka: LICENSING	DB:PRICE
+====================================================================================================================
+====================================================================================================================
+Review: "Free open source and excellent."
+Correctly classified into subclass: LICENSING
+====================================================================================================================
+====================================================================================================================
+Review: "Malware got into my house last week (over a $%^ XP laptop). It seems to have gotten onto my phone (*OR* "TrustLook" is malware itself). Using OS Monitor, I actually saw an active connection to a server in China. This software is incredible. I refuse to let anything financial happen on my phone, but if you show us a web site where we can donate, I think you might get much more of a rewarding response from your users....."
+Correctly classified into subclass: PRICE
+====================================================================================================================
+====================================================================================================================
+Review: "Great Help me solve a rebooting problem (deserves donation)"
+Correctly classified into subclass: PRICE
+====================================================================================================================
+====================================================================================================================
+Review: "5Stars and highest donation 1) I don't only contact developers when having a problem or a request with an application, I also do so when being seriously impressed, which are the case with your 'ClipStack' application. This was obvious for acknowledgement after only 5 mins for my part. 2) You offer all functions in the free version  3) You ask for donation, but only to support you, not to unlock extra features, as they are already available in the free version. 4) The application does NOT take a lot of memory = it's a small size.  5) Simply, you have made a very nice looking interface and very easy to access from the drop-down menu at the top of screen. THANK YOU. In my head it yields: 'Make it work, but keep it simple', which is exactly what you did.  I find these reasons to be VERY high and humble service. Hence I donated the highest possible amount you've made available. Respect for you 'guys'. I will of course rate you on Google play store.  Yasemin Nielsen, Denmark/Norway"
+Correctly classified into subclass: PRICE
+====================================================================================================================
+====================================================================================================================
+Review: "Great This is the best free twitter client, if you're not willing to pay the 4.49 for Fenix. Easy to use, keep up the great work Chris Lacy!"
+Wrong classification:   Weka: LICENSING	DB:PRICE
+====================================================================================================================
+====================================================================================================================
+Review: "What's the point? I willing 'donated' $5 thinking I would unlock some extra content, or even the option to SAVE my progress. This is a fun FREE game, but I genuinely do feel cheated out of my money. Bottom line, fun game but not worth the $5 as there is no added content /value."
+Correctly classified into subclass: PRICE
+====================================================================================================================
+====================================================================================================================
+Review: "Loved it... A few suggestions... Try making this... Plz remove the item degrading features... It's kinda Annoying... That's all... Also I would not kill you even if u add some adds. Make it so that u get enough money to keep updating and donations remove adds. That would surely help u bring more content. But don't do too much adds. Just the right amount.... :)"
+Wrong classification:   Weka: PRICE	DB:LICENSING
+====================================================================================================================
+====================================================================================================================
+Review: "Best movie and TV show tracker app out there! Love this app, I use it daily! Also includes the option of going to premium for a one-time payment and not monthly payments like most of the other similar apps."
+Correctly classified into subclass: LICENSING
+====================================================================================================================
+====================================================================================================================
+Review: "Nice Nice, except paid app for battery charge alarm"
+Correctly classified into subclass: LICENSING
+====================================================================================================================
+====================================================================================================================
+Review: "Actually very excellent! It works great, it's light weight. There is no hidden spyware or Malware like no wifi disconnect, no picture takers, no direct phone calling without your knowledge. This is truly a sweet app. I will buy the paid version just because the writer of this app is so honest..."
+Correctly classified into subclass: LICENSING
+====================================================================================================================
+====================================================================================================================
+Review: "I figured out a way to calibrate it! Take a piece of foam larger than your phone/tablet. (I used 1' Styrofoam insulation) Float the foam in a bowl or your sink full of water. Place your phone on top of the foam and wait until it stops moving.......press calibrate. It should be fairly accurate at that point. I have a Samsung S2x with a battery that bulges out at the back and it was the only way I could figure out how to get level with it. Simple but useful app. Thanks. Edit- Decided to buy the 'Pro Version' Worth the $2 (Canadian :-) )"
+Correctly classified into subclass: LICENSING
+====================================================================================================================
+====================================================================================================================
+Review: "Open Source is only way to be safe AND PROVE APPS AREN'T ABUSING PERMISSIONS YOU ACCEPT. THE MINIMAL HARM IS THE SALE OF UR INFO TO AD COMPANIES OR HACKERS IF U PAY FOR ANYTHING WITH PHONE. BEWARE PEOPLE AND STICK TO DEVELOPMENT IN YOUR REGION IN CASE ABUSE SO REPORT GETS RESPONSE. THIS APP IS GREAT AND NEEDS A DONATE METHOD. I'll pay a lot to open source developers. Google+ me for info or any open source developers. Lets start a movement for a better internet. I'm so serious ill put lots of money where my mouth ism"
+Correctly classified into subclass: PRICE
+====================================================================================================================
+
+*****************************************************************************************************************************
+Correct classified: 31	 Wrong classified: 12
+Classification-Precision: 0.7209302325581395
+*****************************************************************************************************************************
+

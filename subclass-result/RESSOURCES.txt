@@ -1,0 +1,692 @@
+====================================================================================================================
+Review: "Why do we need Tor? To surf internet i need extra app to use,battery will drain so fast"
+Correctly classified into subclass: BATTERY
+====================================================================================================================
+====================================================================================================================
+Review: "Drains battery It's the top draining application on my phone, despite not using it most of the time. Makes it essentially unusable."
+Correctly classified into subclass: BATTERY
+====================================================================================================================
+====================================================================================================================
+Review: "Battery Drain off the charts! Tried to use this with Olark. The battery drain is mind blowing. Sucks my battery dry in 2 hours on my S6 Edge+ making the app useless. A shame."
+Correctly classified into subclass: BATTERY
+====================================================================================================================
+====================================================================================================================
+Review: "Bi polar app... Update: After some years away from this app I decided to give it another go. Sad to see that after 4 years the same issues persist. Sill won't load certain comics after a few pages. Unbelievable. One minute I can read everything, the next I get "out of memory" prompts. What is that all about?"
+Correctly classified into subclass: MEMORY
+====================================================================================================================
+====================================================================================================================
+Review: "No update in 4 years Crashes often. Keep looking for another reader"
+Correctly classified into subclass: PERFORMANCE
+====================================================================================================================
+====================================================================================================================
+Review: "Crashed when going one page to another"
+Correctly classified into subclass: PERFORMANCE
+====================================================================================================================
+====================================================================================================================
+Review: "Worthless Keeps saying not enough memory to open one single file. Others work just fine."
+Correctly classified into subclass: MEMORY
+====================================================================================================================
+====================================================================================================================
+Review: "Buggy, poor performance consistently, even on flagship phones. No excuse for a comic viewer that can't view comics."
+Correctly classified into subclass: PERFORMANCE
+====================================================================================================================
+====================================================================================================================
+Review: "Great app, except for with CBR On most CBR files, it'll throw an error about being out of memory. Doesn't matter if you're on a device with 512mb, or 2gb of RAM, and will always do it on the same pages. Open it up in another reader, on the same device, zero problems. Long time user, but this has just got to be too much."
+Correctly classified into subclass: MEMORY
+====================================================================================================================
+====================================================================================================================
+Review: "Out of memory It used to work great, but now it runs out of memory when opening larger (10 meg+ files). Other comic readers open the comics fine. Also for ICS, it should remove the bottom bar when in full screen mode."
+Correctly classified into subclass: MEMORY
+====================================================================================================================
+====================================================================================================================
+Review: "Great!!! Works like a charm. Easy to use, needs only a little space. Thank you!"
+Wrong classification:   Weka: PERFORMANCE	DB:MEMORY
+====================================================================================================================
+====================================================================================================================
+Review: "Bad Runs out of memory on my way phone which is an S4"
+Correctly classified into subclass: MEMORY
+====================================================================================================================
+====================================================================================================================
+Review: "Memory bugs This is an awesome, user friendly app... When it works. Memory bugs cripple certain files I've used on other apps and devices successfully. Fix it and I'll give more stars."
+Correctly classified into subclass: MEMORY
+====================================================================================================================
+====================================================================================================================
+Review: "Lack of memory Was running fine on my Galaxy note till till today saying a message like lack of memory and brought me back to the welcome screen"
+Correctly classified into subclass: MEMORY
+====================================================================================================================
+====================================================================================================================
+Review: "I don't understand Started out great now always getting low or out of memory error. Got it set to low memory still doing it. Have over 2gb on phone free what's up????"
+Correctly classified into subclass: MEMORY
+====================================================================================================================
+====================================================================================================================
+Review: "Crashing Keeps crashing mid comic"
+Correctly classified into subclass: PERFORMANCE
+====================================================================================================================
+====================================================================================================================
+Review: "Needs a LOT of work! Far too many "memory" issues"
+Correctly classified into subclass: MEMORY
+====================================================================================================================
+====================================================================================================================
+Review: "4/5 rans out of memory on larger comics, and sometimes zoom chages between pages, other thab that, works fine"
+Correctly classified into subclass: MEMORY
+====================================================================================================================
+====================================================================================================================
+Review: "Keeps Crashing Same problem that everyone else is having. "Opps" error has ruined any goodwill I had toward this app."
+Correctly classified into subclass: PERFORMANCE
+====================================================================================================================
+====================================================================================================================
+Review: "No SD card support Was really good but now I can't view my SD card anymore... please fix"
+new Subclassification: PERFORMANCE with precision of 0.8571428571428571
+====================================================================================================================
+====================================================================================================================
+Review: "Memory error Keep getting a memory error on my s3..."
+Correctly classified into subclass: MEMORY
+====================================================================================================================
+====================================================================================================================
+Review: "Not good. I've got a phone with 2GB of RAM and it is running out of memory?"
+Correctly classified into subclass: MEMORY
+====================================================================================================================
+====================================================================================================================
+Review: "Fast, light, and does what needs to be done! Great app. It's really fast, takes up only 673k of space and remembers which page you were at when you close the app. I appreciate the ability to customize controls...you can tailor it to your reading style.I This is the first and only app review I plan on doing...nothing quite like ACV. A must for comic readers."
+Wrong classification:   Weka: PERFORMANCE	DB:MEMORY
+====================================================================================================================
+====================================================================================================================
+Review: "Good but could use fixing After a while I get a lot of errors saying the app is out of memory which fix themselves erratically and unpredictably so I can never read many files at one go. Other than that I enjoy the app's clean interface and ease of use."
+Correctly classified into subclass: MEMORY
+====================================================================================================================
+====================================================================================================================
+Review: "oops! used to love this app, now every comic i read comes up with oops! and something about being ou of memory. happens on both my phone and my tablet, both running different roms."
+Correctly classified into subclass: MEMORY
+====================================================================================================================
+====================================================================================================================
+Review: "Unable to load Has a lot of problems loading comics do to a memory issue."
+Correctly classified into subclass: MEMORY
+====================================================================================================================
+====================================================================================================================
+Review: "Memory error"
+Correctly classified into subclass: MEMORY
+====================================================================================================================
+====================================================================================================================
+Review: "Keeps crashing!"
+Correctly classified into subclass: PERFORMANCE
+====================================================================================================================
+====================================================================================================================
+Review: "It's Like a Waking Dream Never lags, works much better than other apps that attempt to recreate the battle scenes from EarthBound. Highly recommended!"
+Correctly classified into subclass: PERFORMANCE
+====================================================================================================================
+====================================================================================================================
+Review: "Grew up playing this Love it. Works great and doesn't drain battery"
+Correctly classified into subclass: BATTERY
+====================================================================================================================
+====================================================================================================================
+Review: "Superb! Absolutely spectacular. Emulates the Earthbound backgrounds beautifully without compromising battery life. A+ Material!"
+Correctly classified into subclass: BATTERY
+====================================================================================================================
+====================================================================================================================
+Review: "Awesome A few weeks in, and I absolutely love this app. This app is absolutely terrific. And hasn't really drained my battery life yet. I have it on a rotating folder of pictures from trips around the world as my live wallpaper and it just seems awesome. can't feel stronger about it and that's why I gave it 5 stars"
+Correctly classified into subclass: BATTERY
+====================================================================================================================
+====================================================================================================================
+Review: "It works Menu could be setup a little better, but no complaints. Works well & doesnt seem to affect battery life too much"
+Correctly classified into subclass: BATTERY
+====================================================================================================================
+====================================================================================================================
+Review: "Great app with low memory consumption"
+Correctly classified into subclass: MEMORY
+====================================================================================================================
+====================================================================================================================
+Review: "One thing I only wish this app was able to switch wallpapers faster than an hour, like maybe every 30 seconds and every couple minutes."
+Correctly classified into subclass: PERFORMANCE
+====================================================================================================================
+====================================================================================================================
+Review: "Awesome experience Thnx for such grt app. Least space required , no foolish updating..n last bt not least it gives u chnce to put many wallpapers"
+Wrong classification:   Weka: PERFORMANCE	DB:MEMORY
+====================================================================================================================
+====================================================================================================================
+Review: "Doesnt all work Does not work in regard to having different picture per screen. Also takes long long time to call up the 'select picture from' sceeen."
+Correctly classified into subclass: PERFORMANCE
+====================================================================================================================
+====================================================================================================================
+Review: "Crashes everytime Cm12 lollipop. Refunded."
+Correctly classified into subclass: PERFORMANCE
+====================================================================================================================
+====================================================================================================================
+Review: "Great root tool Fantastic root tool for halting unnecessary process startups. Essential to my battery-saving routine."
+Correctly classified into subclass: BATTERY
+====================================================================================================================
+====================================================================================================================
+Review: "Everytime I try to add an attachment to my text the app crashes..."
+Correctly classified into subclass: PERFORMANCE
+====================================================================================================================
+====================================================================================================================
+Review: "Application is crashing again and again whenever I'm changing any category. Please suggest Whenever I'm trying to switch category or going to select mode of payment app is getting hanged and getting crashed. I'm not sure what all information you are looking for. Please be more specific if you really care or delete this app."
+Correctly classified into subclass: PERFORMANCE
+====================================================================================================================
+====================================================================================================================
+Review: "It was a good app Now it is crashing too often to the point it is barely usable :/"
+Correctly classified into subclass: PERFORMANCE
+====================================================================================================================
+====================================================================================================================
+Review: "Lag city"
+Correctly classified into subclass: PERFORMANCE
+====================================================================================================================
+====================================================================================================================
+Review: "Slow Since latest update, it's moving very slow. The animations are fine, but the time it takes from my finger movement to display is too slow. I was already moving ahead of the animations before, but now I don't even want to play due to the latency."
+Correctly classified into subclass: PERFORMANCE
+====================================================================================================================
+====================================================================================================================
+Review: "Almost there Few more tweaks will make this app perfect. Crashes randomly but not as often as previous builds."
+Correctly classified into subclass: PERFORMANCE
+====================================================================================================================
+====================================================================================================================
+Review: "Cannot access the app anymore. Everytime I try to get onto the app, I get a crash report message telling me that it's not responding. I have tried to uninstall and reinstall, only to get the same result."
+Correctly classified into subclass: PERFORMANCE
+====================================================================================================================
+====================================================================================================================
+Review: "literally will not open. crashes every time i try to open it"
+Correctly classified into subclass: PERFORMANCE
+====================================================================================================================
+====================================================================================================================
+Review: "Keeps force closing It's been doing it for a week now -_-"
+Correctly classified into subclass: PERFORMANCE
+====================================================================================================================
+====================================================================================================================
+Review: "Massive battery drain Forced to uninstall after it cut battery life down to 4 hours per full charge. Battery could usually last a day otherwise. Everything else about the app worked fine."
+Correctly classified into subclass: BATTERY
+====================================================================================================================
+====================================================================================================================
+Review: "Lags down my system In idea this is a awesome app, but i've tried it on several phones and always the second result, it someone causes noticeable lag"
+Correctly classified into subclass: PERFORMANCE
+====================================================================================================================
+====================================================================================================================
+Review: "Power-intensive 12mAh Power-intensive 12mAh"
+Wrong classification:   Weka: PERFORMANCE	DB:BATTERY
+====================================================================================================================
+====================================================================================================================
+Review: "Works ok High battery drainage. Using htc one m7"
+Correctly classified into subclass: BATTERY
+====================================================================================================================
+====================================================================================================================
+Review: "Hey Please fix it it drains my battery and it heats up my cpu of the phone really? And it mostly drains my battery more please fix two stars for now please fix it's a beautiful app please work on it more thx"
+Correctly classified into subclass: BATTERY
+====================================================================================================================
+====================================================================================================================
+Review: "Great app This is a great app. Nothing quite does what Muzei does, unfortunately I had to install and here's why. It was just too resource intensive. 124 MB used puts it up there with Google hangouts. There is simply no need for that. Once uninstalled on my Nexus 6, my phone immediately sped up again. There's no question in my mind what the culprit was."
+Wrong classification:   Weka: PERFORMANCE	DB:MEMORY
+====================================================================================================================
+====================================================================================================================
+Review: "Hands down best wallpaper app but... It has been for awhile but it keeps crashing whenever I hit on an image thumbnail. Please fix the issue thanks."
+Correctly classified into subclass: PERFORMANCE
+====================================================================================================================
+====================================================================================================================
+Review: "Where are new updates? But crashes after every 5 seconds so its usless plz fix it asap"
+Correctly classified into subclass: PERFORMANCE
+====================================================================================================================
+====================================================================================================================
+Review: "Decent Decent Wallpapers, but the app glitches often making it impossible to get some wallpapers"
+Correctly classified into subclass: PERFORMANCE
+====================================================================================================================
+====================================================================================================================
+Review: "Good but crashes Great source for high resolution photos but this app has way too many intermittent crash issues."
+Correctly classified into subclass: PERFORMANCE
+====================================================================================================================
+====================================================================================================================
+Review: "Stop!! Stop making me download tons of amazing wallpapers! My phone ran out of memory :P"
+Correctly classified into subclass: MEMORY
+====================================================================================================================
+====================================================================================================================
+Review: "Very poor performances It freezes when you try to scroll the code view in a medium sized file, and when even you try to open a second file. Without mentioning that it may crash at any time. It can't be used for serious coding."
+Correctly classified into subclass: PERFORMANCE
+====================================================================================================================
+====================================================================================================================
+Review: "Has serious battery issues I dunno if it's a runaway process or something but this app can make my phone seriously hot, even after quitting."
+Correctly classified into subclass: BATTERY
+====================================================================================================================
+====================================================================================================================
+Review: "Beautiful!! In love with this app .... It would be just amazing If it won't drain out too much battery and itd be crazy if this has a pattern lock (i really hope) and a custom wallpaper would be fab so ...can we see them ? This app basically deserves first place and the most downloaded app In the market under customisation!!!! Hopefully this app gets even more better with lots of cool stuff !!!!!, ,"
+Correctly classified into subclass: BATTERY
+====================================================================================================================
+====================================================================================================================
+Review: "Awsome app Great and handy app to read notification without opening the lock screen... Plz control battery drain"
+Correctly classified into subclass: BATTERY
+====================================================================================================================
+====================================================================================================================
+Review: "Working good Eating a lot of battery."
+Correctly classified into subclass: BATTERY
+====================================================================================================================
+====================================================================================================================
+Review: "Needs tweaking time lags to update when I take a peek at my phone"
+Correctly classified into subclass: PERFORMANCE
+====================================================================================================================
+====================================================================================================================
+Review: "Wow. I used to have a real DEC VT-100. Now I have one ...and more... and faster than 9600bps without UART glitching... in color... in my pocket. In an app that's better than the original. And a lot quieter than a TeleType. I'm the same age as the VT-100. Wow."
+Correctly classified into subclass: PERFORMANCE
+====================================================================================================================
+====================================================================================================================
+Review: "Awesome The console is fast enough to handle ascii animations :)"
+Correctly classified into subclass: PERFORMANCE
+====================================================================================================================
+====================================================================================================================
+Review: "Key exchange issue persists Randomly fails to connect to SSH host due to key exchange issue. Works fine with JuiceSSH. Will give 5 stars when fixed. Thanks."
+Correctly classified into subclass: PERFORMANCE
+====================================================================================================================
+====================================================================================================================
+Review: "A very well designed app. Only requires 1.6 mb to install it."
+Wrong classification:   Weka: PERFORMANCE	DB:MEMORY
+====================================================================================================================
+====================================================================================================================
+Review: "Works well... More concerned about the program's own overlay on the system, more than all program's together... On Moto 3G 3rd gen with 1gb ram prog needs more resources than whole system... Do I miss something? Please advise"
+Correctly classified into subclass: MEMORY
+====================================================================================================================
+====================================================================================================================
+Review: "Keeps crashing Since I upgraded my android this game keeps crashing."
+Correctly classified into subclass: PERFORMANCE
+====================================================================================================================
+====================================================================================================================
+Review: "Drains my battery! This drains my battery. I can't deactivate this. I get a message saying an administrator must do it. IT'S MY PHONE. Is there a way to delete this app?"
+Correctly classified into subclass: BATTERY
+====================================================================================================================
+====================================================================================================================
+Review: "For excellent power saving.... The sexiest and hottest lockscreen ever If u experience lot of battery drain or u want that sexy and hot look on ur phone then install this app."
+Correctly classified into subclass: BATTERY
+====================================================================================================================
+====================================================================================================================
+Review: "Great app! just wondering if you could implement an 'always on' display that uses low battery for AMOLED display users"
+Correctly classified into subclass: BATTERY
+====================================================================================================================
+====================================================================================================================
+Review: "Great app This app is very good to keep up your battery."
+Correctly classified into subclass: BATTERY
+====================================================================================================================
+====================================================================================================================
+Review: "Like it! Used battery not for years. Simply appreciate and great to know exactly what the status of the battery is right on the home screen."
+Correctly classified into subclass: BATTERY
+====================================================================================================================
+====================================================================================================================
+Review: "Simple and lightweight Does what I wanted and that's just to show my remaining battery life in a percentage while being light on memory usage."
+Correctly classified into subclass: MEMORY
+====================================================================================================================
+====================================================================================================================
+Review: "Moto X I've had this app on 3other phones which all done the job well. Low memory, simple, no ads. Life is good. Thanks app makers. Highly recommended..."
+Correctly classified into subclass: MEMORY
+====================================================================================================================
+====================================================================================================================
+Review: "memory drain used to be great"
+Correctly classified into subclass: MEMORY
+====================================================================================================================
+====================================================================================================================
+Review: "Fix please. So on other file manager if i open very large like conf file ex:apns config on /system/etc . then it not LAGS. Im using exynos note 3 btw. And in yours and some other it lags so much. Cant even scroll to bottom. Maybe allocate more ram? Or use all threads available? And remember hardware rendering :) great job btw. Best file manager"
+Correctly classified into subclass: MEMORY
+====================================================================================================================
+====================================================================================================================
+Review: "Functions Broken The 'move'option has been completely removed with only the choice to 'cut', but even when copying and pasting folders in my storage, it crashes and only copies half or less the files. Please fix."
+Wrong classification:   Weka: PERFORMANCE	DB:MEMORY
+====================================================================================================================
+====================================================================================================================
+Review: "Good design very easy to use Working flawlessly on my S5 for a couple of days now,always showing in the notification bar and it hasn't missed a beat,great performance even during heavy multitasking it has no negative impact on system resources,it has the right amount of functionality and usability it needs while keeping it fast and simple still"
+Wrong classification:   Weka: PERFORMANCE	DB:MEMORY
+====================================================================================================================
+====================================================================================================================
+Review: "Used to be great Now stuck at 99% and phones own indicator shows true value. Pain as rely on it and ended up with no battery yesterday..."
+Correctly classified into subclass: BATTERY
+====================================================================================================================
+====================================================================================================================
+Review: "GREATEST APP EVA Accurate does not take much space! GOOD JOB!!!!!:):):):):):"
+Wrong classification:   Weka: PERFORMANCE	DB:BATTERY
+====================================================================================================================
+====================================================================================================================
+Review: "Great idea It's great overall,but there is an issue with redraws when hitting the home button. Half of the wallpaper is black sometimes, takes about half a second to draw the rest of the wallpaper. It takes away from the experience, it feels cheap when it does that."
+Correctly classified into subclass: PERFORMANCE
+====================================================================================================================
+
+*****************************************************************************************************************************
+Correct classified: 75	 Wrong classified: 9
+Classification-Precision: 0.8928571428571429
+*****************************************************************************************************************************
+
+====================================================================================================================
+Review: "Why do we need Tor? To surf internet i need extra app to use,battery will drain so fast"
+Correctly classified into subclass: BATTERY
+====================================================================================================================
+====================================================================================================================
+Review: "Drains battery It's the top draining application on my phone, despite not using it most of the time. Makes it essentially unusable."
+Correctly classified into subclass: BATTERY
+====================================================================================================================
+====================================================================================================================
+Review: "Battery Drain off the charts! Tried to use this with Olark. The battery drain is mind blowing. Sucks my battery dry in 2 hours on my S6 Edge+ making the app useless. A shame."
+Correctly classified into subclass: BATTERY
+====================================================================================================================
+====================================================================================================================
+Review: "Bi polar app... Update: After some years away from this app I decided to give it another go. Sad to see that after 4 years the same issues persist. Sill won't load certain comics after a few pages. Unbelievable. One minute I can read everything, the next I get "out of memory" prompts. What is that all about?"
+Correctly classified into subclass: MEMORY
+====================================================================================================================
+====================================================================================================================
+Review: "No update in 4 years Crashes often. Keep looking for another reader"
+Correctly classified into subclass: PERFORMANCE
+====================================================================================================================
+====================================================================================================================
+Review: "Crashed when going one page to another"
+Correctly classified into subclass: PERFORMANCE
+====================================================================================================================
+====================================================================================================================
+Review: "Worthless Keeps saying not enough memory to open one single file. Others work just fine."
+Correctly classified into subclass: MEMORY
+====================================================================================================================
+====================================================================================================================
+Review: "Buggy, poor performance consistently, even on flagship phones. No excuse for a comic viewer that can't view comics."
+Correctly classified into subclass: PERFORMANCE
+====================================================================================================================
+====================================================================================================================
+Review: "Great app, except for with CBR On most CBR files, it'll throw an error about being out of memory. Doesn't matter if you're on a device with 512mb, or 2gb of RAM, and will always do it on the same pages. Open it up in another reader, on the same device, zero problems. Long time user, but this has just got to be too much."
+Correctly classified into subclass: MEMORY
+====================================================================================================================
+====================================================================================================================
+Review: "Out of memory It used to work great, but now it runs out of memory when opening larger (10 meg+ files). Other comic readers open the comics fine. Also for ICS, it should remove the bottom bar when in full screen mode."
+Correctly classified into subclass: MEMORY
+====================================================================================================================
+====================================================================================================================
+Review: "Great!!! Works like a charm. Easy to use, needs only a little space. Thank you!"
+Wrong classification:   Weka: PERFORMANCE	DB:MEMORY
+====================================================================================================================
+====================================================================================================================
+Review: "Bad Runs out of memory on my way phone which is an S4"
+Correctly classified into subclass: MEMORY
+====================================================================================================================
+====================================================================================================================
+Review: "Memory bugs This is an awesome, user friendly app... When it works. Memory bugs cripple certain files I've used on other apps and devices successfully. Fix it and I'll give more stars."
+Correctly classified into subclass: MEMORY
+====================================================================================================================
+====================================================================================================================
+Review: "Lack of memory Was running fine on my Galaxy note till till today saying a message like lack of memory and brought me back to the welcome screen"
+Correctly classified into subclass: MEMORY
+====================================================================================================================
+====================================================================================================================
+Review: "I don't understand Started out great now always getting low or out of memory error. Got it set to low memory still doing it. Have over 2gb on phone free what's up????"
+Correctly classified into subclass: MEMORY
+====================================================================================================================
+====================================================================================================================
+Review: "Crashing Keeps crashing mid comic"
+Correctly classified into subclass: PERFORMANCE
+====================================================================================================================
+====================================================================================================================
+Review: "Needs a LOT of work! Far too many "memory" issues"
+Correctly classified into subclass: MEMORY
+====================================================================================================================
+====================================================================================================================
+Review: "4/5 rans out of memory on larger comics, and sometimes zoom chages between pages, other thab that, works fine"
+Correctly classified into subclass: MEMORY
+====================================================================================================================
+====================================================================================================================
+Review: "Keeps Crashing Same problem that everyone else is having. "Opps" error has ruined any goodwill I had toward this app."
+Correctly classified into subclass: PERFORMANCE
+====================================================================================================================
+====================================================================================================================
+Review: "No SD card support Was really good but now I can't view my SD card anymore... please fix"
+new Subclassification: PERFORMANCE with precision of 0.8571428571428571
+====================================================================================================================
+====================================================================================================================
+Review: "Memory error Keep getting a memory error on my s3..."
+Correctly classified into subclass: MEMORY
+====================================================================================================================
+====================================================================================================================
+Review: "Not good. I've got a phone with 2GB of RAM and it is running out of memory?"
+Correctly classified into subclass: MEMORY
+====================================================================================================================
+====================================================================================================================
+Review: "Fast, light, and does what needs to be done! Great app. It's really fast, takes up only 673k of space and remembers which page you were at when you close the app. I appreciate the ability to customize controls...you can tailor it to your reading style.I This is the first and only app review I plan on doing...nothing quite like ACV. A must for comic readers."
+Wrong classification:   Weka: PERFORMANCE	DB:MEMORY
+====================================================================================================================
+====================================================================================================================
+Review: "Good but could use fixing After a while I get a lot of errors saying the app is out of memory which fix themselves erratically and unpredictably so I can never read many files at one go. Other than that I enjoy the app's clean interface and ease of use."
+Correctly classified into subclass: MEMORY
+====================================================================================================================
+====================================================================================================================
+Review: "oops! used to love this app, now every comic i read comes up with oops! and something about being ou of memory. happens on both my phone and my tablet, both running different roms."
+Correctly classified into subclass: MEMORY
+====================================================================================================================
+====================================================================================================================
+Review: "Unable to load Has a lot of problems loading comics do to a memory issue."
+Correctly classified into subclass: MEMORY
+====================================================================================================================
+====================================================================================================================
+Review: "Memory error"
+Correctly classified into subclass: MEMORY
+====================================================================================================================
+====================================================================================================================
+Review: "Keeps crashing!"
+Correctly classified into subclass: PERFORMANCE
+====================================================================================================================
+====================================================================================================================
+Review: "It's Like a Waking Dream Never lags, works much better than other apps that attempt to recreate the battle scenes from EarthBound. Highly recommended!"
+Correctly classified into subclass: PERFORMANCE
+====================================================================================================================
+====================================================================================================================
+Review: "Grew up playing this Love it. Works great and doesn't drain battery"
+Correctly classified into subclass: BATTERY
+====================================================================================================================
+====================================================================================================================
+Review: "Superb! Absolutely spectacular. Emulates the Earthbound backgrounds beautifully without compromising battery life. A+ Material!"
+Correctly classified into subclass: BATTERY
+====================================================================================================================
+====================================================================================================================
+Review: "Awesome A few weeks in, and I absolutely love this app. This app is absolutely terrific. And hasn't really drained my battery life yet. I have it on a rotating folder of pictures from trips around the world as my live wallpaper and it just seems awesome. can't feel stronger about it and that's why I gave it 5 stars"
+Correctly classified into subclass: BATTERY
+====================================================================================================================
+====================================================================================================================
+Review: "It works Menu could be setup a little better, but no complaints. Works well & doesnt seem to affect battery life too much"
+Correctly classified into subclass: BATTERY
+====================================================================================================================
+====================================================================================================================
+Review: "Great app with low memory consumption"
+Correctly classified into subclass: MEMORY
+====================================================================================================================
+====================================================================================================================
+Review: "One thing I only wish this app was able to switch wallpapers faster than an hour, like maybe every 30 seconds and every couple minutes."
+Correctly classified into subclass: PERFORMANCE
+====================================================================================================================
+====================================================================================================================
+Review: "Awesome experience Thnx for such grt app. Least space required , no foolish updating..n last bt not least it gives u chnce to put many wallpapers"
+Wrong classification:   Weka: PERFORMANCE	DB:MEMORY
+====================================================================================================================
+====================================================================================================================
+Review: "Doesnt all work Does not work in regard to having different picture per screen. Also takes long long time to call up the 'select picture from' sceeen."
+Correctly classified into subclass: PERFORMANCE
+====================================================================================================================
+====================================================================================================================
+Review: "Crashes everytime Cm12 lollipop. Refunded."
+Correctly classified into subclass: PERFORMANCE
+====================================================================================================================
+====================================================================================================================
+Review: "Great root tool Fantastic root tool for halting unnecessary process startups. Essential to my battery-saving routine."
+Correctly classified into subclass: BATTERY
+====================================================================================================================
+====================================================================================================================
+Review: "Everytime I try to add an attachment to my text the app crashes..."
+Correctly classified into subclass: PERFORMANCE
+====================================================================================================================
+====================================================================================================================
+Review: "Application is crashing again and again whenever I'm changing any category. Please suggest Whenever I'm trying to switch category or going to select mode of payment app is getting hanged and getting crashed. I'm not sure what all information you are looking for. Please be more specific if you really care or delete this app."
+Correctly classified into subclass: PERFORMANCE
+====================================================================================================================
+====================================================================================================================
+Review: "It was a good app Now it is crashing too often to the point it is barely usable :/"
+Correctly classified into subclass: PERFORMANCE
+====================================================================================================================
+====================================================================================================================
+Review: "Lag city"
+Correctly classified into subclass: PERFORMANCE
+====================================================================================================================
+====================================================================================================================
+Review: "Slow Since latest update, it's moving very slow. The animations are fine, but the time it takes from my finger movement to display is too slow. I was already moving ahead of the animations before, but now I don't even want to play due to the latency."
+Correctly classified into subclass: PERFORMANCE
+====================================================================================================================
+====================================================================================================================
+Review: "Almost there Few more tweaks will make this app perfect. Crashes randomly but not as often as previous builds."
+Correctly classified into subclass: PERFORMANCE
+====================================================================================================================
+====================================================================================================================
+Review: "Cannot access the app anymore. Everytime I try to get onto the app, I get a crash report message telling me that it's not responding. I have tried to uninstall and reinstall, only to get the same result."
+Correctly classified into subclass: PERFORMANCE
+====================================================================================================================
+====================================================================================================================
+Review: "literally will not open. crashes every time i try to open it"
+Correctly classified into subclass: PERFORMANCE
+====================================================================================================================
+====================================================================================================================
+Review: "Keeps force closing It's been doing it for a week now -_-"
+Correctly classified into subclass: PERFORMANCE
+====================================================================================================================
+====================================================================================================================
+Review: "Massive battery drain Forced to uninstall after it cut battery life down to 4 hours per full charge. Battery could usually last a day otherwise. Everything else about the app worked fine."
+Correctly classified into subclass: BATTERY
+====================================================================================================================
+====================================================================================================================
+Review: "Lags down my system In idea this is a awesome app, but i've tried it on several phones and always the second result, it someone causes noticeable lag"
+Correctly classified into subclass: PERFORMANCE
+====================================================================================================================
+====================================================================================================================
+Review: "Power-intensive 12mAh Power-intensive 12mAh"
+Wrong classification:   Weka: PERFORMANCE	DB:BATTERY
+====================================================================================================================
+====================================================================================================================
+Review: "Works ok High battery drainage. Using htc one m7"
+Correctly classified into subclass: BATTERY
+====================================================================================================================
+====================================================================================================================
+Review: "Hey Please fix it it drains my battery and it heats up my cpu of the phone really? And it mostly drains my battery more please fix two stars for now please fix it's a beautiful app please work on it more thx"
+Correctly classified into subclass: BATTERY
+====================================================================================================================
+====================================================================================================================
+Review: "Great app This is a great app. Nothing quite does what Muzei does, unfortunately I had to install and here's why. It was just too resource intensive. 124 MB used puts it up there with Google hangouts. There is simply no need for that. Once uninstalled on my Nexus 6, my phone immediately sped up again. There's no question in my mind what the culprit was."
+Wrong classification:   Weka: PERFORMANCE	DB:MEMORY
+====================================================================================================================
+====================================================================================================================
+Review: "Hands down best wallpaper app but... It has been for awhile but it keeps crashing whenever I hit on an image thumbnail. Please fix the issue thanks."
+Correctly classified into subclass: PERFORMANCE
+====================================================================================================================
+====================================================================================================================
+Review: "Where are new updates? But crashes after every 5 seconds so its usless plz fix it asap"
+Correctly classified into subclass: PERFORMANCE
+====================================================================================================================
+====================================================================================================================
+Review: "Decent Decent Wallpapers, but the app glitches often making it impossible to get some wallpapers"
+Correctly classified into subclass: PERFORMANCE
+====================================================================================================================
+====================================================================================================================
+Review: "Good but crashes Great source for high resolution photos but this app has way too many intermittent crash issues."
+Correctly classified into subclass: PERFORMANCE
+====================================================================================================================
+====================================================================================================================
+Review: "Stop!! Stop making me download tons of amazing wallpapers! My phone ran out of memory :P"
+Correctly classified into subclass: MEMORY
+====================================================================================================================
+====================================================================================================================
+Review: "Very poor performances It freezes when you try to scroll the code view in a medium sized file, and when even you try to open a second file. Without mentioning that it may crash at any time. It can't be used for serious coding."
+Correctly classified into subclass: PERFORMANCE
+====================================================================================================================
+====================================================================================================================
+Review: "Has serious battery issues I dunno if it's a runaway process or something but this app can make my phone seriously hot, even after quitting."
+Correctly classified into subclass: BATTERY
+====================================================================================================================
+====================================================================================================================
+Review: "Beautiful!! In love with this app .... It would be just amazing If it won't drain out too much battery and itd be crazy if this has a pattern lock (i really hope) and a custom wallpaper would be fab so ...can we see them ? This app basically deserves first place and the most downloaded app In the market under customisation!!!! Hopefully this app gets even more better with lots of cool stuff !!!!!, ,"
+Correctly classified into subclass: BATTERY
+====================================================================================================================
+====================================================================================================================
+Review: "Awsome app Great and handy app to read notification without opening the lock screen... Plz control battery drain"
+Correctly classified into subclass: BATTERY
+====================================================================================================================
+====================================================================================================================
+Review: "Working good Eating a lot of battery."
+Correctly classified into subclass: BATTERY
+====================================================================================================================
+====================================================================================================================
+Review: "Needs tweaking time lags to update when I take a peek at my phone"
+Correctly classified into subclass: PERFORMANCE
+====================================================================================================================
+====================================================================================================================
+Review: "Wow. I used to have a real DEC VT-100. Now I have one ...and more... and faster than 9600bps without UART glitching... in color... in my pocket. In an app that's better than the original. And a lot quieter than a TeleType. I'm the same age as the VT-100. Wow."
+Correctly classified into subclass: PERFORMANCE
+====================================================================================================================
+====================================================================================================================
+Review: "Awesome The console is fast enough to handle ascii animations :)"
+Correctly classified into subclass: PERFORMANCE
+====================================================================================================================
+====================================================================================================================
+Review: "Key exchange issue persists Randomly fails to connect to SSH host due to key exchange issue. Works fine with JuiceSSH. Will give 5 stars when fixed. Thanks."
+Correctly classified into subclass: PERFORMANCE
+====================================================================================================================
+====================================================================================================================
+Review: "A very well designed app. Only requires 1.6 mb to install it."
+Wrong classification:   Weka: PERFORMANCE	DB:MEMORY
+====================================================================================================================
+====================================================================================================================
+Review: "Works well... More concerned about the program's own overlay on the system, more than all program's together... On Moto 3G 3rd gen with 1gb ram prog needs more resources than whole system... Do I miss something? Please advise"
+Correctly classified into subclass: MEMORY
+====================================================================================================================
+====================================================================================================================
+Review: "Keeps crashing Since I upgraded my android this game keeps crashing."
+Correctly classified into subclass: PERFORMANCE
+====================================================================================================================
+====================================================================================================================
+Review: "Drains my battery! This drains my battery. I can't deactivate this. I get a message saying an administrator must do it. IT'S MY PHONE. Is there a way to delete this app?"
+Correctly classified into subclass: BATTERY
+====================================================================================================================
+====================================================================================================================
+Review: "For excellent power saving.... The sexiest and hottest lockscreen ever If u experience lot of battery drain or u want that sexy and hot look on ur phone then install this app."
+Correctly classified into subclass: BATTERY
+====================================================================================================================
+====================================================================================================================
+Review: "Great app! just wondering if you could implement an 'always on' display that uses low battery for AMOLED display users"
+Correctly classified into subclass: BATTERY
+====================================================================================================================
+====================================================================================================================
+Review: "Great app This app is very good to keep up your battery."
+Correctly classified into subclass: BATTERY
+====================================================================================================================
+====================================================================================================================
+Review: "Like it! Used battery not for years. Simply appreciate and great to know exactly what the status of the battery is right on the home screen."
+Correctly classified into subclass: BATTERY
+====================================================================================================================
+====================================================================================================================
+Review: "Simple and lightweight Does what I wanted and that's just to show my remaining battery life in a percentage while being light on memory usage."
+Correctly classified into subclass: MEMORY
+====================================================================================================================
+====================================================================================================================
+Review: "Moto X I've had this app on 3other phones which all done the job well. Low memory, simple, no ads. Life is good. Thanks app makers. Highly recommended..."
+Correctly classified into subclass: MEMORY
+====================================================================================================================
+====================================================================================================================
+Review: "memory drain used to be great"
+Correctly classified into subclass: MEMORY
+====================================================================================================================
+====================================================================================================================
+Review: "Fix please. So on other file manager if i open very large like conf file ex:apns config on /system/etc . then it not LAGS. Im using exynos note 3 btw. And in yours and some other it lags so much. Cant even scroll to bottom. Maybe allocate more ram? Or use all threads available? And remember hardware rendering :) great job btw. Best file manager"
+Correctly classified into subclass: MEMORY
+====================================================================================================================
+====================================================================================================================
+Review: "Functions Broken The 'move'option has been completely removed with only the choice to 'cut', but even when copying and pasting folders in my storage, it crashes and only copies half or less the files. Please fix."
+Wrong classification:   Weka: PERFORMANCE	DB:MEMORY
+====================================================================================================================
+====================================================================================================================
+Review: "Good design very easy to use Working flawlessly on my S5 for a couple of days now,always showing in the notification bar and it hasn't missed a beat,great performance even during heavy multitasking it has no negative impact on system resources,it has the right amount of functionality and usability it needs while keeping it fast and simple still"
+Wrong classification:   Weka: PERFORMANCE	DB:MEMORY
+====================================================================================================================
+====================================================================================================================
+Review: "Used to be great Now stuck at 99% and phones own indicator shows true value. Pain as rely on it and ended up with no battery yesterday..."
+Correctly classified into subclass: BATTERY
+====================================================================================================================
+====================================================================================================================
+Review: "GREATEST APP EVA Accurate does not take much space! GOOD JOB!!!!!:):):):):):"
+Wrong classification:   Weka: PERFORMANCE	DB:BATTERY
+====================================================================================================================
+====================================================================================================================
+Review: "Great idea It's great overall,but there is an issue with redraws when hitting the home button. Half of the wallpaper is black sometimes, takes about half a second to draw the rest of the wallpaper. It takes away from the experience, it feels cheap when it does that."
+Correctly classified into subclass: PERFORMANCE
+====================================================================================================================
+
+*****************************************************************************************************************************
+Correct classified: 75	 Wrong classified: 9
+Classification-Precision: 0.8928571428571429
+*****************************************************************************************************************************
+

@@ -1,0 +1,740 @@
+====================================================================================================================
+Review: "So smooth on HTC 10, 6.1 Compaird to Dolphin,chrome,Duck duck go works like a charm,option to add to home screen would top it off.."
+Wrong classification:   Weka: HARDWARE	DB:DEVICE
+====================================================================================================================
+====================================================================================================================
+Review: "Can not get connection post Marshmallow Frustrated with app trying to use Torbot with Tor enabled post M upgrade on S5."
+Wrong classification:   Weka: HARDWARE	DB:ANDROID_VERSION
+====================================================================================================================
+====================================================================================================================
+Review: "Nexus 6 Doesn't connect to tor anymore on my nexus 6 running android n dp4"
+Wrong classification:   Weka: HARDWARE	DB:DEVICE
+====================================================================================================================
+====================================================================================================================
+Review: "Does not work on Android L onwards Does not work on Android L onwards. Works fine on Android kit kat"
+Wrong classification:   Weka: DEVICE	DB:ANDROID_VERSION
+====================================================================================================================
+====================================================================================================================
+Review: "Can't use it as it demands I update my samsung browser. Then it takes me to the app page in Google play. I'm unable to download this as it's not compatible with my system. Help please."
+Wrong classification:   Weka: ANDROID_VERSION	DB:DEVICE
+====================================================================================================================
+====================================================================================================================
+Review: "Crushes a lot on lollipop"
+Correctly classified into subclass: ANDROID_VERSION
+====================================================================================================================
+====================================================================================================================
+Review: "Nice app, just an improvement to be perfect It's easy to display a read, but when opening the options its hard since new phones does not have that phone. I have to click back and most of times close the app."
+Correctly classified into subclass: DEVICE
+====================================================================================================================
+====================================================================================================================
+Review: "Poor Would not read sd card. Useless."
+Correctly classified into subclass: HARDWARE
+====================================================================================================================
+====================================================================================================================
+Review: "No preloading Takes time to load every image when reading in sd card, recommend Perfect Viewer by RookieStudio over this app"
+Correctly classified into subclass: HARDWARE
+====================================================================================================================
+====================================================================================================================
+Review: "May have gotten higher stars if.. Unfortunately it was stuck on one screen without the ability to check for comic or start reading...perhaps this is due to having the Samsung illusion idk.."
+Wrong classification:   Weka: ANDROID_VERSION	DB:DEVICE
+====================================================================================================================
+====================================================================================================================
+Review: "Best comic scan app in the market! Worked good on my G1& Droid. Works great on my HTC Thunderbolt.CBZ's & Folders are the best way to view. CBR's sometimes glitch. I convert to CBZ/ZIP mostly."
+Wrong classification:   Weka: ANDROID_VERSION	DB:DEVICE
+====================================================================================================================
+====================================================================================================================
+Review: "Love It! Unfortunately on the LG phones double tapping the screen doesn't in blur the background, but rather turns off the screen of you have that option on (don't know if you can turn the option off yet) but none the less still a great background app!"
+Correctly classified into subclass: DEVICE
+====================================================================================================================
+====================================================================================================================
+Review: "Only half Installs Says it is intalled but only gives me the option to uninstall not open. Using samsung galaxy mega"
+Wrong classification:   Weka: ANDROID_VERSION	DB:DEVICE
+====================================================================================================================
+====================================================================================================================
+Review: "Nice!! Looks good on galaxy note 2. The little customization options make this a great live wallpaper."
+Wrong classification:   Weka: ANDROID_VERSION	DB:DEVICE
+====================================================================================================================
+====================================================================================================================
+Review: "Awesome! I always thought the battle backgrounds would make great live wallpapers. Thanks for putting this together! By the way, the background picker references a menu button for more options but the menu is not available on the G.Nexus for some reason."
+Wrong classification:   Weka: HARDWARE	DB:DEVICE
+====================================================================================================================
+====================================================================================================================
+Review: "Not working on My OnePlus One Used to work well on my previous Sony Xperia handset..but now it doesn't work with my new device."
+Wrong classification:   Weka: ANDROID_VERSION	DB:DEVICE
+====================================================================================================================
+====================================================================================================================
+Review: "Working good in Sony but not in HTC In my HTC 820 ğ plus, it's not working for setting wallpaper on each screen but for my Xperia M5 it's too good.. Please let me know once you fix so that I can revise the star rating to 5 :-)"
+Wrong classification:   Weka: ANDROID_VERSION	DB:DEVICE
+====================================================================================================================
+====================================================================================================================
+Review: "Doesn't work Doesn't work on Android 5.1"
+Correctly classified into subclass: ANDROID_VERSION
+====================================================================================================================
+====================================================================================================================
+Review: "Ah I've used this app every time I've gotten a new phone. Doesn't work now with my note 5 : ("
+Wrong classification:   Weka: ANDROID_VERSION	DB:DEVICE
+====================================================================================================================
+====================================================================================================================
+Review: "No go for Note 4"
+Wrong classification:   Weka: ANDROID_VERSION	DB:DEVICE
+====================================================================================================================
+====================================================================================================================
+Review: "Asus ZENBOOK 8.0 When turning the screen the picture won't move or change! Worked fine on other devices but doesn't work at all with Asus new line of tablets. Please fix!!!"
+Wrong classification:   Weka: ANDROID_VERSION	DB:DEVICE
+====================================================================================================================
+====================================================================================================================
+Review: "Kavin Around more than a year i was using this app. Now my HTC desire eye was updated to lollipop now the individual home screen cant set with different images. Try to fix it."
+Correctly classified into subclass: ANDROID_VERSION
+====================================================================================================================
+====================================================================================================================
+Review: "Would love it, but... Running Note 2. Super disappointed that doesn't work here. If I'm screwing up somewhere, please advise and I'll reinstall."
+Wrong classification:   Weka: HARDWARE	DB:DEVICE
+====================================================================================================================
+====================================================================================================================
+Review: "Not working Read the reviews, seemed promising. But after installing and fiddling with it for 15 min, couldn't't manage to have the pictures I wanted on three screens. Read the comments more attentively, and seems like that on Nexus 5, you need to use quite a few workarounds to make it work. Doesn't work unless you use album mode, which is not what I wanted to use it for. Same for screen lock."
+Wrong classification:   Weka: ANDROID_VERSION	DB:DEVICE
+====================================================================================================================
+====================================================================================================================
+Review: "Good app but... It doesn't works all the time. Sometimes it doesn't want to get a picture from the SD card. :/"
+Correctly classified into subclass: HARDWARE
+====================================================================================================================
+====================================================================================================================
+Review: "Xperia p Its nice bt we can't set photos. Pls add this"
+Correctly classified into subclass: ANDROID_VERSION
+====================================================================================================================
+====================================================================================================================
+Review: "Not Working Not Working On Xperia Z Kitkat. Please Fix. It Says The The Picture In Unavailable."
+Correctly classified into subclass: ANDROID_VERSION
+====================================================================================================================
+====================================================================================================================
+Review: "Does work now on N5 with LP 5.0.1."
+Wrong classification:   Weka: DEVICE	DB:ANDROID_VERSION
+====================================================================================================================
+====================================================================================================================
+Review: "Hands down! It may not be most feature rich, but it is powerful enough, it even comes with a function plotter. And it works on watch too!"
+Wrong classification:   Weka: ANDROID_VERSION	DB:HARDWARE
+====================================================================================================================
+====================================================================================================================
+Review: "Simple app, Amazing features I love this calculator. Some may think "how can one calculator be superior to the rest?", as I once did. However, I quickly realized just how when I went in search of a calculator that is enhanced for Android Wear. This calculator is the perfect answer for my needs, with a full-featured Wear app. It is clean, simple, uncluttered and similar to the stock/AOSP calculator app. The difference is in the expanded features, which are tucked nicely behind a few simple gestures. The floating calculator is genius!!!"
+Correctly classified into subclass: DEVICE
+====================================================================================================================
+====================================================================================================================
+Review: "Great app! But no SIM, not work? Messages arrive (& go out) pretty slow (delay). And once registered with SMS verification, should be able to operate without requiring SIM, no? Will have to discontinue due to this limitation! My trusted good old Nexus 4 heats up pretty bad with a SIM in it, so I use my other dual SIM phone. Too bad, Signal..."
+Wrong classification:   Weka: ANDROID_VERSION	DB:DEVICE
+====================================================================================================================
+====================================================================================================================
+Review: "Dual Sim Please provide for dual sim"
+Wrong classification:   Weka: ANDROID_VERSION	DB:HARDWARE
+====================================================================================================================
+====================================================================================================================
+Review: "Beautiful app, works great! Would love to see a widget for this, maybe even Android wear support. Absolutely fantastic app though!"
+Correctly classified into subclass: HARDWARE
+====================================================================================================================
+====================================================================================================================
+Review: "Keeps crashing Since I upgraded my android this game keeps crashing."
+Correctly classified into subclass: ANDROID_VERSION
+====================================================================================================================
+====================================================================================================================
+Review: "Used to work perfectly, now won't change the current scrobbling track unless the screen is on. Using Play Music on S6 Edge+ running marshmallow"
+Correctly classified into subclass: ANDROID_VERSION
+====================================================================================================================
+====================================================================================================================
+Review: "Force closes every single time on Nexus 5x running Android 6. Can't even open it anymore. Appears to be scrobbling fine still though."
+Correctly classified into subclass: ANDROID_VERSION
+====================================================================================================================
+====================================================================================================================
+Review: "Disappointed It doesn't scrobble Sony Xperia's Music app anymore! Fix plz! :("
+Wrong classification:   Weka: ANDROID_VERSION	DB:DEVICE
+====================================================================================================================
+====================================================================================================================
+Review: "It won't let me scrobble. I use a lg g4 and it won't let me scrobble from my phone music app at all. Fix it pls."
+Wrong classification:   Weka: ANDROID_VERSION	DB:DEVICE
+====================================================================================================================
+====================================================================================================================
+Review: "Keeps crashing on Android N. Other live wallpapers don't."
+Wrong classification:   Weka: DEVICE	DB:ANDROID_VERSION
+====================================================================================================================
+====================================================================================================================
+Review: "Doesn't work anymore Nexus 10 using cyanogenmod 13"
+Wrong classification:   Weka: ANDROID_VERSION	DB:DEVICE
+====================================================================================================================
+====================================================================================================================
+Review: "Android N Not working on Android N beta"
+Correctly classified into subclass: ANDROID_VERSION
+====================================================================================================================
+====================================================================================================================
+Review: "Not working on marshmallow This used to work great but since upgrading to marshmallow it won't auto cycle through new wallpapers on multiple different extensions. It's stuck until I open the app or reinstall the extensions."
+Correctly classified into subclass: ANDROID_VERSION
+====================================================================================================================
+====================================================================================================================
+Review: "Nice concept Great implementation, works really well with Android Wear. But, today it suddenly used 300mb of cellular data which is not cool. So I've uninstalled."
+Wrong classification:   Weka: ANDROID_VERSION	DB:HARDWARE
+====================================================================================================================
+====================================================================================================================
+Review: "Double tapping doesn't work on Samsung s6 edge. Fix it please."
+Wrong classification:   Weka: ANDROID_VERSION	DB:DEVICE
+====================================================================================================================
+====================================================================================================================
+Review: "Used to be perfect but since moving to Marshmallow the wallpapers rarely update (probably due to Doze?) and the next button doesn't work anymore unfortunately - no new pictures are loaded."
+Wrong classification:   Weka: ANDROID_VERSION	DB:DEVICE
+====================================================================================================================
+====================================================================================================================
+Review: "Once one of the Greats This used to be my go to app for wallpapers. Absolutely loved it but seems to now be unusable with Marshmallow have tried the app on a Nexus 6p, S7 Edge and OnePlus 3. Same issue constant crashes when loading images and often won't save. Would love to see it great again!"
+Wrong classification:   Weka: HARDWARE	DB:ANDROID_VERSION
+====================================================================================================================
+====================================================================================================================
+Review: "Does not detect root on marshmallow I really like this application when it works to disable event conditions that start apps. Unfortunately it no longer detects root on my Galaxy S7 with systemless root su 2.71 or 2.68. Please make this compatible."
+Correctly classified into subclass: DEVICE
+====================================================================================================================
+====================================================================================================================
+Review: "Doesn�۪t work anymore No go for S6 or S7"
+Wrong classification:   Weka: ANDROID_VERSION	DB:DEVICE
+====================================================================================================================
+====================================================================================================================
+Review: "developer abandoned does not work on recent devices. developer abandoned this app back in 2014. do not buy."
+Correctly classified into subclass: DEVICE
+====================================================================================================================
+====================================================================================================================
+Review: "Overall, great app to have and use. lately i'm having a little problem. I'm using an HTC One M9 and its rooted but when I got to disable something. the app isn't letting me. I guess it is telling me that I don't have root when I know I do. has anyone experienced this lately?"
+Correctly classified into subclass: DEVICE
+====================================================================================================================
+====================================================================================================================
+Review: "Looked OK, but it needs major bug fixes to be usable After trying this app out for about 2 minutes, it was freezing for 2-4 seconds every 3 lines of code I was looking through. I'm using KitKat 4.4.2. If you can fix the freezes let me know and I'll try your editor again. I was reading through a .vbs program."
+Wrong classification:   Weka: ANDROID_VERSION	DB:DEVICE
+====================================================================================================================
+====================================================================================================================
+Review: "Aamzing This is the best editor i have ever used in Android, except one problem and i hope you get it fixed soon so i can get the Pro version the problem occurs when i am using my external keyboard i can't use the Shift key its really important because most special characters used in coding are accessible only through Shift and since iam using external keyboard i cant access the row key provided in the app."
+Wrong classification:   Weka: ANDROID_VERSION	DB:HARDWARE
+====================================================================================================================
+====================================================================================================================
+Review: "Good, unless you have a bluetooth keyboard Works very well and has syntax highlighting with a variety of languages (but doesn't seem to understand some ruby constructs). However, this app ignores anything involving a shift key on my bluetooth keyboard. Other installed apps to register these key combinations. If you only plan to use the on-screen keyboard, this app is awesome. Otherwise, you can do better than an app that will not allow capital letters from your main keyboard."
+Wrong classification:   Weka: ANDROID_VERSION	DB:HARDWARE
+====================================================================================================================
+====================================================================================================================
+Review: "Sadly unusable on the Pixel C bluetooth keyboard On the Pixel C keyboard, any character typed in combination with the Shift-key does not show up, like :"!@#$%^&*()&lt;&gt;? This appears to be an easy glitch to fix :)"
+Wrong classification:   Weka: DEVICE	DB:HARDWARE
+====================================================================================================================
+====================================================================================================================
+Review: "Probably the only code editor that saves to the external sd card on lollipop"
+Correctly classified into subclass: HARDWARE
+====================================================================================================================
+====================================================================================================================
+Review: "I like it but it has a few bugs Whenever I go to open a file, it defaults to the app's storage directory instead of the main SD card, i.e /sdcard/Android/data/blah blah, but still lists the folders that are in /sdcard. When I then try and open any of these folders there is nothing in them. This is an irritating bug. Fix this and I will up the rating to 5 stars"
+Correctly classified into subclass: HARDWARE
+====================================================================================================================
+====================================================================================================================
+Review: "Best app for Twitter There are bugs, close app when trying to open any media and can't watch any media. Hope to improve it soon with marshmallow version."
+Correctly classified into subclass: ANDROID_VERSION
+====================================================================================================================
+====================================================================================================================
+Review: "Not as good as it used to be Since I got my update to Marshmallow,it crashes every time I click on an image. Hope there will be a bug fix for this."
+Correctly classified into subclass: ANDROID_VERSION
+====================================================================================================================
+====================================================================================================================
+Review: "Great app, but not work well with Marshmallow It has issue with Marshmallow when click on picture. Otherwise a perfect app."
+Correctly classified into subclass: ANDROID_VERSION
+====================================================================================================================
+====================================================================================================================
+Review: "Hasn't been updated since Oct 2014 Force closes when opening a picture with Marshmallow. If it could be fixed I'd definitely stay with this app, however this hasn't received an update for a year and a half now, and seems forgotten. Time to move on I guess, shame, loved this app. UPDATE: Tried the official Twitter app, it's rubbish!! Now using TwitPane and it's really good."
+Correctly classified into subclass: ANDROID_VERSION
+====================================================================================================================
+====================================================================================================================
+Review: "Used to be the best Twitter client ever but since the Marshmallow upgrade it crashes everytime I click on a photo. Unfortunately the contact developer feature elicits no response and I'm now looking for a replacement. Very disappointing."
+Correctly classified into subclass: ANDROID_VERSION
+====================================================================================================================
+====================================================================================================================
+Review: "Can't open images directly on MM Been using this for ages but since I moved to marshmallow crashes when I tap on images. Don't think it's going to be updated :("
+Wrong classification:   Weka: DEVICE	DB:ANDROID_VERSION
+====================================================================================================================
+====================================================================================================================
+Review: "Good - except on Marshmallow I've used this as my twitter client for a long time. Works great, excepting it doesn't really work if you want to see reactions to a tweet for people that you don't follow. That doesn't work. With Android Marshmallow, the non updates to this so really show. If you click on a picture, it crashes. Maybe time to move on"
+Wrong classification:   Weka: DEVICE	DB:ANDROID_VERSION
+====================================================================================================================
+====================================================================================================================
+Review: "Nice A lot of lock screens claim to be minimalistic but this one does it for real. Using Nokia X2 and will love support for music widget."
+Correctly classified into subclass: DEVICE
+====================================================================================================================
+====================================================================================================================
+Review: "Bug in marshmallow The lock screen keeps coming up in recent menu. Please fix it"
+Wrong classification:   Weka: ANDROID_VERSION	DB:DEVICE
+====================================================================================================================
+====================================================================================================================
+Review: "Crashes Cannot even launch the app on my LG G Pro. Please fix it.. I loved this app"
+Wrong classification:   Weka: ANDROID_VERSION	DB:DEVICE
+====================================================================================================================
+====================================================================================================================
+Review: "Best notification displaying app available. I'd like to see the lock screen feature work with fingerprint reader supported devices like the Nexus 6p, etc."
+Wrong classification:   Weka: ANDROID_VERSION	DB:HARDWARE
+====================================================================================================================
+====================================================================================================================
+Review: "Waiting for Nexus Imprint Support Nexus 5X - Marshmallow. Use to love it, but want to have this as my default lockscreen but cannot until it supports fingerprint unlock and use as replacement for standard lockscreen. Will keep in waiting...."
+Wrong classification:   Weka: ANDROID_VERSION	DB:DEVICE
+====================================================================================================================
+====================================================================================================================
+Review: "Great, but seems to get frozen by Android 6.0.1 I love this app, but since upgrade to 6.0.1, the app gets frozen if there are no new notifications. This means the displayed time can be up to 30mins behind the actual time. Can I deactivate this “freezing”?"
+Correctly classified into subclass: ANDROID_VERSION
+====================================================================================================================
+====================================================================================================================
+Review: "I can't type anymore! A recent update is preventing me for typing at the command line. This makes the app useless."
+Wrong classification:   Weka: ANDROID_VERSION	DB:DEVICE
+====================================================================================================================
+====================================================================================================================
+Review: "Not compatible with android N update Shows everything you need to see what your phone is doing. With older versions of the os but nothing working after os update."
+Correctly classified into subclass: ANDROID_VERSION
+====================================================================================================================
+====================================================================================================================
+Review: "Kindly update Doesn't work on marshmallow"
+Wrong classification:   Weka: ANDROID_VERSION	DB:DEVICE
+====================================================================================================================
+====================================================================================================================
+Review: "how to lock bootloader how to lock bootloader in oppo neo 7 please tell me"
+Wrong classification:   Weka: ANDROID_VERSION	DB:DEVICE
+====================================================================================================================
+====================================================================================================================
+Review: "Great app but need improvement Not compatible with cm13 on my oneplus one. After granted root permission, amaze recognizes /data and some other directories as file and cannot enter them, while ES works without any problem. please fix. I'd like to provide further information."
+Wrong classification:   Weka: HARDWARE	DB:DEVICE
+====================================================================================================================
+====================================================================================================================
+Review: "Awesome app, hoping for sync between devices... Great app, would like to have a widget. An open source, full featured app."
+Wrong classification:   Weka: HARDWARE	DB:DEVICE
+====================================================================================================================
+====================================================================================================================
+Review: "Best Caching app I have used and i have tried a lot. Fully featured even with a basic membership account and Android Wear support to boot. Great job!"
+Wrong classification:   Weka: ANDROID_VERSION	DB:DEVICE
+====================================================================================================================
+====================================================================================================================
+Review: "Worked just fine for a long time until now and made me almost buy a new phone I used this app for a long time on my Asus Zenfone 5. About 1 month ago, mostly right after unlocking the screen and sometimes randomly, the display tilts/shifts with an absurd angle and goes grayscale and then shortly after phone freezes, makes me do a hard reset. I thought it was a phone problem because I hadn't installed a new app. But then I thought maybe it's about this app, because it happened mostly after unlocking. So i disabled it and the problem solved. Hope this gets fixed. Cheers"
+Correctly classified into subclass: DEVICE
+====================================================================================================================
+====================================================================================================================
+Review: "Works well with pictures from SD Memory card too Good LWP slideshow. Samsung Galaxy S4 Active with Android 4.4.2"
+Correctly classified into subclass: HARDWARE
+====================================================================================================================
+====================================================================================================================
+Review: "SD Card Doesn't see the memory card where comics are stored so useless to me."
+Correctly classified into subclass: HARDWARE
+====================================================================================================================
+====================================================================================================================
+Review: "Dual sim? Wouldn't it be more convenient if we can choose from which sim card we like to send our messages from? This app is still great, though, but only 4 stars for now."
+Correctly classified into subclass: HARDWARE
+====================================================================================================================
+====================================================================================================================
+Review: "Easy Install and Use! I'm a huge fan of Hangouts and use it on my Nexus as my main text app, desktop, laptop, and cell. So I doubted this product until I used it. Super easy to setup and use and works basically like Hangouts. Love it."
+Wrong classification:   Weka: ANDROID_VERSION	DB:HARDWARE
+====================================================================================================================
+====================================================================================================================
+Review: "problem with sd card path hello please fix it when ever i run commands it tells there is no specific path exist in sd card tho it was fully there"
+Correctly classified into subclass: HARDWARE
+====================================================================================================================
+====================================================================================================================
+Review: "Best Offline Reader I've tried many comic readers to read the comics saved to my sd card and this is the best by far."
+Correctly classified into subclass: HARDWARE
+====================================================================================================================
+====================================================================================================================
+Review: "A little bit inconsistent Doesn't work reliably with my GS7 edge. I wanted to turn off AOD and use this but it doesn't have an always on mode. Please consider adding"
+Wrong classification:   Weka: ANDROID_VERSION	DB:DEVICE
+====================================================================================================================
+====================================================================================================================
+Review: "My favorite app Update 11/4 Doesn't work on galaxy S5. Does not show multiple screens. I have tons of apps, but this one is fantastic. It uses little resources, does what it says, does it well and has all the controls you could possibly want. My only suggestion would be to have an option to combine all screens into a single wallpaper like the standard wallpaper only you get the interval change. It's a minor suggestion and should not take away form the app."
+Wrong classification:   Weka: HARDWARE	DB:DEVICE
+====================================================================================================================
+====================================================================================================================
+Review: "When will you support dual sim texting? :( I can only give 4 stars because of it."
+Wrong classification:   Weka: ANDROID_VERSION	DB:HARDWARE
+====================================================================================================================
+====================================================================================================================
+Review: "Please add more features The app is very good but please add more features like changing texts size, support for dual sim devices, mark a message as not readed, and..., Thanks :)"
+Wrong classification:   Weka: ANDROID_VERSION	DB:HARDWARE
+====================================================================================================================
+====================================================================================================================
+Review: "Ultimate Control Hahaha &gt,:) Just one last thing. Hope you guys get a peek on this suggestion of mine... In the App Manager when you tap on the app? Can you put a Move to SD Card and Vice Versa so i dont need to go to my settings ?"
+Correctly classified into subclass: HARDWARE
+====================================================================================================================
+====================================================================================================================
+Review: "Great Open Source Podcast App The only thing that would make it better is if the audio controls on my Pebble would interface with it. Might be a Pebble issue though"
+Wrong classification:   Weka: HARDWARE	DB:DEVICE
+====================================================================================================================
+====================================================================================================================
+Review: "Not working on my Xperia Z3 I'm a fan of this app when I was still using my Xperia Go. But when I switched to Xperia Z3 and downloaded this app, "Picture is unavailable. Need to setup or reload" always appear no matter what picture I choose. Help please."
+Wrong classification:   Weka: ANDROID_VERSION	DB:DEVICE
+====================================================================================================================
+====================================================================================================================
+Review: "Important options have been removed! 1. The move option has disappeared, can no longer move folders around. 2. When using the cut and paste option instead. It keeps showing as unsuccessful? 3. Shows my sdcard again which is good! 4. Actually going to uninstall this until fixed."
+Wrong classification:   Weka: ANDROID_VERSION	DB:HARDWARE
+====================================================================================================================
+
+*****************************************************************************************************************************
+Correct classified: 37	 Wrong classified: 54
+Classification-Precision: 0.4065934065934066
+*****************************************************************************************************************************
+
+====================================================================================================================
+Review: "So smooth on HTC 10, 6.1 Compaird to Dolphin,chrome,Duck duck go works like a charm,option to add to home screen would top it off.."
+Wrong classification:   Weka: HARDWARE	DB:DEVICE
+====================================================================================================================
+====================================================================================================================
+Review: "Can not get connection post Marshmallow Frustrated with app trying to use Torbot with Tor enabled post M upgrade on S5."
+Wrong classification:   Weka: HARDWARE	DB:ANDROID_VERSION
+====================================================================================================================
+====================================================================================================================
+Review: "Nexus 6 Doesn't connect to tor anymore on my nexus 6 running android n dp4"
+Wrong classification:   Weka: HARDWARE	DB:DEVICE
+====================================================================================================================
+====================================================================================================================
+Review: "Does not work on Android L onwards Does not work on Android L onwards. Works fine on Android kit kat"
+Wrong classification:   Weka: DEVICE	DB:ANDROID_VERSION
+====================================================================================================================
+====================================================================================================================
+Review: "Can't use it as it demands I update my samsung browser. Then it takes me to the app page in Google play. I'm unable to download this as it's not compatible with my system. Help please."
+Wrong classification:   Weka: ANDROID_VERSION	DB:DEVICE
+====================================================================================================================
+====================================================================================================================
+Review: "Crushes a lot on lollipop"
+Correctly classified into subclass: ANDROID_VERSION
+====================================================================================================================
+====================================================================================================================
+Review: "Nice app, just an improvement to be perfect It's easy to display a read, but when opening the options its hard since new phones does not have that phone. I have to click back and most of times close the app."
+Correctly classified into subclass: DEVICE
+====================================================================================================================
+====================================================================================================================
+Review: "Poor Would not read sd card. Useless."
+Correctly classified into subclass: HARDWARE
+====================================================================================================================
+====================================================================================================================
+Review: "No preloading Takes time to load every image when reading in sd card, recommend Perfect Viewer by RookieStudio over this app"
+Correctly classified into subclass: HARDWARE
+====================================================================================================================
+====================================================================================================================
+Review: "May have gotten higher stars if.. Unfortunately it was stuck on one screen without the ability to check for comic or start reading...perhaps this is due to having the Samsung illusion idk.."
+Wrong classification:   Weka: ANDROID_VERSION	DB:DEVICE
+====================================================================================================================
+====================================================================================================================
+Review: "Best comic scan app in the market! Worked good on my G1& Droid. Works great on my HTC Thunderbolt.CBZ's & Folders are the best way to view. CBR's sometimes glitch. I convert to CBZ/ZIP mostly."
+Wrong classification:   Weka: ANDROID_VERSION	DB:DEVICE
+====================================================================================================================
+====================================================================================================================
+Review: "Love It! Unfortunately on the LG phones double tapping the screen doesn't in blur the background, but rather turns off the screen of you have that option on (don't know if you can turn the option off yet) but none the less still a great background app!"
+Correctly classified into subclass: DEVICE
+====================================================================================================================
+====================================================================================================================
+Review: "Only half Installs Says it is intalled but only gives me the option to uninstall not open. Using samsung galaxy mega"
+Wrong classification:   Weka: ANDROID_VERSION	DB:DEVICE
+====================================================================================================================
+====================================================================================================================
+Review: "Nice!! Looks good on galaxy note 2. The little customization options make this a great live wallpaper."
+Wrong classification:   Weka: ANDROID_VERSION	DB:DEVICE
+====================================================================================================================
+====================================================================================================================
+Review: "Awesome! I always thought the battle backgrounds would make great live wallpapers. Thanks for putting this together! By the way, the background picker references a menu button for more options but the menu is not available on the G.Nexus for some reason."
+Wrong classification:   Weka: HARDWARE	DB:DEVICE
+====================================================================================================================
+====================================================================================================================
+Review: "Not working on My OnePlus One Used to work well on my previous Sony Xperia handset..but now it doesn't work with my new device."
+Wrong classification:   Weka: ANDROID_VERSION	DB:DEVICE
+====================================================================================================================
+====================================================================================================================
+Review: "Working good in Sony but not in HTC In my HTC 820 ğ plus, it's not working for setting wallpaper on each screen but for my Xperia M5 it's too good.. Please let me know once you fix so that I can revise the star rating to 5 :-)"
+Wrong classification:   Weka: ANDROID_VERSION	DB:DEVICE
+====================================================================================================================
+====================================================================================================================
+Review: "Doesn't work Doesn't work on Android 5.1"
+Correctly classified into subclass: ANDROID_VERSION
+====================================================================================================================
+====================================================================================================================
+Review: "Ah I've used this app every time I've gotten a new phone. Doesn't work now with my note 5 : ("
+Wrong classification:   Weka: ANDROID_VERSION	DB:DEVICE
+====================================================================================================================
+====================================================================================================================
+Review: "No go for Note 4"
+Wrong classification:   Weka: ANDROID_VERSION	DB:DEVICE
+====================================================================================================================
+====================================================================================================================
+Review: "Asus ZENBOOK 8.0 When turning the screen the picture won't move or change! Worked fine on other devices but doesn't work at all with Asus new line of tablets. Please fix!!!"
+Wrong classification:   Weka: ANDROID_VERSION	DB:DEVICE
+====================================================================================================================
+====================================================================================================================
+Review: "Kavin Around more than a year i was using this app. Now my HTC desire eye was updated to lollipop now the individual home screen cant set with different images. Try to fix it."
+Correctly classified into subclass: ANDROID_VERSION
+====================================================================================================================
+====================================================================================================================
+Review: "Would love it, but... Running Note 2. Super disappointed that doesn't work here. If I'm screwing up somewhere, please advise and I'll reinstall."
+Wrong classification:   Weka: HARDWARE	DB:DEVICE
+====================================================================================================================
+====================================================================================================================
+Review: "Not working Read the reviews, seemed promising. But after installing and fiddling with it for 15 min, couldn't't manage to have the pictures I wanted on three screens. Read the comments more attentively, and seems like that on Nexus 5, you need to use quite a few workarounds to make it work. Doesn't work unless you use album mode, which is not what I wanted to use it for. Same for screen lock."
+Wrong classification:   Weka: ANDROID_VERSION	DB:DEVICE
+====================================================================================================================
+====================================================================================================================
+Review: "Good app but... It doesn't works all the time. Sometimes it doesn't want to get a picture from the SD card. :/"
+Correctly classified into subclass: HARDWARE
+====================================================================================================================
+====================================================================================================================
+Review: "Xperia p Its nice bt we can't set photos. Pls add this"
+Correctly classified into subclass: ANDROID_VERSION
+====================================================================================================================
+====================================================================================================================
+Review: "Not Working Not Working On Xperia Z Kitkat. Please Fix. It Says The The Picture In Unavailable."
+Correctly classified into subclass: ANDROID_VERSION
+====================================================================================================================
+====================================================================================================================
+Review: "Does work now on N5 with LP 5.0.1."
+Wrong classification:   Weka: DEVICE	DB:ANDROID_VERSION
+====================================================================================================================
+====================================================================================================================
+Review: "Hands down! It may not be most feature rich, but it is powerful enough, it even comes with a function plotter. And it works on watch too!"
+Wrong classification:   Weka: ANDROID_VERSION	DB:HARDWARE
+====================================================================================================================
+====================================================================================================================
+Review: "Simple app, Amazing features I love this calculator. Some may think "how can one calculator be superior to the rest?", as I once did. However, I quickly realized just how when I went in search of a calculator that is enhanced for Android Wear. This calculator is the perfect answer for my needs, with a full-featured Wear app. It is clean, simple, uncluttered and similar to the stock/AOSP calculator app. The difference is in the expanded features, which are tucked nicely behind a few simple gestures. The floating calculator is genius!!!"
+Correctly classified into subclass: DEVICE
+====================================================================================================================
+====================================================================================================================
+Review: "Great app! But no SIM, not work? Messages arrive (& go out) pretty slow (delay). And once registered with SMS verification, should be able to operate without requiring SIM, no? Will have to discontinue due to this limitation! My trusted good old Nexus 4 heats up pretty bad with a SIM in it, so I use my other dual SIM phone. Too bad, Signal..."
+Wrong classification:   Weka: ANDROID_VERSION	DB:DEVICE
+====================================================================================================================
+====================================================================================================================
+Review: "Dual Sim Please provide for dual sim"
+Wrong classification:   Weka: ANDROID_VERSION	DB:HARDWARE
+====================================================================================================================
+====================================================================================================================
+Review: "Beautiful app, works great! Would love to see a widget for this, maybe even Android wear support. Absolutely fantastic app though!"
+Correctly classified into subclass: HARDWARE
+====================================================================================================================
+====================================================================================================================
+Review: "Keeps crashing Since I upgraded my android this game keeps crashing."
+Correctly classified into subclass: ANDROID_VERSION
+====================================================================================================================
+====================================================================================================================
+Review: "Used to work perfectly, now won't change the current scrobbling track unless the screen is on. Using Play Music on S6 Edge+ running marshmallow"
+Correctly classified into subclass: ANDROID_VERSION
+====================================================================================================================
+====================================================================================================================
+Review: "Force closes every single time on Nexus 5x running Android 6. Can't even open it anymore. Appears to be scrobbling fine still though."
+Correctly classified into subclass: ANDROID_VERSION
+====================================================================================================================
+====================================================================================================================
+Review: "Disappointed It doesn't scrobble Sony Xperia's Music app anymore! Fix plz! :("
+Wrong classification:   Weka: ANDROID_VERSION	DB:DEVICE
+====================================================================================================================
+====================================================================================================================
+Review: "It won't let me scrobble. I use a lg g4 and it won't let me scrobble from my phone music app at all. Fix it pls."
+Wrong classification:   Weka: ANDROID_VERSION	DB:DEVICE
+====================================================================================================================
+====================================================================================================================
+Review: "Keeps crashing on Android N. Other live wallpapers don't."
+Wrong classification:   Weka: DEVICE	DB:ANDROID_VERSION
+====================================================================================================================
+====================================================================================================================
+Review: "Doesn't work anymore Nexus 10 using cyanogenmod 13"
+Wrong classification:   Weka: ANDROID_VERSION	DB:DEVICE
+====================================================================================================================
+====================================================================================================================
+Review: "Android N Not working on Android N beta"
+Correctly classified into subclass: ANDROID_VERSION
+====================================================================================================================
+====================================================================================================================
+Review: "Not working on marshmallow This used to work great but since upgrading to marshmallow it won't auto cycle through new wallpapers on multiple different extensions. It's stuck until I open the app or reinstall the extensions."
+Correctly classified into subclass: ANDROID_VERSION
+====================================================================================================================
+====================================================================================================================
+Review: "Nice concept Great implementation, works really well with Android Wear. But, today it suddenly used 300mb of cellular data which is not cool. So I've uninstalled."
+Wrong classification:   Weka: ANDROID_VERSION	DB:HARDWARE
+====================================================================================================================
+====================================================================================================================
+Review: "Double tapping doesn't work on Samsung s6 edge. Fix it please."
+Wrong classification:   Weka: ANDROID_VERSION	DB:DEVICE
+====================================================================================================================
+====================================================================================================================
+Review: "Used to be perfect but since moving to Marshmallow the wallpapers rarely update (probably due to Doze?) and the next button doesn't work anymore unfortunately - no new pictures are loaded."
+Wrong classification:   Weka: ANDROID_VERSION	DB:DEVICE
+====================================================================================================================
+====================================================================================================================
+Review: "Once one of the Greats This used to be my go to app for wallpapers. Absolutely loved it but seems to now be unusable with Marshmallow have tried the app on a Nexus 6p, S7 Edge and OnePlus 3. Same issue constant crashes when loading images and often won't save. Would love to see it great again!"
+Wrong classification:   Weka: HARDWARE	DB:ANDROID_VERSION
+====================================================================================================================
+====================================================================================================================
+Review: "Does not detect root on marshmallow I really like this application when it works to disable event conditions that start apps. Unfortunately it no longer detects root on my Galaxy S7 with systemless root su 2.71 or 2.68. Please make this compatible."
+Correctly classified into subclass: DEVICE
+====================================================================================================================
+====================================================================================================================
+Review: "Doesn�۪t work anymore No go for S6 or S7"
+Wrong classification:   Weka: ANDROID_VERSION	DB:DEVICE
+====================================================================================================================
+====================================================================================================================
+Review: "developer abandoned does not work on recent devices. developer abandoned this app back in 2014. do not buy."
+Correctly classified into subclass: DEVICE
+====================================================================================================================
+====================================================================================================================
+Review: "Overall, great app to have and use. lately i'm having a little problem. I'm using an HTC One M9 and its rooted but when I got to disable something. the app isn't letting me. I guess it is telling me that I don't have root when I know I do. has anyone experienced this lately?"
+Correctly classified into subclass: DEVICE
+====================================================================================================================
+====================================================================================================================
+Review: "Looked OK, but it needs major bug fixes to be usable After trying this app out for about 2 minutes, it was freezing for 2-4 seconds every 3 lines of code I was looking through. I'm using KitKat 4.4.2. If you can fix the freezes let me know and I'll try your editor again. I was reading through a .vbs program."
+Wrong classification:   Weka: ANDROID_VERSION	DB:DEVICE
+====================================================================================================================
+====================================================================================================================
+Review: "Aamzing This is the best editor i have ever used in Android, except one problem and i hope you get it fixed soon so i can get the Pro version the problem occurs when i am using my external keyboard i can't use the Shift key its really important because most special characters used in coding are accessible only through Shift and since iam using external keyboard i cant access the row key provided in the app."
+Wrong classification:   Weka: ANDROID_VERSION	DB:HARDWARE
+====================================================================================================================
+====================================================================================================================
+Review: "Good, unless you have a bluetooth keyboard Works very well and has syntax highlighting with a variety of languages (but doesn't seem to understand some ruby constructs). However, this app ignores anything involving a shift key on my bluetooth keyboard. Other installed apps to register these key combinations. If you only plan to use the on-screen keyboard, this app is awesome. Otherwise, you can do better than an app that will not allow capital letters from your main keyboard."
+Wrong classification:   Weka: ANDROID_VERSION	DB:HARDWARE
+====================================================================================================================
+====================================================================================================================
+Review: "Sadly unusable on the Pixel C bluetooth keyboard On the Pixel C keyboard, any character typed in combination with the Shift-key does not show up, like :"!@#$%^&*()&lt;&gt;? This appears to be an easy glitch to fix :)"
+Wrong classification:   Weka: DEVICE	DB:HARDWARE
+====================================================================================================================
+====================================================================================================================
+Review: "Probably the only code editor that saves to the external sd card on lollipop"
+Correctly classified into subclass: HARDWARE
+====================================================================================================================
+====================================================================================================================
+Review: "I like it but it has a few bugs Whenever I go to open a file, it defaults to the app's storage directory instead of the main SD card, i.e /sdcard/Android/data/blah blah, but still lists the folders that are in /sdcard. When I then try and open any of these folders there is nothing in them. This is an irritating bug. Fix this and I will up the rating to 5 stars"
+Correctly classified into subclass: HARDWARE
+====================================================================================================================
+====================================================================================================================
+Review: "Best app for Twitter There are bugs, close app when trying to open any media and can't watch any media. Hope to improve it soon with marshmallow version."
+Correctly classified into subclass: ANDROID_VERSION
+====================================================================================================================
+====================================================================================================================
+Review: "Not as good as it used to be Since I got my update to Marshmallow,it crashes every time I click on an image. Hope there will be a bug fix for this."
+Correctly classified into subclass: ANDROID_VERSION
+====================================================================================================================
+====================================================================================================================
+Review: "Great app, but not work well with Marshmallow It has issue with Marshmallow when click on picture. Otherwise a perfect app."
+Correctly classified into subclass: ANDROID_VERSION
+====================================================================================================================
+====================================================================================================================
+Review: "Hasn't been updated since Oct 2014 Force closes when opening a picture with Marshmallow. If it could be fixed I'd definitely stay with this app, however this hasn't received an update for a year and a half now, and seems forgotten. Time to move on I guess, shame, loved this app. UPDATE: Tried the official Twitter app, it's rubbish!! Now using TwitPane and it's really good."
+Correctly classified into subclass: ANDROID_VERSION
+====================================================================================================================
+====================================================================================================================
+Review: "Used to be the best Twitter client ever but since the Marshmallow upgrade it crashes everytime I click on a photo. Unfortunately the contact developer feature elicits no response and I'm now looking for a replacement. Very disappointing."
+Correctly classified into subclass: ANDROID_VERSION
+====================================================================================================================
+====================================================================================================================
+Review: "Can't open images directly on MM Been using this for ages but since I moved to marshmallow crashes when I tap on images. Don't think it's going to be updated :("
+Wrong classification:   Weka: DEVICE	DB:ANDROID_VERSION
+====================================================================================================================
+====================================================================================================================
+Review: "Good - except on Marshmallow I've used this as my twitter client for a long time. Works great, excepting it doesn't really work if you want to see reactions to a tweet for people that you don't follow. That doesn't work. With Android Marshmallow, the non updates to this so really show. If you click on a picture, it crashes. Maybe time to move on"
+Wrong classification:   Weka: DEVICE	DB:ANDROID_VERSION
+====================================================================================================================
+====================================================================================================================
+Review: "Nice A lot of lock screens claim to be minimalistic but this one does it for real. Using Nokia X2 and will love support for music widget."
+Correctly classified into subclass: DEVICE
+====================================================================================================================
+====================================================================================================================
+Review: "Bug in marshmallow The lock screen keeps coming up in recent menu. Please fix it"
+Wrong classification:   Weka: ANDROID_VERSION	DB:DEVICE
+====================================================================================================================
+====================================================================================================================
+Review: "Crashes Cannot even launch the app on my LG G Pro. Please fix it.. I loved this app"
+Wrong classification:   Weka: ANDROID_VERSION	DB:DEVICE
+====================================================================================================================
+====================================================================================================================
+Review: "Best notification displaying app available. I'd like to see the lock screen feature work with fingerprint reader supported devices like the Nexus 6p, etc."
+Wrong classification:   Weka: ANDROID_VERSION	DB:HARDWARE
+====================================================================================================================
+====================================================================================================================
+Review: "Waiting for Nexus Imprint Support Nexus 5X - Marshmallow. Use to love it, but want to have this as my default lockscreen but cannot until it supports fingerprint unlock and use as replacement for standard lockscreen. Will keep in waiting...."
+Wrong classification:   Weka: ANDROID_VERSION	DB:DEVICE
+====================================================================================================================
+====================================================================================================================
+Review: "Great, but seems to get frozen by Android 6.0.1 I love this app, but since upgrade to 6.0.1, the app gets frozen if there are no new notifications. This means the displayed time can be up to 30mins behind the actual time. Can I deactivate this “freezing”?"
+Correctly classified into subclass: ANDROID_VERSION
+====================================================================================================================
+====================================================================================================================
+Review: "I can't type anymore! A recent update is preventing me for typing at the command line. This makes the app useless."
+Wrong classification:   Weka: ANDROID_VERSION	DB:DEVICE
+====================================================================================================================
+====================================================================================================================
+Review: "Not compatible with android N update Shows everything you need to see what your phone is doing. With older versions of the os but nothing working after os update."
+Correctly classified into subclass: ANDROID_VERSION
+====================================================================================================================
+====================================================================================================================
+Review: "Kindly update Doesn't work on marshmallow"
+Correctly classified into subclass: ANDROID_VERSION
+====================================================================================================================
+====================================================================================================================
+Review: "how to lock bootloader how to lock bootloader in oppo neo 7 please tell me"
+Wrong classification:   Weka: ANDROID_VERSION	DB:DEVICE
+====================================================================================================================
+====================================================================================================================
+Review: "Great app but need improvement Not compatible with cm13 on my oneplus one. After granted root permission, amaze recognizes /data and some other directories as file and cannot enter them, while ES works without any problem. please fix. I'd like to provide further information."
+Wrong classification:   Weka: HARDWARE	DB:DEVICE
+====================================================================================================================
+====================================================================================================================
+Review: "Awesome app, hoping for sync between devices... Great app, would like to have a widget. An open source, full featured app."
+Wrong classification:   Weka: HARDWARE	DB:DEVICE
+====================================================================================================================
+====================================================================================================================
+Review: "Best Caching app I have used and i have tried a lot. Fully featured even with a basic membership account and Android Wear support to boot. Great job!"
+Wrong classification:   Weka: ANDROID_VERSION	DB:DEVICE
+====================================================================================================================
+====================================================================================================================
+Review: "Worked just fine for a long time until now and made me almost buy a new phone I used this app for a long time on my Asus Zenfone 5. About 1 month ago, mostly right after unlocking the screen and sometimes randomly, the display tilts/shifts with an absurd angle and goes grayscale and then shortly after phone freezes, makes me do a hard reset. I thought it was a phone problem because I hadn't installed a new app. But then I thought maybe it's about this app, because it happened mostly after unlocking. So i disabled it and the problem solved. Hope this gets fixed. Cheers"
+Correctly classified into subclass: DEVICE
+====================================================================================================================
+====================================================================================================================
+Review: "Works well with pictures from SD Memory card too Good LWP slideshow. Samsung Galaxy S4 Active with Android 4.4.2"
+Correctly classified into subclass: HARDWARE
+====================================================================================================================
+====================================================================================================================
+Review: "SD Card Doesn't see the memory card where comics are stored so useless to me."
+Correctly classified into subclass: HARDWARE
+====================================================================================================================
+====================================================================================================================
+Review: "Dual sim? Wouldn't it be more convenient if we can choose from which sim card we like to send our messages from? This app is still great, though, but only 4 stars for now."
+Correctly classified into subclass: HARDWARE
+====================================================================================================================
+====================================================================================================================
+Review: "Easy Install and Use! I'm a huge fan of Hangouts and use it on my Nexus as my main text app, desktop, laptop, and cell. So I doubted this product until I used it. Super easy to setup and use and works basically like Hangouts. Love it."
+Wrong classification:   Weka: ANDROID_VERSION	DB:HARDWARE
+====================================================================================================================
+====================================================================================================================
+Review: "problem with sd card path hello please fix it when ever i run commands it tells there is no specific path exist in sd card tho it was fully there"
+Correctly classified into subclass: HARDWARE
+====================================================================================================================
+====================================================================================================================
+Review: "Best Offline Reader I've tried many comic readers to read the comics saved to my sd card and this is the best by far."
+Correctly classified into subclass: HARDWARE
+====================================================================================================================
+====================================================================================================================
+Review: "A little bit inconsistent Doesn't work reliably with my GS7 edge. I wanted to turn off AOD and use this but it doesn't have an always on mode. Please consider adding"
+Wrong classification:   Weka: ANDROID_VERSION	DB:DEVICE
+====================================================================================================================
+====================================================================================================================
+Review: "My favorite app Update 11/4 Doesn't work on galaxy S5. Does not show multiple screens. I have tons of apps, but this one is fantastic. It uses little resources, does what it says, does it well and has all the controls you could possibly want. My only suggestion would be to have an option to combine all screens into a single wallpaper like the standard wallpaper only you get the interval change. It's a minor suggestion and should not take away form the app."
+Wrong classification:   Weka: HARDWARE	DB:DEVICE
+====================================================================================================================
+====================================================================================================================
+Review: "When will you support dual sim texting? :( I can only give 4 stars because of it."
+Wrong classification:   Weka: ANDROID_VERSION	DB:HARDWARE
+====================================================================================================================
+====================================================================================================================
+Review: "Please add more features The app is very good but please add more features like changing texts size, support for dual sim devices, mark a message as not readed, and..., Thanks :)"
+Wrong classification:   Weka: ANDROID_VERSION	DB:HARDWARE
+====================================================================================================================
+====================================================================================================================
+Review: "Ultimate Control Hahaha &gt,:) Just one last thing. Hope you guys get a peek on this suggestion of mine... In the App Manager when you tap on the app? Can you put a Move to SD Card and Vice Versa so i dont need to go to my settings ?"
+Correctly classified into subclass: HARDWARE
+====================================================================================================================
+====================================================================================================================
+Review: "Great Open Source Podcast App The only thing that would make it better is if the audio controls on my Pebble would interface with it. Might be a Pebble issue though"
+Wrong classification:   Weka: HARDWARE	DB:DEVICE
+====================================================================================================================
+====================================================================================================================
+Review: "Not working on my Xperia Z3 I'm a fan of this app when I was still using my Xperia Go. But when I switched to Xperia Z3 and downloaded this app, "Picture is unavailable. Need to setup or reload" always appear no matter what picture I choose. Help please."
+Wrong classification:   Weka: ANDROID_VERSION	DB:DEVICE
+====================================================================================================================
+====================================================================================================================
+Review: "Important options have been removed! 1. The move option has disappeared, can no longer move folders around. 2. When using the cut and paste option instead. It keeps showing as unsuccessful? 3. Shows my sdcard again which is good! 4. Actually going to uninstall this until fixed."
+Wrong classification:   Weka: ANDROID_VERSION	DB:HARDWARE
+====================================================================================================================
+
+*****************************************************************************************************************************
+Correct classified: 38	 Wrong classified: 53
+Classification-Precision: 0.4175824175824176
+*****************************************************************************************************************************
+

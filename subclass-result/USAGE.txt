@@ -1,0 +1,262 @@
+29====================================================================================================================
+Review: "Tabs? Works as a browser should. Maybe add tabs option? Sometimes I wanna open a new window to search something can't do that on here."
+Wrong classification:   Weka: UI	DB:APP_USABILITY
+====================================================================================================================
+====================================================================================================================
+Review: "Cant open cbr files Hated it"
+Correctly classified into subclass: APP_USABILITY
+====================================================================================================================
+====================================================================================================================
+Review: "Ok Very messy looking interface. Not intuitive. Wide range of options for viewing your comics though."
+Correctly classified into subclass: UI
+====================================================================================================================
+====================================================================================================================
+Review: "No menu button Seems like a good app. I paid for the premium and I can't even bring up a menu."
+Wrong classification:   Weka: APP_USABILITY	DB:UI
+====================================================================================================================
+====================================================================================================================
+Review: "Love it! I really like it, the puzzles are fun, and best of all, IT'S FREE. But I'm dumb and some of the puzzles I can't get the hang of, even if I read the instructions 50 times. But anyway, It's great fun, and definitely a wonderful app. Keep it up! 😊"
+Wrong classification:   Weka: UI	DB:APP_USABILITY
+====================================================================================================================
+====================================================================================================================
+Review: "Underappreciated This app is phenomenal. Tiny data size, simple and easy to control UI that does not complicate the procedure but is able to execute a complex service. Built in fixes for known issues with certain phone and tablet screens and the ability to designate specific wallpapers per screen is very handy. I have yet to have an issue and enjoy the app."
+Wrong classification:   Weka: UI	DB:APP_USABILITY
+====================================================================================================================
+====================================================================================================================
+Review: "Ur new update sucks... Makes my phone stuck on home screen after using cool widget which makes it unique from the others when I drag the icon to 'X' icon and hv to restart the whole phone... The previous version would hv been a full 5 stars"
+Correctly classified into subclass: APP_USABILITY
+====================================================================================================================
+====================================================================================================================
+Review: "Very useful calc app, almost perfect I use this app as my daily calculator for homework and other tasks (I'm an engineering student). Great UI, fast, simple, and feels good to use. Deceptively versatile based on its seemingly simple UI. However, one improvement I would suggest is the ability to recall previous equations instead of previous answers. Many times I find myself retyping a long equation when I need to make small changes to it. Think "question focused" instead of "answer focused""
+Correctly classified into subclass: UI
+====================================================================================================================
+====================================================================================================================
+Review: "Works, but looks ancient. The design is from pre-Holo times."
+Wrong classification:   Weka: APP_USABILITY	DB:UI
+====================================================================================================================
+====================================================================================================================
+Review: "the dark theme makes a huge difference, so I use this now instead of Google messenger. Also nice to have a desktop client."
+Wrong classification:   Weka: APP_USABILITY	DB:UI
+====================================================================================================================
+====================================================================================================================
+Review: "As a student, I have my own educational expense. But I need to add them in "child education" which is "Family" category. Check this and make a category named "Education""
+Correctly classified into subclass: APP_USABILITY
+====================================================================================================================
+====================================================================================================================
+Review: "Great app It's work wonderful using it for an year it's awesome, suggestion to upgrade it's UI, new design icons and warning option if budget exceed it's level like that..."
+Correctly classified into subclass: UI
+====================================================================================================================
+====================================================================================================================
+Review: "Hate that it automatically clears account and category and some changes (like adding a note). Also if I have 1 account it should always be automatically selected."
+Correctly classified into subclass: APP_USABILITY
+====================================================================================================================
+====================================================================================================================
+Review: "Graph is hard to read The old linear one was much easier to understand, this one creates curves spontaneously where they do not exist"
+Correctly classified into subclass: APP_USABILITY
+====================================================================================================================
+====================================================================================================================
+Review: "Good but... I really miss a feature to see both the salary and expenses in the Reports. With just expenses shown I can't tell if I'm in a positive balance or not at the end of the month. Also, what are the graphs for if they don't show the numbers on Y axis? I can't click on them to get the data tip as shown in screenshots here. Option to expend the category and show Tag expenses when you click on Pie chart. Cheers!"
+Wrong classification:   Weka: UI	DB:APP_USABILITY
+====================================================================================================================
+====================================================================================================================
+Review: "Excellent Best I've used and I've tried several. To those who say there's no transfer option, under the transactions tab click the red circle icon and it will go green, and again and it will go grey 》transfer. One improvement I'd suggest is a really quick tutorial just to point out less obvious features like that one. But it's clean, attractive, and easy to use."
+Wrong classification:   Weka: UI	DB:APP_USABILITY
+====================================================================================================================
+====================================================================================================================
+Review: "Good idea. +1 for Open Source. Edit: Cannot stand blurriness anymore."
+Correctly classified into subclass: APP_USABILITY
+====================================================================================================================
+====================================================================================================================
+Review: "Too easy and too slow Being able to undo just one move should be enough to correct false moves, 50 is ridiculous and makes the game annoyingly slow. 3 moves and everybody is happy, yes? Oh and the occasional dropping of 4 has ruined many a game. The undo button took me from a high score of 73000ish to 290552 in one game, finally defeated by a dropped 4."
+Correctly classified into subclass: APP_USABILITY
+====================================================================================================================
+====================================================================================================================
+Review: "Highly recommended A wonderful collection of brain-teasing puzzles all in one app. I play this all the time because there's so much variation you can never get bored. Suggestion: Could 'Reveal solution' be a button not on a menu so we can see where we went wrong visibly correct itself. Helpful when learning a game."
+Correctly classified into subclass: APP_USABILITY
+====================================================================================================================
+====================================================================================================================
+Review: "An excellent little collection Great to play when you're bored and you want something fun to do on your phone that doesn't drain the battery. Controls can be a little annoying when you have to switch between tap and long press all the time. Overall, I highly recommend these games."
+Correctly classified into subclass: APP_USABILITY
+====================================================================================================================
+====================================================================================================================
+Review: "Mediocre app with a horrible UI. Won't work with apple music."
+Correctly classified into subclass: UI
+====================================================================================================================
+====================================================================================================================
+Review: "This app is a joke Ugly ads. Everything in settings opens up a window in my phone's browser, which would be bad enough but the website is awful too. Plus there's no way to turn off the persistent notification, so now I have to have it taking up space on my notification bar. I just want it to run in the background."
+Correctly classified into subclass: APP_USABILITY
+====================================================================================================================
+====================================================================================================================
+Review: "Love it but Love my ever changing wallpapers. But can't seem to figure out how to centre the image if I've only got one home screen. I end up seeing just the left side of all my images."
+Correctly classified into subclass: APP_USABILITY
+====================================================================================================================
+====================================================================================================================
+Review: "Pls add only lockscreen wallpaper support Cannot set wallpaper on lockscreen individually.I have to set wallpaper for both home screen as well as lockscreen.. Please add a feature through which we can set wallpaper only on lockscreen"
+Correctly classified into subclass: APP_USABILITY
+====================================================================================================================
+====================================================================================================================
+Review: "The disability is really bad It could be so good but it's really hard to use and relies heavily on plugins. Ie it has no built in automatic image change and no multiple source selector."
+Wrong classification:   Weka: UI	DB:APP_USABILITY
+====================================================================================================================
+====================================================================================================================
+Review: "Too few customizations What it needs is a setting that allows you to set a specific time cycle when to automatically change wallpaper."
+Wrong classification:   Weka: APP_USABILITY	DB:UI
+====================================================================================================================
+====================================================================================================================
+Review: "awesome holy f-ck 1-click downloads+search and clean interface. where is your donate button, you need one. nicely done."
+Wrong classification:   Weka: APP_USABILITY	DB:UI
+====================================================================================================================
+====================================================================================================================
+Review: "Needa only material design update"
+Wrong classification:   Weka: APP_USABILITY	DB:UI
+====================================================================================================================
+====================================================================================================================
+Review: "No search feature on the app!!"
+Correctly classified into subclass: APP_USABILITY
+====================================================================================================================
+====================================================================================================================
+Review: "More syntax color scheme please. Specially Monokai."
+Wrong classification:   Weka: APP_USABILITY	DB:UI
+====================================================================================================================
+====================================================================================================================
+Review: "Can't use sliding to write"
+Wrong classification:   Weka: APP_USABILITY	DB:UI
+====================================================================================================================
+====================================================================================================================
+Review: "Neat Enjoy the dark color scheme & specially helpful w/ bluetooth keyboard."
+Wrong classification:   Weka: APP_USABILITY	DB:UI
+====================================================================================================================
+====================================================================================================================
+Review: "No keyboard. This is another typical Android app. I have looked at on a few occasions. It has features I want such as monospaced font for columnar editing. Unfortunately I can't get at a keyboard or full character set. Maybe this is because I don't use a standard Google keyboard. It is typical in the fact that there I so help, hints, or way to ask a question. It wouldn't need more than a paragraph or two of documentation but without it becomes a time consuming frustration rather than the useful app it could be."
+Wrong classification:   Weka: UI	DB:APP_USABILITY
+====================================================================================================================
+====================================================================================================================
+Review: "Font No external font support… actually, no font support at all."
+Wrong classification:   Weka: APP_USABILITY	DB:UI
+====================================================================================================================
+====================================================================================================================
+Review: "Don't like the word limit in DM's.Would also like to rearrange the lanes instead of scrolling back and forth."
+Wrong classification:   Weka: APP_USABILITY	DB:UI
+====================================================================================================================
+====================================================================================================================
+Review: "Good Remove the ac in the notification bar its useless... And improve that lock screen, i always have to turn it on and off because it stop working... Other than that, awesome! 5 stars when fixed!"
+Wrong classification:   Weka: APP_USABILITY	DB:UI
+====================================================================================================================
+====================================================================================================================
+Review: "Absolutely love almost everything about it. Only thing that I would like changed is for the lockscreen to not disable when the phone does actions while the screen is off(such as the music player starting or receiving a phone call)."
+Correctly classified into subclass: APP_USABILITY
+====================================================================================================================
+====================================================================================================================
+Review: "Background Can you make background setting light or dark.(i mean too dark of wallpaper)"
+Wrong classification:   Weka: APP_USABILITY	DB:UI
+====================================================================================================================
+====================================================================================================================
+Review: "Nice but some remarks I have an s6 and sometimes when I click on the notification bubble in acdisplay it stays blank which is annoying. Would be nice to be able to use my fingerprint reader as well. Awesome app tho! Would recommend."
+Wrong classification:   Weka: APP_USABILITY	DB:UI
+====================================================================================================================
+====================================================================================================================
+Review: "Almost! Great minimalist lock screen. The wave proximity sensor unlocking function should be improved though. As well as adding more options for swiping from upper/lower right/left, not just dialer and camera. And it would also be perfect if you can edit the size of the clock. Hihi. Still an awesome app though! :)"
+Correctly classified into subclass: UI
+====================================================================================================================
+====================================================================================================================
+Review: "I would be glad if Fingerprint unlocking will come to AcDisplay I want to see this App as a real Lockscreen replacement 👍"
+Correctly classified into subclass: APP_USABILITY
+====================================================================================================================
+====================================================================================================================
+Review: "Great app just needs a few additions This is a fantastic app for someone coming from the Motorola ecosystem that misses the active display as badly as I did. There needs to be a way to swipe the media player out of the way to access the normal acdisplay screen. There also needs to be an addition that brings up acdisplay when the phone is picked up after sitting for a set period of time. I have issues with the proximity wake but pulling it out of my pocket always seems to work. Otherwise this is a fantastic app!"
+Correctly classified into subclass: APP_USABILITY
+====================================================================================================================
+====================================================================================================================
+Review: "The grid and list view are changing randomly, could you please fix it?"
+Correctly classified into subclass: APP_USABILITY
+====================================================================================================================
+====================================================================================================================
+Review: "Works brilliantly. Lots of features, including tunnelling and private key authentication. The extra CTRL/ESC/TAB/arrow keys which appear above the standard keyboard make it possible to de serious work with this app."
+Wrong classification:   Weka: APP_USABILITY	DB:UI
+====================================================================================================================
+====================================================================================================================
+Review: "Awesome Small size and works as expected. Excellent work. Could you guys add an option to keep the soft keyboard (ctrl, tab, arrows, etc) always visible, please?"
+Correctly classified into subclass: UI
+====================================================================================================================
+====================================================================================================================
+Review: "Text too small on high res screens"
+Wrong classification:   Weka: APP_USABILITY	DB:UI
+====================================================================================================================
+====================================================================================================================
+Review: "Complete button Very good, with button tab and arrow navigation. The other similar apps only provide Esc and Ctrl button"
+Wrong classification:   Weka: APP_USABILITY	DB:UI
+====================================================================================================================
+====================================================================================================================
+Review: "Fullscreen scrolling problem The console cannot scroll to the last line or the line where the cursor is when fullscreen mode is on and the keyboard active. Else everything is good."
+Wrong classification:   Weka: APP_USABILITY	DB:UI
+====================================================================================================================
+====================================================================================================================
+Review: "Keyboard shortcuts awesome Adding the arrow and tab key shortcuts makes it so much easier to take care of tasks on a small phone screen (particularly the tab for auto-completion)."
+Correctly classified into subclass: APP_USABILITY
+====================================================================================================================
+====================================================================================================================
+Review: "Its Ok The biggest drawback is the picture size limit. When I tried to send a picture it said that I was exceeding the size limit, but it was able to send perfectly fine through my normal text SMS app."
+Correctly classified into subclass: APP_USABILITY
+====================================================================================================================
+====================================================================================================================
+Review: "It's okay Just wish I could save so every time i died i didn't have to start all over"
+Wrong classification:   Weka: UI	DB:APP_USABILITY
+====================================================================================================================
+====================================================================================================================
+Review: "There should be a quick save option in my opnion that way if you have to stop plying you won't lose all your progress,and maybe even just a checkpoint that can be used once or something."
+Wrong classification:   Weka: UI	DB:APP_USABILITY
+====================================================================================================================
+====================================================================================================================
+Review: "Please consider adding two options - make the proximity sensor time shorter so i can basically wave over my phone for a second to see the time/notifications.. or allow always-on mode.. thank you, great work"
+Wrong classification:   Weka: UI	DB:APP_USABILITY
+====================================================================================================================
+====================================================================================================================
+Review: "Great but... I'd like to give this app 5 stars but it makes unlock slower... On my Samsung Galaxy S6, I have to swipe and then unlock with fingerprints, of you add fingerprint directly in acdisplay I'll give you 5 stars ! You can also add a mode for Samsung clear cover ,)"
+Correctly classified into subclass: APP_USABILITY
+====================================================================================================================
+====================================================================================================================
+Review: "Great app....! But the major change has to be do is that the floating shortcut doesn't appeare as soon as text is been coppied on clipboard and the thing which has to be done is firstly we have to pull down the notification tray and then after putting it back the floating shortcut appeares and also the bubble short cut is insecure while using banking apps so I would rate app as 5 star only when you people will develop an app of such a form that app will not ask acesseblity permission."
+Wrong classification:   Weka: APP_USABILITY	DB:UI
+====================================================================================================================
+====================================================================================================================
+Review: "list item take too much space, missing info 1) Each list item is surrounded by too much empty space. List view could have been easily compressed more. 2) In list view, I want to see full time ( not just month & day, & year if not current). 3) Sometimes Amaze seems to fail to recall options set previously."
+Correctly classified into subclass: UI
+====================================================================================================================
+====================================================================================================================
+Review: "Annoying bar Top bar takes too much space. I can't disable it because I need it's functionality…"
+Wrong classification:   Weka: APP_USABILITY	DB:UI
+====================================================================================================================
+====================================================================================================================
+Review: "meh Too much wasted space. No control over text size. I'm using a phone with a decent size screen (5.5 inch) and in landscape there is so much space wasted only two files are visible. Noy very useful with such a limitation."
+Wrong classification:   Weka: APP_USABILITY	DB:UI
+====================================================================================================================
+====================================================================================================================
+Review: "Widgets Small widget doesn't work in android 6.0 LG G3. I mean it doesn't show untrained words."
+Wrong classification:   Weka: APP_USABILITY	DB:UI
+====================================================================================================================
+====================================================================================================================
+Review: "Does exactly what it says Does exactly what it says....low footprint widget. I wanted a very big widget so I could monitor the battery."
+Wrong classification:   Weka: APP_USABILITY	DB:UI
+====================================================================================================================
+====================================================================================================================
+Review: "It works well and I'm learning but doesn't seem to display the third tone in pinyin correctly. Also you should be able to scroll at the left and use the whiteboard on the right. This will make it easier to practice writing while checking notes."
+Correctly classified into subclass: APP_USABILITY
+====================================================================================================================
+====================================================================================================================
+Review: "Great design! One of the best spaced repetition apps out there. Very well-designed. I only wish it were easier to switch between multiple profiles! I use the app with my students in class as well as for my own studies. And it proves it to be very difficult to do that on the same device."
+Correctly classified into subclass: APP_USABILITY
+====================================================================================================================
+====================================================================================================================
+Review: "CAPCHA Whilst I have no issue with you including this feature can you please try to implement it more effectively? I have a Note 4 and even on that large, hi res screen those capchas are ridiculously hard to read."
+Wrong classification:   Weka: APP_USABILITY	DB:UI
+====================================================================================================================
+====================================================================================================================
+Review: "There is transfers! Click on the red button when you set a new transaction. Quite hidden, but it's there!"
+Wrong classification:   Weka: APP_USABILITY	DB:UI
+====================================================================================================================
+
+*****************************************************************************************************************************
+Correct classified: 29	 Wrong classified: 35
+Classification-Precision: 0.453125
+*****************************************************************************************************************************
+
