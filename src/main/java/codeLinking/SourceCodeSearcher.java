@@ -90,7 +90,7 @@ public class SourceCodeSearcher implements Constants{
     /**
      * Decides a IndexCategory based on the Classification of a review.
      * This will be used for a boost on the corresponding files in the index
-     * @param reviewC
+     * @param
      * @return
      */
     private IndexCategory defineIndexCategory(Review review) {
