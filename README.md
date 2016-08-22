@@ -1,4 +1,4 @@
-# URL - UserRequestLocalizer
+# URL - UserRequestReferencer
 
 ## Introduction
 As a part of my bachelor thesis I developed this prototype. The idea of the project is to link review of specific Application in the Google Play Store with the corresponding Source Code file. So a developer can faster find the location of a f.ex bugfix or error.
@@ -12,7 +12,7 @@ With the second application (Two_Linking.main()) the preclassified reviewText ar
 - Install the standard Firefox Browser, if running on Windows: https://www.mozilla.org/en-US/firefox/new/
 
 ##Process - Run the application
-![alt tag](https://github.com/anschau1992/UserRequestLocalizer/blob/developer/ba_URL_process_app.png)
+![alt tag](https://github.com/anschau1992/UserRequestReferencer/blob/developer/ba_URL_process_app.png)
 
 1. In ./docs/appInfos.csv the apps you want to crawl can be added. Make sure the csv-file always has the proper format of:  **appname;category;id;sourceCodeLink**
   - where id is the end of the Google Play Store link.
@@ -23,7 +23,7 @@ With the second application (Two_Linking.main()) the preclassified reviewText ar
 3. Run One_Crawling.main() with arguments:  **<csvPath> <browser> <mode>**
   - whereas <csvPath> is the filePath to the Appinfos, <browser> is either 'firefox' or 'safari' and <moded> is 'test' or 'prod'
   - When choosen 'test' the reviews are stored in a DB 'testreviews' otherwise in one called 'review'
-4. Open the new created csv-File 'preclassification.csv'. Do Preclassification and Subclassification(optional) based on the [predefined heuristics](https://github.com/anschau1992/UserRequestLocalizer/blob/developer/docs/preclassification_heuristics.pdf) for the reviews.
+4. Open the new created csv-File 'preclassification.csv'. Do Preclassification and Subclassification(optional) based on the [predefined heuristics](https://github.com/anschau1992/UserRequestReferencer/blob/developer/docs/preclassification_heuristics.pdf) for the reviews.
   - Create for that a csv-file './docs/preclassification_with_classes' with the format:  **reviewID;reviewText;preclassification;subclassification**
   - Not every review must have a defined pre- & subclassification in the file.
 5. Start Two_Linking.main() with arguments:**<preclassification> <mode>**
